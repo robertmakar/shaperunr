@@ -1,0 +1,5 @@
+node_modules/
+.env
+data/**/*.osm.pbf
+data/**/*.tar
+data/**/valhalla_tiles/

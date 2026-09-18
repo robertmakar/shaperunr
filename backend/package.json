@@ -1,0 +1,27 @@
+{
+  "name": "runshape-backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "self-test": "tsx src/generation/adaptive-scale.self-test.ts && tsx src/scoring/shape-match.self-test.ts && tsx src/generation/candidate-search.self-test.ts && tsx src/generation/ordered-street-route.self-test.ts && tsx src/diagnostics/street-fit.self-test.ts && tsx src/generation/street-fit-search.self-test.ts",
+    "street-fit": "tsx src/diagnostics/street-fit.run.ts",
+    "street-fit-search": "tsx src/generation/street-fit-search.run.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.1",
+    "tsx": "^4.20.5",
+    "typescript": "~6.0.3"
+  }
+}

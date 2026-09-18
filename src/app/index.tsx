@@ -1,98 +1,174 @@
-import * as Device from 'expo-device';
-import { Platform, StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useState } from 'react';
+import {
+  KeyboardAvoidingView,
+  Platform,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from 'react-native';
+import { useRouter } from 'expo-router';
 
-import { AnimatedIcon } from '@/components/animated-icon';
-import { HintRow } from '@/components/hint-row';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { WebBadge } from '@/components/web-badge';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
-
-function getDevMenuHint() {
-  if (Platform.OS === 'web') {
-    return <ThemedText type="small">use browser devtools</ThemedText>;
-  }
-  if (Device.isDevice) {
-    return (
-      <ThemedText type="small">
-        shake device or press <ThemedText type="code">m</ThemedText> in terminal
-      </ThemedText>
-    );
-  }
-  const shortcut = Platform.OS === 'android' ? 'cmd+m (or ctrl+m)' : 'cmd+d';
-  return (
-    <ThemedText type="small">
-      press <ThemedText type="code">{shortcut}</ThemedText>
-    </ThemedText>
-  );
-}
+import { DistanceSelector } from '@/components/distance-selector';
+import { LocationControl, type LocationControlStatus } from '@/components/location-control';
+import { PrimaryButton } from '@/components/primary-button';
+import { Screen } from '@/components/screen';
+import { colors, spacing, typography } from '@/constants/theme';
+import { formatWord } from '@/lib/format';
+import type { Coordinate } from '@/lib/geo';
+import { requestAndGetCurrentLocation } from '@/lib/location';
 
 export default function HomeScreen() {
+  const router = useRouter();
+  const [word, setWord] = useState('');
+  const [distance, setDistance] = useState(4);
+  const [locationStatus, setLocationStatus] = useState<LocationControlStatus>('idle');
+  const [userLocation, setUserLocation] = useState<Coordinate | null>(null);
+  const canSearch = word.trim().length > 0;
+
+  async function handleUseLocation() {
+    setLocationStatus('loading');
+
+    const result = await requestAndGetCurrentLocation();
+
+    if (result.ok) {
+      setUserLocation(result.coordinate);
+      setLocationStatus('ready');
+      return;
+    }
+
+    setUserLocation(null);
+    setLocationStatus('unavailable');
+  }
+
   return (
-    <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea}>
-        <ThemedView style={styles.heroSection}>
-          <AnimatedIcon />
-          <ThemedText type="title" style={styles.title}>
-            Welcome to&nbsp;Expo
-          </ThemedText>
-        </ThemedView>
+    <Screen>
+      <KeyboardAvoidingView
+        style={styles.flex}
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+        <ScrollView
+          keyboardShouldPersistTaps="handled"
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.content}>
+          <View>
+            <Text style={styles.logo}>RUNSHAPE</Text>
 
-        <ThemedText type="code" style={styles.code}>
-          get started
-        </ThemedText>
+            <View style={styles.hero}>
+              <Text style={styles.title}>What do you want</Text>
+              <Text style={styles.title}>to run?</Text>
+            </View>
 
-        <ThemedView type="backgroundElement" style={styles.stepContainer}>
-          <HintRow
-            title="Try editing"
-            hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
-          />
-          <HintRow title="Dev tools" hint={getDevMenuHint()} />
-          <HintRow
-            title="Fresh start"
-            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
-          />
-        </ThemedView>
+            <TextInput
+              value={word}
+              onChangeText={setWord}
+              placeholder="Type a word..."
+              placeholderTextColor={colors.textMuted}
+              autoCapitalize="characters"
+              autoCorrect={false}
+              maxLength={12}
+              style={styles.input}
+            />
 
-        {Platform.OS === 'web' && <WebBadge />}
-      </SafeAreaView>
-    </ThemedView>
+            <View style={styles.section}>
+              <Text style={styles.label}>DISTANCE</Text>
+              <DistanceSelector value={distance} onChange={setDistance} />
+            </View>
+
+            <LocationControl
+              status={locationStatus}
+              coordinate={userLocation}
+              onPress={() => {
+                void handleUseLocation();
+              }}
+            />
+          </View>
+
+          <View>
+            <PrimaryButton
+              label="FIND MY ROUTE"
+              disabled={!canSearch}
+              onPress={() => {
+                router.push({
+                  pathname: '/routes',
+                  params: {
+                    word: formatWord(word),
+                    distance: String(distance),
+                    ...(userLocation
+                      ? {
+                          latitude: String(userLocation.latitude),
+                          longitude: String(userLocation.longitude),
+                        }
+                      : {}),
+                  },
+                });
+              }}
+            />
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Open developer shape proof of concept"
+              onPress={() => router.push('/debug-shape')}
+              style={styles.devLink}>
+              <Text style={styles.devLinkText}>DEV · SHAPE POC</Text>
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Open developer real OpenStreetMap route generator"
+              onPress={() => router.push('/debug-real-routes')}
+              style={styles.devLink}>
+              <Text style={styles.devLinkText}>DEV · REAL OSM ROUTES</Text>
+            </Pressable>
+          </View>
+        </ScrollView>
+      </KeyboardAvoidingView>
+    </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  flex: {
     flex: 1,
-    justifyContent: 'center',
-    flexDirection: 'row',
   },
-  safeArea: {
-    flex: 1,
-    paddingHorizontal: Spacing.four,
-    alignItems: 'center',
-    gap: Spacing.three,
-    paddingBottom: BottomTabInset + Spacing.three,
-    maxWidth: MaxContentWidth,
+  content: {
+    flexGrow: 1,
+    justifyContent: 'space-between',
+    paddingBottom: spacing.two,
   },
-  heroSection: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-    paddingHorizontal: Spacing.four,
-    gap: Spacing.four,
+  logo: {
+    ...typography.logo,
+    color: colors.text,
+  },
+  hero: {
+    marginTop: spacing.hero,
+    marginBottom: spacing.xxl,
   },
   title: {
-    textAlign: 'center',
+    ...typography.hero,
+    color: colors.text,
   },
-  code: {
-    textTransform: 'uppercase',
+  input: {
+    height: 64,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.text,
+    ...typography.input,
+    color: colors.text,
+    paddingHorizontal: 0,
   },
-  stepContainer: {
-    gap: Spacing.three,
-    alignSelf: 'stretch',
-    paddingHorizontal: Spacing.three,
-    paddingVertical: Spacing.four,
-    borderRadius: Spacing.four,
+  section: {
+    marginTop: 42,
+  },
+  label: {
+    ...typography.kicker,
+    color: colors.textSecondary,
+    marginBottom: 14,
+  },
+  devLink: {
+    marginTop: spacing.xl,
+    alignSelf: 'flex-start',
+  },
+  devLinkText: {
+    ...typography.kicker,
+    color: colors.textMuted,
   },
 });

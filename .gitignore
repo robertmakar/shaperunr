@@ -31,7 +31,16 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
+backend/.env
+
+# OSM / Valhalla data — never commit extracts or tiles
+*.osm.pbf
+*.osm.pbf.md5
+backend/data/
+valhalla_tiles/
+custom_files/
 
 # typescript
 *.tsbuildinfo

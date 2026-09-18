@@ -1,0 +1,28 @@
+# Official Valhalla scripted image. Multi-arch: linux/arm64 (Apple Silicon) and linux/amd64.
+# Pin platform so Docker Desktop on an M-series Mac does not fall back to slow amd64 emulation.
+services:
+  valhalla:
+    image: ghcr.io/valhalla/valhalla-scripted:latest
+    platform: linux/arm64
+    container_name: runshape-valhalla
+    ports:
+      - "8002:8002"
+    environment:
+      # Put egypt-latest.osm.pbf in ./data/custom_files before the first start.
+      # False: build tiles from that PBF when no graph exists (or the PBF hash changed).
+      # Do not set this True on a first run — that skips tile generation if a stale tar is present.
+      use_tiles_ignore_pbf: "False"
+      force_rebuild: "False"
+      serve_tiles: "True"
+      build_elevation: "False"
+      build_admins: "True"
+      build_time_zones: "True"
+      build_tar: "True"
+      # Empty = do not build a traffic archive (not needed for pedestrian development).
+      traffic_name: ""
+    volumes:
+      # Host: backend/data/custom_files/egypt-latest.osm.pbf
+      # Container: /custom_files/egypt-latest.osm.pbf
+      - ./data/custom_files:/custom_files
+    # First Egypt tile build can take 10–30+ minutes. The service port is silent until then.
+    restart: unless-stopped
