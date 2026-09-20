@@ -1,6 +1,8 @@
+import { useMemo } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { colors, typography } from '@/constants/theme';
+import { typography, type ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 
 type RunStatProps = {
   value: string;
@@ -13,6 +15,9 @@ export function RunStat({
   label,
   emphasis = 'secondary',
 }: RunStatProps) {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+
   return (
     <View style={styles.stat}>
       <Text
@@ -29,21 +34,23 @@ export function RunStat({
   );
 }
 
-const styles = StyleSheet.create({
-  stat: {
-    flex: 1,
-    minWidth: 0,
-    gap: 6,
-  },
-  value: {
-    ...typography.statSecondary,
-    color: colors.text,
-  },
-  valuePrimary: {
-    ...typography.metricLarge,
-  },
-  label: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    stat: {
+      flex: 1,
+      minWidth: 0,
+      gap: 6,
+    },
+    value: {
+      ...typography.statSecondary,
+      color: colors.text,
+    },
+    valuePrimary: {
+      ...typography.metricLarge,
+    },
+    label: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+  });
+}

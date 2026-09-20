@@ -1,7 +1,9 @@
+import { useMemo } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { colors, radii, spacing, typography } from '@/constants/theme';
+import { radii, spacing, typography, type ThemeColors } from '@/constants/theme';
 import { useDistanceUnit } from '@/hooks/use-distance-unit';
+import { useThemeColors } from '@/hooks/use-theme';
 import { convertKmToUnit, distanceUnitLabel, distanceUnitName } from '@/lib/format';
 
 /**
@@ -18,6 +20,8 @@ type DistanceSelectorProps = {
 
 export function DistanceSelector({ value, onChange }: DistanceSelectorProps) {
   const [unit] = useDistanceUnit();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
 
   return (
     <View style={styles.row}>
@@ -49,31 +53,33 @@ export function DistanceSelector({ value, onChange }: DistanceSelectorProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  row: {
-    flexDirection: 'row',
-    gap: spacing.sm,
-  },
-  chip: {
-    flex: 1,
-    minHeight: 48,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.surface,
-    borderRadius: radii.pill,
-    paddingHorizontal: spacing.sm,
-  },
-  chipSelected: {
-    backgroundColor: colors.accent,
-  },
-  pressed: {
-    backgroundColor: colors.surfaceAlt,
-  },
-  label: {
-    ...typography.meta,
-    color: colors.textSecondary,
-  },
-  labelSelected: {
-    color: colors.inverse,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    row: {
+      flexDirection: 'row',
+      gap: spacing.sm,
+    },
+    chip: {
+      flex: 1,
+      minHeight: 48,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: colors.surface,
+      borderRadius: radii.pill,
+      paddingHorizontal: spacing.sm,
+    },
+    chipSelected: {
+      backgroundColor: colors.accent,
+    },
+    pressed: {
+      backgroundColor: colors.surfaceAlt,
+    },
+    label: {
+      ...typography.meta,
+      color: colors.textSecondary,
+    },
+    labelSelected: {
+      color: colors.inverse,
+    },
+  });
+}

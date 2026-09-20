@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Redirect, useLocalSearchParams, useRouter } from 'expo-router';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
@@ -11,7 +11,8 @@ import {
   ALEXANDRIA_DIAGNOSTIC_COORDINATE,
   DEBUG_FIXED_ALEXANDRIA,
 } from '@/constants/experimental';
-import { colors, spacing, typography } from '@/constants/theme';
+import { spacing, typography, type ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 import {
   experimentalNoMatchCopy,
   generateExperimentalRoutesFromBackend,
@@ -27,6 +28,8 @@ type Phase = 'loading' | 'ready' | 'empty' | 'error';
 
 export default function ExperimentalRoutesScreen() {
   const router = useRouter();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const params = useLocalSearchParams<{
     word?: string | string[];
     distance?: string | string[];
@@ -287,68 +290,70 @@ export default function ExperimentalRoutesScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  content: {
-    paddingBottom: spacing.xxl,
-    gap: spacing.xxl,
-  },
-  header: {
-    gap: spacing.xs,
-  },
-  loadingScreen: {
-    gap: spacing.xl,
-  },
-  kicker: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-    marginTop: spacing.sm,
-  },
-  word: {
-    ...typography.display,
-    color: colors.text,
-    marginTop: spacing.xs,
-  },
-  loadingWord: {
-    ...typography.title,
-    color: colors.text,
-    marginTop: spacing.xs,
-  },
-  description: {
-    ...typography.caption,
-    color: colors.textSecondary,
-    marginTop: spacing.sm,
-  },
-  list: {
-    gap: spacing.xxl,
-  },
-  secondaryCandidate: {
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: colors.border,
-    paddingTop: spacing.xxl,
-  },
-  empty: {
-    gap: spacing.sm,
-    maxWidth: 320,
-    paddingTop: spacing.xxxl,
-  },
-  emptyAction: {
-    marginTop: spacing.xl,
-  },
-  emptyTitle: {
-    ...typography.title,
-    color: colors.text,
-  },
-  emptyBody: {
-    ...typography.body,
-    color: colors.textSecondary,
-  },
-  tryLabel: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-    marginTop: spacing.lg,
-  },
-  tryItem: {
-    ...typography.body,
-    color: colors.text,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    content: {
+      paddingBottom: spacing.xxl,
+      gap: spacing.xxl,
+    },
+    header: {
+      gap: spacing.xs,
+    },
+    loadingScreen: {
+      gap: spacing.xl,
+    },
+    kicker: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+      marginTop: spacing.sm,
+    },
+    word: {
+      ...typography.display,
+      color: colors.text,
+      marginTop: spacing.xs,
+    },
+    loadingWord: {
+      ...typography.title,
+      color: colors.text,
+      marginTop: spacing.xs,
+    },
+    description: {
+      ...typography.caption,
+      color: colors.textSecondary,
+      marginTop: spacing.sm,
+    },
+    list: {
+      gap: spacing.xxl,
+    },
+    secondaryCandidate: {
+      borderTopWidth: StyleSheet.hairlineWidth,
+      borderTopColor: colors.border,
+      paddingTop: spacing.xxl,
+    },
+    empty: {
+      gap: spacing.sm,
+      maxWidth: 320,
+      paddingTop: spacing.xxxl,
+    },
+    emptyAction: {
+      marginTop: spacing.xl,
+    },
+    emptyTitle: {
+      ...typography.title,
+      color: colors.text,
+    },
+    emptyBody: {
+      ...typography.body,
+      color: colors.textSecondary,
+    },
+    tryLabel: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+      marginTop: spacing.lg,
+    },
+    tryItem: {
+      ...typography.body,
+      color: colors.text,
+    },
+  });
+}

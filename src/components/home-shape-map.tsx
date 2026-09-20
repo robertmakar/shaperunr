@@ -9,7 +9,8 @@ import {
 } from 'react-native';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-import { colors } from '@/constants/theme';
+import type { ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 import { boundingBox2 } from '@/lib/geometry';
 import { HOME_HANDOFF_MS } from '@/lib/home-handoff';
 import {
@@ -58,6 +59,8 @@ export function HomeShapeMap({
   retraceHoldMs = 0,
 }: HomeShapeMapProps) {
   const window = useWindowDimensions();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const [measured, setMeasured] = useState<HomeSize>({ width: 0, height: 0 });
   const [reduceMotion, setReduceMotion] = useState(false);
   const progress = useRef(new Animated.Value(0)).current;
@@ -374,7 +377,7 @@ export function HomeShapeMap({
 
         <View pointerEvents="none" style={StyleSheet.absoluteFill}>
           {activeScene.route.map((segment) => (
-            <RouteSegment key={`${normalizedWord}-${segment.key}`} segment={segment} progress={progress} />
+            <RouteSegment key={`${normalizedWord}-${segment.key}`} segment={segment} progress={progress} styles={styles} />
           ))}
         </View>
       </Animated.View>
@@ -385,9 +388,11 @@ export function HomeShapeMap({
 function RouteSegment({
   segment,
   progress,
+  styles,
 }: {
   segment: HomeSegment;
   progress: Animated.Value;
+  styles: ReturnType<typeof createStyles>;
 }) {
   const reveal = progress.interpolate({
     inputRange: [segment.startProgress, Math.max(segment.endProgress, segment.startProgress + 0.001)],
@@ -428,33 +433,35 @@ function drawDuration(letterCount: number): number {
   return 1280;
 }
 
-const styles = StyleSheet.create({
-  canvas: {
-    position: 'relative',
-    overflow: 'hidden',
-    backgroundColor: colors.background,
-    flexShrink: 0,
-  },
-  /** The frozen scene renders larger than the canvas's own (fixed) layout box while growing. */
-  canvasGrowing: {
-    overflow: 'visible',
-  },
-  stroke: {
-    position: 'absolute',
-    borderRadius: 1,
-  },
-  routeClip: {
-    position: 'absolute',
-    height: HOME_ROUTE_WIDTH,
-    overflow: 'hidden',
-    borderRadius: HOME_ROUTE_WIDTH / 2,
-  },
-  routeLine: {
-    position: 'absolute',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    borderRadius: HOME_ROUTE_WIDTH / 2,
-    backgroundColor: colors.text,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    canvas: {
+      position: 'relative',
+      overflow: 'hidden',
+      backgroundColor: colors.background,
+      flexShrink: 0,
+    },
+    /** The frozen scene renders larger than the canvas's own (fixed) layout box while growing. */
+    canvasGrowing: {
+      overflow: 'visible',
+    },
+    stroke: {
+      position: 'absolute',
+      borderRadius: 1,
+    },
+    routeClip: {
+      position: 'absolute',
+      height: HOME_ROUTE_WIDTH,
+      overflow: 'hidden',
+      borderRadius: HOME_ROUTE_WIDTH / 2,
+    },
+    routeLine: {
+      position: 'absolute',
+      top: 0,
+      bottom: 0,
+      left: 0,
+      borderRadius: HOME_ROUTE_WIDTH / 2,
+      backgroundColor: colors.text,
+    },
+  });
+}

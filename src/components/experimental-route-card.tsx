@@ -1,9 +1,11 @@
+import { useMemo } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import { PrimaryButton } from '@/components/primary-button';
 import { RouteMap, type MapOverlay } from '@/components/route-map';
-import { colors, spacing, typography } from '@/constants/theme';
+import { spacing, typography, type ThemeColors } from '@/constants/theme';
 import { useDistanceUnit } from '@/hooks/use-distance-unit';
+import { useThemeColors } from '@/hooks/use-theme';
 import type { ExperimentalUserRoute } from '@/lib/experimental-routes-client';
 import { formatDistance, formatMatch } from '@/lib/format';
 import type { Coordinate } from '@/lib/geo';
@@ -23,7 +25,7 @@ const COMPACT_MAP_HEIGHT = 230;
 /** Below this, the connector leg is too short to be worth a line item. */
 const CONNECTOR_DISPLAY_THRESHOLD_METERS = 15;
 
-export function experimentalConnectorOverlay(connector: Coordinate[]): MapOverlay[] {
+export function experimentalConnectorOverlay(connector: Coordinate[], colors: ThemeColors): MapOverlay[] {
   if (connector.length < 2) {
     return [];
   }
@@ -45,6 +47,8 @@ export function ExperimentalRouteCard({
   onSelect,
 }: ExperimentalRouteCardProps) {
   const [unit] = useDistanceUnit();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const isHero = variant === 'hero';
   const shapeKm = route.shapeDistance / 1000;
   const totalKm = route.totalDistance / 1000;
@@ -59,7 +63,7 @@ export function ExperimentalRouteCard({
         coordinates={route.shapeCoordinates}
         userLocation={userLocation}
         showUserLocation={showUserLocation}
-        overlays={experimentalConnectorOverlay(route.connectorCoordinates)}
+        overlays={experimentalConnectorOverlay(route.connectorCoordinates, colors)}
         height={isHero ? HERO_MAP_HEIGHT : COMPACT_MAP_HEIGHT}
       />
 
@@ -98,71 +102,73 @@ export function ExperimentalRouteCard({
   );
 }
 
-const styles = StyleSheet.create({
-  card: {
-    gap: spacing.md,
-  },
-  legend: {
-    flexDirection: 'row',
-    gap: spacing.lg,
-  },
-  legendItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.xs,
-  },
-  legendSwatchShape: {
-    width: 14,
-    height: 2,
-    borderRadius: 1,
-    backgroundColor: colors.accent,
-  },
-  legendSwatchConnector: {
-    width: 14,
-    height: 2,
-    borderRadius: 1,
-    backgroundColor: colors.routeMuted,
-  },
-  legendLabel: {
-    ...typography.microLabel,
-    color: colors.textMuted,
-  },
-  body: {
-    gap: spacing.xs,
-    paddingTop: spacing.xs,
-  },
-  bestKicker: {
-    ...typography.kicker,
-    color: colors.accent,
-  },
-  matchValue: {
-    fontWeight: '700',
-    color: colors.accent,
-    letterSpacing: -0.6,
-  },
-  matchValueHero: {
-    fontSize: 28,
-    lineHeight: 32,
-  },
-  matchValueCompact: {
-    fontSize: 22,
-    lineHeight: 26,
-  },
-  matchUnit: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-  },
-  metaLine: {
-    ...typography.meta,
-    color: colors.text,
-    textTransform: 'uppercase',
-  },
-  subMetaLine: {
-    ...typography.caption,
-    color: colors.textSecondary,
-    textTransform: 'uppercase',
-  },
-  cta: {
-    marginTop: spacing.sm,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    card: {
+      gap: spacing.md,
+    },
+    legend: {
+      flexDirection: 'row',
+      gap: spacing.lg,
+    },
+    legendItem: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.xs,
+    },
+    legendSwatchShape: {
+      width: 14,
+      height: 2,
+      borderRadius: 1,
+      backgroundColor: colors.accent,
+    },
+    legendSwatchConnector: {
+      width: 14,
+      height: 2,
+      borderRadius: 1,
+      backgroundColor: colors.routeMuted,
+    },
+    legendLabel: {
+      ...typography.microLabel,
+      color: colors.textMuted,
+    },
+    body: {
+      gap: spacing.xs,
+      paddingTop: spacing.xs,
+    },
+    bestKicker: {
+      ...typography.kicker,
+      color: colors.accent,
+    },
+    matchValue: {
+      fontWeight: '700',
+      color: colors.accent,
+      letterSpacing: -0.6,
+    },
+    matchValueHero: {
+      fontSize: 28,
+      lineHeight: 32,
+    },
+    matchValueCompact: {
+      fontSize: 22,
+      lineHeight: 26,
+    },
+    matchUnit: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+    metaLine: {
+      ...typography.meta,
+      color: colors.text,
+      textTransform: 'uppercase',
+    },
+    subMetaLine: {
+      ...typography.caption,
+      color: colors.textSecondary,
+      textTransform: 'uppercase',
+    },
+    cta: {
+      marginTop: spacing.sm,
+    },
+  });
+}

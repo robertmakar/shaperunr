@@ -2,8 +2,9 @@ import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { Platform, StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 import MapView, { Marker, Polyline } from 'react-native-maps';
 
-import { QUIET_MAP_STYLE } from '@/constants/map-style';
-import { colors } from '@/constants/theme';
+import { QUIET_MAP_STYLE, QUIET_MAP_STYLE_DARK } from '@/constants/map-style';
+import type { ThemeColors } from '@/constants/theme';
+import { useResolvedAppearance, useThemeColors } from '@/hooks/use-theme';
 import { regionForCoordinates, type Coordinate } from '@/lib/geo';
 
 /**
@@ -43,6 +44,9 @@ export function RouteMap({
   style,
 }: RouteMapProps) {
   const mapRef = useRef<MapView>(null);
+  const colors = useThemeColors();
+  const resolvedAppearance = useResolvedAppearance();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const startPoint = start ?? coordinates[0];
   const endPoint = end ?? coordinates[coordinates.length - 1];
   const overlayPoints = useMemo(
@@ -92,8 +96,14 @@ export function RouteMap({
         style={StyleSheet.absoluteFill}
         initialRegion={region}
         mapType={Platform.OS === 'ios' ? 'mutedStandard' : 'standard'}
-        userInterfaceStyle="light"
-        customMapStyle={Platform.OS === 'android' ? QUIET_MAP_STYLE : undefined}
+        userInterfaceStyle={resolvedAppearance}
+        customMapStyle={
+          Platform.OS === 'android'
+            ? resolvedAppearance === 'dark'
+              ? QUIET_MAP_STYLE_DARK
+              : QUIET_MAP_STYLE
+            : undefined
+        }
         scrollEnabled={interactive}
         zoomEnabled={interactive}
         rotateEnabled={false}
@@ -162,29 +172,31 @@ export function RouteMap({
   );
 }
 
-const styles = StyleSheet.create({
-  frame: {
-    overflow: 'hidden',
-    backgroundColor: colors.surface,
-  },
-  flex: {
-    flex: 1,
-  },
-  startDot: {
-    width: 14,
-    height: 14,
-    borderRadius: 7,
-    backgroundColor: colors.accent,
-    borderWidth: 2,
-    borderColor: colors.inverse,
-  },
-  endDot: {
-    width: 14,
-    height: 14,
-    borderRadius: 7,
-    borderWidth: 2,
-    borderColor: colors.accent,
-    backgroundColor: colors.inverse,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    frame: {
+      overflow: 'hidden',
+      backgroundColor: colors.surface,
+    },
+    flex: {
+      flex: 1,
+    },
+    startDot: {
+      width: 14,
+      height: 14,
+      borderRadius: 7,
+      backgroundColor: colors.accent,
+      borderWidth: 2,
+      borderColor: colors.inverse,
+    },
+    endDot: {
+      width: 14,
+      height: 14,
+      borderRadius: 7,
+      borderWidth: 2,
+      borderColor: colors.accent,
+      backgroundColor: colors.inverse,
+    },
+  });
+}
 

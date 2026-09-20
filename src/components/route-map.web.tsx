@@ -1,7 +1,8 @@
 import { createElement, useMemo } from 'react';
 import { StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 
-import { colors } from '@/constants/theme';
+import type { ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 import { boundingBoxForCoordinates, osmEmbedBbox, type Coordinate } from '@/lib/geo';
 
 export type MapOverlay = {
@@ -33,15 +34,17 @@ export function RouteMap({
   interactive = false,
   style,
 }: RouteMapProps) {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const startPoint = start ?? coordinates[0];
   const endPoint = end ?? coordinates[coordinates.length - 1];
   const overlay = useMemo(() => {
     const allCoordinates = [...coordinates, ...overlays.flatMap((item) => item.coordinates)];
     return {
       bbox: osmEmbedBbox(allCoordinates),
-      drawing: projectOverlay(allCoordinates, coordinates, overlays, startPoint, endPoint),
+      drawing: projectOverlay(allCoordinates, coordinates, overlays, startPoint, endPoint, colors),
     };
-  }, [coordinates, endPoint, overlays, startPoint]);
+  }, [colors, coordinates, endPoint, overlays, startPoint]);
 
   return (
     <View style={[styles.frame, height ? { height } : styles.flex, style]}>
@@ -111,8 +114,9 @@ function projectOverlay(
   allCoordinates: Coordinate[],
   coordinates: Coordinate[],
   overlays: MapOverlay[],
-  start?: Coordinate,
-  end?: Coordinate,
+  start: Coordinate | undefined,
+  end: Coordinate | undefined,
+  colors: ThemeColors,
 ): {
   lines: Array<{ key: string; points: string; color: string; width: number; dash?: string }>;
   start?: { x: number; y: number };
@@ -165,13 +169,15 @@ function projectOverlay(
   };
 }
 
-const styles = StyleSheet.create({
-  frame: {
-    overflow: 'hidden',
-    backgroundColor: colors.surface,
-    position: 'relative',
-  },
-  flex: {
-    flex: 1,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    frame: {
+      overflow: 'hidden',
+      backgroundColor: colors.surface,
+      position: 'relative',
+    },
+    flex: {
+      flex: 1,
+    },
+  });
+}

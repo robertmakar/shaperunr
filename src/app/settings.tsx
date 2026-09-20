@@ -1,16 +1,20 @@
 import type { ReactNode } from 'react';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { SymbolView } from 'expo-symbols';
 import { useRouter } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { BackButton } from '@/components/back-button';
 import { Screen } from '@/components/screen';
-import { colors, radii, spacing, typography } from '@/constants/theme';
+import { radii, spacing, typography, type ThemeColors } from '@/constants/theme';
+import { useAppearance } from '@/hooks/use-appearance';
 import { useAutoPause } from '@/hooks/use-auto-pause';
 import { useDistanceUnit } from '@/hooks/use-distance-unit';
+import { usePaceUnit } from '@/hooks/use-pace-unit';
+import { useThemeColors } from '@/hooks/use-theme';
+import { APPEARANCES, appearanceName, type Appearance } from '@/lib/appearance-preference';
 import { AUTO_PAUSE_SETTINGS, autoPauseSettingName, type AutoPauseSetting } from '@/lib/auto-pause-preference';
-import { DISTANCE_UNITS, distanceUnitName, type DistanceUnit } from '@/lib/format';
+import { DISTANCE_UNITS, distanceUnitName, paceUnitName, type DistanceUnit } from '@/lib/format';
 
 type SettingsRow = {
   label: string;
@@ -25,10 +29,16 @@ const ABOUT: SettingsRow[] = [
 
 export default function SettingsScreen() {
   const router = useRouter();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const [unit, setUnit] = useDistanceUnit();
   const [distanceExpanded, setDistanceExpanded] = useState(false);
   const [autoPause, setAutoPause] = useAutoPause();
   const [autoPauseExpanded, setAutoPauseExpanded] = useState(false);
+  const [paceUnit, setPaceUnit] = usePaceUnit();
+  const [paceExpanded, setPaceExpanded] = useState(false);
+  const [appearance, setAppearance] = useAppearance();
+  const [appearanceExpanded, setAppearanceExpanded] = useState(false);
 
   return (
     <Screen>
@@ -63,14 +73,38 @@ export default function SettingsScreen() {
               }}
             />
             <View style={styles.divider} />
-            <Row label="Appearance" value="System" />
+            <ExpandableOptionRow
+              label="Appearance"
+              accessibilityLabel="Appearance"
+              options={APPEARANCES}
+              value={appearance}
+              optionLabel={appearanceName}
+              expanded={appearanceExpanded}
+              onToggle={() => setAppearanceExpanded((value) => !value)}
+              onSelect={(next: Appearance) => {
+                setAppearance(next);
+                setAppearanceExpanded(false);
+              }}
+            />
           </View>
         </View>
 
         <View style={styles.section}>
           <Text style={styles.sectionHeading}>RUNNING</Text>
           <View style={styles.rowGroup}>
-            <Row label="Pace" value="min/km" />
+            <ExpandableOptionRow
+              label="Pace"
+              accessibilityLabel="Pace unit"
+              options={DISTANCE_UNITS}
+              value={paceUnit}
+              optionLabel={paceUnitName}
+              expanded={paceExpanded}
+              onToggle={() => setPaceExpanded((value) => !value)}
+              onSelect={(next: DistanceUnit) => {
+                setPaceUnit(next);
+                setPaceExpanded(false);
+              }}
+            />
             <View style={styles.divider} />
             <ExpandableOptionRow
               label="Auto-pause"
@@ -100,6 +134,9 @@ export default function SettingsScreen() {
 }
 
 function Section({ heading, rows }: { heading: string; rows: SettingsRow[] }) {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+
   return (
     <View style={styles.section}>
       <Text style={styles.sectionHeading}>{heading}</Text>
@@ -116,6 +153,9 @@ function Section({ heading, rows }: { heading: string; rows: SettingsRow[] }) {
 }
 
 function Row({ label, value }: { label: string; value?: string }): ReactNode {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+
   return (
     <View style={styles.row}>
       <Text style={styles.rowLabel}>{label}</Text>
@@ -144,6 +184,9 @@ function ExpandableOptionRow<T extends string>({
   onToggle: () => void;
   onSelect: (option: T) => void;
 }) {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+
   return (
     <View>
       <Pressable
@@ -192,101 +235,103 @@ function ExpandableOptionRow<T extends string>({
   );
 }
 
-const styles = StyleSheet.create({
-  content: {
-    paddingBottom: spacing.xxl,
-    gap: spacing.xxl,
-  },
-  header: {
-    gap: spacing.md,
-  },
-  title: {
-    ...typography.title,
-    color: colors.text,
-    marginTop: spacing.sm,
-  },
-  section: {
-    gap: spacing.md,
-  },
-  sectionHeading: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-  },
-  rowGroup: {
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.border,
-  },
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingVertical: spacing.md,
-  },
-  rowPressed: {
-    opacity: 0.6,
-  },
-  rowLabel: {
-    ...typography.body,
-    color: colors.text,
-  },
-  rowValue: {
-    ...typography.body,
-    color: colors.textSecondary,
-  },
-  rowValueGroup: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.xs,
-  },
-  chevron: {
-    transform: [{ rotate: '0deg' }],
-  },
-  chevronExpanded: {
-    transform: [{ rotate: '180deg' }],
-  },
-  divider: {
-    height: StyleSheet.hairlineWidth,
-    backgroundColor: colors.border,
-  },
-  optionChips: {
-    flexDirection: 'row',
-    gap: spacing.sm,
-    paddingBottom: spacing.md,
-  },
-  chip: {
-    flex: 1,
-    minHeight: 44,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.surface,
-    borderRadius: radii.pill,
-    paddingHorizontal: spacing.sm,
-  },
-  chipSelected: {
-    backgroundColor: colors.accent,
-  },
-  chipPressed: {
-    backgroundColor: colors.surfaceAlt,
-  },
-  chipLabel: {
-    ...typography.meta,
-    color: colors.textSecondary,
-  },
-  chipLabelSelected: {
-    color: colors.inverse,
-  },
-  footer: {
-    alignItems: 'center',
-    gap: spacing.xs,
-    marginTop: spacing.md,
-  },
-  version: {
-    ...typography.caption,
-    color: colors.textMuted,
-  },
-  credit: {
-    ...typography.microLabel,
-    color: colors.textMuted,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    content: {
+      paddingBottom: spacing.xxl,
+      gap: spacing.xxl,
+    },
+    header: {
+      gap: spacing.md,
+    },
+    title: {
+      ...typography.title,
+      color: colors.text,
+      marginTop: spacing.sm,
+    },
+    section: {
+      gap: spacing.md,
+    },
+    sectionHeading: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+    rowGroup: {
+      borderTopWidth: StyleSheet.hairlineWidth,
+      borderBottomWidth: StyleSheet.hairlineWidth,
+      borderColor: colors.border,
+    },
+    row: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      paddingVertical: spacing.md,
+    },
+    rowPressed: {
+      opacity: 0.6,
+    },
+    rowLabel: {
+      ...typography.body,
+      color: colors.text,
+    },
+    rowValue: {
+      ...typography.body,
+      color: colors.textSecondary,
+    },
+    rowValueGroup: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.xs,
+    },
+    chevron: {
+      transform: [{ rotate: '0deg' }],
+    },
+    chevronExpanded: {
+      transform: [{ rotate: '180deg' }],
+    },
+    divider: {
+      height: StyleSheet.hairlineWidth,
+      backgroundColor: colors.border,
+    },
+    optionChips: {
+      flexDirection: 'row',
+      gap: spacing.sm,
+      paddingBottom: spacing.md,
+    },
+    chip: {
+      flex: 1,
+      minHeight: 44,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: colors.surface,
+      borderRadius: radii.pill,
+      paddingHorizontal: spacing.sm,
+    },
+    chipSelected: {
+      backgroundColor: colors.accent,
+    },
+    chipPressed: {
+      backgroundColor: colors.surfaceAlt,
+    },
+    chipLabel: {
+      ...typography.meta,
+      color: colors.textSecondary,
+    },
+    chipLabelSelected: {
+      color: colors.inverse,
+    },
+    footer: {
+      alignItems: 'center',
+      gap: spacing.xs,
+      marginTop: spacing.md,
+    },
+    version: {
+      ...typography.caption,
+      color: colors.textMuted,
+    },
+    credit: {
+      ...typography.microLabel,
+      color: colors.textMuted,
+    },
+  });
+}

@@ -1,6 +1,8 @@
+import { useMemo } from 'react';
 import { Pressable, StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-native';
 
-import { colors, spacing, typography } from '@/constants/theme';
+import { spacing, typography, type ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 
 export type DeniedNoticeCopy = {
   title: string;
@@ -17,6 +19,9 @@ type DeniedNoticeProps = {
 
 /** The one "location/permission denied, here's what to do" notice — shared so it looks identical wherever it appears. */
 export function DeniedNotice({ copy, onPress, style }: DeniedNoticeProps) {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+
   return (
     <View style={[styles.denied, style]}>
       <Text style={styles.title}>{copy.title}</Text>
@@ -32,25 +37,27 @@ export function DeniedNotice({ copy, onPress, style }: DeniedNoticeProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  denied: {
-    gap: spacing.sm,
-  },
-  title: {
-    ...typography.kicker,
-    color: colors.text,
-  },
-  body: {
-    ...typography.body,
-    color: colors.textSecondary,
-    maxWidth: 320,
-  },
-  action: {
-    ...typography.kicker,
-    color: colors.text,
-    marginTop: spacing.sm,
-  },
-  pressed: {
-    opacity: 0.55,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    denied: {
+      gap: spacing.sm,
+    },
+    title: {
+      ...typography.kicker,
+      color: colors.text,
+    },
+    body: {
+      ...typography.body,
+      color: colors.textSecondary,
+      maxWidth: 320,
+    },
+    action: {
+      ...typography.kicker,
+      color: colors.text,
+      marginTop: spacing.sm,
+    },
+    pressed: {
+      opacity: 0.55,
+    },
+  });
+}

@@ -7,7 +7,7 @@ import '@/global.css';
 
 import { Platform } from 'react-native';
 
-export const colors = {
+export const lightColors = {
   background: '#F4F3EF',
   surface: '#ECEBE6',
   surfaceAlt: '#E4E3DE',
@@ -24,6 +24,40 @@ export const colors = {
   /** The active/drawn route's color, named explicitly. Intentionally the same value as `text`. */
   route: '#111111',
 } as const;
+
+/**
+ * ShapeRunr's dark appearance — designed, not inverted. Background and
+ * primary text/route swap to near-black / off-white (mirroring Light's own
+ * off-white/near-black pairing), the accent is untouched so the brand color
+ * reads identically in both appearances, and the muted grey shared by
+ * caption text and quiet street geometry stays the same value too (it sits
+ * at a legible contrast against both). `surface`/`surfaceAlt` move lighter
+ * than `background` (Light moves them darker), keeping the same "further
+ * from the page, closer to the ink" relationship in both directions.
+ * `inverse` becomes the dark background itself rather than white, so text
+ * and map markers drawn on a `text`-colored fill stay legible without a
+ * jarring pure-white halo.
+ */
+export const darkColors = {
+  background: '#111111',
+  surface: '#1C1C1C',
+  surfaceAlt: '#242424',
+  text: '#F4F3EF',
+  textSecondary: '#A6A6A6',
+  textMuted: '#8B8B8B',
+  border: '#333333',
+  inverse: '#111111',
+  accent: '#E85D4A',
+  accentSoft: '#2A1D1B',
+  routeMuted: '#8B8B8B',
+  route: '#F4F3EF',
+} as const;
+
+/** Back-compat static default (Light) for the handful of call sites (dev/debug screens) not migrated to `useThemeColors()`. */
+export const colors = lightColors;
+
+/** Loosened from `typeof lightColors`/`typeof darkColors` (whose values are string-literal types) so either palette satisfies it. */
+export type ThemeColors = { [K in keyof typeof lightColors]: string };
 
 export const Colors = {
   light: {

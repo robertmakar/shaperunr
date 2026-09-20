@@ -1,13 +1,15 @@
 import { SymbolView } from 'expo-symbols';
 import { Pressable, StyleSheet } from 'react-native';
 
-import { colors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 
 type SettingsButtonProps = {
   onPress: () => void;
 };
 
 export function SettingsButton({ onPress }: SettingsButtonProps) {
+  const colors = useThemeColors();
+
   return (
     <Pressable
       accessibilityRole="button"

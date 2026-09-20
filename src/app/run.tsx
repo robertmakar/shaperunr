@@ -10,9 +10,11 @@ import { RouteMap, type MapOverlay } from '@/components/route-map';
 import { RunStat } from '@/components/run-stat';
 import { Screen } from '@/components/screen';
 import { getRouteCoordinates } from '@/constants/mock-routes';
-import { colors, spacing, typography } from '@/constants/theme';
+import { spacing, typography, type ThemeColors } from '@/constants/theme';
 import { useDistanceUnit } from '@/hooks/use-distance-unit';
 import { useForegroundRun } from '@/hooks/use-foreground-run';
+import { usePaceUnit } from '@/hooks/use-pace-unit';
+import { useThemeColors } from '@/hooks/use-theme';
 import { getSelectedExperimentalRoute } from '@/lib/experimental-route-session';
 import { convertKmToUnit, distanceUnitLabel, formatMatch, formatPace, formatWord } from '@/lib/format';
 import { resolveStartCoordinate } from '@/lib/location';
@@ -31,6 +33,8 @@ const COUNTDOWN_STEP_MS = 700;
 export default function RunScreen() {
   const router = useRouter();
   const navigation = useNavigation();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const params = useLocalSearchParams<{
     word?: string | string[];
     distance?: string | string[];
@@ -74,6 +78,7 @@ export default function RunScreen() {
     [coordinates, run.pathSegments],
   );
   const [distanceUnit] = useDistanceUnit();
+  const [paceUnit] = usePaceUnit();
   const distanceKm = live ? run.distanceMeters / 1000 : plannedDistanceKm;
   const displayDistance = convertKmToUnit(distanceKm, distanceUnit);
   const displayDistanceUnitLabel = distanceUnitLabel(distanceUnit).toUpperCase();
@@ -83,7 +88,7 @@ export default function RunScreen() {
     : String(Math.max(1, Math.round(plannedDurationMin)));
   const overlays = useMemo(() => {
     const layers: MapOverlay[] = selectedExperimental
-      ? experimentalConnectorOverlay(selectedExperimental.connectorCoordinates)
+      ? experimentalConnectorOverlay(selectedExperimental.connectorCoordinates, colors)
       : [];
     for (const segment of run.pathSegments) {
       if (segment.length > 1) {
@@ -95,7 +100,7 @@ export default function RunScreen() {
       }
     }
     return layers;
-  }, [run.pathSegments, selectedExperimental]);
+  }, [colors, run.pathSegments, selectedExperimental]);
 
   /**
    * Pre-run countdown — purely a presentation delay in front of run.start().
@@ -177,8 +182,10 @@ export default function RunScreen() {
       ? formatPace(
           distanceKm,
           live ? Math.max(durationMin, 1 / 60) : durationMin,
+          paceUnit,
         )
       : '--:--';
+  const paceUnitLabelText = `/${distanceUnitLabel(paceUnit).toUpperCase()}`;
 
   function goBack() {
     if (router.canGoBack()) {
@@ -250,7 +257,7 @@ export default function RunScreen() {
       {run.status !== 'finished' ? (
         <View style={styles.stats}>
           <RunStat value={displayDistance.toFixed(2)} label={displayDistanceUnitLabel} emphasis="primary" />
-          <RunStat value={paceLabel} label="/KM" emphasis="primary" />
+          <RunStat value={paceLabel} label={paceUnitLabelText} emphasis="primary" />
           <RunStat value={durationLabel} label="TIME" emphasis="primary" />
         </View>
       ) : null}
@@ -298,7 +305,7 @@ export default function RunScreen() {
           </Text>
           <View style={styles.finishedStats}>
             <RunStat value={displayDistance.toFixed(2)} label={displayDistanceUnitLabel} />
-            <RunStat value={paceLabel} label="/KM" />
+            <RunStat value={paceLabel} label={paceUnitLabelText} />
             <RunStat value={durationLabel} label="TIME" />
           </View>
           <Text style={styles.finishedShapeLine}>
@@ -348,124 +355,126 @@ export default function RunScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  screen: {
-    gap: spacing.md,
-  },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: spacing.sm,
-  },
-  identity: {
-    flex: 1,
-    gap: spacing.xs,
-    minHeight: 52,
-    justifyContent: 'center',
-  },
-  kicker: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-  },
-  word: {
-    ...typography.display,
-    fontSize: 34,
-    lineHeight: 38,
-    color: colors.text,
-  },
-  plannedMatch: {
-    ...typography.caption,
-    color: colors.textSecondary,
-  },
-  map: {
-    flex: 1,
-    minHeight: 260,
-  },
-  mapRecede: {
-    opacity: 0.82,
-  },
-  stats: {
-    flexDirection: 'row',
-    alignItems: 'flex-end',
-    gap: spacing.md,
-  },
-  shapeProgress: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    minHeight: 22,
-  },
-  shapeLabel: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-  },
-  shapeTrack: {
-    flex: 1,
-    height: 3,
-    borderRadius: 1.5,
-    backgroundColor: colors.border,
-    overflow: 'hidden',
-  },
-  shapeFill: {
-    height: '100%',
-    borderRadius: 1.5,
-    backgroundColor: colors.accent,
-  },
-  shapeValue: {
-    ...typography.meta,
-    color: colors.text,
-    minWidth: 40,
-    textAlign: 'right',
-  },
-  shapeComplete: {
-    ...typography.title,
-    color: colors.accent,
-  },
-  countdown: {
-    minHeight: 62,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  countdownValue: {
-    ...typography.display,
-    color: colors.text,
-  },
-  activeControls: {
-    gap: spacing.sm,
-  },
-  finishLink: {
-    alignSelf: 'center',
-    minHeight: 44,
-    paddingVertical: spacing.sm,
-    justifyContent: 'center',
-  },
-  finishLinkPressed: {
-    opacity: 0.5,
-  },
-  finishLinkText: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-  },
-  finishedSummary: {
-    gap: spacing.md,
-  },
-  finishedTitle: {
-    ...typography.display,
-    color: colors.text,
-  },
-  finishedTitleComplete: {
-    color: colors.accent,
-  },
-  finishedStats: {
-    flexDirection: 'row',
-    alignItems: 'flex-end',
-    gap: spacing.md,
-  },
-  finishedShapeLine: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-  },
-  finishedShapeValue: {
-    color: colors.accent,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    screen: {
+      gap: spacing.md,
+    },
+    header: {
+      flexDirection: 'row',
+      alignItems: 'flex-start',
+      gap: spacing.sm,
+    },
+    identity: {
+      flex: 1,
+      gap: spacing.xs,
+      minHeight: 52,
+      justifyContent: 'center',
+    },
+    kicker: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+    word: {
+      ...typography.display,
+      fontSize: 34,
+      lineHeight: 38,
+      color: colors.text,
+    },
+    plannedMatch: {
+      ...typography.caption,
+      color: colors.textSecondary,
+    },
+    map: {
+      flex: 1,
+      minHeight: 260,
+    },
+    mapRecede: {
+      opacity: 0.82,
+    },
+    stats: {
+      flexDirection: 'row',
+      alignItems: 'flex-end',
+      gap: spacing.md,
+    },
+    shapeProgress: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.sm,
+      minHeight: 22,
+    },
+    shapeLabel: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+    shapeTrack: {
+      flex: 1,
+      height: 3,
+      borderRadius: 1.5,
+      backgroundColor: colors.border,
+      overflow: 'hidden',
+    },
+    shapeFill: {
+      height: '100%',
+      borderRadius: 1.5,
+      backgroundColor: colors.accent,
+    },
+    shapeValue: {
+      ...typography.meta,
+      color: colors.text,
+      minWidth: 40,
+      textAlign: 'right',
+    },
+    shapeComplete: {
+      ...typography.title,
+      color: colors.accent,
+    },
+    countdown: {
+      minHeight: 62,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    countdownValue: {
+      ...typography.display,
+      color: colors.text,
+    },
+    activeControls: {
+      gap: spacing.sm,
+    },
+    finishLink: {
+      alignSelf: 'center',
+      minHeight: 44,
+      paddingVertical: spacing.sm,
+      justifyContent: 'center',
+    },
+    finishLinkPressed: {
+      opacity: 0.5,
+    },
+    finishLinkText: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+    finishedSummary: {
+      gap: spacing.md,
+    },
+    finishedTitle: {
+      ...typography.display,
+      color: colors.text,
+    },
+    finishedTitleComplete: {
+      color: colors.accent,
+    },
+    finishedStats: {
+      flexDirection: 'row',
+      alignItems: 'flex-end',
+      gap: spacing.md,
+    },
+    finishedShapeLine: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+    finishedShapeValue: {
+      color: colors.accent,
+    },
+  });
+}

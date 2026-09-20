@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   AccessibilityInfo,
   Animated,
@@ -30,7 +30,8 @@ import { Screen } from '@/components/screen';
 import { SettingsButton } from '@/components/settings-button';
 import { EXPERIMENTAL_ROUTES } from '@/constants/experimental';
 import { getDevelopmentApiUrl } from '@/constants/api';
-import { colors, radii, spacing, typography } from '@/constants/theme';
+import { radii, spacing, typography, type ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 import { generateExperimentalRoutesFromBackend } from '@/lib/experimental-routes-client';
 import { setExperimentalRoutesPrefetch } from '@/lib/experimental-routes-prefetch';
 import { formatWord } from '@/lib/format';
@@ -65,6 +66,8 @@ const EDGE_SWIPE_VELOCITY = 600;
 export default function HomeScreen() {
   const router = useRouter();
   const window = useWindowDimensions();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const [word, setWord] = useState('');
   const [distance, setDistance] = useState(EXPERIMENTAL_ROUTES ? 2 : 4);
   const [locationStatus, setLocationStatus] = useState<LocationControlStatus>('idle');
@@ -622,156 +625,158 @@ export default function HomeScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  flex: {
-    flex: 1,
-  },
-  edgeSwipeZone: {
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    bottom: 0,
-    width: EDGE_SWIPE_WIDTH,
-    zIndex: 10,
-  },
-  findingBackRow: {
-    marginBottom: spacing.sm,
-  },
-  content: {
-    flexGrow: 1,
-    justifyContent: 'space-between',
-    paddingTop: spacing.xs,
-    paddingBottom: spacing.sm,
-    gap: spacing.lg,
-  },
-  form: {
-    flexShrink: 1,
-  },
-  topBar: {
-    justifyContent: 'center',
-  },
-  logoRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: spacing.xs,
-  },
-  settingsButtonSlot: {
-    position: 'absolute',
-    right: 0,
-    top: 0,
-    bottom: 0,
-    justifyContent: 'center',
-  },
-  logo: {
-    ...typography.logo,
-    color: colors.text,
-  },
-  hero: {
-    marginTop: spacing.xxl,
-    marginBottom: spacing.xs,
-  },
-  title: {
-    ...typography.display,
-    color: colors.text,
-  },
-  findingKicker: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-    marginTop: spacing.xl,
-  },
-  findingWord: {
-    ...typography.display,
-    color: colors.text,
-    marginTop: spacing.xs,
-    marginBottom: spacing.md,
-  },
-  findingFooter: {
-    gap: spacing.sm,
-    marginTop: spacing.md,
-  },
-  findingSearching: {
-    ...typography.body,
-    color: colors.text,
-  },
-  findingStatus: {
-    ...typography.kicker,
-    color: colors.textMuted,
-  },
-  input: {
-    height: 64,
-    borderRadius: radii.pill,
-    borderWidth: 1.5,
-    borderColor: 'transparent',
-    backgroundColor: colors.surface,
-    ...typography.input,
-    color: colors.text,
-    paddingHorizontal: spacing.xl,
-  },
-  inputActive: {
-    borderColor: colors.text,
-  },
-  inputWrapper: {
-    position: 'relative',
-    marginBottom: spacing.md,
-  },
-  inputPlaceholder: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    justifyContent: 'center',
-    paddingHorizontal: spacing.xl,
-  },
-  inputPlaceholderText: {
-    ...typography.input,
-    fontSize: 23,
-    color: colors.textMuted,
-  },
-  mapBleed: {
-    marginHorizontal: -spacing.screen,
-    flexShrink: 0,
-    justifyContent: 'center',
-    overflow: 'visible',
-  },
-  section: {
-    marginTop: spacing.lg,
-  },
-  label: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-    marginBottom: spacing.md,
-  },
-  actions: {
-    paddingTop: spacing.lg,
-  },
-  primaryAction: {
-    gap: spacing.md,
-    marginTop: spacing.xl,
-    marginBottom: spacing.xl,
-  },
-  explanation: {
-    ...typography.caption,
-    color: colors.textSecondary,
-    maxWidth: 320,
-    marginBottom: spacing.lg,
-  },
-  devLinks: {
-    gap: spacing.md,
-    alignItems: 'flex-start',
-  },
-  devLinkText: {
-    ...typography.kicker,
-    color: colors.textMuted,
-  },
-  devLinkPressed: {
-    opacity: 0.5,
-  },
-  denied: {
-    marginTop: spacing.lg,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    flex: {
+      flex: 1,
+    },
+    edgeSwipeZone: {
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      bottom: 0,
+      width: EDGE_SWIPE_WIDTH,
+      zIndex: 10,
+    },
+    findingBackRow: {
+      marginBottom: spacing.sm,
+    },
+    content: {
+      flexGrow: 1,
+      justifyContent: 'space-between',
+      paddingTop: spacing.xs,
+      paddingBottom: spacing.sm,
+      gap: spacing.lg,
+    },
+    form: {
+      flexShrink: 1,
+    },
+    topBar: {
+      justifyContent: 'center',
+    },
+    logoRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: spacing.xs,
+    },
+    settingsButtonSlot: {
+      position: 'absolute',
+      right: 0,
+      top: 0,
+      bottom: 0,
+      justifyContent: 'center',
+    },
+    logo: {
+      ...typography.logo,
+      color: colors.text,
+    },
+    hero: {
+      marginTop: spacing.xxl,
+      marginBottom: spacing.xs,
+    },
+    title: {
+      ...typography.display,
+      color: colors.text,
+    },
+    findingKicker: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+      marginTop: spacing.xl,
+    },
+    findingWord: {
+      ...typography.display,
+      color: colors.text,
+      marginTop: spacing.xs,
+      marginBottom: spacing.md,
+    },
+    findingFooter: {
+      gap: spacing.sm,
+      marginTop: spacing.md,
+    },
+    findingSearching: {
+      ...typography.body,
+      color: colors.text,
+    },
+    findingStatus: {
+      ...typography.kicker,
+      color: colors.textMuted,
+    },
+    input: {
+      height: 64,
+      borderRadius: radii.pill,
+      borderWidth: 1.5,
+      borderColor: 'transparent',
+      backgroundColor: colors.surface,
+      ...typography.input,
+      color: colors.text,
+      paddingHorizontal: spacing.xl,
+    },
+    inputActive: {
+      borderColor: colors.text,
+    },
+    inputWrapper: {
+      position: 'relative',
+      marginBottom: spacing.md,
+    },
+    inputPlaceholder: {
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      justifyContent: 'center',
+      paddingHorizontal: spacing.xl,
+    },
+    inputPlaceholderText: {
+      ...typography.input,
+      fontSize: 23,
+      color: colors.textMuted,
+    },
+    mapBleed: {
+      marginHorizontal: -spacing.screen,
+      flexShrink: 0,
+      justifyContent: 'center',
+      overflow: 'visible',
+    },
+    section: {
+      marginTop: spacing.lg,
+    },
+    label: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+      marginBottom: spacing.md,
+    },
+    actions: {
+      paddingTop: spacing.lg,
+    },
+    primaryAction: {
+      gap: spacing.md,
+      marginTop: spacing.xl,
+      marginBottom: spacing.xl,
+    },
+    explanation: {
+      ...typography.caption,
+      color: colors.textSecondary,
+      maxWidth: 320,
+      marginBottom: spacing.lg,
+    },
+    devLinks: {
+      gap: spacing.md,
+      alignItems: 'flex-start',
+    },
+    devLinkText: {
+      ...typography.kicker,
+      color: colors.textMuted,
+    },
+    devLinkPressed: {
+      opacity: 0.5,
+    },
+    denied: {
+      marginTop: spacing.lg,
+    },
+  });
+}
 
 function homeMapHeight(windowHeight: number, keyboardHeight: number): number {
   if (windowHeight <= 0) {

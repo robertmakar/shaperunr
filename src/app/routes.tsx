@@ -6,7 +6,8 @@ import { BackButton } from '@/components/back-button';
 import { RouteCard } from '@/components/route-card';
 import { Screen } from '@/components/screen';
 import { getMockRoutes } from '@/constants/mock-routes';
-import { colors, spacing, typography } from '@/constants/theme';
+import { spacing, typography, type ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 import { formatWord } from '@/lib/format';
 import { resolveStartCoordinate } from '@/lib/location';
 import { readNumberParam, readOptionalNumberParam, readParam } from '@/lib/search-params';
@@ -19,6 +20,8 @@ export default function RoutesScreen() {
     latitude?: string | string[];
     longitude?: string | string[];
   }>();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const word = formatWord(readParam(params.word));
   const requestedDistance = readNumberParam(params.distance, 4);
   const start = resolveStartCoordinate(
@@ -90,35 +93,37 @@ export default function RoutesScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  content: {
-    paddingBottom: spacing.xxl,
-    gap: spacing.xxl,
-  },
-  header: {
-    gap: spacing.xs,
-  },
-  kicker: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-    marginTop: spacing.sm,
-  },
-  word: {
-    ...typography.display,
-    color: colors.text,
-    marginTop: spacing.xs,
-  },
-  description: {
-    ...typography.caption,
-    color: colors.textSecondary,
-    marginTop: spacing.sm,
-  },
-  fallback: {
-    ...typography.kicker,
-    color: colors.textMuted,
-    marginTop: spacing.xs,
-  },
-  list: {
-    gap: spacing.xl,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    content: {
+      paddingBottom: spacing.xxl,
+      gap: spacing.xxl,
+    },
+    header: {
+      gap: spacing.xs,
+    },
+    kicker: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+      marginTop: spacing.sm,
+    },
+    word: {
+      ...typography.display,
+      color: colors.text,
+      marginTop: spacing.xs,
+    },
+    description: {
+      ...typography.caption,
+      color: colors.textSecondary,
+      marginTop: spacing.sm,
+    },
+    fallback: {
+      ...typography.kicker,
+      color: colors.textMuted,
+      marginTop: spacing.xs,
+    },
+    list: {
+      gap: spacing.xl,
+    },
+  });
+}

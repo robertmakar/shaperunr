@@ -10,7 +10,8 @@ import {
 } from 'react-native';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-import { colors, radii, spacing, typography } from '@/constants/theme';
+import { radii, spacing, typography, type ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 import { buildWordShape } from '@/lib/word-shape';
 import type { Vec2 } from '@/lib/geometry';
 
@@ -125,6 +126,8 @@ export function FindingRouteAnimation({
   onExitComplete,
 }: FindingRouteAnimationProps) {
   const window = useWindowDimensions();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const [size, setSize] = useState<Size>({ width: 0, height: 0 });
   const [attempt, setAttempt] = useState(0);
   const [reduceMotion, setReduceMotion] = useState(false);
@@ -700,57 +703,59 @@ function pointsToSegments(
   return segments;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    gap: spacing.xl,
-  },
-  mapField: {
-    position: 'relative',
-    overflow: 'hidden',
-    backgroundColor: colors.background,
-  },
-  block: {
-    position: 'absolute',
-    borderRadius: radii.sm,
-    borderWidth: 1,
-    borderColor: colors.routeMuted,
-    opacity: 0.18,
-  },
-  street: {
-    position: 'absolute',
-    borderRadius: 2,
-    backgroundColor: colors.routeMuted,
-  },
-  routeLayer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  routeSegment: {
-    position: 'absolute',
-    height: ROUTE_WIDTH,
-    overflow: 'hidden',
-    borderRadius: ROUTE_WIDTH / 2,
-  },
-  routeLine: {
-    position: 'absolute',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    borderRadius: ROUTE_WIDTH / 2,
-    backgroundColor: colors.text,
-  },
-  footer: {
-    gap: spacing.sm,
-    paddingBottom: spacing.sm,
-  },
-  searching: {
-    ...typography.body,
-    color: colors.text,
-  },
-  status: {
-    ...typography.kicker,
-    color: colors.textMuted,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      gap: spacing.xl,
+    },
+    mapField: {
+      position: 'relative',
+      overflow: 'hidden',
+      backgroundColor: colors.background,
+    },
+    block: {
+      position: 'absolute',
+      borderRadius: radii.sm,
+      borderWidth: 1,
+      borderColor: colors.routeMuted,
+      opacity: 0.18,
+    },
+    street: {
+      position: 'absolute',
+      borderRadius: 2,
+      backgroundColor: colors.routeMuted,
+    },
+    routeLayer: {
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    routeSegment: {
+      position: 'absolute',
+      height: ROUTE_WIDTH,
+      overflow: 'hidden',
+      borderRadius: ROUTE_WIDTH / 2,
+    },
+    routeLine: {
+      position: 'absolute',
+      top: 0,
+      bottom: 0,
+      left: 0,
+      borderRadius: ROUTE_WIDTH / 2,
+      backgroundColor: colors.text,
+    },
+    footer: {
+      gap: spacing.sm,
+      paddingBottom: spacing.sm,
+    },
+    searching: {
+      ...typography.body,
+      color: colors.text,
+    },
+    status: {
+      ...typography.kicker,
+      color: colors.textMuted,
+    },
+  });
+}

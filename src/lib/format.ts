@@ -22,6 +22,11 @@ export function distanceUnitName(unit: DistanceUnit): string {
   return unit === 'mi' ? 'Miles' : 'Kilometers';
 }
 
+/** Pace shares the same km/mi unit domain as distance, but is a separate, independently-selectable preference — see pace-unit-preference.ts. */
+export function paceUnitName(unit: DistanceUnit): string {
+  return unit === 'mi' ? 'min/mi' : 'min/km';
+}
+
 export function formatDistance(km: number, unit: DistanceUnit = 'km'): string {
   return `${convertKmToUnit(km, unit).toFixed(1)} ${distanceUnitLabel(unit)}`;
 }
@@ -42,14 +47,15 @@ export function formatCoordinatePair(coordinate: { latitude: number; longitude: 
   return `${coordinate.latitude.toFixed(4)}, ${coordinate.longitude.toFixed(4)}`;
 }
 
-export function formatPace(distanceKm: number, durationMin: number): string {
+export function formatPace(distanceKm: number, durationMin: number, unit: DistanceUnit = 'km'): string {
   if (distanceKm <= 0) {
     return '–';
   }
 
   const minPerKm = durationMin / distanceKm;
-  let minutes = Math.floor(minPerKm);
-  let seconds = Math.round((minPerKm - minutes) * 60);
+  const minPerUnit = unit === 'mi' ? minPerKm * KM_PER_MILE : minPerKm;
+  let minutes = Math.floor(minPerUnit);
+  let seconds = Math.round((minPerUnit - minutes) * 60);
 
   if (seconds === 60) {
     minutes += 1;

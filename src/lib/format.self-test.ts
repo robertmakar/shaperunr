@@ -7,6 +7,7 @@ import {
   formatDuration,
   formatMatch,
   formatPace,
+  paceUnitName,
 } from './format';
 
 type SelfTest = { name: string; passed: boolean; detail: string };
@@ -66,12 +67,47 @@ export function runFormatSelfTests(): SelfTest[] {
   });
 
   tests.push({
-    name: 'unrelated formatters (duration/match/pace) are untouched by this change',
-    passed:
-      formatDuration(24) === '24 min' &&
-      formatMatch(92) === '92%' &&
-      formatPace(5, 30) === '6:00',
-    detail: `${formatDuration(24)}, ${formatMatch(92)}, ${formatPace(5, 30)}`,
+    name: 'unrelated formatters (duration/match) are untouched by this change',
+    passed: formatDuration(24) === '24 min' && formatMatch(92) === '92%',
+    detail: `${formatDuration(24)}, ${formatMatch(92)}`,
+  });
+
+  tests.push({
+    name: 'formatPace defaults to min/km (backward compatible)',
+    passed: formatPace(5, 30) === '6:00',
+    detail: formatPace(5, 30),
+  });
+
+  tests.push({
+    name: 'formatPace(km, mi, "km") is unchanged by round-tripping the unit',
+    passed: formatPace(5, 30, 'km') === '6:00',
+    detail: formatPace(5, 30, 'km'),
+  });
+
+  tests.push({
+    name: 'formatPace converts an even min/km pace to min/mi correctly',
+    // 5 min/km * 1.609344 km/mi = 8.0467.. min/mi -> 8:03
+    passed: formatPace(10, 50, 'mi') === '8:03',
+    detail: formatPace(10, 50, 'mi'),
+  });
+
+  tests.push({
+    name: 'formatPace converts a non-even min/km pace to min/mi correctly',
+    // 6 min/km * 1.609344 km/mi = 9.656.. min/mi -> 9:39
+    passed: formatPace(5, 30, 'mi') === '9:39',
+    detail: formatPace(5, 30, 'mi'),
+  });
+
+  tests.push({
+    name: 'formatPace still guards against zero distance for both units',
+    passed: formatPace(0, 30, 'km') === '–' && formatPace(0, 30, 'mi') === '–',
+    detail: `${formatPace(0, 30, 'km')}, ${formatPace(0, 30, 'mi')}`,
+  });
+
+  tests.push({
+    name: 'paceUnitName covers both units and is independent of distanceUnitName',
+    passed: paceUnitName('km') === 'min/km' && paceUnitName('mi') === 'min/mi',
+    detail: `${paceUnitName('km')}, ${paceUnitName('mi')}`,
   });
 
   return tests;

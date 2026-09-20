@@ -1,10 +1,12 @@
+import { useMemo } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import { PrimaryButton } from '@/components/primary-button';
 import { RouteMap } from '@/components/route-map';
 import type { MockRoute } from '@/constants/mock-routes';
-import { colors, radii, spacing, typography } from '@/constants/theme';
+import { radii, spacing, typography, type ThemeColors } from '@/constants/theme';
 import { useDistanceUnit } from '@/hooks/use-distance-unit';
+import { useThemeColors } from '@/hooks/use-theme';
 import { formatDistance, formatDuration, formatMatch } from '@/lib/format';
 import type { Coordinate } from '@/lib/geo';
 
@@ -17,6 +19,8 @@ type RouteCardProps = {
 
 export function RouteCard({ route, userLocation, showUserLocation = false, onSelect }: RouteCardProps) {
   const [unit] = useDistanceUnit();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
 
   return (
     <View style={styles.card}>
@@ -63,46 +67,48 @@ export function RouteCard({ route, userLocation, showUserLocation = false, onSel
   );
 }
 
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: colors.surface,
-    borderRadius: radii.card,
-    overflow: 'hidden',
-  },
-  body: {
-    padding: spacing.lg,
-    gap: spacing.xl,
-  },
-  summary: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    gap: spacing.xl,
-  },
-  match: {
-    flex: 1,
-    gap: spacing.xs,
-  },
-  matchValue: {
-    ...typography.metricLarge,
-    color: colors.accent,
-  },
-  matchLabel: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-  },
-  details: {
-    flex: 1.15,
-    alignItems: 'flex-end',
-    gap: spacing.sm,
-  },
-  detail: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-  },
-  detailValue: {
-    ...typography.meta,
-    color: colors.text,
-    textTransform: 'uppercase',
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    card: {
+      backgroundColor: colors.surface,
+      borderRadius: radii.card,
+      overflow: 'hidden',
+    },
+    body: {
+      padding: spacing.lg,
+      gap: spacing.xl,
+    },
+    summary: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: spacing.xl,
+    },
+    match: {
+      flex: 1,
+      gap: spacing.xs,
+    },
+    matchValue: {
+      ...typography.metricLarge,
+      color: colors.accent,
+    },
+    matchLabel: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+    details: {
+      flex: 1.15,
+      alignItems: 'flex-end',
+      gap: spacing.sm,
+    },
+    detail: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+    detailValue: {
+      ...typography.meta,
+      color: colors.text,
+      textTransform: 'uppercase',
+    },
+  });
+}

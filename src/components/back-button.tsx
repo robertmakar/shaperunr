@@ -1,12 +1,17 @@
+import { useMemo } from 'react';
 import { Pressable, StyleSheet, Text } from 'react-native';
 
-import { colors, typography } from '@/constants/theme';
+import { typography, type ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 
 type BackButtonProps = {
   onPress: () => void;
 };
 
 export function BackButton({ onPress }: BackButtonProps) {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+
   return (
     <Pressable
       accessibilityRole="button"
@@ -19,7 +24,8 @@ export function BackButton({ onPress }: BackButtonProps) {
   );
 }
 
-const styles = StyleSheet.create({
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
   button: {
     width: 44,
     height: 44,
@@ -36,4 +42,5 @@ const styles = StyleSheet.create({
   pressed: {
     opacity: 0.45,
   },
-});
+  });
+}
