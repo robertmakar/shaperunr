@@ -27,6 +27,7 @@ import { HomeShapeMap } from '@/components/home-shape-map';
 import { LocationControl, type LocationControlStatus } from '@/components/location-control';
 import { PrimaryButton } from '@/components/primary-button';
 import { Screen } from '@/components/screen';
+import { SettingsButton } from '@/components/settings-button';
 import { EXPERIMENTAL_ROUTES } from '@/constants/experimental';
 import { getDevelopmentApiUrl } from '@/constants/api';
 import { colors, radii, spacing, typography } from '@/constants/theme';
@@ -475,9 +476,14 @@ export default function HomeScreen() {
                 </View>
               ) : (
                 <>
-                  <View style={styles.logoRow}>
-                    <BrandMark size={14} />
-                    <Text style={styles.logo}>SHAPERUNR</Text>
+                  <View style={styles.topBar}>
+                    <View style={styles.logoRow}>
+                      <BrandMark size={14} />
+                      <Text style={styles.logo}>SHAPERUNR</Text>
+                    </View>
+                    <View style={styles.settingsButtonSlot}>
+                      <SettingsButton onPress={() => router.push('/settings')} />
+                    </View>
                   </View>
 
                   <View style={styles.hero}>
@@ -641,11 +647,21 @@ const styles = StyleSheet.create({
   form: {
     flexShrink: 1,
   },
+  topBar: {
+    justifyContent: 'center',
+  },
   logoRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     gap: spacing.xs,
+  },
+  settingsButtonSlot: {
+    position: 'absolute',
+    right: 0,
+    top: 0,
+    bottom: 0,
+    justifyContent: 'center',
   },
   logo: {
     ...typography.logo,

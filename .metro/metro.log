@@ -101,3 +101,62 @@ Call Stack
  LOG  [experimental-routes] using prefetched response {"targetDistanceMeters": 2000, "word": "L"}
  LOG  [find-my-route][frontend-interpretation] {"jsonStatus": "ok", "ok": true, "phase": "ready", "routes": 3}
  LOG  [experimental-routes] phase {"firstRouteId": "sf-r135-s0.6-e-282.8-n-282.8", "jsonStatus": "ok", "phase": "ready", "routes": 3}
+iOS Bundled 73ms node_modules/expo-router/entry.js (1 module)
+ WARN  Deep imports from the 'react-native' package are deprecated ('react-native/Libraries/Core/Devtools/getDevServer'). Source: /Users/robert/RunShape/src/constants/api.ts 44:6
+ LOG  [find-my-route][home] {"apiUrl": "http://192.168.1.101:8787", "expoPublicApiUrl": null, "latitude": 31.22758288601396, "longitude": 29.949501692000297, "selectedDistanceKm": 2, "targetDistanceMeters": 2000, "word": "L"}
+ LOG  [experimental client] FIND MY ROUTE location {"distanceKm": 2, "latitude": 31.22758288601396, "longitude": 29.949501692000297, "targetDistance": 2000, "word": "L"}
+ LOG  [find-my-route][phone-request] {"apiUrl": "http://192.168.1.101:8787", "apiUrlLooksLocalhost": false, "expoPublicApiUrl": null, "latitude": 31.22758288601396, "longitude": 29.949501692000297, "path": "/generate-routes-experimental", "requestUrl": "http://192.168.1.101:8787/generate-routes-experimental", "selectedDistanceKm": 2, "targetDistanceMeters": 2000, "word": "L"}
+ LOG  [experimental client] request {"apiUrl": "http://192.168.1.101:8787", "latitude": 31.22758288601396, "longitude": 29.949501692000297, "requestUrl": "http://192.168.1.101:8787/generate-routes-experimental", "targetDistance": 2000, "word": "L"}
+ LOG  [generate-routes-experimental] request {"apiUrl": "http://192.168.1.101:8787", "latitude": 31.22758288601396, "longitude": 29.949501692000297, "requestUrl": "http://192.168.1.101:8787/generate-routes-experimental", "targetDistance": 2000, "word": "L"}
+ LOG  [find-my-route][phone-response] {"acceptedRoutes": 3, "diagnostics": {"received": {"latitude": 31.22758288601396, "longitude": 29.949501692000297, "targetDistance": 2000, "word": "L"}, "rejectedBy": "none (product accepted at least one route)", "snapped": {"latitude": 31.227553, "longitude": 29.949661, "snapDistanceMeters": 15.507954606861649, "wayId": 157600816}, "stages": {"graphFeasibilityPool": 96, "graphFeasible": 9, "graphRejected": 87, "placementsEvaluated": 1360, "productAccepted": 3, "productBacktrackPass": 3, "productConnectedPass": 3, "productCoveragePass": 3, "productGapPass": 3, "productOrderPass": 3, "productShapeScorePass": 3, "routedBeforeProduct": 3, "streetFitPassThreshold": 96, "streetFitRanked": 1360}}, "dropReason": null, "errorCode": null, "errorMessage": null, "httpStatus": 200, "parsedStatus": "ok", "responseStatus": "ok", "returnedRoutes": 3}
+ LOG  [experimental client] response status 200
+ LOG  [experimental client] response JSON status ok
+ LOG  [experimental client] routes count 3
+ LOG  [experimental client] first route id sf-r135-s0.6-e-282.8-n-282.8
+ LOG  [generate-routes-experimental] response {"acceptedRouteCount": 3, "dropReason": null, "firstRouteFieldTypes": {"backtrack": "number", "heading": "number", "id": "string", "placement": "number", "rotation": "number", "scale": "number"}, "firstRouteId": "sf-r135-s0.6-e-282.8-n-282.8", "httpStatus": 200, "parsedStatus": "ok", "received": {"latitude": 31.22758288601396, "longitude": 29.949501692000297, "targetDistance": 2000, "word": "L"}, "rejectedBy": "none (product accepted at least one route)", "routeCount": 3, "stages": {"graphFeasibilityPool": 96, "graphFeasible": 9, "graphRejected": 87, "placementsEvaluated": 1360, "productAccepted": 3, "productBacktrackPass": 3, "productConnectedPass": 3, "productCoveragePass": 3, "productGapPass": 3, "productOrderPass": 3, "productShapeScorePass": 3, "routedBeforeProduct": 3, "streetFitPassThreshold": 96, "streetFitRanked": 1360}, "status": "ok", "targetDistance": 2000, "targetDistanceType": "number", "word": "L"}
+ LOG  [experimental client] parsed {"firstRouteId": "sf-r135-s0.6-e-282.8-n-282.8", "routes": 3, "status": "ok"}
+ LOG  [find-my-route][results-screen] {"debugFixedAlexandria": false, "gpsLatitude": 31.22758288601396, "gpsLongitude": 29.949501692000297, "isFallback": false, "latitude": 31.22758288601396, "longitude": 29.949501692000297, "selectedDistanceKm": 2, "targetDistanceMeters": 2000, "word": "L"}
+ LOG  [experimental-routes] start {"isFallback": false, "latitude": 31.22758288601396, "longitude": 29.949501692000297, "requestedDistanceKm": 2, "targetDistanceMeters": 2000, "word": "L"}
+ LOG  [experimental-routes] using prefetched response {"targetDistanceMeters": 2000, "word": "L"}
+ LOG  [find-my-route][frontend-interpretation] {"jsonStatus": "ok", "ok": true, "phase": "ready", "routes": 3}
+ LOG  [experimental-routes] phase {"firstRouteId": "sf-r135-s0.6-e-282.8-n-282.8", "jsonStatus": "ok", "phase": "ready", "routes": 3}
+ ERROR  The screen 'run' was removed natively but didn't get removed from JS state. This can happen if the action was prevented in a 'beforeRemove' listener, which is not fully supported in native-stack.
+
+Consider using a 'usePreventRemove' hook with 'headerBackButtonMenuEnabled: false' to prevent users from natively going back multiple screens. 
+
+Code: _layout.tsx
+[0m [90m 19 |[39m     [33m<[39m[33mGestureHandlerRootView[39m style[33m=[39m{{ flex[33m:[39m [35m1[39m }}[33m>[39m
+ [90m 20 |[39m       [33m<[39m[33mStatusBar[39m style[33m=[39m[32m"dark"[39m [33m/[39m[33m>[39m
+[31m[1m>[22m[39m[90m 21 |[39m       [33m<[39m[33mStack[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 22 |[39m         screenOptions[33m=[39m{{
+ [90m 23 |[39m           headerShown[33m:[39m [36mfalse[39m[33m,[39m
+ [90m 24 |[39m           contentStyle[33m:[39m { backgroundColor[33m:[39m colors[33m.[39mbackground }[33m,[39m[0m
+Call Stack
+  RootLayout (src/app/_layout.tsx:21:7)
+iOS Bundled 72ms node_modules/expo-router/entry.js (1 module)
+ WARN  Deep imports from the 'react-native' package are deprecated ('react-native/Libraries/Core/Devtools/getDevServer'). Source: /Users/robert/RunShape/src/constants/api.ts 44:6
+ ERROR  [ReferenceError: Property 'SettingsButton' doesn't exist] 
+
+Code: index.tsx
+[0m [90m 482 |[39m                     [33m<[39m[33m/[39m[33mView[39m[33m>[39m
+ [90m 483 |[39m                     [33m<[39m[33mView[39m style[33m=[39m{styles[33m.[39msettingsButtonSlot}[33m>[39m
+[31m[1m>[22m[39m[90m 484 |[39m                       [33m<[39m[33mSettingsButton[39m onPress[33m=[39m{() [33m=>[39m router[33m.[39mpush([32m'/settings'[39m)} [33m/[39m[33m>[39m
+ [90m     |[39m                        [31m[1m^[22m[39m
+ [90m 485 |[39m                     [33m<[39m[33m/[39m[33mView[39m[33m>[39m
+ [90m 486 |[39m                   [33m<[39m[33m/[39m[33mView[39m[33m>[39m
+ [90m 487 |[39m[0m
+Call Stack
+  HomeScreen (src/app/index.tsx:484:24) 
+
+Code: _layout.tsx
+[0m [90m 19 |[39m     [33m<[39m[33mGestureHandlerRootView[39m style[33m=[39m{{ flex[33m:[39m [35m1[39m }}[33m>[39m
+ [90m 20 |[39m       [33m<[39m[33mStatusBar[39m style[33m=[39m[32m"dark"[39m [33m/[39m[33m>[39m
+[31m[1m>[22m[39m[90m 21 |[39m       [33m<[39m[33mStack[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 22 |[39m         screenOptions[33m=[39m{{
+ [90m 23 |[39m           headerShown[33m:[39m [36mfalse[39m[33m,[39m
+ [90m 24 |[39m           contentStyle[33m:[39m { backgroundColor[33m:[39m colors[33m.[39mbackground }[33m,[39m[0m
+Call Stack
+  RootLayout (src/app/_layout.tsx:21:7)
+ WARN  Sending `onAnimatedValueUpdate` with no listeners registered.
