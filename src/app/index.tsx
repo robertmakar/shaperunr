@@ -481,7 +481,7 @@ export default function HomeScreen() {
                 <>
                   <View style={styles.topBar}>
                     <View style={styles.logoRow}>
-                      <BrandMark size={14} />
+                      <BrandMark size={14} tintColor={colors.accent} />
                       <Text style={styles.logo}>SHAPERUNR</Text>
                     </View>
                     <View style={styles.settingsButtonSlot}>

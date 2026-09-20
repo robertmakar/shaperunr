@@ -82,8 +82,9 @@ export default function SettingsScreen() {
               expanded={appearanceExpanded}
               onToggle={() => setAppearanceExpanded((value) => !value)}
               onSelect={(next: Appearance) => {
+                // Unlike Distance/Pace/Auto-pause, Appearance stays expanded after a
+                // selection — the row only collapses when explicitly tapped again.
                 setAppearance(next);
-                setAppearanceExpanded(false);
               }}
             />
           </View>
