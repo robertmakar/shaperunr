@@ -29,6 +29,10 @@ export type RouteMapProps = {
   height?: number;
   interactive?: boolean;
   style?: StyleProp<ViewStyle>;
+  /** Multiplier applied to the route's own bounding box for the initial region (before `fitToCoordinates` corrects it). Defaults to `regionForCoordinates`'s own default — pass a smaller value for a tighter-framed preview. */
+  regionPaddingFactor?: number;
+  /** Screen-pixel padding used by `fitToCoordinates`. Defaults to the existing hero padding — pass smaller values for a shorter/narrower preview so the route still fills most of the frame. */
+  fitEdgePadding?: { top: number; right: number; bottom: number; left: number };
 };
 
 export function RouteMap({
@@ -42,6 +46,8 @@ export function RouteMap({
   height,
   interactive = false,
   style,
+  regionPaddingFactor,
+  fitEdgePadding,
 }: RouteMapProps) {
   const mapRef = useRef<MapView>(null);
   const colors = useThemeColors();
@@ -59,6 +65,7 @@ export function RouteMap({
       ...overlayPoints,
       ...(userLocation ? [userLocation] : []),
     ],
+    regionPaddingFactor,
   );
 
   const fitRoute = useCallback(() => {
@@ -73,14 +80,14 @@ export function RouteMap({
 
     const fit = () => {
       mapRef.current?.fitToCoordinates(points, {
-        edgePadding: { top: 44, right: 36, bottom: 44, left: 36 },
+        edgePadding: fitEdgePadding ?? { top: 44, right: 36, bottom: 44, left: 36 },
         animated: false,
       });
     };
 
     requestAnimationFrame(fit);
     setTimeout(fit, 80);
-  }, [coordinates, overlayPoints, userLocation]);
+  }, [coordinates, overlayPoints, userLocation, fitEdgePadding]);
 
   useEffect(() => {
     if (followUser) {

@@ -10,18 +10,30 @@ import type { ExperimentalUserRoute } from '@/lib/experimental-routes-client';
 import { formatDistance, formatMatch } from '@/lib/format';
 import type { Coordinate } from '@/lib/geo';
 
-export type ExperimentalRouteCardVariant = 'hero' | 'compact';
+/** 'expanded' is always the best route's full hero presentation; 'collapsed' is every other route's smaller, subordinate option — never interchangeable, no accordion. */
+export type ExperimentalRouteCardVariant = 'expanded' | 'collapsed';
 
-type ExperimentalRouteCardProps = {
+export type ExperimentalRouteCardProps = {
   route: ExperimentalUserRoute;
   userLocation?: Coordinate;
   showUserLocation?: boolean;
-  variant?: ExperimentalRouteCardVariant;
+  variant: ExperimentalRouteCardVariant;
+  /** "USE THIS ROUTE →" — calls selectRoute(route), navigating to Run with this exact route. */
   onSelect: () => void;
 };
 
-const HERO_MAP_HEIGHT = 270;
-const COMPACT_MAP_HEIGHT = 230;
+const EXPANDED_MAP_HEIGHT = 270;
+/** Large enough to actually see the route's shape, not a postage-stamp tile. */
+const COLLAPSED_MAP_HEIGHT = 130;
+/**
+ * A much tighter camera than the hero's default (regionForCoordinates'
+ * paddingFactor 1.7 / fitToCoordinates' {44,36,44,36} edge padding) — at
+ * this preview's smaller height, that default padding left the route
+ * occupying only a sliver of the frame. Doesn't touch the hero's own
+ * camera behavior, which still uses RouteMap's defaults.
+ */
+const COLLAPSED_REGION_PADDING_FACTOR = 1.15;
+const COLLAPSED_FIT_EDGE_PADDING = { top: 10, right: 10, bottom: 10, left: 10 };
 /** Below this, the connector leg is too short to be worth a line item. */
 const CONNECTOR_DISPLAY_THRESHOLD_METERS = 15;
 
@@ -43,19 +55,42 @@ export function ExperimentalRouteCard({
   route,
   userLocation,
   showUserLocation = false,
-  variant = 'compact',
+  variant,
   onSelect,
 }: ExperimentalRouteCardProps) {
   const [unit] = useDistanceUnit();
   const colors = useThemeColors();
   const styles = useMemo(() => createStyles(colors), [colors]);
-  const isHero = variant === 'hero';
   const shapeKm = route.shapeDistance / 1000;
   const totalKm = route.totalDistance / 1000;
   const connectorKm = route.connectorDistance / 1000;
   const matchPercent = Math.round(route.shapeScore * 100);
   const approximateMinutes = Math.max(1, Math.round(totalKm * 6.3));
   const showConnector = route.connectorDistance >= CONNECTOR_DISPLAY_THRESHOLD_METERS;
+  const overlays = experimentalConnectorOverlay(route.connectorCoordinates, colors);
+
+  if (variant === 'collapsed') {
+    // A medium, passive list row — not a card, not a button, and it never
+    // navigates on its own. Its own "USE THIS ROUTE" button below is the
+    // only thing that selects this route.
+    return (
+      <View style={styles.collapsedRow}>
+        <RouteMap
+          coordinates={route.shapeCoordinates}
+          userLocation={userLocation}
+          showUserLocation={showUserLocation}
+          overlays={overlays}
+          height={COLLAPSED_MAP_HEIGHT}
+          regionPaddingFactor={COLLAPSED_REGION_PADDING_FACTOR}
+          fitEdgePadding={COLLAPSED_FIT_EDGE_PADDING}
+        />
+        <Text style={styles.collapsedMetaText}>
+          {formatMatch(matchPercent)} MATCH  ·  {formatDistance(totalKm, unit)} · ~{approximateMinutes} MIN
+        </Text>
+        <PrimaryButton label="USE THIS ROUTE" size="small" onPress={onSelect} style={styles.collapsedCta} />
+      </View>
+    );
+  }
 
   return (
     <View style={styles.card}>
@@ -63,8 +98,8 @@ export function ExperimentalRouteCard({
         coordinates={route.shapeCoordinates}
         userLocation={userLocation}
         showUserLocation={showUserLocation}
-        overlays={experimentalConnectorOverlay(route.connectorCoordinates, colors)}
-        height={isHero ? HERO_MAP_HEIGHT : COMPACT_MAP_HEIGHT}
+        overlays={overlays}
+        height={EXPANDED_MAP_HEIGHT}
       />
 
       <View style={styles.legend}>
@@ -81,9 +116,9 @@ export function ExperimentalRouteCard({
       </View>
 
       <View style={styles.body}>
-        {isHero ? <Text style={styles.bestKicker}>BEST MATCH</Text> : null}
+        <Text style={styles.kicker}>BEST MATCH</Text>
 
-        <Text style={[styles.matchValue, isHero ? styles.matchValueHero : styles.matchValueCompact]}>
+        <Text style={styles.matchValue}>
           {formatMatch(matchPercent)}
           <Text style={styles.matchUnit}> MATCH</Text>
         </Text>
@@ -136,7 +171,7 @@ function createStyles(colors: ThemeColors) {
       gap: spacing.xs,
       paddingTop: spacing.xs,
     },
-    bestKicker: {
+    kicker: {
       ...typography.kicker,
       color: colors.accent,
     },
@@ -144,14 +179,8 @@ function createStyles(colors: ThemeColors) {
       fontWeight: '700',
       color: colors.accent,
       letterSpacing: -0.6,
-    },
-    matchValueHero: {
       fontSize: 28,
       lineHeight: 32,
-    },
-    matchValueCompact: {
-      fontSize: 22,
-      lineHeight: 26,
     },
     matchUnit: {
       ...typography.kicker,
@@ -169,6 +198,18 @@ function createStyles(colors: ThemeColors) {
     },
     cta: {
       marginTop: spacing.sm,
+    },
+    collapsedRow: {
+      gap: spacing.sm,
+      paddingVertical: spacing.md,
+    },
+    collapsedMetaText: {
+      ...typography.meta,
+      color: colors.text,
+      textTransform: 'uppercase',
+    },
+    collapsedCta: {
+      marginTop: spacing.xs,
     },
   });
 }

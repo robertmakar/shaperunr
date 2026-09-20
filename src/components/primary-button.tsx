@@ -17,7 +17,7 @@ type PrimaryButtonProps = {
   disabled?: boolean;
   showArrow?: boolean;
   variant?: 'primary' | 'secondary';
-  size?: 'large' | 'compact';
+  size?: 'large' | 'compact' | 'small';
   style?: StyleProp<ViewStyle>;
 };
 
@@ -42,17 +42,28 @@ export function PrimaryButton({
       style={({ pressed }) => [
         styles.button,
         size === 'compact' && styles.compact,
+        size === 'small' && styles.small,
         secondary && styles.secondary,
         disabled && styles.disabled,
         pressed && !disabled && styles.pressed,
         style,
       ]}>
       <View style={styles.row}>
-        <Text style={[styles.label, secondary && styles.secondaryLabel]}>
+        <Text
+          style={[
+            styles.label,
+            size === 'small' && styles.smallLabel,
+            secondary && styles.secondaryLabel,
+          ]}>
           {label}
         </Text>
         {showArrow ? (
-          <Text style={[styles.arrow, secondary && styles.secondaryLabel]}>
+          <Text
+            style={[
+              styles.arrow,
+              size === 'small' && styles.smallArrow,
+              secondary && styles.secondaryLabel,
+            ]}>
             →
           </Text>
         ) : null}
@@ -74,6 +85,11 @@ function createStyles(colors: ThemeColors) {
     compact: {
       height: 52,
     },
+    /** For subordinate actions (e.g. an alternative route's own CTA) — still a real, comfortably tappable button, just visually quieter than the hero's. */
+    small: {
+      height: 44,
+      paddingHorizontal: spacing.lg,
+    },
     secondary: {
       backgroundColor: colors.surface,
     },
@@ -92,6 +108,9 @@ function createStyles(colors: ThemeColors) {
       ...typography.cta,
       color: colors.inverse,
     },
+    smallLabel: {
+      fontSize: 12,
+    },
     secondaryLabel: {
       color: colors.text,
     },
@@ -99,6 +118,9 @@ function createStyles(colors: ThemeColors) {
       color: colors.inverse,
       fontSize: 22,
       marginTop: -2,
+    },
+    smallArrow: {
+      fontSize: 17,
     },
   });
 }

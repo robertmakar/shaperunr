@@ -244,6 +244,24 @@ export default function ExperimentalRoutesScreen() {
   }
 
   const routes = result?.routes ?? [];
+  const [bestRoute, ...otherRoutes] = routes;
+
+  function selectRoute(route: (typeof routes)[number]) {
+    setSelectedExperimentalRoute({ ...route, word });
+    router.push({
+      pathname: '/run',
+      params: {
+        word,
+        experimental: '1',
+        routeId: route.id,
+        distance: String(route.totalDistance / 1000),
+        match: String(Math.round(route.shapeScore * 100)),
+        duration: String(Math.max(1, Math.round((route.totalDistance / 1000) * 6.3))),
+        latitude: String(start.coordinate.latitude),
+        longitude: String(start.coordinate.longitude),
+      },
+    });
+  }
 
   return (
     <Screen>
@@ -257,34 +275,36 @@ export default function ExperimentalRoutesScreen() {
           </Text>
         </View>
 
-        <View style={styles.list}>
-          {routes.map((route, index) => (
-            <View key={route.id} style={index > 0 ? styles.secondaryCandidate : undefined}>
-              <ExperimentalRouteCard
-                route={route}
-                variant={index === 0 ? 'hero' : 'compact'}
-                userLocation={start.coordinate}
-                showUserLocation
-                onSelect={() => {
-                  setSelectedExperimentalRoute({ ...route, word });
-                  router.push({
-                    pathname: '/run',
-                    params: {
-                      word,
-                      experimental: '1',
-                      routeId: route.id,
-                      distance: String(route.totalDistance / 1000),
-                      match: String(Math.round(route.shapeScore * 100)),
-                      duration: String(Math.max(1, Math.round((route.totalDistance / 1000) * 6.3))),
-                      latitude: String(start.coordinate.latitude),
-                      longitude: String(start.coordinate.longitude),
-                    },
-                  });
-                }}
-              />
+        {bestRoute ? (
+          <ExperimentalRouteCard
+            route={bestRoute}
+            variant="expanded"
+            userLocation={start.coordinate}
+            showUserLocation
+            onSelect={() => selectRoute(bestRoute)}
+          />
+        ) : null}
+
+        {otherRoutes.length > 0 ? (
+          <View style={styles.otherRoutes}>
+            <View style={styles.divider} />
+            <Text style={styles.otherRoutesHeading}>OTHER ROUTES</Text>
+            <View style={styles.otherRoutesList}>
+              {otherRoutes.map((route, index) => (
+                <View key={route.id}>
+                  {index > 0 ? <View style={styles.divider} /> : null}
+                  <ExperimentalRouteCard
+                    route={route}
+                    variant="collapsed"
+                    userLocation={start.coordinate}
+                    showUserLocation
+                    onSelect={() => selectRoute(route)}
+                  />
+                </View>
+              ))}
             </View>
-          ))}
-        </View>
+          </View>
+        ) : null}
       </ScrollView>
     </Screen>
   );
@@ -322,13 +342,20 @@ function createStyles(colors: ThemeColors) {
       color: colors.textSecondary,
       marginTop: spacing.sm,
     },
-    list: {
-      gap: spacing.xxl,
+    otherRoutes: {
+      gap: spacing.lg,
     },
-    secondaryCandidate: {
-      borderTopWidth: StyleSheet.hairlineWidth,
-      borderTopColor: colors.border,
-      paddingTop: spacing.xxl,
+    divider: {
+      height: StyleSheet.hairlineWidth,
+      backgroundColor: colors.border,
+    },
+    otherRoutesHeading: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+    otherRoutesList: {
+      // No extra gap: each collapsed row supplies its own vertical padding, and
+      // a divider (added between items, not around them) does the separating.
     },
     empty: {
       gap: spacing.sm,
