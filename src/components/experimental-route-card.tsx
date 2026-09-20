@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { PrimaryButton } from '@/components/primary-button';
 import { RouteMap, type MapOverlay } from '@/components/route-map';
 import { colors, spacing, typography } from '@/constants/theme';
+import { useDistanceUnit } from '@/hooks/use-distance-unit';
 import type { ExperimentalUserRoute } from '@/lib/experimental-routes-client';
 import { formatDistance, formatMatch } from '@/lib/format';
 import type { Coordinate } from '@/lib/geo';
@@ -43,6 +44,7 @@ export function ExperimentalRouteCard({
   variant = 'compact',
   onSelect,
 }: ExperimentalRouteCardProps) {
+  const [unit] = useDistanceUnit();
   const isHero = variant === 'hero';
   const shapeKm = route.shapeDistance / 1000;
   const totalKm = route.totalDistance / 1000;
@@ -83,11 +85,11 @@ export function ExperimentalRouteCard({
         </Text>
 
         <Text style={styles.metaLine}>
-          {formatDistance(totalKm)} TOTAL · ~{approximateMinutes} MIN
+          {formatDistance(totalKm, unit)} TOTAL · ~{approximateMinutes} MIN
         </Text>
         <Text style={styles.subMetaLine}>
-          {formatDistance(shapeKm)} SHAPE
-          {showConnector ? `  ·  +${connectorKm.toFixed(1)} KM TO START` : ''}
+          {formatDistance(shapeKm, unit)} SHAPE
+          {showConnector ? `  ·  +${formatDistance(connectorKm, unit)} TO START` : ''}
         </Text>
 
         <PrimaryButton label="USE THIS ROUTE" size="compact" onPress={onSelect} style={styles.cta} />

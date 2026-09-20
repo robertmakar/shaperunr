@@ -11,9 +11,10 @@ import { RunStat } from '@/components/run-stat';
 import { Screen } from '@/components/screen';
 import { getRouteCoordinates } from '@/constants/mock-routes';
 import { colors, spacing, typography } from '@/constants/theme';
+import { useDistanceUnit } from '@/hooks/use-distance-unit';
 import { useForegroundRun } from '@/hooks/use-foreground-run';
 import { getSelectedExperimentalRoute } from '@/lib/experimental-route-session';
-import { formatMatch, formatPace, formatWord } from '@/lib/format';
+import { convertKmToUnit, distanceUnitLabel, formatMatch, formatPace, formatWord } from '@/lib/format';
 import { resolveStartCoordinate } from '@/lib/location';
 import {
   elapsedMinutes,
@@ -72,7 +73,10 @@ export default function RunScreen() {
     () => calculateShapeProgress(coordinates, run.pathSegments),
     [coordinates, run.pathSegments],
   );
+  const [distanceUnit] = useDistanceUnit();
   const distanceKm = live ? run.distanceMeters / 1000 : plannedDistanceKm;
+  const displayDistance = convertKmToUnit(distanceKm, distanceUnit);
+  const displayDistanceUnitLabel = distanceUnitLabel(distanceUnit).toUpperCase();
   const durationMin = live ? elapsedMinutes(run.elapsedMs) : plannedDurationMin;
   const durationLabel = live
     ? formatElapsedClock(run.elapsedMs)
@@ -245,7 +249,7 @@ export default function RunScreen() {
 
       {run.status !== 'finished' ? (
         <View style={styles.stats}>
-          <RunStat value={distanceKm.toFixed(2)} label="KM" emphasis="primary" />
+          <RunStat value={displayDistance.toFixed(2)} label={displayDistanceUnitLabel} emphasis="primary" />
           <RunStat value={paceLabel} label="/KM" emphasis="primary" />
           <RunStat value={durationLabel} label="TIME" emphasis="primary" />
         </View>
@@ -293,7 +297,7 @@ export default function RunScreen() {
             {shapeProgress.completed ? 'SHAPE COMPLETE' : 'SHAPE PROGRESS'}
           </Text>
           <View style={styles.finishedStats}>
-            <RunStat value={distanceKm.toFixed(2)} label="KM" />
+            <RunStat value={displayDistance.toFixed(2)} label={displayDistanceUnitLabel} />
             <RunStat value={paceLabel} label="/KM" />
             <RunStat value={durationLabel} label="TIME" />
           </View>

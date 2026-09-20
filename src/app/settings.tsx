@@ -1,20 +1,19 @@
 import type { ReactNode } from 'react';
+import { useState } from 'react';
+import { SymbolView } from 'expo-symbols';
 import { useRouter } from 'expo-router';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { BackButton } from '@/components/back-button';
 import { Screen } from '@/components/screen';
-import { colors, spacing, typography } from '@/constants/theme';
+import { colors, radii, spacing, typography } from '@/constants/theme';
+import { useDistanceUnit } from '@/hooks/use-distance-unit';
+import { DISTANCE_UNITS, distanceUnitName, type DistanceUnit } from '@/lib/format';
 
 type SettingsRow = {
   label: string;
   value?: string;
 };
-
-const PREFERENCES: SettingsRow[] = [
-  { label: 'Distance', value: 'Kilometers' },
-  { label: 'Appearance', value: 'System' },
-];
 
 const RUNNING: SettingsRow[] = [
   { label: 'Pace', value: 'min/km' },
@@ -29,6 +28,8 @@ const ABOUT: SettingsRow[] = [
 
 export default function SettingsScreen() {
   const router = useRouter();
+  const [unit, setUnit] = useDistanceUnit();
+  const [distanceExpanded, setDistanceExpanded] = useState(false);
 
   return (
     <Screen>
@@ -46,7 +47,23 @@ export default function SettingsScreen() {
           <Text style={styles.title}>Settings</Text>
         </View>
 
-        <Section heading="PREFERENCES" rows={PREFERENCES} />
+        <View style={styles.section}>
+          <Text style={styles.sectionHeading}>PREFERENCES</Text>
+          <View style={styles.rowGroup}>
+            <DistanceUnitRow
+              unit={unit}
+              expanded={distanceExpanded}
+              onToggle={() => setDistanceExpanded((value) => !value)}
+              onSelect={(next) => {
+                setUnit(next);
+                setDistanceExpanded(false);
+              }}
+            />
+            <View style={styles.divider} />
+            <Row label="Appearance" value="System" />
+          </View>
+        </View>
+
         <Section heading="RUNNING" rows={RUNNING} />
         <Section heading="ABOUT" rows={ABOUT} />
 
@@ -84,6 +101,65 @@ function Row({ label, value }: { label: string; value?: string }): ReactNode {
   );
 }
 
+function DistanceUnitRow({
+  unit,
+  expanded,
+  onToggle,
+  onSelect,
+}: {
+  unit: DistanceUnit;
+  expanded: boolean;
+  onToggle: () => void;
+  onSelect: (unit: DistanceUnit) => void;
+}) {
+  return (
+    <View>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Distance unit"
+        accessibilityState={{ expanded }}
+        onPress={onToggle}
+        style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}>
+        <Text style={styles.rowLabel}>Distance</Text>
+        <View style={styles.rowValueGroup}>
+          <Text style={styles.rowValue}>{distanceUnitName(unit)}</Text>
+          <SymbolView
+            name={{ ios: 'chevron.down', android: 'expand_more', web: 'expand_more' }}
+            size={13}
+            weight="semibold"
+            tintColor={colors.textMuted}
+            style={[styles.chevron, expanded && styles.chevronExpanded]}
+          />
+        </View>
+      </Pressable>
+      {expanded ? (
+        <View style={styles.unitOptions}>
+          {DISTANCE_UNITS.map((option) => {
+            const selected = option === unit;
+            return (
+              <Pressable
+                key={option}
+                accessibilityRole="button"
+                accessibilityLabel={distanceUnitName(option)}
+                accessibilityState={{ selected }}
+                onPress={() => onSelect(option)}
+                style={({ pressed }) => [
+                  styles.unitChip,
+                  selected && styles.unitChipSelected,
+                  pressed && !selected && styles.unitChipPressed,
+                ]}>
+                <Text style={[styles.unitChipLabel, selected && styles.unitChipLabelSelected]}>
+                  {distanceUnitName(option)}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      ) : null}
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   content: {
     paddingBottom: spacing.xxl,
@@ -115,6 +191,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingVertical: spacing.md,
   },
+  rowPressed: {
+    opacity: 0.6,
+  },
   rowLabel: {
     ...typography.body,
     color: colors.text,
@@ -123,9 +202,47 @@ const styles = StyleSheet.create({
     ...typography.body,
     color: colors.textSecondary,
   },
+  rowValueGroup: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.xs,
+  },
+  chevron: {
+    transform: [{ rotate: '0deg' }],
+  },
+  chevronExpanded: {
+    transform: [{ rotate: '180deg' }],
+  },
   divider: {
     height: StyleSheet.hairlineWidth,
     backgroundColor: colors.border,
+  },
+  unitOptions: {
+    flexDirection: 'row',
+    gap: spacing.sm,
+    paddingBottom: spacing.md,
+  },
+  unitChip: {
+    flex: 1,
+    minHeight: 44,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: colors.surface,
+    borderRadius: radii.pill,
+    paddingHorizontal: spacing.sm,
+  },
+  unitChipSelected: {
+    backgroundColor: colors.accent,
+  },
+  unitChipPressed: {
+    backgroundColor: colors.surfaceAlt,
+  },
+  unitChipLabel: {
+    ...typography.meta,
+    color: colors.textSecondary,
+  },
+  unitChipLabelSelected: {
+    color: colors.inverse,
   },
   footer: {
     alignItems: 'center',

@@ -4,6 +4,7 @@ import { PrimaryButton } from '@/components/primary-button';
 import { RouteMap } from '@/components/route-map';
 import type { MockRoute } from '@/constants/mock-routes';
 import { colors, radii, spacing, typography } from '@/constants/theme';
+import { useDistanceUnit } from '@/hooks/use-distance-unit';
 import { formatDistance, formatDuration, formatMatch } from '@/lib/format';
 import type { Coordinate } from '@/lib/geo';
 
@@ -15,6 +16,8 @@ type RouteCardProps = {
 };
 
 export function RouteCard({ route, userLocation, showUserLocation = false, onSelect }: RouteCardProps) {
+  const [unit] = useDistanceUnit();
+
   return (
     <View style={styles.card}>
       <RouteMap
@@ -33,7 +36,7 @@ export function RouteCard({ route, userLocation, showUserLocation = false, onSel
           <View style={styles.details}>
             <Text style={styles.detail}>
               <Text style={styles.detailValue}>
-                {formatDistance(route.distanceKm)}
+                {formatDistance(route.distanceKm, unit)}
               </Text>
               {'  TOTAL'}
             </Text>

@@ -1,7 +1,14 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { colors, radii, spacing, typography } from '@/constants/theme';
+import { useDistanceUnit } from '@/hooks/use-distance-unit';
+import { convertKmToUnit, distanceUnitLabel, distanceUnitName } from '@/lib/format';
 
+/**
+ * The four selectable route distances, always in km — this is what's sent
+ * to route generation and must stay unchanged regardless of the display
+ * unit. Only the chip label converts for display below.
+ */
 export const DISTANCES = [2, 4, 6, 8] as const;
 
 type DistanceSelectorProps = {
@@ -10,16 +17,21 @@ type DistanceSelectorProps = {
 };
 
 export function DistanceSelector({ value, onChange }: DistanceSelectorProps) {
+  const [unit] = useDistanceUnit();
+
   return (
     <View style={styles.row}>
       {DISTANCES.map((distance) => {
         const selected = distance === value;
+        const unitLabel = distanceUnitLabel(unit).toUpperCase();
+        const displayValue =
+          unit === 'mi' ? convertKmToUnit(distance, unit).toFixed(1) : String(distance);
 
         return (
           <Pressable
             key={distance}
             accessibilityRole="button"
-            accessibilityLabel={`${distance} kilometers`}
+            accessibilityLabel={`${displayValue} ${distanceUnitName(unit).toLowerCase()}`}
             accessibilityState={{ selected }}
             onPress={() => onChange(distance)}
             style={({ pressed }) => [
@@ -28,7 +40,7 @@ export function DistanceSelector({ value, onChange }: DistanceSelectorProps) {
               pressed && !selected && styles.pressed,
             ]}>
             <Text style={[styles.label, selected && styles.labelSelected]}>
-              {distance} KM
+              {displayValue} {unitLabel}
             </Text>
           </Pressable>
         );
