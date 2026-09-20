@@ -5,6 +5,7 @@ import { useRouter } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { BackButton } from '@/components/back-button';
+import { BrandMark } from '@/components/brand-mark';
 import { Screen } from '@/components/screen';
 import { radii, spacing, typography, type ThemeColors } from '@/constants/theme';
 import { useAppearance } from '@/hooks/use-appearance';
@@ -19,12 +20,13 @@ import { DISTANCE_UNITS, distanceUnitName, paceUnitName, type DistanceUnit } fro
 type SettingsRow = {
   label: string;
   value?: string;
+  href?: '/about' | '/privacy' | '/terms';
 };
 
 const ABOUT: SettingsRow[] = [
-  { label: 'About ShapeRunr' },
-  { label: 'Privacy' },
-  { label: 'Terms' },
+  { label: 'About ShapeRunr', href: '/about' },
+  { label: 'Privacy', href: '/privacy' },
+  { label: 'Terms', href: '/terms' },
 ];
 
 export default function SettingsScreen() {
@@ -68,8 +70,9 @@ export default function SettingsScreen() {
               expanded={distanceExpanded}
               onToggle={() => setDistanceExpanded((value) => !value)}
               onSelect={(next: DistanceUnit) => {
+                // Stays expanded after a selection — the row only collapses when
+                // explicitly tapped again (same behavior as Pace/Auto-pause/Appearance).
                 setUnit(next);
-                setDistanceExpanded(false);
               }}
             />
             <View style={styles.divider} />
@@ -82,8 +85,8 @@ export default function SettingsScreen() {
               expanded={appearanceExpanded}
               onToggle={() => setAppearanceExpanded((value) => !value)}
               onSelect={(next: Appearance) => {
-                // Unlike Distance/Pace/Auto-pause, Appearance stays expanded after a
-                // selection — the row only collapses when explicitly tapped again.
+                // Stays expanded after a selection — the row only collapses when
+                // explicitly tapped again (same behavior as Distance/Pace/Auto-pause).
                 setAppearance(next);
               }}
             />
@@ -102,8 +105,9 @@ export default function SettingsScreen() {
               expanded={paceExpanded}
               onToggle={() => setPaceExpanded((value) => !value)}
               onSelect={(next: DistanceUnit) => {
+                // Stays expanded after a selection — the row only collapses when
+                // explicitly tapped again (same behavior as Distance/Auto-pause/Appearance).
                 setPaceUnit(next);
-                setPaceExpanded(false);
               }}
             />
             <View style={styles.divider} />
@@ -116,8 +120,9 @@ export default function SettingsScreen() {
               expanded={autoPauseExpanded}
               onToggle={() => setAutoPauseExpanded((value) => !value)}
               onSelect={(next: AutoPauseSetting) => {
+                // Stays expanded after a selection — the row only collapses when
+                // explicitly tapped again (same behavior as Distance/Pace/Appearance).
                 setAutoPause(next);
-                setAutoPauseExpanded(false);
               }}
             />
           </View>
@@ -126,6 +131,10 @@ export default function SettingsScreen() {
         <Section heading="ABOUT" rows={ABOUT} />
 
         <View style={styles.footer}>
+          <View style={styles.brandRow}>
+            <BrandMark size={12} tintColor={colors.accent} />
+            <Text style={styles.brandWordmark}>SHAPERUNR</Text>
+          </View>
           <Text style={styles.version}>Version 1.0.0</Text>
           <Text style={styles.credit}>DEVELOPED BY ROBZ!</Text>
         </View>
@@ -145,7 +154,7 @@ function Section({ heading, rows }: { heading: string; rows: SettingsRow[] }) {
         {rows.map((row, index) => (
           <View key={row.label}>
             {index > 0 ? <View style={styles.divider} /> : null}
-            <Row label={row.label} value={row.value} />
+            <Row label={row.label} value={row.value} href={row.href} />
           </View>
         ))}
       </View>
@@ -153,15 +162,38 @@ function Section({ heading, rows }: { heading: string; rows: SettingsRow[] }) {
   );
 }
 
-function Row({ label, value }: { label: string; value?: string }): ReactNode {
+function Row({
+  label,
+  value,
+  href,
+}: {
+  label: string;
+  value?: string;
+  href?: SettingsRow['href'];
+}): ReactNode {
+  const router = useRouter();
   const colors = useThemeColors();
   const styles = useMemo(() => createStyles(colors), [colors]);
 
-  return (
-    <View style={styles.row}>
+  const content = (
+    <>
       <Text style={styles.rowLabel}>{label}</Text>
       {value ? <Text style={styles.rowValue}>{value}</Text> : null}
-    </View>
+    </>
+  );
+
+  if (!href) {
+    return <View style={styles.row}>{content}</View>;
+  }
+
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      onPress={() => router.push(href)}
+      style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}>
+      {content}
+    </Pressable>
   );
 }
 
@@ -324,7 +356,17 @@ function createStyles(colors: ThemeColors) {
     footer: {
       alignItems: 'center',
       gap: spacing.xs,
-      marginTop: spacing.md,
+      marginTop: spacing.xl,
+    },
+    brandRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: spacing.xs,
+      marginBottom: spacing.xs,
+    },
+    brandWordmark: {
+      ...typography.logo,
+      color: colors.text,
     },
     version: {
       ...typography.caption,

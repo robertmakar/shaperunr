@@ -1,0 +1,119 @@
+import type { ReactNode } from 'react';
+import { useMemo } from 'react';
+import { useRouter } from 'expo-router';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+
+import { BackButton } from '@/components/back-button';
+import { Screen } from '@/components/screen';
+import { spacing, typography, type ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
+
+type InfoScreenProps = {
+  title: string;
+  children: ReactNode;
+};
+
+/**
+ * Shared header/scroll shell for Settings' informational pages (About,
+ * Privacy, Terms) — the same back-navigation and title treatment as
+ * Settings itself, so all three read as part of the same screen family.
+ */
+export function InfoScreen({ title, children }: InfoScreenProps) {
+  const router = useRouter();
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+
+  return (
+    <Screen>
+      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.content}>
+        <View style={styles.header}>
+          <BackButton
+            onPress={() => {
+              if (router.canGoBack()) {
+                router.back();
+              } else {
+                router.replace('/settings');
+              }
+            }}
+          />
+          <Text style={styles.title}>{title}</Text>
+        </View>
+        {children}
+      </ScrollView>
+    </Screen>
+  );
+}
+
+type InfoSectionProps = {
+  heading: string;
+  children: ReactNode;
+};
+
+/** A heading + stacked-paragraph block, shared by Privacy and Terms — keeps every section's spacing and type treatment identical without repeating styles at each call site. */
+export function InfoSection({ heading, children }: InfoSectionProps) {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createSectionStyles(colors), [colors]);
+
+  return (
+    <View style={styles.section}>
+      <Text style={styles.heading}>{heading}</Text>
+      <View style={styles.body}>{children}</View>
+    </View>
+  );
+}
+
+/** A single short paragraph, styled for comfortable reading (not dense legal-block text). */
+export function InfoParagraph({ children }: { children: ReactNode }) {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createSectionStyles(colors), [colors]);
+
+  return <Text style={styles.paragraph}>{children}</Text>;
+}
+
+/** A small muted meta line (e.g. "Last updated"). */
+export function InfoMeta({ children }: { children: ReactNode }) {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createSectionStyles(colors), [colors]);
+
+  return <Text style={styles.meta}>{children}</Text>;
+}
+
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    content: {
+      paddingBottom: spacing.xxl,
+      gap: spacing.xxl,
+    },
+    header: {
+      gap: spacing.md,
+    },
+    title: {
+      ...typography.title,
+      color: colors.text,
+      marginTop: spacing.sm,
+    },
+  });
+}
+
+function createSectionStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    section: {
+      gap: spacing.md,
+    },
+    heading: {
+      ...typography.kicker,
+      color: colors.textSecondary,
+    },
+    body: {
+      gap: spacing.sm,
+    },
+    paragraph: {
+      ...typography.body,
+      color: colors.text,
+    },
+    meta: {
+      ...typography.caption,
+      color: colors.textMuted,
+    },
+  });
+}
