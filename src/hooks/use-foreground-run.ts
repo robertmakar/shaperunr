@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { AppState, Linking } from 'react-native';
 
+import { ensureAutoPauseHydrated, getAutoPauseSetting } from '@/lib/auto-pause-preference';
 import { startForegroundPositionWatch, type ForegroundWatch } from '@/lib/foreground-gps';
 import type { Coordinate } from '@/lib/geo';
 import {
@@ -177,8 +178,13 @@ export function useForegroundRun(shapeStart?: Coordinate) {
   }, [session.status]);
 
   useEffect(() => {
+    ensureAutoPauseHydrated();
     const subscription = AppState.addEventListener('change', (nextState) => {
-      if (nextState !== 'active' && sessionRef.current.status === 'running') {
+      if (
+        nextState !== 'active' &&
+        sessionRef.current.status === 'running' &&
+        getAutoPauseSetting() === 'on'
+      ) {
         pause();
       }
     });

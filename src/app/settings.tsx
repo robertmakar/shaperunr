@@ -7,18 +7,15 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { BackButton } from '@/components/back-button';
 import { Screen } from '@/components/screen';
 import { colors, radii, spacing, typography } from '@/constants/theme';
+import { useAutoPause } from '@/hooks/use-auto-pause';
 import { useDistanceUnit } from '@/hooks/use-distance-unit';
+import { AUTO_PAUSE_SETTINGS, autoPauseSettingName, type AutoPauseSetting } from '@/lib/auto-pause-preference';
 import { DISTANCE_UNITS, distanceUnitName, type DistanceUnit } from '@/lib/format';
 
 type SettingsRow = {
   label: string;
   value?: string;
 };
-
-const RUNNING: SettingsRow[] = [
-  { label: 'Pace', value: 'min/km' },
-  { label: 'Auto-pause', value: 'Off' },
-];
 
 const ABOUT: SettingsRow[] = [
   { label: 'About ShapeRunr' },
@@ -30,6 +27,8 @@ export default function SettingsScreen() {
   const router = useRouter();
   const [unit, setUnit] = useDistanceUnit();
   const [distanceExpanded, setDistanceExpanded] = useState(false);
+  const [autoPause, setAutoPause] = useAutoPause();
+  const [autoPauseExpanded, setAutoPauseExpanded] = useState(false);
 
   return (
     <Screen>
@@ -50,11 +49,15 @@ export default function SettingsScreen() {
         <View style={styles.section}>
           <Text style={styles.sectionHeading}>PREFERENCES</Text>
           <View style={styles.rowGroup}>
-            <DistanceUnitRow
-              unit={unit}
+            <ExpandableOptionRow
+              label="Distance"
+              accessibilityLabel="Distance unit"
+              options={DISTANCE_UNITS}
+              value={unit}
+              optionLabel={distanceUnitName}
               expanded={distanceExpanded}
               onToggle={() => setDistanceExpanded((value) => !value)}
-              onSelect={(next) => {
+              onSelect={(next: DistanceUnit) => {
                 setUnit(next);
                 setDistanceExpanded(false);
               }}
@@ -64,7 +67,27 @@ export default function SettingsScreen() {
           </View>
         </View>
 
-        <Section heading="RUNNING" rows={RUNNING} />
+        <View style={styles.section}>
+          <Text style={styles.sectionHeading}>RUNNING</Text>
+          <View style={styles.rowGroup}>
+            <Row label="Pace" value="min/km" />
+            <View style={styles.divider} />
+            <ExpandableOptionRow
+              label="Auto-pause"
+              accessibilityLabel="Auto-pause"
+              options={AUTO_PAUSE_SETTINGS}
+              value={autoPause}
+              optionLabel={autoPauseSettingName}
+              expanded={autoPauseExpanded}
+              onToggle={() => setAutoPauseExpanded((value) => !value)}
+              onSelect={(next: AutoPauseSetting) => {
+                setAutoPause(next);
+                setAutoPauseExpanded(false);
+              }}
+            />
+          </View>
+        </View>
+
         <Section heading="ABOUT" rows={ABOUT} />
 
         <View style={styles.footer}>
@@ -101,28 +124,37 @@ function Row({ label, value }: { label: string; value?: string }): ReactNode {
   );
 }
 
-function DistanceUnitRow({
-  unit,
+/** The interaction Distance introduced (tap to reveal pill options, selected one highlighted) — reused as-is for any other Settings preference with a short, fixed option list. */
+function ExpandableOptionRow<T extends string>({
+  label,
+  accessibilityLabel,
+  options,
+  value,
+  optionLabel,
   expanded,
   onToggle,
   onSelect,
 }: {
-  unit: DistanceUnit;
+  label: string;
+  accessibilityLabel: string;
+  options: T[];
+  value: T;
+  optionLabel: (option: T) => string;
   expanded: boolean;
   onToggle: () => void;
-  onSelect: (unit: DistanceUnit) => void;
+  onSelect: (option: T) => void;
 }) {
   return (
     <View>
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel="Distance unit"
+        accessibilityLabel={accessibilityLabel}
         accessibilityState={{ expanded }}
         onPress={onToggle}
         style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}>
-        <Text style={styles.rowLabel}>Distance</Text>
+        <Text style={styles.rowLabel}>{label}</Text>
         <View style={styles.rowValueGroup}>
-          <Text style={styles.rowValue}>{distanceUnitName(unit)}</Text>
+          <Text style={styles.rowValue}>{optionLabel(value)}</Text>
           <SymbolView
             name={{ ios: 'chevron.down', android: 'expand_more', web: 'expand_more' }}
             size={13}
@@ -133,23 +165,23 @@ function DistanceUnitRow({
         </View>
       </Pressable>
       {expanded ? (
-        <View style={styles.unitOptions}>
-          {DISTANCE_UNITS.map((option) => {
-            const selected = option === unit;
+        <View style={styles.optionChips}>
+          {options.map((option) => {
+            const selected = option === value;
             return (
               <Pressable
                 key={option}
                 accessibilityRole="button"
-                accessibilityLabel={distanceUnitName(option)}
+                accessibilityLabel={optionLabel(option)}
                 accessibilityState={{ selected }}
                 onPress={() => onSelect(option)}
                 style={({ pressed }) => [
-                  styles.unitChip,
-                  selected && styles.unitChipSelected,
-                  pressed && !selected && styles.unitChipPressed,
+                  styles.chip,
+                  selected && styles.chipSelected,
+                  pressed && !selected && styles.chipPressed,
                 ]}>
-                <Text style={[styles.unitChipLabel, selected && styles.unitChipLabelSelected]}>
-                  {distanceUnitName(option)}
+                <Text style={[styles.chipLabel, selected && styles.chipLabelSelected]}>
+                  {optionLabel(option)}
                 </Text>
               </Pressable>
             );
@@ -217,12 +249,12 @@ const styles = StyleSheet.create({
     height: StyleSheet.hairlineWidth,
     backgroundColor: colors.border,
   },
-  unitOptions: {
+  optionChips: {
     flexDirection: 'row',
     gap: spacing.sm,
     paddingBottom: spacing.md,
   },
-  unitChip: {
+  chip: {
     flex: 1,
     minHeight: 44,
     alignItems: 'center',
@@ -231,17 +263,17 @@ const styles = StyleSheet.create({
     borderRadius: radii.pill,
     paddingHorizontal: spacing.sm,
   },
-  unitChipSelected: {
+  chipSelected: {
     backgroundColor: colors.accent,
   },
-  unitChipPressed: {
+  chipPressed: {
     backgroundColor: colors.surfaceAlt,
   },
-  unitChipLabel: {
+  chipLabel: {
     ...typography.meta,
     color: colors.textSecondary,
   },
-  unitChipLabelSelected: {
+  chipLabelSelected: {
     color: colors.inverse,
   },
   footer: {
