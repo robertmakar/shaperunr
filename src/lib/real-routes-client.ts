@@ -78,7 +78,7 @@ export async function generateRealRoutesFromBackend(input: {
       status: 0,
       code: 'API_URL_MISSING',
       message:
-        'Set EXPO_PUBLIC_API_URL to the RunShape backend (see backend/README.md). localhost is not hard-coded because it breaks on physical devices.',
+        'Set EXPO_PUBLIC_API_URL to the ShapeRunr backend (see backend/README.md). localhost is not hard-coded because it breaks on physical devices.',
       failures: [],
     };
   }
@@ -118,8 +118,8 @@ export async function generateRealRoutesFromBackend(input: {
       code: 'BACKEND_UNAVAILABLE',
       message:
         error instanceof Error
-          ? `Cannot reach the RunShape backend at ${baseUrl}. ${error.message}`
-          : 'Cannot reach the RunShape backend.',
+          ? `Cannot reach the ShapeRunr backend at ${baseUrl}. ${error.message}`
+          : 'Cannot reach the ShapeRunr backend.',
       failures: [],
     };
   }

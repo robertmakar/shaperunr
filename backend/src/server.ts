@@ -3,6 +3,7 @@ import express from 'express';
 
 import { config, localOsmFiles } from './config';
 import { generateRoutesRouter } from './routes/generate-routes';
+import { generateRoutesExperimentalRouter } from './routes/generate-routes-experimental';
 import { streetFitRouter } from './routes/street-fit';
 import { diagnoseValhalla } from './routing/valhalla';
 
@@ -15,7 +16,7 @@ app.get('/health', async (_req, res) => {
   const available = valhalla.ready;
   res.status(available ? 200 : 503).json({
     ok: available,
-    service: 'runshape-backend',
+    service: 'shaperunr-backend',
     developmentOnly: true,
     valhallaUrl: config.valhallaUrl,
     valhalla: {
@@ -35,9 +36,10 @@ app.get('/health', async (_req, res) => {
 });
 
 app.use(generateRoutesRouter);
+app.use(generateRoutesExperimentalRouter);
 app.use(streetFitRouter);
 
 app.listen(config.port, () => {
-  console.log(`RunShape backend (DEV) http://127.0.0.1:${config.port}`);
+  console.log(`ShapeRunr backend (DEV) http://127.0.0.1:${config.port}`);
   console.log(`Valhalla ${config.valhallaUrl}`);
 });

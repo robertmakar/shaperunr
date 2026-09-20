@@ -1,0 +1,917 @@
+DEVELOPMENT / A-Z letter coverage (after)
+Production experimental settings and product thresholds unchanged.
+generated 2026-09-18T20:28:35.678Z
+combinations 156  pass 53  graph-feasible 78  product-valid 53
+runtime 2172545 ms
+status counts PASS=53 GRAPH_FEASIBLE=7 NEAR_MISS=18 NO_STREET_FIT=0 NO_CANDIDATE=0 ROUTE_FAILED=78
+passing letters C D G I J L M N O R S T U V W Z
+graph-feasible letters B C D G H I J K L M N O Q R S T U V W Z
+
+GEOMETRY
+letter aspect path strokes segments sharpTurns intersections closed minFeature scale2k(width×height) scale4k(width×height)
+A 0.840 3.296 2 3 1 0 false 0.400 509.643x606.718 1019.286x1213.435
+B 0.740 4.440 1 11 6 0 true 0.220 333.311x450.420 666.622x900.840
+C 0.720 2.065 1 16 0 0 false 0.114 697.203x968.454 1394.406x1936.909
+D 0.760 3.158 1 7 1 0 true 0.283 481.338x633.339 962.676x1266.679
+E 0.700 3.820 2 4 2 0 false 0.560 366.470x523.528 732.940x1047.057
+F 0.700 3.100 2 3 1 0 false 0.540 451.579x645.113 903.158x1290.226
+G 0.769 2.771 1 18 2 0 false 0.122 554.790x721.841 1109.580x1443.681
+H 0.680 4.733 3 3 0 0 false 0.680 287.324x422.535 574.648x845.070
+I 0.560 2.680 3 3 0 0 false 0.560 417.910x746.269 835.821x1492.537
+J 0.889 3.152 2 12 1 0 false 0.082 563.939x634.431 1127.878x1268.863
+K 0.680 3.368 2 3 1 0 false 0.844 403.791x593.811 807.583x1187.622
+L 0.680 1.680 1 2 1 0 false 0.680 809.524x1190.476 1619.048x2380.952
+M 0.840 3.498 1 4 3 0 false 0.749 480.311x571.799 960.623x1143.598
+N 0.720 3.232 1 3 2 0 false 1.000 445.512x618.767 891.025x1237.534
+O 0.856 2.925 1 18 0 0 true 0.140 585.466x683.673 1170.933x1367.346
+P 0.700 2.745 1 6 3 0 false 0.213 509.980x728.543 1019.960x1457.086
+Q 0.856 3.991 2 19 0 1 true 0.139 429.181x501.172 858.362x1002.345
+R 0.740 3.741 1 8 5 0 false 0.213 395.621x534.623 791.243x1069.247
+S 0.660 2.528 1 11 4 0 false 0.170 522.096x791.055 1044.193x1582.111
+T 0.840 2.260 2 2 0 0 false 0.840 743.363x884.956 1486.726x1769.912
+U 0.694 2.410 3 12 0 0 false 0.094 575.745x829.750 1151.489x1659.499
+V 0.840 2.169 1 2 1 0 false 1.085 774.465x921.982 1548.930x1843.964
+W 0.920 3.248 1 4 3 0 false 0.600 566.503x615.765 1133.007x1231.529
+X 0.760 3.512 2 2 0 1 false 1.256 432.796x569.468 865.591x1138.936
+Y 0.800 2.448 2 3 1 0 false 0.480 653.556x816.945 1307.111x1633.889
+Z 0.800 2.881 1 3 2 0 false 0.800 555.435x694.294 1110.870x1388.588
+
+MATRIX / Downtown Cairo
+letter 2km 4km
+A ROUTE_FAILED ROUTE_FAILED
+B GRAPH_FEASIBLE ROUTE_FAILED
+C PASS PASS
+D NEAR_MISS NEAR_MISS
+E ROUTE_FAILED ROUTE_FAILED
+F ROUTE_FAILED ROUTE_FAILED
+G PASS PASS
+H GRAPH_FEASIBLE ROUTE_FAILED
+I PASS ROUTE_FAILED
+J PASS PASS
+K ROUTE_FAILED ROUTE_FAILED
+L PASS PASS
+M NEAR_MISS ROUTE_FAILED
+N PASS PASS
+O PASS NEAR_MISS
+P ROUTE_FAILED ROUTE_FAILED
+Q GRAPH_FEASIBLE ROUTE_FAILED
+R NEAR_MISS ROUTE_FAILED
+S PASS PASS
+T PASS ROUTE_FAILED
+U PASS ROUTE_FAILED
+V PASS PASS
+W PASS ROUTE_FAILED
+X ROUTE_FAILED ROUTE_FAILED
+Y ROUTE_FAILED ROUTE_FAILED
+Z PASS PASS
+
+MATRIX / Zamalek
+letter 2km 4km
+A ROUTE_FAILED ROUTE_FAILED
+B NEAR_MISS ROUTE_FAILED
+C PASS ROUTE_FAILED
+D ROUTE_FAILED ROUTE_FAILED
+E ROUTE_FAILED ROUTE_FAILED
+F ROUTE_FAILED ROUTE_FAILED
+G PASS ROUTE_FAILED
+H GRAPH_FEASIBLE ROUTE_FAILED
+I NEAR_MISS ROUTE_FAILED
+J PASS ROUTE_FAILED
+K GRAPH_FEASIBLE ROUTE_FAILED
+L PASS NEAR_MISS
+M PASS ROUTE_FAILED
+N NEAR_MISS PASS
+O NEAR_MISS ROUTE_FAILED
+P ROUTE_FAILED ROUTE_FAILED
+Q GRAPH_FEASIBLE ROUTE_FAILED
+R NEAR_MISS ROUTE_FAILED
+S PASS ROUTE_FAILED
+T PASS ROUTE_FAILED
+U NEAR_MISS PASS
+V PASS ROUTE_FAILED
+W NEAR_MISS ROUTE_FAILED
+X ROUTE_FAILED ROUTE_FAILED
+Y ROUTE_FAILED ROUTE_FAILED
+Z NEAR_MISS PASS
+
+MATRIX / Alexandria
+letter 2km 4km
+A ROUTE_FAILED ROUTE_FAILED
+B NEAR_MISS ROUTE_FAILED
+C PASS ROUTE_FAILED
+D PASS PASS
+E ROUTE_FAILED ROUTE_FAILED
+F ROUTE_FAILED ROUTE_FAILED
+G PASS PASS
+H NEAR_MISS ROUTE_FAILED
+I PASS PASS
+J PASS PASS
+K GRAPH_FEASIBLE ROUTE_FAILED
+L PASS ROUTE_FAILED
+M PASS ROUTE_FAILED
+N PASS ROUTE_FAILED
+O NEAR_MISS ROUTE_FAILED
+P ROUTE_FAILED ROUTE_FAILED
+Q ROUTE_FAILED ROUTE_FAILED
+R PASS ROUTE_FAILED
+S PASS ROUTE_FAILED
+T PASS ROUTE_FAILED
+U PASS PASS
+V PASS PASS
+W NEAR_MISS PASS
+X ROUTE_FAILED ROUTE_FAILED
+Y ROUTE_FAILED ROUTE_FAILED
+Z PASS ROUTE_FAILED
+
+DETAILS
+A | Downtown Cairo | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=24260 runtime=14271ms
+  graphFailures poor target-progress coverage=93, disconnected candidate paths=3
+  best=sf-r270-s0.6-e800-n0 rank=21 streetFit=0.781 feasibility=0.682 shape=n/a coverage=0.229 order=n/a backtrack=0.000 gap=0.708 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+B | Downtown Cairo | 2000m | GRAPH_FEASIBLE
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=0 accepted=0 graphEdges=24260 runtime=6290ms
+  graphFailures poor target-progress coverage=92, disconnected candidate paths=3
+  best=sf-r270-s0.6-e0-n800 rank=86 streetFit=0.750 feasibility=0.752 shape=0.573 coverage=0.500 order=0.344 backtrack=0.007 gap=0.167 finalLength=n/a rejections=shapeScore,coverage,order
+  rejectionStage=pipeline_quality reason=Graph-feasible candidates existed but all failed the pipeline quality gate.
+C | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=10 productValid=4 routed=3 accepted=2 graphEdges=24260 runtime=11048ms
+  graphFailures poor target-progress coverage=81, disconnected candidate paths=5
+  best=sf-r157.5-s1.0-e282.8-n282.8 rank=86 streetFit=0.756 feasibility=0.789 shape=0.876 coverage=0.787 order=0.845 backtrack=0.000 gap=0.104 finalLength=2003 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+D | Downtown Cairo | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=0 routed=1 accepted=0 graphEdges=24260 runtime=5837ms
+  graphFailures poor target-progress coverage=90, excessive backtracking=2, disconnected candidate paths=2
+  best=sf-r315-s1.2-e400-n0 rank=35 streetFit=0.760 feasibility=0.663 shape=0.589 coverage=0.688 order=0.168 backtrack=0.247 gap=0.354 finalLength=2657 rejections=shapeScore,order,largestGap
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: shapeScore, order, largestGap.
+E | Downtown Cairo | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=24260 runtime=14519ms
+  graphFailures poor target-progress coverage=91, disconnected candidate paths=5
+  best=sf-r180-s0.6-e282.8-n-282.8 rank=54 streetFit=0.774 feasibility=0.724 shape=n/a coverage=0.438 order=n/a backtrack=0.000 gap=0.521 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+F | Downtown Cairo | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=24260 runtime=15968ms
+  graphFailures poor target-progress coverage=79, disconnected candidate paths=17
+  best=sf-r90-s1.2-e282.8-n282.8 rank=10 streetFit=0.780 feasibility=0.700 shape=n/a coverage=0.333 order=n/a backtrack=0.000 gap=0.646 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+G | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=1 routed=2 accepted=1 graphEdges=24260 runtime=9440ms
+  graphFailures poor target-progress coverage=84, disconnected candidate paths=10
+  best=sf-r225-s0.8-e282.8-n282.8 rank=34 streetFit=0.767 feasibility=0.788 shape=0.779 coverage=0.637 order=0.710 backtrack=0.000 gap=0.250 finalLength=1570 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+H | Downtown Cairo | 2000m | GRAPH_FEASIBLE
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=0 routed=0 accepted=0 graphEdges=24260 runtime=28827ms
+  graphFailures poor target-progress coverage=88, disconnected candidate paths=6
+  best=sf-r90-s0.6-e282.8-n282.8 rank=51 streetFit=0.786 feasibility=0.670 shape=0.535 coverage=0.550 order=0.221 backtrack=0.259 gap=0.229 finalLength=n/a rejections=shapeScore,coverage,order,backtrack
+  rejectionStage=pipeline_quality reason=Graph-feasible candidates existed but all failed the pipeline quality gate.
+I | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=5 productValid=1 routed=3 accepted=1 graphEdges=24260 runtime=4873ms
+  graphFailures poor target-progress coverage=72, disconnected candidate paths=19
+  best=sf-r45-s0.6-e-282.8-n282.8 rank=92 streetFit=0.761 feasibility=0.803 shape=0.756 coverage=0.650 order=0.701 backtrack=0.000 gap=0.229 finalLength=901 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+J | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=5 productValid=4 routed=3 accepted=3 graphEdges=24260 runtime=8092ms
+  graphFailures poor target-progress coverage=84, disconnected candidate paths=7
+  best=sf-r0-s1.0-e282.8-n282.8 rank=52 streetFit=0.764 feasibility=0.749 shape=0.788 coverage=0.700 order=0.706 backtrack=0.009 gap=0.146 finalLength=1683 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+K | Downtown Cairo | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=24260 runtime=17559ms
+  graphFailures poor target-progress coverage=82, disconnected candidate paths=14
+  best=sf-r247.5-s0.6-e0-n0 rank=63 streetFit=0.763 feasibility=0.727 shape=n/a coverage=0.417 order=n/a backtrack=0.001 gap=0.313 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+L | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=19 productValid=12 routed=3 accepted=3 graphEdges=24260 runtime=4466ms
+  graphFailures poor target-progress coverage=66, disconnected candidate paths=11
+  best=sf-r67.5-s1.2-e0-n-400 rank=20 streetFit=0.790 feasibility=0.800 shape=0.898 coverage=0.900 order=0.860 backtrack=0.001 gap=0.125 finalLength=1441 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+M | Downtown Cairo | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=0 routed=2 accepted=0 graphEdges=24260 runtime=4526ms
+  graphFailures poor target-progress coverage=87, disconnected candidate paths=7
+  best=sf-r90-s0.6-e282.8-n282.8 rank=34 streetFit=0.802 feasibility=0.794 shape=0.702 coverage=0.575 order=0.604 backtrack=0.023 gap=0.146 finalLength=837 rejections=coverage
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: coverage.
+N | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=1 routed=2 accepted=1 graphEdges=24260 runtime=4241ms
+  graphFailures poor target-progress coverage=93, disconnected candidate paths=1
+  best=sf-r67.5-s0.8-e282.8-n-282.8 rank=62 streetFit=0.795 feasibility=0.778 shape=0.752 coverage=0.613 order=0.699 backtrack=0.016 gap=0.167 finalLength=1180 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+O | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=8 productValid=1 routed=3 accepted=1 graphEdges=24260 runtime=9187ms
+  graphFailures poor target-progress coverage=84, excessive backtracking=3, disconnected candidate paths=1
+  best=sf-r22.5-s0.8-e565.7-n-565.7 rank=40 streetFit=0.758 feasibility=0.790 shape=0.738 coverage=0.675 order=0.603 backtrack=0.000 gap=0.292 finalLength=1315 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+P | Downtown Cairo | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=24260 runtime=4844ms
+  graphFailures poor target-progress coverage=89, disconnected candidate paths=7
+  best=sf-r315-s0.6-e-282.8-n-282.8 rank=12 streetFit=0.764 feasibility=0.678 shape=n/a coverage=0.292 order=n/a backtrack=0.033 gap=0.688 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Q | Downtown Cairo | 2000m | GRAPH_FEASIBLE
+  placements=1360 streetFitPass=96 graphFeasible=5 productValid=0 routed=0 accepted=0 graphEdges=24260 runtime=18433ms
+  graphFailures poor target-progress coverage=73, disconnected candidate paths=16, unknown=2
+  best=sf-r90-s0.6-e0-n-400 rank=88 streetFit=0.751 feasibility=0.780 shape=0.565 coverage=0.537 order=0.347 backtrack=0.000 gap=0.167 finalLength=n/a rejections=shapeScore,coverage,order
+  rejectionStage=pipeline_quality reason=Graph-feasible candidates existed but all failed the pipeline quality gate.
+R | Downtown Cairo | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=0 routed=1 accepted=0 graphEdges=24260 runtime=5357ms
+  graphFailures poor target-progress coverage=90, disconnected candidate paths=4
+  best=sf-r247.5-s1.4-e0-n800 rank=95 streetFit=0.758 feasibility=0.718 shape=0.726 coverage=0.650 order=0.561 backtrack=0.016 gap=0.250 finalLength=2172 rejections=order
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: order.
+S | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=9 productValid=4 routed=3 accepted=3 graphEdges=24260 runtime=7524ms
+  graphFailures poor target-progress coverage=80, disconnected candidate paths=7
+  best=sf-r180-s1.2-e0-n-400 rank=69 streetFit=0.769 feasibility=0.797 shape=0.850 coverage=0.838 order=0.768 backtrack=0.000 gap=0.146 finalLength=2287 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+T | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=3 productValid=1 routed=2 accepted=1 graphEdges=24260 runtime=4050ms
+  graphFailures poor target-progress coverage=77, disconnected candidate paths=16
+  best=sf-r90-s0.8-e-400-n0 rank=6 streetFit=0.799 feasibility=0.723 shape=0.777 coverage=0.762 order=0.654 backtrack=0.245 gap=0.125 finalLength=1363 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+U | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=12 productValid=5 routed=3 accepted=3 graphEdges=24260 runtime=7848ms
+  graphFailures poor target-progress coverage=78, disconnected candidate paths=6
+  best=sf-r67.5-s1.0-e282.8-n282.8 rank=51 streetFit=0.781 feasibility=0.821 shape=0.886 coverage=0.825 order=0.854 backtrack=0.000 gap=0.125 finalLength=1961 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+V | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=13 productValid=6 routed=3 accepted=3 graphEdges=24260 runtime=3879ms
+  graphFailures poor target-progress coverage=76, disconnected candidate paths=7
+  best=sf-r112.5-s1.0-e800-n0 rank=18 streetFit=0.802 feasibility=0.823 shape=0.867 coverage=0.838 order=0.799 backtrack=0.000 gap=0.083 finalLength=1991 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+W | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=4 productValid=3 routed=3 accepted=3 graphEdges=24260 runtime=4695ms
+  graphFailures poor target-progress coverage=88, disconnected candidate paths=4
+  best=sf-r90-s0.6-e0-n0 rank=18 streetFit=0.809 feasibility=0.850 shape=0.787 coverage=0.675 order=0.735 backtrack=0.007 gap=0.125 finalLength=911 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+X | Downtown Cairo | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=24260 runtime=18926ms
+  graphFailures poor target-progress coverage=87, disconnected candidate paths=9
+  best=sf-r112.5-s1.2-e565.7-n-565.7 rank=42 streetFit=0.765 feasibility=0.725 shape=n/a coverage=0.375 order=n/a backtrack=0.001 gap=0.625 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Y | Downtown Cairo | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=24260 runtime=4081ms
+  graphFailures poor target-progress coverage=91, disconnected candidate paths=5
+  best=sf-r225-s1.0-e565.7-n-565.7 rank=61 streetFit=0.765 feasibility=0.730 shape=n/a coverage=0.438 order=n/a backtrack=0.000 gap=0.500 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Z | Downtown Cairo | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=11 productValid=5 routed=3 accepted=2 graphEdges=24260 runtime=4081ms
+  graphFailures poor target-progress coverage=79, disconnected candidate paths=6
+  best=sf-r180-s0.6-e282.8-n282.8 rank=75 streetFit=0.783 feasibility=0.883 shape=0.843 coverage=0.800 order=0.779 backtrack=0.027 gap=0.063 finalLength=1095 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+A | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=33363ms
+  graphFailures poor target-progress coverage=88, disconnected candidate paths=8
+  best=sf-r90-s0.6-e905.1-n905.1 rank=41 streetFit=0.772 feasibility=0.677 shape=n/a coverage=0.292 order=n/a backtrack=0.000 gap=0.271 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+B | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=11883ms
+  graphFailures disconnected candidate paths=15, poor target-progress coverage=81
+  best=sf-r0-s0.6-e640-n0 rank=34 streetFit=0.760 feasibility=0.717 shape=n/a coverage=0.479 order=n/a backtrack=0.000 gap=0.229 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+C | Downtown Cairo | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=60918 runtime=28655ms
+  graphFailures poor target-progress coverage=77, disconnected candidate paths=18
+  best=sf-r135-s0.6-e640-n0 rank=11 streetFit=0.768 feasibility=0.744 shape=0.734 coverage=0.662 order=0.677 backtrack=0.022 gap=0.292 finalLength=1970 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+D | Downtown Cairo | 4000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=1 accepted=0 graphEdges=60918 runtime=12701ms
+  graphFailures poor target-progress coverage=87, disconnected candidate paths=8
+  best=sf-r270-s0.6-e0-n640 rank=57 streetFit=0.757 feasibility=0.758 shape=0.715 coverage=0.713 order=0.499 backtrack=0.000 gap=0.313 finalLength=2023 rejections=order
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: order.
+E | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=33808ms
+  graphFailures disconnected candidate paths=17, poor target-progress coverage=79
+  best=sf-r157.5-s0.6-e1280-n0 rank=41 streetFit=0.778 feasibility=0.660 shape=n/a coverage=0.292 order=n/a backtrack=0.005 gap=0.563 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+F | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=38456ms
+  graphFailures poor target-progress coverage=77, disconnected candidate paths=19
+  best=sf-r0-s1.2-e640-n0 rank=5 streetFit=0.786 feasibility=0.656 shape=n/a coverage=0.229 order=n/a backtrack=0.000 gap=0.688 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+G | Downtown Cairo | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=60918 runtime=22070ms
+  graphFailures disconnected candidate paths=13, poor target-progress coverage=82
+  best=sf-r180-s0.6-e1280-n0 rank=13 streetFit=0.771 feasibility=0.718 shape=0.833 coverage=0.738 order=0.779 backtrack=0.022 gap=0.125 finalLength=2495 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+H | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=67878ms
+  graphFailures poor target-progress coverage=84, disconnected candidate paths=12
+  best=sf-r67.5-s0.8-e640-n0 rank=55 streetFit=0.781 feasibility=0.691 shape=n/a coverage=0.354 order=n/a backtrack=0.000 gap=0.271 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+I | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=10405ms
+  graphFailures poor target-progress coverage=78, disconnected candidate paths=18
+  best=sf-r0-s0.8-e1280-n0 rank=6 streetFit=0.791 feasibility=0.722 shape=n/a coverage=0.500 order=n/a backtrack=0.000 gap=0.188 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+J | Downtown Cairo | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=5 productValid=4 routed=3 accepted=3 graphEdges=60918 runtime=18551ms
+  graphFailures poor target-progress coverage=83, disconnected candidate paths=8
+  best=sf-r0-s0.6-e0-n640 rank=3 streetFit=0.786 feasibility=0.834 shape=0.870 coverage=0.838 order=0.813 backtrack=0.000 gap=0.104 finalLength=2152 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+K | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=41749ms
+  graphFailures poor target-progress coverage=75, disconnected candidate paths=21
+  best=sf-r135-s0.6-e1280-n0 rank=27 streetFit=0.765 feasibility=0.719 shape=n/a coverage=0.313 order=n/a backtrack=0.000 gap=0.375 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+L | Downtown Cairo | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=1 routed=2 accepted=1 graphEdges=60918 runtime=9397ms
+  graphFailures poor target-progress coverage=79, disconnected candidate paths=15
+  best=sf-r90-s0.6-e0-n640 rank=9 streetFit=0.786 feasibility=0.727 shape=0.824 coverage=0.813 order=0.751 backtrack=0.072 gap=0.208 finalLength=2298 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+M | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=9473ms
+  graphFailures poor target-progress coverage=90, disconnected candidate paths=6
+  best=sf-r270-s0.8-e0-n640 rank=5 streetFit=0.817 feasibility=0.699 shape=n/a coverage=0.542 order=n/a backtrack=0.043 gap=0.250 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+N | Downtown Cairo | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=60918 runtime=8455ms
+  graphFailures poor target-progress coverage=88, disconnected candidate paths=7
+  best=sf-r270-s0.6-e0-n640 rank=40 streetFit=0.796 feasibility=0.730 shape=0.777 coverage=0.725 order=0.650 backtrack=0.004 gap=0.208 finalLength=2084 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+O | Downtown Cairo | 4000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=1 accepted=0 graphEdges=60918 runtime=21641ms
+  graphFailures poor target-progress coverage=84, disconnected candidate paths=10, unknown=1
+  best=sf-r67.5-s0.6-e452.5-n452.5 rank=80 streetFit=0.745 feasibility=0.736 shape=0.727 coverage=0.713 order=0.562 backtrack=0.000 gap=0.313 finalLength=2007 rejections=order
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: order.
+P | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=12233ms
+  graphFailures poor target-progress coverage=80, disconnected candidate paths=16
+  best=sf-r270-s0.8-e640-n0 rank=66 streetFit=0.755 feasibility=0.664 shape=n/a coverage=0.354 order=n/a backtrack=0.000 gap=0.563 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Q | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=42695ms
+  graphFailures poor target-progress coverage=58, disconnected candidate paths=38
+  best=sf-r90-s0.6-e452.5-n452.5 rank=25 streetFit=0.759 feasibility=0.710 shape=n/a coverage=0.458 order=n/a backtrack=0.000 gap=0.229 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+R | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=11316ms
+  graphFailures poor target-progress coverage=85, disconnected candidate paths=11
+  best=sf-r270-s1.0-e640-n0 rank=42 streetFit=0.762 feasibility=0.659 shape=n/a coverage=0.313 order=n/a backtrack=0.000 gap=0.625 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+S | Downtown Cairo | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=2 routed=2 accepted=2 graphEdges=60918 runtime=17939ms
+  graphFailures poor target-progress coverage=81, disconnected candidate paths=13
+  best=sf-r202.5-s0.6-e640-n0 rank=6 streetFit=0.791 feasibility=0.758 shape=0.865 coverage=0.825 order=0.805 backtrack=0.001 gap=0.208 finalLength=2408 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+T | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=10031ms
+  graphFailures poor target-progress coverage=86, disconnected candidate paths=10
+  best=sf-r90-s0.6-e452.5-n452.5 rank=38 streetFit=0.766 feasibility=0.731 shape=n/a coverage=0.521 order=n/a backtrack=0.002 gap=0.354 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+U | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=21426ms
+  graphFailures disconnected candidate paths=15, poor target-progress coverage=81
+  best=sf-r90-s0.6-e905.1-n905.1 rank=7 streetFit=0.801 feasibility=0.709 shape=n/a coverage=0.458 order=n/a backtrack=0.004 gap=0.521 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+V | Downtown Cairo | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=3 productValid=3 routed=3 accepted=3 graphEdges=60918 runtime=9170ms
+  graphFailures disconnected candidate paths=14, poor target-progress coverage=79
+  best=sf-r90-s0.6-e0-n0 rank=27 streetFit=0.791 feasibility=0.797 shape=0.879 coverage=0.825 order=0.821 backtrack=0.000 gap=0.125 finalLength=2403 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+W | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=10382ms
+  graphFailures poor target-progress coverage=77, disconnected candidate paths=19
+  best=sf-r67.5-s0.8-e0-n640 rank=61 streetFit=0.795 feasibility=0.713 shape=n/a coverage=0.542 order=n/a backtrack=0.019 gap=0.187 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+X | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=52058ms
+  graphFailures disconnected candidate paths=22, poor target-progress coverage=74
+  best=sf-r135-s1.0-e0-n-640 rank=6 streetFit=0.775 feasibility=0.692 shape=n/a coverage=0.271 order=n/a backtrack=0.004 gap=0.667 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Y | Downtown Cairo | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=60918 runtime=9916ms
+  graphFailures poor target-progress coverage=70, disconnected candidate paths=26
+  best=sf-r135-s0.6-e0-n-640 rank=10 streetFit=0.787 feasibility=0.730 shape=n/a coverage=0.396 order=n/a backtrack=0.000 gap=0.479 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Z | Downtown Cairo | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=60918 runtime=9645ms
+  graphFailures poor target-progress coverage=89, disconnected candidate paths=6
+  best=sf-r135-s0.6-e640-n0 rank=79 streetFit=0.776 feasibility=0.763 shape=0.827 coverage=0.713 order=0.785 backtrack=0.000 gap=0.125 finalLength=2108 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+A | Zamalek | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=23432 runtime=10582ms
+  graphFailures poor target-progress coverage=84, disconnected candidate paths=12
+  best=sf-r90-s1.4-e0-n-400 rank=25 streetFit=0.781 feasibility=0.680 shape=n/a coverage=0.208 order=n/a backtrack=0.000 gap=0.750 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+B | Zamalek | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=0 routed=1 accepted=0 graphEdges=23432 runtime=4336ms
+  graphFailures poor target-progress coverage=92, excessive backtracking=1, disconnected candidate paths=1
+  best=sf-r135-s0.6-e400-n0 rank=25 streetFit=0.766 feasibility=0.770 shape=0.605 coverage=0.625 order=0.217 backtrack=0.172 gap=0.271 finalLength=1018 rejections=shapeScore,order
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: shapeScore, order.
+C | Zamalek | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=8 productValid=4 routed=3 accepted=3 graphEdges=23432 runtime=8120ms
+  graphFailures poor target-progress coverage=80, disconnected candidate paths=8
+  best=sf-r337.5-s0.6-e282.8-n-282.8 rank=33 streetFit=0.755 feasibility=0.873 shape=0.842 coverage=0.675 order=0.830 backtrack=0.000 gap=0.063 finalLength=1189 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+D | Zamalek | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=23432 runtime=3887ms
+  graphFailures poor target-progress coverage=92, excessive backtracking=2, disconnected candidate paths=2
+  best=sf-r247.5-s0.6-e800-n0 rank=93 streetFit=0.748 feasibility=0.804 shape=n/a coverage=0.729 order=n/a backtrack=0.000 gap=0.250 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+E | Zamalek | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=23432 runtime=11181ms
+  graphFailures disconnected candidate paths=19, poor target-progress coverage=77
+  best=sf-r157.5-s0.6-e-282.8-n-282.8 rank=55 streetFit=0.775 feasibility=0.768 shape=n/a coverage=0.479 order=n/a backtrack=0.000 gap=0.500 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+F | Zamalek | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=23432 runtime=12635ms
+  graphFailures poor target-progress coverage=83, disconnected candidate paths=13
+  best=sf-r337.5-s0.6-e282.8-n-282.8 rank=62 streetFit=0.757 feasibility=0.718 shape=n/a coverage=0.375 order=n/a backtrack=0.000 gap=0.604 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+G | Zamalek | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=3 productValid=3 routed=3 accepted=3 graphEdges=23432 runtime=6867ms
+  graphFailures poor target-progress coverage=86, disconnected candidate paths=7
+  best=sf-r157.5-s1.0-e800-n0 rank=16 streetFit=0.770 feasibility=0.789 shape=0.824 coverage=0.825 order=0.764 backtrack=0.016 gap=0.167 finalLength=2213 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+H | Zamalek | 2000m | GRAPH_FEASIBLE
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=0 accepted=0 graphEdges=23432 runtime=21419ms
+  graphFailures poor target-progress coverage=74, disconnected candidate paths=21
+  best=sf-r270-s0.6-e-800-n0 rank=84 streetFit=0.769 feasibility=0.674 shape=0.571 coverage=0.537 order=0.283 backtrack=0.281 gap=0.208 finalLength=n/a rejections=shapeScore,coverage,order,backtrack
+  rejectionStage=pipeline_quality reason=Graph-feasible candidates existed but all failed the pipeline quality gate.
+I | Zamalek | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=3 productValid=0 routed=3 accepted=0 graphEdges=23432 runtime=3315ms
+  graphFailures poor target-progress coverage=67, disconnected candidate paths=26
+  best=sf-r180-s0.6-e-565.7-n565.7 rank=10 streetFit=0.790 feasibility=0.757 shape=0.638 coverage=0.500 order=0.510 backtrack=0.002 gap=0.146 finalLength=722 rejections=shapeScore,coverage,order
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: shapeScore, coverage, order.
+J | Zamalek | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=4 productValid=2 routed=3 accepted=2 graphEdges=23432 runtime=5593ms
+  graphFailures poor target-progress coverage=82, disconnected candidate paths=10
+  best=sf-r157.5-s0.6-e0-n-400 rank=0 streetFit=0.815 feasibility=0.841 shape=0.795 coverage=0.675 order=0.797 backtrack=0.001 gap=0.083 finalLength=831 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+K | Zamalek | 2000m | GRAPH_FEASIBLE
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=0 accepted=0 graphEdges=23432 runtime=13765ms
+  graphFailures poor target-progress coverage=92, disconnected candidate paths=3
+  best=sf-r270-s0.6-e-565.7-n-565.7 rank=14 streetFit=0.776 feasibility=0.608 shape=0.495 coverage=0.438 order=0.179 backtrack=0.361 gap=0.188 finalLength=n/a rejections=shapeScore,coverage,order,backtrack
+  rejectionStage=pipeline_quality reason=Graph-feasible candidates existed but all failed the pipeline quality gate.
+L | Zamalek | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=12 productValid=6 routed=3 accepted=3 graphEdges=23432 runtime=3398ms
+  graphFailures poor target-progress coverage=75, disconnected candidate paths=9
+  best=sf-r315-s1.2-e-800-n0 rank=8 streetFit=0.768 feasibility=0.756 shape=0.890 coverage=0.850 order=0.860 backtrack=0.008 gap=0.104 finalLength=1516 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+M | Zamalek | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=4 productValid=1 routed=3 accepted=1 graphEdges=23432 runtime=3096ms
+  graphFailures poor target-progress coverage=78, disconnected candidate paths=14
+  best=sf-r270-s0.6-e-800-n0 rank=1 streetFit=0.819 feasibility=0.820 shape=0.753 coverage=0.650 order=0.662 backtrack=0.004 gap=0.146 finalLength=965 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+N | Zamalek | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=1 accepted=0 graphEdges=23432 runtime=2743ms
+  graphFailures poor target-progress coverage=83, disconnected candidate paths=12
+  best=sf-r247.5-s0.6-e0-n0 rank=81 streetFit=0.781 feasibility=0.722 shape=0.597 coverage=0.438 order=0.500 backtrack=0.027 gap=0.375 finalLength=758 rejections=shapeScore,coverage,order,largestGap
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: shapeScore, coverage, order, largestGap.
+O | Zamalek | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=5 productValid=0 routed=2 accepted=0 graphEdges=23432 runtime=6776ms
+  graphFailures poor target-progress coverage=87, disconnected candidate paths=2, excessive backtracking=2
+  best=sf-r0-s0.8-e0-n0 rank=93 streetFit=0.750 feasibility=0.798 shape=0.729 coverage=0.688 order=0.591 backtrack=0.028 gap=0.292 finalLength=1230 rejections=order
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: order.
+P | Zamalek | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=23432 runtime=3793ms
+  graphFailures poor target-progress coverage=89, disconnected candidate paths=7
+  best=sf-r337.5-s1.2-e0-n-800 rank=86 streetFit=0.748 feasibility=0.688 shape=n/a coverage=0.229 order=n/a backtrack=0.000 gap=0.771 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Q | Zamalek | 2000m | GRAPH_FEASIBLE
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=0 accepted=0 graphEdges=23432 runtime=14060ms
+  graphFailures poor target-progress coverage=72, disconnected candidate paths=23
+  best=sf-r45-s0.6-e282.8-n-282.8 rank=15 streetFit=0.770 feasibility=0.608 shape=0.443 coverage=0.338 order=0.189 backtrack=0.382 gap=0.333 finalLength=n/a rejections=shapeScore,coverage,order,backtrack,largestGap
+  rejectionStage=pipeline_quality reason=Graph-feasible candidates existed but all failed the pipeline quality gate.
+R | Zamalek | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=1 accepted=0 graphEdges=23432 runtime=3620ms
+  graphFailures poor target-progress coverage=82, disconnected candidate paths=13
+  best=sf-r22.5-s0.6-e0-n0 rank=53 streetFit=0.759 feasibility=0.743 shape=0.656 coverage=0.512 order=0.557 backtrack=0.145 gap=0.313 finalLength=723 rejections=shapeScore,coverage,order
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: shapeScore, coverage, order.
+S | Zamalek | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=5 productValid=2 routed=3 accepted=2 graphEdges=23432 runtime=5360ms
+  graphFailures poor target-progress coverage=79, disconnected candidate paths=12
+  best=sf-r247.5-s1.2-e-800-n0 rank=89 streetFit=0.754 feasibility=0.761 shape=0.868 coverage=0.887 order=0.840 backtrack=0.000 gap=0.125 finalLength=2686 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+T | Zamalek | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=6 productValid=1 routed=3 accepted=1 graphEdges=23432 runtime=3296ms
+  graphFailures poor target-progress coverage=75, disconnected candidate paths=15
+  best=sf-r157.5-s0.6-e-800-n0 rank=5 streetFit=0.786 feasibility=0.710 shape=0.730 coverage=0.588 order=0.619 backtrack=0.217 gap=0.208 finalLength=1119 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+U | Zamalek | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=3 productValid=0 routed=3 accepted=0 graphEdges=23432 runtime=6252ms
+  graphFailures disconnected candidate paths=15, poor target-progress coverage=78
+  best=sf-r67.5-s0.6-e-282.8-n-282.8 rank=79 streetFit=0.759 feasibility=0.778 shape=0.779 coverage=0.537 order=0.785 backtrack=0.000 gap=0.375 finalLength=1065 rejections=coverage,largestGap
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: coverage, largestGap.
+V | Zamalek | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=1 routed=2 accepted=1 graphEdges=23432 runtime=2562ms
+  graphFailures poor target-progress coverage=75, disconnected candidate paths=19
+  best=sf-r112.5-s0.8-e-565.7-n565.7 rank=74 streetFit=0.764 feasibility=0.795 shape=0.783 coverage=0.650 order=0.753 backtrack=0.014 gap=0.167 finalLength=1362 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+W | Zamalek | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=0 routed=2 accepted=0 graphEdges=23432 runtime=3017ms
+  graphFailures poor target-progress coverage=74, disconnected candidate paths=20
+  best=sf-r112.5-s0.6-e-565.7-n565.7 rank=47 streetFit=0.788 feasibility=0.762 shape=0.688 coverage=0.450 order=0.671 backtrack=0.012 gap=0.104 finalLength=711 rejections=shapeScore,coverage
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: shapeScore, coverage.
+X | Zamalek | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=23432 runtime=14665ms
+  graphFailures poor target-progress coverage=87, disconnected candidate paths=9
+  best=sf-r22.5-s0.6-e0-n-400 rank=45 streetFit=0.764 feasibility=0.740 shape=n/a coverage=0.375 order=n/a backtrack=0.001 gap=0.313 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Y | Zamalek | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=23432 runtime=2944ms
+  graphFailures poor target-progress coverage=80, disconnected candidate paths=16
+  best=sf-r270-s0.6-e-400-n0 rank=11 streetFit=0.775 feasibility=0.722 shape=n/a coverage=0.479 order=n/a backtrack=0.000 gap=0.500 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Z | Zamalek | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=1 accepted=0 graphEdges=23432 runtime=2967ms
+  graphFailures poor target-progress coverage=78, disconnected candidate paths=17
+  best=sf-r0-s0.6-e-800-n0 rank=13 streetFit=0.801 feasibility=0.731 shape=0.630 coverage=0.512 order=0.476 backtrack=0.005 gap=0.417 finalLength=948 rejections=shapeScore,coverage,order,largestGap
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: shapeScore, coverage, order, largestGap.
+A | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=27717ms
+  graphFailures poor target-progress coverage=78, disconnected candidate paths=18
+  best=sf-r270-s0.6-e0-n0 rank=77 streetFit=0.768 feasibility=0.650 shape=n/a coverage=0.250 order=n/a backtrack=0.001 gap=0.688 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+B | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=10417ms
+  graphFailures poor target-progress coverage=92, disconnected candidate paths=4
+  best=sf-r135-s0.6-e0-n0 rank=24 streetFit=0.764 feasibility=0.656 shape=n/a coverage=0.396 order=n/a backtrack=0.188 gap=0.417 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+C | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=24838ms
+  graphFailures poor target-progress coverage=77, disconnected candidate paths=19
+  best=sf-r135-s0.8-e905.1-n905.1 rank=37 streetFit=0.743 feasibility=0.693 shape=n/a coverage=0.375 order=n/a backtrack=0.000 gap=0.625 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+D | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=10348ms
+  graphFailures poor target-progress coverage=89, disconnected candidate paths=7
+  best=sf-r270-s0.6-e-905.1-n905.1 rank=0 streetFit=0.805 feasibility=0.562 shape=n/a coverage=0.313 order=n/a backtrack=0.519 gap=0.667 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+E | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=31706ms
+  graphFailures poor target-progress coverage=76, disconnected candidate paths=20
+  best=sf-r0-s0.6-e1280-n0 rank=6 streetFit=0.791 feasibility=0.660 shape=n/a coverage=0.313 order=n/a backtrack=0.000 gap=0.563 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+F | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=34238ms
+  graphFailures poor target-progress coverage=81, disconnected candidate paths=15
+  best=sf-r0-s0.6-e-905.1-n905.1 rank=0 streetFit=0.805 feasibility=0.658 shape=n/a coverage=0.208 order=n/a backtrack=0.000 gap=0.688 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+G | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=19248ms
+  graphFailures poor target-progress coverage=80, disconnected candidate paths=16
+  best=sf-r112.5-s0.6-e1280-n0 rank=63 streetFit=0.745 feasibility=0.659 shape=n/a coverage=0.375 order=n/a backtrack=0.000 gap=0.479 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+H | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=59568ms
+  graphFailures poor target-progress coverage=78, disconnected candidate paths=18
+  best=sf-r270-s0.6-e1280-n0 rank=5 streetFit=0.801 feasibility=0.686 shape=n/a coverage=0.375 order=n/a backtrack=0.000 gap=0.313 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+I | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=8476ms
+  graphFailures poor target-progress coverage=72, disconnected candidate paths=24
+  best=sf-r22.5-s0.6-e1280-n0 rank=37 streetFit=0.768 feasibility=0.706 shape=n/a coverage=0.500 order=n/a backtrack=0.000 gap=0.333 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+J | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=15623ms
+  graphFailures poor target-progress coverage=83, disconnected candidate paths=13
+  best=sf-r0-s0.6-e1280-n0 rank=7 streetFit=0.777 feasibility=0.707 shape=n/a coverage=0.500 order=n/a backtrack=0.000 gap=0.271 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+K | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=35496ms
+  graphFailures poor target-progress coverage=82, disconnected candidate paths=14
+  best=sf-r180-s0.6-e0-n1280 rank=37 streetFit=0.766 feasibility=0.695 shape=n/a coverage=0.375 order=n/a backtrack=0.000 gap=0.375 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+L | Zamalek | 4000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=0 routed=1 accepted=0 graphEdges=61962 runtime=7654ms
+  graphFailures poor target-progress coverage=66, disconnected candidate paths=28
+  best=sf-r157.5-s0.6-e0-n640 rank=37 streetFit=0.753 feasibility=0.669 shape=0.635 coverage=0.613 order=0.486 backtrack=0.087 gap=0.375 finalLength=2535 rejections=shapeScore,order,largestGap
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: shapeScore, order, largestGap.
+M | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=7329ms
+  graphFailures poor target-progress coverage=77, disconnected candidate paths=19
+  best=sf-r270-s0.6-e-905.1-n905.1 rank=34 streetFit=0.792 feasibility=0.668 shape=n/a coverage=0.354 order=n/a backtrack=0.010 gap=0.646 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+N | Zamalek | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=61962 runtime=6696ms
+  graphFailures poor target-progress coverage=71, disconnected candidate paths=24
+  best=sf-r90-s0.8-e-905.1-n-905.1 rank=77 streetFit=0.783 feasibility=0.729 shape=0.813 coverage=0.738 order=0.680 backtrack=0.029 gap=0.188 finalLength=3151 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+O | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=18925ms
+  graphFailures poor target-progress coverage=92, disconnected candidate paths=4
+  best=sf-r270-s0.6-e0-n1280 rank=0 streetFit=0.799 feasibility=0.731 shape=n/a coverage=0.521 order=n/a backtrack=0.000 gap=0.458 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+P | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=9717ms
+  graphFailures poor target-progress coverage=84, disconnected candidate paths=12
+  best=sf-r270-s0.6-e-905.1-n905.1 rank=1 streetFit=0.791 feasibility=0.663 shape=n/a coverage=0.229 order=n/a backtrack=0.001 gap=0.771 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Q | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=36657ms
+  graphFailures disconnected candidate paths=13, poor target-progress coverage=83
+  best=sf-r45-s0.6-e1280-n0 rank=68 streetFit=0.751 feasibility=0.659 shape=n/a coverage=0.354 order=n/a backtrack=0.000 gap=0.542 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+R | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=9771ms
+  graphFailures poor target-progress coverage=79, disconnected candidate paths=17
+  best=sf-r67.5-s0.6-e1280-n0 rank=9 streetFit=0.778 feasibility=0.670 shape=n/a coverage=0.438 order=n/a backtrack=0.269 gap=0.417 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+S | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=15370ms
+  graphFailures disconnected candidate paths=21, poor target-progress coverage=75
+  best=sf-r45-s0.6-e1280-n0 rank=10 streetFit=0.779 feasibility=0.715 shape=n/a coverage=0.542 order=n/a backtrack=0.004 gap=0.375 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+T | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=8001ms
+  graphFailures poor target-progress coverage=75, disconnected candidate paths=21
+  best=sf-r90-s0.6-e905.1-n905.1 rank=0 streetFit=0.818 feasibility=0.713 shape=n/a coverage=0.438 order=n/a backtrack=0.000 gap=0.375 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+U | Zamalek | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=61962 runtime=18029ms
+  graphFailures poor target-progress coverage=60, disconnected candidate paths=35
+  best=sf-r90-s0.6-e-905.1-n905.1 rank=0 streetFit=0.811 feasibility=0.749 shape=0.801 coverage=0.650 order=0.754 backtrack=0.016 gap=0.167 finalLength=2303 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+V | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=7685ms
+  graphFailures poor target-progress coverage=70, disconnected candidate paths=26
+  best=sf-r247.5-s0.6-e-905.1-n-905.1 rank=80 streetFit=0.765 feasibility=0.689 shape=n/a coverage=0.500 order=n/a backtrack=0.000 gap=0.333 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+W | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=8706ms
+  graphFailures poor target-progress coverage=70, disconnected candidate paths=26
+  best=sf-r90-s0.6-e-905.1-n905.1 rank=0 streetFit=0.821 feasibility=0.680 shape=n/a coverage=0.458 order=n/a backtrack=0.012 gap=0.417 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+X | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=42644ms
+  graphFailures poor target-progress coverage=78, disconnected candidate paths=18
+  best=sf-r45-s0.6-e-905.1-n905.1 rank=17 streetFit=0.772 feasibility=0.657 shape=n/a coverage=0.229 order=n/a backtrack=0.002 gap=0.667 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Y | Zamalek | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=61962 runtime=8602ms
+  graphFailures poor target-progress coverage=68, disconnected candidate paths=28
+  best=sf-r135-s0.6-e-905.1-n905.1 rank=15 streetFit=0.774 feasibility=0.655 shape=n/a coverage=0.313 order=n/a backtrack=0.000 gap=0.500 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Z | Zamalek | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=61962 runtime=8177ms
+  graphFailures poor target-progress coverage=74, disconnected candidate paths=21
+  best=sf-r135-s0.6-e-905.1-n-905.1 rank=56 streetFit=0.772 feasibility=0.752 shape=0.862 coverage=0.825 order=0.826 backtrack=0.007 gap=0.104 finalLength=2219 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+A | Alexandria | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=14650 runtime=12597ms
+  graphFailures poor target-progress coverage=95, disconnected candidate paths=1
+  best=sf-r90-s0.8-e282.8-n-282.8 rank=4 streetFit=0.804 feasibility=0.682 shape=n/a coverage=0.188 order=n/a backtrack=0.000 gap=0.750 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+B | Alexandria | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=3 productValid=0 routed=1 accepted=0 graphEdges=14650 runtime=5616ms
+  graphFailures poor target-progress coverage=91, disconnected candidate paths=1, excessive backtracking=1
+  best=sf-r315-s1.0-e-282.8-n-282.8 rank=9 streetFit=0.773 feasibility=0.770 shape=0.632 coverage=0.625 order=0.427 backtrack=0.000 gap=0.271 finalLength=1094 rejections=shapeScore,order
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: shapeScore, order.
+C | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=20 productValid=9 routed=3 accepted=3 graphEdges=14650 runtime=9184ms
+  graphFailures poor target-progress coverage=72, disconnected candidate paths=4
+  best=sf-r157.5-s1.0-e0-n-400 rank=61 streetFit=0.752 feasibility=0.788 shape=0.880 coverage=0.813 order=0.849 backtrack=0.000 gap=0.167 finalLength=2740 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+D | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=8 productValid=1 routed=3 accepted=1 graphEdges=14650 runtime=5076ms
+  graphFailures poor target-progress coverage=83, excessive backtracking=3, unknown=1, disconnected candidate paths=1
+  best=sf-r135-s1.2-e0-n0 rank=91 streetFit=0.750 feasibility=0.747 shape=0.740 coverage=0.725 order=0.625 backtrack=0.000 gap=0.313 finalLength=1733 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+E | Alexandria | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=14650 runtime=13112ms
+  graphFailures poor target-progress coverage=93, disconnected candidate paths=3
+  best=sf-r337.5-s1.2-e282.8-n-282.8 rank=67 streetFit=0.776 feasibility=0.691 shape=n/a coverage=0.333 order=n/a backtrack=0.003 gap=0.563 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+F | Alexandria | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=14650 runtime=14307ms
+  graphFailures poor target-progress coverage=87, disconnected candidate paths=9
+  best=sf-r135-s1.0-e565.7-n565.7 rank=66 streetFit=0.759 feasibility=0.715 shape=n/a coverage=0.354 order=n/a backtrack=0.000 gap=0.646 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+G | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=14650 runtime=8165ms
+  graphFailures poor target-progress coverage=91, disconnected candidate paths=4
+  best=sf-r22.5-s1.2-e565.7-n565.7 rank=11 streetFit=0.771 feasibility=0.810 shape=0.901 coverage=0.912 order=0.842 backtrack=0.000 gap=0.063 finalLength=2377 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+H | Alexandria | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=1 accepted=0 graphEdges=14650 runtime=25303ms
+  graphFailures poor target-progress coverage=93, disconnected candidate paths=2
+  best=sf-r270-s0.6-e282.8-n-282.8 rank=9 streetFit=0.804 feasibility=0.765 shape=0.629 coverage=0.550 order=0.508 backtrack=0.006 gap=0.208 finalLength=543 rejections=shapeScore,coverage,order
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: shapeScore, coverage, order.
+I | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=16 productValid=3 routed=3 accepted=2 graphEdges=14650 runtime=4192ms
+  graphFailures poor target-progress coverage=77, disconnected candidate paths=3
+  best=sf-r135-s1.2-e282.8-n-282.8 rank=23 streetFit=0.772 feasibility=0.776 shape=0.752 coverage=0.625 order=0.757 backtrack=0.000 gap=0.188 finalLength=1284 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+J | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=15 productValid=9 routed=3 accepted=3 graphEdges=14650 runtime=6544ms
+  graphFailures poor target-progress coverage=81
+  best=sf-r45-s1.2-e-800-n0 rank=50 streetFit=0.763 feasibility=0.780 shape=0.859 coverage=0.800 order=0.845 backtrack=0.012 gap=0.125 finalLength=2091 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+K | Alexandria | 2000m | GRAPH_FEASIBLE
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=0 routed=0 accepted=0 graphEdges=14650 runtime=16186ms
+  graphFailures poor target-progress coverage=91, disconnected candidate paths=4
+  best=sf-r270-s0.6-e400-n0 rank=74 streetFit=0.761 feasibility=0.671 shape=0.505 coverage=0.338 order=0.245 backtrack=0.155 gap=0.188 finalLength=n/a rejections=shapeScore,coverage,order
+  rejectionStage=pipeline_quality reason=Graph-feasible candidates existed but all failed the pipeline quality gate.
+L | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=9 productValid=6 routed=3 accepted=3 graphEdges=14650 runtime=3415ms
+  graphFailures poor target-progress coverage=84, disconnected candidate paths=3
+  best=sf-r135-s0.8-e-565.7-n-565.7 rank=91 streetFit=0.756 feasibility=0.868 shape=0.878 coverage=0.800 order=0.878 backtrack=0.000 gap=0.083 finalLength=1092 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+M | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=5 productValid=3 routed=3 accepted=3 graphEdges=14650 runtime=3990ms
+  graphFailures poor target-progress coverage=91
+  best=sf-r135-s1.0-e282.8-n282.8 rank=84 streetFit=0.790 feasibility=0.771 shape=0.763 coverage=0.675 order=0.705 backtrack=0.000 gap=0.271 finalLength=1463 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+N | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=6 productValid=3 routed=3 accepted=3 graphEdges=14650 runtime=3609ms
+  graphFailures poor target-progress coverage=88, disconnected candidate paths=2
+  best=sf-r90-s1.0-e282.8-n-282.8 rank=63 streetFit=0.796 feasibility=0.821 shape=0.818 coverage=0.787 order=0.730 backtrack=0.000 gap=0.125 finalLength=1728 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+O | Alexandria | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=6 productValid=0 routed=3 accepted=0 graphEdges=14650 runtime=8021ms
+  graphFailures poor target-progress coverage=83, excessive backtracking=3, unknown=1, disconnected candidate paths=3
+  best=sf-r247.5-s0.8-e565.7-n-565.7 rank=36 streetFit=0.757 feasibility=0.784 shape=0.732 coverage=0.675 order=0.589 backtrack=0.017 gap=0.292 finalLength=1356 rejections=order
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: order.
+P | Alexandria | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=14650 runtime=3978ms
+  graphFailures poor target-progress coverage=87, disconnected candidate paths=9
+  best=sf-r157.5-s1.2-e0-n-400 rank=49 streetFit=0.757 feasibility=0.682 shape=n/a coverage=0.229 order=n/a backtrack=0.022 gap=0.750 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Q | Alexandria | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=14650 runtime=17025ms
+  graphFailures disconnected candidate paths=12, poor target-progress coverage=84
+  best=sf-r22.5-s0.6-e800-n0 rank=77 streetFit=0.755 feasibility=0.741 shape=n/a coverage=0.500 order=n/a backtrack=0.000 gap=0.208 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+R | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=2 routed=2 accepted=2 graphEdges=14650 runtime=4518ms
+  graphFailures poor target-progress coverage=93, disconnected candidate paths=1
+  best=sf-r315-s0.8-e-282.8-n-282.8 rank=95 streetFit=0.759 feasibility=0.810 shape=0.773 coverage=0.713 order=0.681 backtrack=0.000 gap=0.083 finalLength=1284 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+S | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=10 productValid=5 routed=3 accepted=3 graphEdges=14650 runtime=6391ms
+  graphFailures poor target-progress coverage=81, disconnected candidate paths=5
+  best=sf-r22.5-s1.4-e565.7-n565.7 rank=52 streetFit=0.768 feasibility=0.811 shape=0.880 coverage=0.900 order=0.840 backtrack=0.006 gap=0.104 finalLength=3092 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+T | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=5 productValid=1 routed=3 accepted=1 graphEdges=14650 runtime=3371ms
+  graphFailures poor target-progress coverage=79, disconnected candidate paths=12
+  best=sf-r135-s0.8-e282.8-n-282.8 rank=66 streetFit=0.759 feasibility=0.738 shape=0.723 coverage=0.675 order=0.668 backtrack=0.211 gap=0.313 finalLength=1088 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+U | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=15 productValid=9 routed=3 accepted=3 graphEdges=14650 runtime=6984ms
+  graphFailures poor target-progress coverage=77, disconnected candidate paths=4
+  best=sf-r247.5-s0.6-e282.8-n-282.8 rank=87 streetFit=0.772 feasibility=0.887 shape=0.884 coverage=0.762 order=0.873 backtrack=0.000 gap=0.146 finalLength=1174 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+V | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=17 productValid=13 routed=3 accepted=3 graphEdges=14650 runtime=3383ms
+  graphFailures poor target-progress coverage=78, disconnected candidate paths=1
+  best=sf-r292.5-s0.8-e282.8-n282.8 rank=69 streetFit=0.787 feasibility=0.873 shape=0.880 coverage=0.875 order=0.850 backtrack=0.002 gap=0.063 finalLength=1699 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+W | Alexandria | 2000m | NEAR_MISS
+  placements=1360 streetFitPass=96 graphFeasible=5 productValid=0 routed=3 accepted=0 graphEdges=14650 runtime=3960ms
+  graphFailures poor target-progress coverage=85, disconnected candidate paths=6
+  best=sf-r112.5-s0.6-e400-n0 rank=44 streetFit=0.802 feasibility=0.791 shape=0.729 coverage=0.512 order=0.691 backtrack=0.006 gap=0.208 finalLength=922 rejections=coverage
+  rejectionStage=product_threshold reason=Best routed candidate rejected by: coverage.
+X | Alexandria | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=14650 runtime=17658ms
+  graphFailures poor target-progress coverage=92, disconnected candidate paths=4
+  best=sf-r90-s0.6-e0-n0 rank=0 streetFit=0.802 feasibility=0.761 shape=n/a coverage=0.417 order=n/a backtrack=0.000 gap=0.271 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Y | Alexandria | 2000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=14650 runtime=3444ms
+  graphFailures poor target-progress coverage=87, disconnected candidate paths=9
+  best=sf-r90-s0.8-e0-n0 rank=0 streetFit=0.818 feasibility=0.741 shape=n/a coverage=0.396 order=n/a backtrack=0.000 gap=0.500 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Z | Alexandria | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=13 productValid=8 routed=3 accepted=3 graphEdges=14650 runtime=3673ms
+  graphFailures poor target-progress coverage=80, disconnected candidate paths=3
+  best=sf-r180-s1.2-e282.8-n-282.8 rank=59 streetFit=0.781 feasibility=0.783 shape=0.872 coverage=0.838 order=0.798 backtrack=0.000 gap=0.104 finalLength=2347 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+A | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=25736ms
+  graphFailures poor target-progress coverage=92, disconnected candidate paths=4
+  best=sf-r247.5-s0.8-e0-n0 rank=40 streetFit=0.773 feasibility=0.642 shape=n/a coverage=0.042 order=n/a backtrack=0.000 gap=0.958 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+B | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=9676ms
+  graphFailures poor target-progress coverage=93, disconnected candidate paths=3
+  best=sf-r45-s0.6-e-905.1-n-905.1 rank=39 streetFit=0.763 feasibility=0.624 shape=n/a coverage=0.271 order=n/a backtrack=0.203 gap=0.333 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+C | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=19677ms
+  graphFailures poor target-progress coverage=89, disconnected candidate paths=7
+  best=sf-r225-s0.8-e452.5-n-452.5 rank=6 streetFit=0.771 feasibility=0.714 shape=n/a coverage=0.438 order=n/a backtrack=0.000 gap=0.542 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+D | Alexandria | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=34608 runtime=8543ms
+  graphFailures poor target-progress coverage=90, disconnected candidate paths=5
+  best=sf-r315-s0.6-e-452.5-n-452.5 rank=79 streetFit=0.753 feasibility=0.771 shape=0.749 coverage=0.713 order=0.668 backtrack=0.000 gap=0.313 finalLength=1672 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+E | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=27061ms
+  graphFailures poor target-progress coverage=92, disconnected candidate paths=4
+  best=sf-r180-s1.0-e640-n0 rank=46 streetFit=0.779 feasibility=0.655 shape=n/a coverage=0.313 order=n/a backtrack=0.000 gap=0.562 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+F | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=30542ms
+  graphFailures poor target-progress coverage=85, disconnected candidate paths=11
+  best=sf-r45-s0.6-e640-n0 rank=94 streetFit=0.755 feasibility=0.671 shape=n/a coverage=0.292 order=n/a backtrack=0.000 gap=0.688 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+G | Alexandria | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=34608 runtime=16852ms
+  graphFailures poor target-progress coverage=87, disconnected candidate paths=8
+  best=sf-r157.5-s0.6-e-452.5-n452.5 rank=64 streetFit=0.750 feasibility=0.773 shape=0.719 coverage=0.675 order=0.612 backtrack=0.000 gap=0.313 finalLength=1823 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+H | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=53462ms
+  graphFailures disconnected candidate paths=10, poor target-progress coverage=86
+  best=sf-r90-s0.6-e-452.5-n-452.5 rank=2 streetFit=0.812 feasibility=0.695 shape=n/a coverage=0.417 order=n/a backtrack=0.073 gap=0.271 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+I | Alexandria | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=34608 runtime=7847ms
+  graphFailures poor target-progress coverage=86, disconnected candidate paths=9
+  best=sf-r67.5-s0.6-e1280-n0 rank=21 streetFit=0.767 feasibility=0.734 shape=0.753 coverage=0.662 order=0.701 backtrack=0.000 gap=0.167 finalLength=1522 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+J | Alexandria | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=34608 runtime=13045ms
+  graphFailures poor target-progress coverage=85, disconnected candidate paths=10
+  best=sf-r90-s0.6-e640-n0 rank=70 streetFit=0.749 feasibility=0.718 shape=0.786 coverage=0.625 order=0.679 backtrack=0.022 gap=0.208 finalLength=2411 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+K | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=33351ms
+  graphFailures poor target-progress coverage=76, disconnected candidate paths=20
+  best=sf-r180-s1.2-e-452.5-n-452.5 rank=46 streetFit=0.761 feasibility=0.698 shape=n/a coverage=0.271 order=n/a backtrack=0.000 gap=0.375 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+L | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=6677ms
+  graphFailures poor target-progress coverage=84, disconnected candidate paths=12
+  best=sf-r90-s0.6-e-640-n0 rank=16 streetFit=0.793 feasibility=0.687 shape=n/a coverage=0.479 order=n/a backtrack=0.000 gap=0.438 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+M | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=6956ms
+  graphFailures poor target-progress coverage=85, disconnected candidate paths=11
+  best=sf-r247.5-s0.6-e0-n0 rank=83 streetFit=0.780 feasibility=0.717 shape=n/a coverage=0.500 order=n/a backtrack=0.000 gap=0.208 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+N | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=6174ms
+  graphFailures poor target-progress coverage=83, disconnected candidate paths=13
+  best=sf-r270-s0.6-e-640-n0 rank=1 streetFit=0.830 feasibility=0.718 shape=n/a coverage=0.542 order=n/a backtrack=0.000 gap=0.188 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+O | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=16651ms
+  graphFailures poor target-progress coverage=90, disconnected candidate paths=6
+  best=sf-r225-s0.6-e1280-n0 rank=69 streetFit=0.750 feasibility=0.687 shape=n/a coverage=0.438 order=n/a backtrack=0.001 gap=0.417 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+P | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=8305ms
+  graphFailures poor target-progress coverage=89, disconnected candidate paths=7
+  best=sf-r315-s0.6-e0-n0 rank=73 streetFit=0.755 feasibility=0.665 shape=n/a coverage=0.229 order=n/a backtrack=0.001 gap=0.771 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Q | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=33603ms
+  graphFailures poor target-progress coverage=88, disconnected candidate paths=8
+  best=sf-r180-s0.8-e0-n-640 rank=49 streetFit=0.751 feasibility=0.679 shape=n/a coverage=0.396 order=n/a backtrack=0.022 gap=0.271 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+R | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=8472ms
+  graphFailures poor target-progress coverage=90, disconnected candidate paths=6
+  best=sf-r270-s0.6-e452.5-n-452.5 rank=23 streetFit=0.768 feasibility=0.650 shape=n/a coverage=0.188 order=n/a backtrack=0.000 gap=0.563 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+S | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=12734ms
+  graphFailures poor target-progress coverage=89, disconnected candidate paths=7
+  best=sf-r202.5-s0.8-e640-n0 rank=19 streetFit=0.775 feasibility=0.658 shape=n/a coverage=0.333 order=n/a backtrack=0.000 gap=0.625 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+T | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=6842ms
+  graphFailures poor target-progress coverage=88, disconnected candidate paths=8
+  best=sf-r112.5-s0.6-e1280-n0 rank=53 streetFit=0.762 feasibility=0.726 shape=n/a coverage=0.521 order=n/a backtrack=0.000 gap=0.333 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+U | Alexandria | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=1 productValid=1 routed=1 accepted=1 graphEdges=34608 runtime=14297ms
+  graphFailures poor target-progress coverage=88, disconnected candidate paths=7
+  best=sf-r135-s0.6-e-452.5-n-452.5 rank=68 streetFit=0.767 feasibility=0.785 shape=0.893 coverage=0.825 order=0.879 backtrack=0.000 gap=0.271 finalLength=2417 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+V | Alexandria | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=3 productValid=3 routed=3 accepted=3 graphEdges=34608 runtime=5798ms
+  graphFailures poor target-progress coverage=93
+  best=sf-r292.5-s0.6-e452.5-n452.5 rank=15 streetFit=0.798 feasibility=0.824 shape=0.908 coverage=0.900 order=0.870 backtrack=0.000 gap=0.104 finalLength=2399 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+W | Alexandria | 4000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=2 productValid=2 routed=2 accepted=2 graphEdges=34608 runtime=7332ms
+  graphFailures poor target-progress coverage=87, disconnected candidate paths=7
+  best=sf-r112.5-s0.6-e-452.5-n-452.5 rank=6 streetFit=0.812 feasibility=0.790 shape=0.818 coverage=0.750 order=0.762 backtrack=0.000 gap=0.104 finalLength=1932 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+X | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=38303ms
+  graphFailures poor target-progress coverage=95, disconnected candidate paths=1
+  best=sf-r112.5-s0.6-e452.5-n-452.5 rank=65 streetFit=0.763 feasibility=0.656 shape=n/a coverage=0.292 order=n/a backtrack=0.005 gap=0.292 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Y | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=6672ms
+  graphFailures poor target-progress coverage=90, disconnected candidate paths=6
+  best=sf-r90-s0.8-e-452.5-n-452.5 rank=32 streetFit=0.778 feasibility=0.720 shape=n/a coverage=0.396 order=n/a backtrack=0.000 gap=0.500 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+Z | Alexandria | 4000m | ROUTE_FAILED
+  placements=1360 streetFitPass=96 graphFeasible=0 productValid=0 routed=0 accepted=0 graphEdges=34608 runtime=6517ms
+  graphFailures poor target-progress coverage=85, disconnected candidate paths=11
+  best=sf-r157.5-s0.6-e452.5-n-452.5 rank=15 streetFit=0.794 feasibility=0.757 shape=n/a coverage=0.500 order=n/a backtrack=0.000 gap=0.479 finalLength=n/a rejections=none
+  rejectionStage=graph_search reason=poor target-progress coverage
+
+LOCATION STABILITY
+Downtown Cairo 2000m snapSeparation=81.948m sameWay=true L-status=PASS/PASS
+  A raw=30.044400,31.235700 snap=30.044278,31.235320 distance=39.011m
+  B raw=30.044616,31.235887 snap=30.044686,31.236029 distance=15.769m
+Zamalek 2000m snapSeparation=36.661m sameWay=false L-status=PASS/PASS
+  A raw=30.061900,31.219500 snap=30.062160,31.219267 distance=36.587m
+  B raw=30.062116,31.219687 snap=30.062411,31.219514 distance=36.818m
+Alexandria 2000m snapSeparation=29.853m sameWay=false L-status=PASS/PASS
+  A raw=31.227549,29.949470 snap=31.227553,29.949661 distance=18.156m
+  B raw=31.227765,29.949659 snap=31.227785,29.949503 distance=15.018m

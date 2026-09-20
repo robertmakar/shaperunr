@@ -1,5 +1,5 @@
 {
-  "name": "runshape-backend",
+  "name": "shaperunr-backend",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -7,9 +7,14 @@
     "dev": "tsx watch src/server.ts",
     "start": "tsx src/server.ts",
     "typecheck": "tsc --noEmit",
-    "self-test": "tsx src/generation/adaptive-scale.self-test.ts && tsx src/scoring/shape-match.self-test.ts && tsx src/generation/candidate-search.self-test.ts && tsx src/generation/ordered-street-route.self-test.ts && tsx src/diagnostics/street-fit.self-test.ts && tsx src/generation/street-fit-search.self-test.ts",
+    "self-test": "tsx src/generation/adaptive-scale.self-test.ts && tsx src/scoring/shape-match.self-test.ts && tsx src/generation/candidate-search.self-test.ts && tsx src/generation/ordered-street-route.self-test.ts && tsx src/diagnostics/street-fit.self-test.ts && tsx src/diagnostics/letter-coverage.self-test.ts && tsx src/generation/street-fit-search.self-test.ts && tsx src/generation/walkable-target.self-test.ts && tsx src/generation/graph-shape.self-test.ts && tsx src/generation/shape-discovery.self-test.ts && tsx src/generation/graph-constrained-pipeline.self-test.ts && tsx src/generation/experimental-product.self-test.ts && tsx src/generation/experimental-diagnostics.self-test.ts && tsx src/generation/search-radius.self-test.ts && tsx src/generation/snap-search-origin.self-test.ts && tsx src/generation/feasibility-pool-diagnostic.self-test.ts && tsx src/generation/target-identity.self-test.ts && tsx src/generation/word-identity.self-test.ts",
+    "word-identity": "tsx src/generation/word-identity.run.ts",
+    "feasibility-pool": "tsx src/generation/feasibility-pool-diagnostic.run.ts",
     "street-fit": "tsx src/diagnostics/street-fit.run.ts",
-    "street-fit-search": "tsx src/generation/street-fit-search.run.ts"
+    "street-fit-search": "tsx src/generation/street-fit-search.run.ts",
+    "graph-shape-test": "tsx src/generation/graph-shape.run.ts",
+    "shape-discovery": "tsx src/generation/shape-discovery.run.ts",
+    "generate-experimental": "tsx src/generation/graph-constrained-pipeline.run.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",

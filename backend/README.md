@@ -1,4 +1,4 @@
-# RunShape backend — local Valhalla (Mac)
+# ShapeRunr backend — local Valhalla (Mac)
 
 Development only. The phone never talks to Valhalla, Overpass, or Geofabrik.
 
@@ -11,7 +11,7 @@ Docker Desktop
   → Valhalla container (port 8002)
       → egypt-latest.osm.pbf mounted at /custom_files
       → builds valhalla_tiles on first start
-  → RunShape backend (port 8787)
+  → ShapeRunr backend (port 8787)
       → POST /generate-routes
   → Expo app /debug-real-routes
 ```
@@ -186,7 +186,7 @@ Expected when ready:
 
 ---
 
-## 5. Start the RunShape backend
+## 5. Start the ShapeRunr backend
 
 In a **second** terminal:
 
@@ -200,7 +200,7 @@ npm run dev
 Expected:
 
 ```
-RunShape backend (DEV) http://127.0.0.1:8787
+ShapeRunr backend (DEV) http://127.0.0.1:8787
 Valhalla http://127.0.0.1:8002
 ```
 

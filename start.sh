@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Starting RunShape..."
+echo "🚀 Starting ShapeRunr..."
 
 # Start Docker / Valhalla
 echo "🗺️ Starting Valhalla..."
@@ -29,5 +29,5 @@ tell application "Terminal"
 end tell
 EOF
 
-echo "🎉 RunShape is ready!"
+echo "🎉 ShapeRunr is ready!"
 

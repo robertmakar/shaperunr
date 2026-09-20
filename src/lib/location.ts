@@ -7,6 +7,7 @@ import { isValidCoordinate, type Coordinate } from '@/lib/geo';
 export { DEVELOPMENT_FALLBACK_LOCATION };
 
 const LOCATION_TIMEOUT_MS = 12_000;
+const REVERSE_GEOCODE_TIMEOUT_MS = 6_000;
 
 export type LocationPermissionState = 'undetermined' | 'granted' | 'denied' | 'restricted' | 'unavailable';
 
@@ -106,6 +107,74 @@ export async function requestAndGetCurrentLocation(): Promise<LocationResult> {
   }
 
   return { ok: false, reason: 'unavailable' };
+}
+
+/** Foreground GPS for experimental FIND MY ROUTE. Never requests background. */
+export async function getForegroundLocationForSearch(): Promise<LocationResult> {
+  const state = await getLocationPermissionState();
+  if (state === 'granted') {
+    return getCurrentLocation();
+  }
+  return requestAndGetCurrentLocation();
+}
+
+/**
+ * Human-readable place name for a coordinate (e.g. "Park Slope, NY"), for
+ * display only — never used for routing. Resolves to null (never lat/long)
+ * on web, on timeout, or if the device can't reverse geocode.
+ */
+export async function reverseGeocodeLabel(coordinate: Coordinate): Promise<string | null> {
+  if (Platform.OS === 'web') {
+    return null;
+  }
+
+  try {
+    const results = await withTimeout(
+      Location.reverseGeocodeAsync(coordinate),
+      REVERSE_GEOCODE_TIMEOUT_MS,
+    );
+    const place = results[0];
+    if (!place) {
+      return null;
+    }
+
+    const locality = place.city ?? place.subregion ?? place.district ?? null;
+    const region = place.region ?? null;
+
+    if (locality && region && locality !== region) {
+      return `${locality}, ${region}`;
+    }
+
+    return locality ?? region ?? null;
+  } catch {
+    return null;
+  }
+}
+
+export function searchLocationNeededCopy(reason: LocationFailureReason): {
+  title: string;
+  body: string;
+  action: string;
+} {
+  if (reason === 'restricted') {
+    return {
+      title: 'LOCATION NEEDED',
+      body: 'Location access is turned off. Enable it in Settings, then try again.',
+      action: 'OPEN SETTINGS',
+    };
+  }
+  if (reason === 'unavailable' || reason === 'timeout' || reason === 'failed') {
+    return {
+      title: 'LOCATION NEEDED',
+      body: 'Location access is required to find a route near you. Turn on Location Services and try again.',
+      action: 'TRY AGAIN',
+    };
+  }
+  return {
+    title: 'LOCATION NEEDED',
+    body: 'Location access is required to find a route near you.',
+    action: 'TRY AGAIN',
+  };
 }
 
 export function resolveStartCoordinate(

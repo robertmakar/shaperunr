@@ -43,13 +43,15 @@ import {
   toConstructionFailure,
 } from './ordered-street-route';
 import { generateStreetFitExperimentalRoutes } from './street-fit-pipeline';
+import { runExperimentalPipeline } from './graph-constrained-pipeline';
 
 const SAMPLE_COUNT = 36;
 const ROUTE_THROUGH_MAX_POINTS = 20;
 const DEDUPE_METERS = 60;
 
-/** Production generator. Experimental street-fit search is opt-in. */
-export const ROUTE_GENERATION_MODE: 'current' | 'street_fit_experimental' = 'current';
+/** Production generator. Experimental modes are opt-in and must not change `current`. */
+export const ROUTE_GENERATION_MODE: 'current' | 'street_fit_experimental' | 'graph_constrained_experimental' =
+  'current';
 
 /** Experimental graph-binding. Keep `trace_map_snap` available for comparison. */
 export const ROUTE_CONSTRUCTION_STRATEGY: 'trace_map_snap' | 'ordered_breaks' = 'ordered_breaks';
@@ -64,6 +66,9 @@ export async function generateRealRoutes(input: {
 }): Promise<GenerateRoutesResponse> {
   if (ROUTE_GENERATION_MODE === 'street_fit_experimental') {
     return generateStreetFitExperimentalRoutes(input);
+  }
+  if (ROUTE_GENERATION_MODE === 'graph_constrained_experimental') {
+    return runExperimentalPipeline(input);
   }
 
   const started = Date.now();
@@ -603,7 +608,7 @@ function logConstruction(entry: {
     Number(point.longitude.toFixed(5)),
   ]);
   console.info(
-    '[runshape:construction]',
+    '[shaperunr:construction]',
     JSON.stringify({
       candidateId: entry.candidateId,
       rotation: entry.rotationDegrees,
@@ -672,7 +677,7 @@ function failAttempt(
 }
 
 function logCandidate(diagnostics: CandidateDiagnostics) {
-  console.info('[runshape:candidate]', JSON.stringify(diagnostics));
+  console.info('[shaperunr:candidate]', JSON.stringify(diagnostics));
 }
 
 function geographicBoundingBox(coordinates: Coordinate[]) {

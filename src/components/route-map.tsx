@@ -23,6 +23,7 @@ export type RouteMapProps = {
   end?: Coordinate;
   userLocation?: Coordinate;
   showUserLocation?: boolean;
+  followUser?: boolean;
   overlays?: MapOverlay[];
   height?: number;
   interactive?: boolean;
@@ -35,6 +36,7 @@ export function RouteMap({
   end,
   userLocation,
   showUserLocation = false,
+  followUser = false,
   overlays = [],
   height,
   interactive = false,
@@ -67,7 +69,7 @@ export function RouteMap({
 
     const fit = () => {
       mapRef.current?.fitToCoordinates(points, {
-        edgePadding: { top: 40, right: 40, bottom: 40, left: 40 },
+        edgePadding: { top: 44, right: 36, bottom: 44, left: 36 },
         animated: false,
       });
     };
@@ -77,8 +79,11 @@ export function RouteMap({
   }, [coordinates, overlayPoints, userLocation]);
 
   useEffect(() => {
+    if (followUser) {
+      return;
+    }
     fitRoute();
-  }, [fitRoute]);
+  }, [fitRoute, followUser]);
 
   return (
     <View style={[styles.frame, height ? { height } : styles.flex, style]}>
@@ -102,8 +107,8 @@ export function RouteMap({
         showsBuildings={false}
         showsPointsOfInterests={false}
         showsMyLocationButton={false}
-        showsUserLocation={showUserLocation}
-        followsUserLocation={false}
+        showsUserLocation={showUserLocation || followUser}
+        followsUserLocation={followUser}
         moveOnMarkerPress={false}
         pointerEvents={interactive ? 'auto' : 'none'}
         onMapReady={fitRoute}>
@@ -124,8 +129,8 @@ export function RouteMap({
         {coordinates.length > 1 ? (
           <Polyline
             coordinates={coordinates}
-            strokeColor={colors.text}
-            strokeWidth={4}
+            strokeColor={colors.accent}
+            strokeWidth={5}
             lineCap="round"
             lineJoin="round"
           />
@@ -169,14 +174,16 @@ const styles = StyleSheet.create({
     width: 14,
     height: 14,
     borderRadius: 7,
-    backgroundColor: colors.text,
+    backgroundColor: colors.accent,
+    borderWidth: 2,
+    borderColor: colors.inverse,
   },
   endDot: {
     width: 14,
     height: 14,
     borderRadius: 7,
     borderWidth: 2,
-    borderColor: colors.text,
+    borderColor: colors.accent,
     backgroundColor: colors.inverse,
   },
 });

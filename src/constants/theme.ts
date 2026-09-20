@@ -1,5 +1,5 @@
 /**
- * RunShape design tokens.
+ * ShapeRunr design tokens.
  * Off-white, typography-led, lots of whitespace.
  */
 
@@ -13,9 +13,16 @@ export const colors = {
   surfaceAlt: '#E4E3DE',
   text: '#111111',
   textSecondary: '#777777',
+  /** The one muted-grey role, shared by quiet caption text and quiet street geometry. */
   textMuted: '#8B8B8B',
   border: '#D0D0CC',
   inverse: '#FFFFFF',
+  accent: '#E85D4A',
+  accentSoft: '#FBE4E1',
+  /** Same grey role as textMuted — kept as its own name since it's used for street lines, not text. */
+  routeMuted: '#8B8B8B',
+  /** The active/drawn route's color, named explicitly. Intentionally the same value as `text`. */
+  route: '#111111',
 } as const;
 
 export const Colors = {
@@ -98,12 +105,13 @@ export const typography = {
     fontWeight: '700' as const,
     letterSpacing: 1.6,
   },
-  hero: {
-    fontSize: 46,
-    lineHeight: 48,
-    fontWeight: '700' as const,
-    letterSpacing: -1.5,
+  /** The smallest label role — legends, inline swatches. Quieter than `kicker`, same family. */
+  microLabel: {
+    fontSize: 10,
+    fontWeight: '600' as const,
+    letterSpacing: 0.6,
   },
+  /** The one big-display role — headlines and identity words alike (previously split into `hero` / `display`). */
   display: {
     fontSize: 44,
     lineHeight: 46,
@@ -116,16 +124,13 @@ export const typography = {
   },
   title: {
     fontSize: 22,
+    lineHeight: 27,
     fontWeight: '600' as const,
     letterSpacing: -0.4,
   },
   body: {
     fontSize: 16,
     lineHeight: 22,
-    fontWeight: '500' as const,
-  },
-  location: {
-    fontSize: 19,
     fontWeight: '500' as const,
   },
   cta: {
@@ -137,10 +142,29 @@ export const typography = {
     fontSize: 14,
     fontWeight: '600' as const,
   },
+  caption: {
+    fontSize: 13,
+    lineHeight: 18,
+    fontWeight: '500' as const,
+  },
   stat: {
     fontSize: 28,
+    lineHeight: 32,
     fontWeight: '700' as const,
     letterSpacing: -0.8,
+  },
+  /** A quieter stat value than `stat` — secondary metrics in a stat row. */
+  statSecondary: {
+    fontSize: 24,
+    lineHeight: 29,
+    fontWeight: '600' as const,
+    letterSpacing: -0.5,
+  },
+  metricLarge: {
+    fontSize: 38,
+    lineHeight: 40,
+    fontWeight: '700' as const,
+    letterSpacing: -1.2,
   },
 } as const;
 

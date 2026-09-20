@@ -1,5 +1,6 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
+import { PrimaryButton } from '@/components/primary-button';
 import { RouteMap } from '@/components/route-map';
 import type { MockRoute } from '@/constants/mock-routes';
 import { colors, radii, spacing, typography } from '@/constants/theme';
@@ -20,32 +21,40 @@ export function RouteCard({ route, userLocation, showUserLocation = false, onSel
         coordinates={route.coordinates}
         userLocation={userLocation}
         showUserLocation={showUserLocation}
-        height={210}
+        height={220}
       />
 
       <View style={styles.body}>
-        <View style={styles.meta}>
-          <View style={styles.metaCopy}>
-            <Text style={styles.routeLabel}>ROUTE {route.id}</Text>
-            <Text style={styles.details}>
-              {formatDistance(route.distanceKm)} · {formatDuration(route.durationMin)} · {route.difficulty}
-            </Text>
-          </View>
-
+        <View style={styles.summary}>
           <View style={styles.match}>
             <Text style={styles.matchValue}>{formatMatch(route.matchPercent)}</Text>
-            <Text style={styles.matchLabel}>match</Text>
+            <Text style={styles.matchLabel}>MATCH</Text>
+          </View>
+          <View style={styles.details}>
+            <Text style={styles.detail}>
+              <Text style={styles.detailValue}>
+                {formatDistance(route.distanceKm)}
+              </Text>
+              {'  TOTAL'}
+            </Text>
+            <Text style={styles.detail}>
+              <Text style={styles.detailValue}>
+                {formatDuration(route.durationMin)}
+              </Text>
+              {'  RUN'}
+            </Text>
+            <Text style={styles.detail}>
+              <Text style={styles.detailValue}>{route.difficulty}</Text>
+              {'  ROUTE'}
+            </Text>
           </View>
         </View>
 
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={`Use route ${route.id}`}
+        <PrimaryButton
+          label="USE THIS ROUTE"
+          size="compact"
           onPress={onSelect}
-          style={({ pressed }) => [styles.cta, pressed && styles.pressed]}>
-          <Text style={styles.ctaText}>USE THIS ROUTE</Text>
-          <Text style={styles.arrow}>→</Text>
-        </Pressable>
+        />
       </View>
     </View>
   );
@@ -59,60 +68,38 @@ const styles = StyleSheet.create({
   },
   body: {
     padding: spacing.lg,
-    gap: spacing.lg,
+    gap: spacing.xl,
   },
-  meta: {
+  summary: {
     flexDirection: 'row',
-    alignItems: 'flex-end',
+    alignItems: 'center',
     justifyContent: 'space-between',
-    gap: spacing.md,
-  },
-  metaCopy: {
-    flex: 1,
-    gap: 6,
-  },
-  routeLabel: {
-    ...typography.kicker,
-    color: colors.textSecondary,
-  },
-  details: {
-    ...typography.body,
-    color: colors.text,
+    gap: spacing.xl,
   },
   match: {
-    alignItems: 'flex-end',
+    flex: 1,
+    gap: spacing.xs,
   },
   matchValue: {
-    fontSize: 28,
-    lineHeight: 32,
-    fontWeight: '700',
-    letterSpacing: -0.8,
-    color: colors.text,
+    ...typography.metricLarge,
+    color: colors.accent,
   },
   matchLabel: {
     ...typography.kicker,
     color: colors.textSecondary,
-    marginTop: 2,
   },
-  cta: {
-    height: 48,
-    borderRadius: radii.pill,
-    backgroundColor: colors.text,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 10,
+  details: {
+    flex: 1.15,
+    alignItems: 'flex-end',
+    gap: spacing.sm,
   },
-  pressed: {
-    opacity: 0.82,
+  detail: {
+    ...typography.kicker,
+    color: colors.textSecondary,
   },
-  ctaText: {
-    ...typography.cta,
-    color: colors.inverse,
-  },
-  arrow: {
-    color: colors.inverse,
-    fontSize: 18,
-    marginTop: -1,
+  detailValue: {
+    ...typography.meta,
+    color: colors.text,
+    textTransform: 'uppercase',
   },
 });

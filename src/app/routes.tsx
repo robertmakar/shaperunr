@@ -47,9 +47,11 @@ export default function RoutesScreen() {
               }
             }}
           />
-          <Text style={styles.kicker}>ROUTES NEAR YOU</Text>
+          <Text style={styles.kicker}>ROUTES FOR</Text>
           <Text style={styles.word}>{word}</Text>
-          <Text style={styles.description}>We found a few ways to turn your run into {word}.</Text>
+          <Text style={styles.description}>
+            {routes.length} walkable {routes.length === 1 ? 'match' : 'matches'} nearby
+          </Text>
           {start.isFallback ? (
             <Text style={styles.fallback}>Using development location</Text>
           ) : null}
@@ -90,16 +92,16 @@ export default function RoutesScreen() {
 
 const styles = StyleSheet.create({
   content: {
-    paddingBottom: spacing.xl,
+    paddingBottom: spacing.xxl,
     gap: spacing.xxl,
   },
   header: {
-    gap: spacing.sm,
+    gap: spacing.xs,
   },
   kicker: {
     ...typography.kicker,
     color: colors.textSecondary,
-    marginTop: spacing.md,
+    marginTop: spacing.sm,
   },
   word: {
     ...typography.display,
@@ -107,9 +109,8 @@ const styles = StyleSheet.create({
     marginTop: spacing.xs,
   },
   description: {
-    ...typography.body,
+    ...typography.caption,
     color: colors.textSecondary,
-    maxWidth: 280,
     marginTop: spacing.sm,
   },
   fallback: {
@@ -118,6 +119,6 @@ const styles = StyleSheet.create({
     marginTop: spacing.xs,
   },
   list: {
-    gap: spacing.lg,
+    gap: spacing.xl,
   },
 });

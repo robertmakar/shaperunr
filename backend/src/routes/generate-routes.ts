@@ -50,6 +50,10 @@ generateRoutesRouter.post('/generate-routes', async (req, res) => {
     });
 
     if (result.routes.length === 0) {
+      if (result.status === 'no_viable_shape' || result.status === 'weak_candidates') {
+        res.json(result);
+        return;
+      }
       res.status(422).json(
         apiError(
           result.failures[0]?.code ?? 'NO_ROUTE',

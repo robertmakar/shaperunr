@@ -13,13 +13,20 @@ export function BackButton({ onPress }: BackButtonProps) {
       accessibilityLabel="Go back"
       hitSlop={12}
       onPress={onPress}
-      style={({ pressed }) => pressed && styles.pressed}>
+      style={({ pressed }) => [styles.button, pressed && styles.pressed]}>
       <Text style={styles.label}>←</Text>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
+  button: {
+    width: 44,
+    height: 44,
+    marginLeft: -8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   label: {
     fontSize: 28,
     lineHeight: 32,

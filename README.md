@@ -1,4 +1,6 @@
-# Welcome to your Expo app 👋
+# ShapeRunr
+
+ShapeRunr lets you turn words and shapes into real-world running routes.
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 

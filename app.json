@@ -1,14 +1,15 @@
 {
   "expo": {
-    "name": "RunShape",
-    "slug": "RunShape",
+    "name": "ShapeRunr",
+    "slug": "ShapeRunr",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "runshape",
+    "scheme": "shaperunr",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/brand/shaperunr-runner-icon-coral.png",
+      "bundleIdentifier": "com.shaperunr.app"
     },
     "android": {
       "adaptiveIcon": {
@@ -28,17 +29,25 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "backgroundColor": "#F4F3EF",
+          "image": "./assets/brand/shaperunr-runner-mark-black-512.png",
+          "imageWidth": 170
         }
       ],
       [
         "expo-location",
         {
-          "locationWhenInUsePermission": "RunShape uses your location to find running routes near you.",
+          "locationWhenInUsePermission": "ShapeRunr uses your location to find nearby running routes and to track your run.",
           "isIosBackgroundLocationEnabled": false,
           "isAndroidBackgroundLocationEnabled": false
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "enableSceneSupport": true
+          }
         }
       ]
     ],

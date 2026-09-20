@@ -19,6 +19,7 @@ export function DistanceSelector({ value, onChange }: DistanceSelectorProps) {
           <Pressable
             key={distance}
             accessibilityRole="button"
+            accessibilityLabel={`${distance} kilometers`}
             accessibilityState={{ selected }}
             onPress={() => onChange(distance)}
             style={({ pressed }) => [
@@ -26,7 +27,9 @@ export function DistanceSelector({ value, onChange }: DistanceSelectorProps) {
               selected && styles.chipSelected,
               pressed && !selected && styles.pressed,
             ]}>
-            <Text style={[styles.label, selected && styles.labelSelected]}>{distance} km</Text>
+            <Text style={[styles.label, selected && styles.labelSelected]}>
+              {distance} KM
+            </Text>
           </Pressable>
         );
       })}
@@ -37,27 +40,26 @@ export function DistanceSelector({ value, onChange }: DistanceSelectorProps) {
 const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
-    gap: spacing.two,
+    gap: spacing.sm,
   },
   chip: {
     flex: 1,
+    minHeight: 48,
     alignItems: 'center',
-    borderWidth: 1,
-    borderColor: colors.border,
+    justifyContent: 'center',
+    backgroundColor: colors.surface,
     borderRadius: radii.pill,
-    paddingHorizontal: 8,
-    paddingVertical: 11,
+    paddingHorizontal: spacing.sm,
   },
   chipSelected: {
-    backgroundColor: colors.text,
-    borderColor: colors.text,
+    backgroundColor: colors.accent,
   },
   pressed: {
-    opacity: 0.7,
+    backgroundColor: colors.surfaceAlt,
   },
   label: {
     ...typography.meta,
-    color: '#555555',
+    color: colors.textSecondary,
   },
   labelSelected: {
     color: colors.inverse,

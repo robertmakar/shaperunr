@@ -1,0 +1,82 @@
+DEVELOPMENT / word identity audit
+location 30.0444,31.2357
+generated 2026-09-18T20:52:46.567Z  runtime 196499 ms
+
+L    2000m  graph=19 routed=3 local=true global=true
+  best sf-r135-s0.8-e0-n800 shape=0.867 cov=0.725 order=0.887 productBefore=true
+  targetLen=1600 routeLen=1443 boxT=673.386x1131.371 boxR=624.742x1030.828
+  progress 0.000→0.911 start=0.000 end=0.911 naiveSpan=0.911 span=0.563 occ=1.000 gap=0.200 meanDist=23.783
+  ratioReq=0.721 ratioProj=0.902 letters=1/1 inOrder=true trav=1.000 mostOfWord=true
+  per-letter L cov=0.75 ord=0.89 p=0.00-1.00 YES
+O    2000m  graph=8 routed=3 local=false global=false
+  best sf-r67.5-s1.0-e565.7-n565.7 shape=0.678 cov=0.662 order=0.511 productBefore=false
+  targetLen=2000 routeLen=1381 boxT=671.316x606.475 boxR=634.035x490.365
+  progress 0.023→0.652 start=0.023 end=0.652 naiveSpan=0.630 span=0.630 occ=1.000 gap=0.325 meanDist=23.013
+  ratioReq=0.690 ratioProj=0.690 letters=1/1 inOrder=true trav=1.000 mostOfWord=true
+  per-letter O cov=0.71 ord=0.51 p=0.00-1.00 YES
+RO   2000m  graph=9 routed=2 local=false global=false
+  best sf-r315-s0.6-e565.7-n-565.7 shape=0.623 cov=0.487 order=0.524 productBefore=false
+  targetLen=1200 routeLen=449 boxT=301.121x301.105 boxR=207.576x220.080
+  progress 0.031→0.888 start=0.031 end=0.888 naiveSpan=0.856 span=0.134 occ=1.000 gap=0.188 meanDist=12.605
+  ratioReq=0.225 ratioProj=0.374 letters=0/2 inOrder=false trav=0.000 mostOfWord=false
+  per-letter R cov=0.38 ord=0.29 p=0.00-0.48 no | O cov=0.25 ord=0.44 p=0.65-0.98 no
+ROB  2000m  graph=7 routed=3 local=false global=false
+  best sf-r45-s1.0-e-282.8-n282.8 shape=0.658 cov=0.625 order=0.528 productBefore=false
+  targetLen=2000 routeLen=889 boxT=435.191x431.017 boxR=384.960x429.918
+  progress 0.014→0.926 start=0.014 end=0.926 naiveSpan=0.912 span=0.117 occ=1.000 gap=0.100 meanDist=24.722
+  ratioReq=0.444 ratioProj=0.444 letters=0/3 inOrder=false trav=0.000 mostOfWord=false
+  per-letter R cov=0.21 ord=0.40 p=0.00-0.28 no | O cov=0.25 ord=0.23 p=0.37-0.56 no | B cov=0.38 ord=0.33 p=0.67-0.96 no
+ROBZ 2000m  graph=17 routed=3 local=true global=false
+  best sf-r45-s1.0-e800-n0 shape=0.717 cov=0.688 order=0.624 productBefore=true
+  targetLen=2000 routeLen=895 boxT=440.179x440.179 boxR=373.792x392.514
+  progress 0.005→0.956 start=0.005 end=0.956 naiveSpan=0.950 span=0.209 occ=1.000 gap=0.112 meanDist=15.462
+  ratioReq=0.447 ratioProj=0.447 letters=2/4 inOrder=true trav=0.500 mostOfWord=false
+  per-letter R cov=0.46 ord=0.47 p=0.00-0.21 YES | O cov=0.38 ord=0.41 p=0.28-0.42 no | B cov=0.17 ord=0.17 p=0.50-0.72 no | Z cov=0.58 ord=0.53 p=0.84-1.00 YES
+L    2500m  graph=12 routed=3 local=true global=true
+  best sf-r135-s0.6-e0-n800 shape=0.921 cov=0.925 order=0.917 productBefore=true
+  targetLen=1500 routeLen=1345 boxT=631.300x1060.660 boxR=624.742x953.238
+  progress 0.000→0.903 start=0.000 end=0.903 naiveSpan=0.903 span=0.903 occ=1.000 gap=0.075 meanDist=12.604
+  ratioReq=0.538 ratioProj=0.897 letters=1/1 inOrder=true trav=1.000 mostOfWord=true
+  per-letter L cov=0.92 ord=0.92 p=0.00-1.00 YES
+O    2500m  graph=5 routed=3 local=false global=false
+  best sf-r22.5-s0.6-e565.7-n-565.7 shape=0.680 cov=0.637 order=0.484 productBefore=false
+  targetLen=1500 routeLen=1170 boxT=454.880x503.513 boxR=484.345x471.774
+  progress 0.023→0.644 start=0.023 end=0.644 naiveSpan=0.621 span=0.621 occ=1.000 gap=0.338 meanDist=15.600
+  ratioReq=0.468 ratioProj=0.780 letters=1/1 inOrder=true trav=1.000 mostOfWord=true
+  per-letter O cov=0.63 ord=0.48 p=0.00-1.00 YES
+RO   2500m  graph=0 routed=0 local=false global=false
+  best=none
+ROB  2500m  graph=7 routed=3 local=false global=false
+  best sf-r45-s0.6-e565.7-n565.7 shape=0.663 cov=0.537 order=0.618 productBefore=false
+  targetLen=1500 routeLen=457 boxT=326.385x323.263 boxR=232.704x220.191
+  progress 0.000→0.997 start=0.000 end=0.984 naiveSpan=0.997 span=0.440 occ=0.786 gap=0.250 meanDist=9.032
+  ratioReq=0.183 ratioProj=0.305 letters=1/3 inOrder=true trav=0.333 mostOfWord=false
+  per-letter R cov=0.29 ord=0.25 p=0.00-0.28 no | O cov=0.58 ord=0.50 p=0.37-0.56 YES | B cov=0.08 ord=0.25 p=0.67-0.96 no
+ROBZ 2500m  graph=9 routed=2 local=true global=false
+  best sf-r315-s1.0-e565.7-n-565.7 shape=0.732 cov=0.825 order=0.648 productBefore=true
+  targetLen=2500 routeLen=746 boxT=550.252x550.224 boxR=418.526x380.158
+  progress 0.015→0.929 start=0.015 end=0.929 naiveSpan=0.914 span=0.160 occ=0.800 gap=0.050 meanDist=13.136
+  ratioReq=0.298 ratioProj=0.298 letters=0/4 inOrder=false trav=0.000 mostOfWord=false
+  per-letter R cov=0.29 ord=0.18 p=0.00-0.21 no | O cov=0.46 ord=0.13 p=0.28-0.42 no | B cov=0.29 ord=0.38 p=0.50-0.72 no | Z cov=0.08 ord=0.32 p=0.84-1.00 no
+L    4000m  graph=2 routed=2 local=false global=false
+  best sf-r90-s0.6-e640-n0 shape=0.691 cov=0.650 order=0.609 productBefore=false
+  targetLen=2400 routeLen=1900 boxT=1428.571x971.429 boxR=1425.304x202.714
+  progress 0.019→0.645 start=0.019 end=0.645 naiveSpan=0.626 span=0.626 occ=1.000 gap=0.338 meanDist=25.499
+  ratioReq=0.475 ratioProj=0.792 letters=1/1 inOrder=true trav=1.000 mostOfWord=true
+  per-letter L cov=0.67 ord=0.61 p=0.00-1.00 YES
+O    4000m  graph=1 routed=1 local=false global=false
+  best sf-r67.5-s0.6-e452.5-n452.5 shape=0.727 cov=0.713 order=0.562 productBefore=false
+  targetLen=2400 routeLen=2009 boxT=805.587x727.770 boxR=835.336x602.019
+  progress 0.019→0.679 start=0.019 end=0.679 naiveSpan=0.660 span=0.660 occ=1.000 gap=0.288 meanDist=29.666
+  ratioReq=0.502 ratioProj=0.837 letters=1/1 inOrder=true trav=1.000 mostOfWord=true
+  per-letter O cov=0.75 ord=0.56 p=0.00-1.00 YES
+RO   4000m  graph=0 routed=0 local=false global=false
+  best=none
+ROB  4000m  graph=0 routed=0 local=false global=false
+  best=none
+ROBZ 4000m  graph=4 routed=3 local=true global=false
+  best sf-r225-s0.6-e452.5-n-452.5 shape=0.718 cov=0.762 order=0.610 productBefore=true
+  targetLen=2400 routeLen=994 boxT=528.236x528.215 boxR=376.987x640.869
+  progress 0.000→0.883 start=0.000 end=0.884 naiveSpan=0.883 span=0.518 occ=0.882 gap=0.112 meanDist=21.814
+  ratioReq=0.248 ratioProj=0.414 letters=0/4 inOrder=false trav=0.000 mostOfWord=false
+  per-letter R cov=0.25 ord=0.21 p=0.00-0.21 no | O cov=0.25 ord=0.39 p=0.28-0.42 no | B cov=0.33 ord=0.34 p=0.50-0.72 no | Z cov=0.21 ord=0.45 p=0.84-1.00 no

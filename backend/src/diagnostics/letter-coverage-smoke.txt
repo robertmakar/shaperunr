@@ -1,0 +1,132 @@
+DEVELOPMENT / A-Z letter coverage (smoke)
+Production experimental settings and product thresholds unchanged.
+generated 2026-09-18T19:15:58.793Z
+combinations 1  pass 1  graph-feasible 1  product-valid 1
+runtime 5312 ms
+status counts PASS=1 GRAPH_FEASIBLE=0 NEAR_MISS=0 NO_STREET_FIT=0 NO_CANDIDATE=0 ROUTE_FAILED=0
+passing letters L
+graph-feasible letters L
+
+GEOMETRY
+letter aspect path strokes segments sharpTurns intersections closed minFeature scale2k(width×height) scale4k(width×height)
+A 0.840 3.296 2 3 1 0 false 0.400 509.643x606.718 1019.286x1213.435
+B 0.740 4.440 1 11 6 0 true 0.220 333.311x450.420 666.622x900.840
+C 0.720 2.065 1 16 0 0 false 0.114 697.203x968.454 1394.406x1936.909
+D 0.760 3.158 1 7 1 0 true 0.283 481.338x633.339 962.676x1266.679
+E 0.700 3.820 2 4 2 0 false 0.560 366.470x523.528 732.940x1047.057
+F 0.700 3.100 2 3 1 0 false 0.540 451.579x645.113 903.158x1290.226
+G 0.769 2.771 1 18 2 0 false 0.122 554.790x721.841 1109.580x1443.681
+H 0.680 4.733 3 3 0 0 false 0.680 287.324x422.535 574.648x845.070
+I 0.560 2.680 3 3 0 0 false 0.560 417.910x746.269 835.821x1492.537
+J 0.889 3.152 2 12 1 0 false 0.082 563.939x634.431 1127.878x1268.863
+K 0.680 3.368 2 3 1 0 false 0.844 403.791x593.811 807.583x1187.622
+L 0.680 1.680 1 2 1 0 false 0.680 809.524x1190.476 1619.048x2380.952
+M 0.840 3.498 1 4 3 0 false 0.749 480.311x571.799 960.623x1143.598
+N 0.720 3.232 1 3 2 0 false 1.000 445.512x618.767 891.025x1237.534
+O 0.856 2.925 1 18 0 0 true 0.140 585.466x683.673 1170.933x1367.346
+P 0.700 2.745 1 6 3 0 false 0.213 509.980x728.543 1019.960x1457.086
+Q 0.856 3.991 2 19 0 1 true 0.139 429.181x501.172 858.362x1002.345
+R 0.740 3.741 1 8 5 0 false 0.213 395.621x534.623 791.243x1069.247
+S 0.660 2.528 1 11 4 0 false 0.170 522.096x791.055 1044.193x1582.111
+T 0.840 2.260 2 2 0 0 false 0.840 743.363x884.956 1486.726x1769.912
+U 0.694 2.410 3 12 0 0 false 0.094 575.745x829.750 1151.489x1659.499
+V 0.840 2.169 1 2 1 0 false 1.085 774.465x921.982 1548.930x1843.964
+W 0.920 3.248 1 4 3 0 false 0.600 566.503x615.765 1133.007x1231.529
+X 0.760 3.512 2 2 0 1 false 1.256 432.796x569.468 865.591x1138.936
+Y 0.800 2.448 2 3 1 0 false 0.480 653.556x816.945 1307.111x1633.889
+Z 0.800 2.881 1 3 2 0 false 0.800 555.435x694.294 1110.870x1388.588
+
+MATRIX / Downtown Cairo
+letter 2km 4km
+A n/a n/a
+B n/a n/a
+C n/a n/a
+D n/a n/a
+E n/a n/a
+F n/a n/a
+G n/a n/a
+H n/a n/a
+I n/a n/a
+J n/a n/a
+K n/a n/a
+L n/a n/a
+M n/a n/a
+N n/a n/a
+O n/a n/a
+P n/a n/a
+Q n/a n/a
+R n/a n/a
+S n/a n/a
+T n/a n/a
+U n/a n/a
+V n/a n/a
+W n/a n/a
+X n/a n/a
+Y n/a n/a
+Z n/a n/a
+
+MATRIX / Zamalek
+letter 2km 4km
+A n/a n/a
+B n/a n/a
+C n/a n/a
+D n/a n/a
+E n/a n/a
+F n/a n/a
+G n/a n/a
+H n/a n/a
+I n/a n/a
+J n/a n/a
+K n/a n/a
+L PASS n/a
+M n/a n/a
+N n/a n/a
+O n/a n/a
+P n/a n/a
+Q n/a n/a
+R n/a n/a
+S n/a n/a
+T n/a n/a
+U n/a n/a
+V n/a n/a
+W n/a n/a
+X n/a n/a
+Y n/a n/a
+Z n/a n/a
+
+MATRIX / Alexandria
+letter 2km 4km
+A n/a n/a
+B n/a n/a
+C n/a n/a
+D n/a n/a
+E n/a n/a
+F n/a n/a
+G n/a n/a
+H n/a n/a
+I n/a n/a
+J n/a n/a
+K n/a n/a
+L n/a n/a
+M n/a n/a
+N n/a n/a
+O n/a n/a
+P n/a n/a
+Q n/a n/a
+R n/a n/a
+S n/a n/a
+T n/a n/a
+U n/a n/a
+V n/a n/a
+W n/a n/a
+X n/a n/a
+Y n/a n/a
+Z n/a n/a
+
+DETAILS
+L | Zamalek | 2000m | PASS
+  placements=1360 streetFitPass=96 graphFeasible=12 productValid=6 routed=3 accepted=3 graphEdges=23432 runtime=4282ms
+  best=sf-r315-s1.2-e-800-n0 rank=8 streetFit=0.768 feasibility=0.756 shape=0.890 coverage=0.850 order=0.860 backtrack=0.008 gap=0.104 finalLength=1516 rejections=none
+  rejectionStage=accepted reason=At least one routed candidate passes every product rule.
+
+LOCATION STABILITY

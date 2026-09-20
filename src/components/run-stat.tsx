@@ -5,12 +5,21 @@ import { colors, typography } from '@/constants/theme';
 type RunStatProps = {
   value: string;
   label: string;
+  emphasis?: 'primary' | 'secondary';
 };
 
-export function RunStat({ value, label }: RunStatProps) {
+export function RunStat({
+  value,
+  label,
+  emphasis = 'secondary',
+}: RunStatProps) {
   return (
     <View style={styles.stat}>
-      <Text numberOfLines={1} style={styles.value}>
+      <Text
+        numberOfLines={1}
+        adjustsFontSizeToFit
+        minimumFontScale={0.8}
+        style={[styles.value, emphasis === 'primary' && styles.valuePrimary]}>
         {value}
       </Text>
       <Text numberOfLines={1} style={styles.label}>
@@ -27,11 +36,11 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   value: {
-    fontSize: 28,
-    lineHeight: 32,
-    fontWeight: '700',
-    letterSpacing: -0.8,
+    ...typography.statSecondary,
     color: colors.text,
+  },
+  valuePrimary: {
+    ...typography.metricLarge,
   },
   label: {
     ...typography.kicker,

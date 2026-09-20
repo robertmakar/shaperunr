@@ -17,6 +17,7 @@ export type RouteMapProps = {
   end?: Coordinate;
   userLocation?: Coordinate;
   showUserLocation?: boolean;
+  followUser?: boolean;
   overlays?: MapOverlay[];
   height?: number;
   interactive?: boolean;
@@ -86,7 +87,9 @@ export function RouteMap({
               cx: overlay.drawing.start.x,
               cy: overlay.drawing.start.y,
               r: 1.8,
-              fill: colors.text,
+              fill: colors.accent,
+              stroke: colors.inverse,
+              strokeWidth: 0.6,
             })
           : null,
         overlay.drawing.end
@@ -95,7 +98,7 @@ export function RouteMap({
               cy: overlay.drawing.end.y,
               r: 1.8,
               fill: colors.inverse,
-              stroke: colors.text,
+              stroke: colors.accent,
               strokeWidth: 0.7,
             })
           : null,
@@ -153,8 +156,8 @@ function projectOverlay(
       {
         key: 'main',
         points: toPoints(coordinates),
-        color: colors.text,
-        width: 1.8,
+        color: colors.accent,
+        width: 2.2,
       },
     ],
     start: start ? project(start) : undefined,

@@ -20,7 +20,8 @@ export type RouteFailureCode =
   | 'TARGET_TOO_SMALL'
   | 'TARGET_TOO_LARGE'
   | 'DISTANCE_OUT_OF_RANGE'
-  | 'MALFORMED_RESPONSE';
+  | 'MALFORMED_RESPONSE'
+  | 'NO_VIABLE_SHAPE';
 
 export type RouteFailure = {
   code: RouteFailureCode;
@@ -35,6 +36,8 @@ export type GeneratedRoute = {
   developmentOnly: true;
   coordinates: Coordinate[];
   targetCoordinates: Coordinate[];
+  shapeCoordinates?: Coordinate[];
+  connectorCoordinates?: Coordinate[];
   distanceMeters: number;
   shapeScore: number;
   coverage: number;
@@ -44,7 +47,7 @@ export type GeneratedRoute = {
     scale: number;
     placement: 'start-anchored' | 'offset';
     offsetAcrossMeters: number;
-    method: 'trace_route' | 'route_through' | 'route_breaks';
+    method: 'trace_route' | 'route_through' | 'route_breaks' | 'graph_constrained';
     connectedFromStart: boolean;
     startSnapDistanceMeters: number;
     lengthError: number;
@@ -52,6 +55,18 @@ export type GeneratedRoute = {
     detourRatio: number;
     backtrackRatio: number;
     score: ShapeMatchResult;
+    connectorDistanceMeters?: number;
+    graphShapeScore?: number;
+    failureReason?: string | null;
+    shapeRouteDistanceMeters?: number;
+    totalDistanceMeters?: number;
+    quality?: 'excellent' | 'acceptable' | 'weak';
+    headingAgreementDegrees?: number;
+    largestGap?: number;
+    eastMeters?: number;
+    northMeters?: number;
+    distanceFromUserMeters?: number;
+    connected?: boolean;
   };
 };
 
@@ -80,6 +95,9 @@ export type GenerateRoutesResponse = {
     returnedRoutes: number;
     valhallaCalls: number;
   };
+  status?: 'ok' | 'weak_candidates' | 'no_viable_shape';
+  message?: string;
+  suggestions?: string[];
 };
 
 export type ApiErrorBody = {

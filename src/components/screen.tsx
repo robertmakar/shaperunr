@@ -18,7 +18,10 @@ export function Screen({ children, style }: ScreenProps) {
         styles.root,
         {
           paddingTop: insets.top + spacing.two,
-          paddingBottom: Math.max(insets.bottom, spacing.three),
+          paddingBottom: Math.max(
+            insets.bottom + spacing.two,
+            spacing.three,
+          ),
         },
         style,
       ]}>

@@ -1,18 +1,17 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { colors, typography } from '@/constants/theme';
-import { formatCoordinatePair } from '@/lib/format';
-import type { Coordinate } from '@/lib/geo';
+import { colors, spacing, typography } from '@/constants/theme';
 
 export type LocationControlStatus = 'idle' | 'loading' | 'ready' | 'unavailable';
 
 type LocationControlProps = {
   status: LocationControlStatus;
-  coordinate: Coordinate | null;
+  /** Human-readable place name (e.g. "Park Slope, NY") — never lat/long. Null while resolving or if unavailable. */
+  label: string | null;
   onPress: () => void;
 };
 
-export function LocationControl({ status, coordinate, onPress }: LocationControlProps) {
+export function LocationControl({ status, label, onPress }: LocationControlProps) {
   const disabled = status === 'loading';
 
   return (
@@ -23,14 +22,29 @@ export function LocationControl({ status, coordinate, onPress }: LocationControl
         accessibilityLabel={accessibilityLabel(status)}
         disabled={disabled}
         onPress={onPress}
-        style={({ pressed }) => pressed && !disabled && styles.pressed}>
-        <Text style={[styles.primary, status === 'idle' && styles.action]}>
-          {primaryLabel(status)}
-        </Text>
-        {status === 'ready' && coordinate ? (
-          <Text style={styles.secondary}>{formatCoordinatePair(coordinate)}</Text>
-        ) : null}
+        style={({ pressed }) => [
+          styles.control,
+          disabled && styles.disabled,
+          pressed && !disabled && styles.pressed,
+        ]}>
+        <LocationMark />
+        <View style={styles.copy}>
+          <Text style={styles.primary}>{primaryLabel(status)}</Text>
+          {status === 'ready' && label ? (
+            <Text style={styles.secondary}>{label}</Text>
+          ) : null}
+        </View>
       </Pressable>
+    </View>
+  );
+}
+
+function LocationMark() {
+  return (
+    <View style={styles.mark} pointerEvents="none" accessibilityElementsHidden>
+      <View style={styles.markHead} />
+      <View style={styles.markHole} />
+      <View style={styles.markPoint} />
     </View>
   );
 }
@@ -61,28 +75,79 @@ function accessibilityLabel(status: LocationControlStatus): string {
   }
 }
 
+const MARK_COLOR = colors.textSecondary;
+
 const styles = StyleSheet.create({
   wrap: {
-    marginTop: 42,
+    marginTop: spacing.lg,
+    alignItems: 'center',
   },
   label: {
     ...typography.kicker,
     color: colors.textSecondary,
-    marginBottom: 14,
+    marginBottom: spacing.sm,
+    textAlign: 'center',
+  },
+  control: {
+    minHeight: 44,
+    minWidth: 44,
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'center',
+    gap: spacing.sm,
+    backgroundColor: 'transparent',
+  },
+  mark: {
+    width: 14,
+    height: 20,
+    alignItems: 'center',
+  },
+  markHead: {
+    width: 14,
+    height: 14,
+    borderRadius: 7,
+    borderWidth: 1.5,
+    borderColor: MARK_COLOR,
+    backgroundColor: 'transparent',
+  },
+  markHole: {
+    position: 'absolute',
+    top: 4,
+    width: 4,
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: MARK_COLOR,
+  },
+  markPoint: {
+    width: 0,
+    height: 0,
+    marginTop: -1,
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    borderTopWidth: 7,
+    borderLeftColor: 'transparent',
+    borderRightColor: 'transparent',
+    borderTopColor: MARK_COLOR,
+  },
+  copy: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   primary: {
-    ...typography.location,
+    ...typography.body,
     color: colors.text,
-  },
-  action: {
-    color: colors.text,
+    textAlign: 'center',
   },
   secondary: {
-    ...typography.body,
+    ...typography.caption,
     color: colors.textSecondary,
-    marginTop: 6,
+    marginTop: spacing.xs,
+    textAlign: 'center',
   },
   pressed: {
+    opacity: 0.58,
+  },
+  disabled: {
     opacity: 0.55,
   },
 });

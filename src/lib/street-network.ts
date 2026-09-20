@@ -14,7 +14,7 @@
  * ---------------------------------------------------------------------------
  *
  * Mobile client
- *   Sends { word, start, targetDistance } to a RunShape backend.
+ *   Sends { word, start, targetDistance } to a ShapeRunr backend.
  *   Does not query Overpass, OSRM, ORS, GraphHopper, or Mapbox in a loop.
  *
  * Backend
@@ -33,7 +33,7 @@
  *      Self-host Valhalla with a pedestrian costing profile on the Egypt
  *      (later planet) extract.
  *
- *      Why Valhalla over the alternatives for RunShape:
+ *      Why Valhalla over the alternatives for ShapeRunr:
  *      - OSM-native; pedestrian costing favors walkways/footpaths, avoids
  *        stairs/alleys slightly; supports via/through points so a letter
  *        polyline can guide the route without inventing streets.
