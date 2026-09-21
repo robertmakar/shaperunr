@@ -11,14 +11,19 @@ import { useThemeColors } from '@/hooks/use-theme';
 type InfoScreenProps = {
   title: string;
   children: ReactNode;
+  /** Where Back goes if there's nothing to pop to (e.g. deep-linked directly to this screen). Defaults to `/settings`, matching About/Privacy/Terms, which are only ever reached from there. */
+  backFallback?: '/settings' | '/';
+  /** `'default'` (typography.title, 22px) matches About/Privacy/Terms. `'display'` is the larger editorial scale used by My Shapes, where the title reads as this screen's own identity rather than a settings sub-page label. */
+  titleSize?: 'default' | 'display';
 };
 
 /**
  * Shared header/scroll shell for Settings' informational pages (About,
- * Privacy, Terms) — the same back-navigation and title treatment as
- * Settings itself, so all three read as part of the same screen family.
+ * Privacy, Terms) and other simple back+title+content screens (e.g. My
+ * Shapes) — the same back-navigation and title treatment throughout, so
+ * they all read as part of the same screen family.
  */
-export function InfoScreen({ title, children }: InfoScreenProps) {
+export function InfoScreen({ title, children, backFallback = '/settings', titleSize = 'default' }: InfoScreenProps) {
   const router = useRouter();
   const colors = useThemeColors();
   const styles = useMemo(() => createStyles(colors), [colors]);
@@ -32,11 +37,11 @@ export function InfoScreen({ title, children }: InfoScreenProps) {
               if (router.canGoBack()) {
                 router.back();
               } else {
-                router.replace('/settings');
+                router.replace(backFallback);
               }
             }}
           />
-          <Text style={styles.title}>{title}</Text>
+          <Text style={[styles.title, titleSize === 'display' && styles.titleDisplay]}>{title}</Text>
         </View>
         {children}
       </ScrollView>
@@ -91,6 +96,11 @@ function createStyles(colors: ThemeColors) {
       ...typography.title,
       color: colors.text,
       marginTop: spacing.sm,
+    },
+    titleDisplay: {
+      ...typography.display,
+      fontSize: 34,
+      lineHeight: 38,
     },
   });
 }

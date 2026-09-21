@@ -26,12 +26,8 @@ export default function RootLayout() {
           headerShown: false,
           contentStyle: { backgroundColor: colors.background },
           animation: 'slide_from_right',
-        }}>
-        <Stack.Screen
-          name="experimental-routes"
-          options={{ animation: 'fade', animationDuration: 280 }}
-        />
-      </Stack>
+        }}
+      />
     </GestureHandlerRootView>
   );
 }

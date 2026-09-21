@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { StyleSheet, View, type LayoutChangeEvent, type StyleProp, type ViewStyle } from 'react-native';
 
-import { colors } from '@/constants/theme';
+import type { ThemeColors } from '@/constants/theme';
+import { useThemeColors } from '@/hooks/use-theme';
 import { boundingBox2, type Vec2 } from '@/lib/geometry';
 
 export type ShapeCanvasPolyline = {
@@ -17,10 +18,12 @@ type ShapeCanvasProps = {
 };
 
 export function ShapeCanvas({ polylines, height = 160, style }: ShapeCanvasProps) {
+  const colors = useThemeColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const [width, setWidth] = useState(0);
   const allPoints = polylines.flatMap((line) => line.points);
   const bounds = boundingBox2(allPoints);
-  const segments = bounds && width > 0 ? flattenSegments(polylines, bounds, width, height) : [];
+  const segments = bounds && width > 0 ? flattenSegments(polylines, bounds, width, height, colors) : [];
 
   function handleLayout(event: LayoutChangeEvent) {
     setWidth(event.nativeEvent.layout.width);
@@ -53,6 +56,7 @@ function flattenSegments(
   bounds: NonNullable<ReturnType<typeof boundingBox2>>,
   width: number,
   height: number,
+  colors: ThemeColors,
 ) {
   const pad = 12;
   const usableW = width - pad * 2;
@@ -107,14 +111,16 @@ function flattenSegments(
   return segments;
 }
 
-const styles = StyleSheet.create({
-  frame: {
-    backgroundColor: colors.surface,
-    overflow: 'hidden',
-    position: 'relative',
-  },
-  segment: {
-    position: 'absolute',
-    borderRadius: 1,
-  },
-});
+function createStyles(colors: ThemeColors) {
+  return StyleSheet.create({
+    frame: {
+      backgroundColor: colors.surface,
+      overflow: 'hidden',
+      position: 'relative',
+    },
+    segment: {
+      position: 'absolute',
+      borderRadius: 1,
+    },
+  });
+}

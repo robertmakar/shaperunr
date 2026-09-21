@@ -24,6 +24,7 @@ import {
   formatElapsedClock,
   runPermissionDeniedCopy,
 } from '@/lib/run-tracking';
+import { saveFinishedRun } from '@/lib/run-history';
 import {
   calculateShapeProgress,
   remainingShapeProgressCoordinates,
@@ -126,6 +127,38 @@ export default function RunScreen() {
   }, [coordinates, live, shapeProgress.progress]);
   /** Pre-run only — lets the "recenter" control re-trigger RouteMap's own existing fit-to-route framing without reimplementing any camera logic. */
   const mapRef = useRef<RouteMapHandle>(null);
+
+  /**
+   * Saves exactly one "My Shapes" history record the moment this run session
+   * first reaches 'finished'. Guarded by a ref (not by removing the effect's
+   * dependency) so it still reacts to the real transition, but can never
+   * fire twice for the same run — `run.finish()` itself is already a no-op
+   * once `session.status` is 'finished' (see useForegroundRun/run-tracking),
+   * and this screen fully unmounts between runs, so a fresh mount always
+   * gets a fresh guard. Deliberately a plain side effect *observing* the
+   * existing finish transition, never something `finish()` itself calls —
+   * so a storage failure here can never prevent or alter the run finishing.
+   */
+  const hasSavedHistoryRef = useRef(false);
+  useEffect(() => {
+    if (run.status !== 'finished' || hasSavedHistoryRef.current) {
+      return;
+    }
+    hasSavedHistoryRef.current = true;
+    void saveFinishedRun({
+      word,
+      distanceMeters: run.distanceMeters,
+      elapsedMs: run.elapsedMs,
+      shapeProgressPercent: shapeProgress.progressPercent,
+      completed: shapeProgress.completed,
+      targetShapeCoordinates: coordinates,
+      runnerPathSegments: run.pathSegments,
+    });
+    // Only `run.status` is a meaningful trigger here — the other values are
+    // read once, at the moment status first becomes 'finished', when they're
+    // already final (GPS/elapsed time stop advancing once finished).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [run.status]);
 
   /**
    * Pre-run countdown — purely a presentation delay in front of run.start().

@@ -1,5 +1,11 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Redirect, useLocalSearchParams, useRouter } from 'expo-router';
+import {
+  Redirect,
+  useLocalSearchParams,
+  useNavigation,
+  useRouter,
+  type NativeStackNavigationProp,
+} from 'expo-router';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { BackButton } from '@/components/back-button';
@@ -21,6 +27,7 @@ import {
 import { takeExperimentalRoutesPrefetch } from '@/lib/experimental-routes-prefetch';
 import { setSelectedExperimentalRoute } from '@/lib/experimental-route-session';
 import { formatWord } from '@/lib/format';
+import { resetHomeFindingState } from '@/lib/home-finding-reset';
 import { resolveStartCoordinate } from '@/lib/location';
 import { readNumberParam, readOptionalNumberParam, readParam } from '@/lib/search-params';
 
@@ -28,6 +35,10 @@ type Phase = 'loading' | 'ready' | 'empty' | 'error';
 
 export default function ExperimentalRoutesScreen() {
   const router = useRouter();
+  // Typed against the native-stack navigation prop (rather than the default,
+  // core-only prop) so `addListener` accepts stack-specific events like
+  // `transitionStart` below, alongside the core `beforeRemove` event.
+  const navigation = useNavigation<NativeStackNavigationProp<ReactNavigation.RootParamList>>();
   const colors = useThemeColors();
   const styles = useMemo(() => createStyles(colors), [colors]);
   const params = useLocalSearchParams<{
@@ -159,6 +170,36 @@ export default function ExperimentalRoutesScreen() {
   useEffect(() => {
     runSearch();
   }, [runSearch]);
+
+  // Covers the back button / a committed `router.back()`: this screen is
+  // about to be removed and Home revealed underneath, so reset Home's own
+  // Finding chrome right now rather than waiting for Home's own focus event
+  // (which only fires once the pop has already started revealing Home's
+  // stale state). Never calls preventDefault — the pop proceeds exactly as
+  // it would have otherwise.
+  useEffect(() => {
+    return navigation.addListener('beforeRemove', () => {
+      resetHomeFindingState();
+    });
+  }, [navigation]);
+
+  // Covers the interactive iOS swipe-back gesture, which `beforeRemove`
+  // alone doesn't catch early enough: the gesture starts revealing Home
+  // underneath immediately as the finger drags, well before the pop is
+  // committed (and before `beforeRemove` fires). `transitionStart` fires
+  // the moment ANY closing transition begins — including the very start of
+  // the interactive gesture, whether or not it's ultimately completed — so
+  // resetting Home here means it's already idle for the entire reveal, not
+  // just once the gesture finishes. Only acts on `closing: true` (a back
+  // transition), never on the forward/opening transition into Results.
+  // Same as above: never a navigation call, never preventDefault.
+  useEffect(() => {
+    return navigation.addListener('transitionStart', (event) => {
+      if (event.data.closing) {
+        resetHomeFindingState();
+      }
+    });
+  }, [navigation]);
 
   if (!word) {
     return <Redirect href="/" />;

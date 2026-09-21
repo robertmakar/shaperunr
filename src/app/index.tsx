@@ -23,6 +23,7 @@ import { BackButton } from '@/components/back-button';
 import { BrandMark } from '@/components/brand-mark';
 import { DeniedNotice } from '@/components/denied-notice';
 import { DistanceSelector } from '@/components/distance-selector';
+import { HistoryButton } from '@/components/history-button';
 import { HomeShapeMap } from '@/components/home-shape-map';
 import { LocationControl, type LocationControlStatus } from '@/components/location-control';
 import { PrimaryButton } from '@/components/primary-button';
@@ -35,6 +36,7 @@ import { useThemeColors } from '@/hooks/use-theme';
 import { generateExperimentalRoutesFromBackend } from '@/lib/experimental-routes-client';
 import { setExperimentalRoutesPrefetch } from '@/lib/experimental-routes-prefetch';
 import { formatWord } from '@/lib/format';
+import { registerHomeFindingReset } from '@/lib/home-finding-reset';
 import { shouldPlayHomeHandoff } from '@/lib/home-handoff';
 import type { Coordinate } from '@/lib/geo';
 import {
@@ -117,25 +119,42 @@ export default function HomeScreen() {
     };
   }, []);
 
+  /**
+   * The one place that clears every piece of Finding-state chrome — used
+   * both on Home's own focus (below) and, via `registerHomeFindingReset`,
+   * by a screen popping back to Home (e.g. Results' beforeRemove listener)
+   * so Home is already idle before the pop reveals it, instead of visibly
+   * snapping back after the fact.
+   */
+  const resetFindingState = useCallback(() => {
+    findLockRef.current = false;
+    requestTokenRef.current += 1;
+    abortControllerRef.current?.abort();
+    chromeAnimRef.current?.stop();
+    setHandoff(false);
+    setShowFindingChrome(false);
+    setSearchingLocation(false);
+    chromeOpacity.setValue(1);
+    mapHeightAnim.setValue(mapHeight);
+    wordGrowAnim.setValue(0);
+    // mapHeight intentionally omitted: this only needs to reset to whatever
+    // height is current at the moment it runs, not re-run on resize.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [chromeOpacity, mapHeightAnim, wordGrowAnim]);
+
+  useEffect(() => {
+    registerHomeFindingReset(resetFindingState);
+    return () => registerHomeFindingReset(null);
+  }, [resetFindingState]);
+
   useFocusEffect(
     useCallback(() => {
-      findLockRef.current = false;
-      requestTokenRef.current += 1;
-      abortControllerRef.current?.abort();
-      setHandoff(false);
-      setShowFindingChrome(false);
-      setSearchingLocation(false);
-      chromeOpacity.setValue(1);
-      mapHeightAnim.setValue(mapHeight);
-      wordGrowAnim.setValue(0);
+      resetFindingState();
       return () => {
         chromeAnimRef.current?.stop();
         setHandoff(false);
       };
-      // mapHeight intentionally omitted: this only needs to reset to whatever
-      // height is current at the moment of (re)focus, not re-run on resize.
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [chromeOpacity, mapHeightAnim, wordGrowAnim]),
+    }, [resetFindingState]),
   );
 
   // Keeps the map's height following Home's normal (keyboard-aware) sizing
@@ -485,6 +504,7 @@ export default function HomeScreen() {
                       <Text style={styles.logo}>SHAPERUNR</Text>
                     </View>
                     <View style={styles.settingsButtonSlot}>
+                      <HistoryButton onPress={() => router.push('/history')} />
                       <SettingsButton onPress={() => router.push('/settings')} />
                     </View>
                   </View>
@@ -665,7 +685,8 @@ function createStyles(colors: ThemeColors) {
       right: 0,
       top: 0,
       bottom: 0,
-      justifyContent: 'center',
+      flexDirection: 'row',
+      alignItems: 'center',
     },
     logo: {
       ...typography.logo,
@@ -688,7 +709,7 @@ function createStyles(colors: ThemeColors) {
       ...typography.display,
       color: colors.text,
       marginTop: spacing.xs,
-      marginBottom: spacing.md,
+      marginBottom: spacing.lg,
     },
     findingFooter: {
       gap: spacing.sm,
@@ -700,7 +721,7 @@ function createStyles(colors: ThemeColors) {
     },
     findingStatus: {
       ...typography.kicker,
-      color: colors.textMuted,
+      color: colors.accent,
     },
     input: {
       height: 64,

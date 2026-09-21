@@ -743,7 +743,8 @@ function createStyles(colors: ThemeColors) {
       bottom: 0,
       left: 0,
       borderRadius: ROUTE_WIDTH / 2,
-      backgroundColor: colors.text,
+      /** Coral, matching Home's own searching-state route — the thing being found, not just a generic drawn line. */
+      backgroundColor: colors.accent,
     },
     footer: {
       gap: spacing.sm,
@@ -755,7 +756,7 @@ function createStyles(colors: ThemeColors) {
     },
     status: {
       ...typography.kicker,
-      color: colors.textMuted,
+      color: colors.accent,
     },
   });
 }

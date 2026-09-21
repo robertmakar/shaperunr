@@ -31,8 +31,9 @@ type HomeShapeMapProps = {
    * 0 → 1 progress for the word's own growth, owned by the caller (e.g.
    * index.tsx animates it in parallel with, but independently of, the
    * canvas's own layout-height growth). At 0 the frozen scene renders at
-   * exactly its Home size; at 1 it renders at `wordScale` (see below) —
-   * derived from the word's OWN bounding box, not the canvas's.
+   * exactly its Home size; at 1 it renders at its fixed Finding-viewport
+   * target size (see `findingBox`/`fitScale` below) — a deterministic
+   * function of the word alone, not of Home's own current canvas size.
    */
   growProgress?: Animated.Value;
   /**
@@ -47,6 +48,24 @@ type HomeShapeMapProps = {
   /** How long the fully-drawn route holds before redrawing (defaults to 0 — no hold, matching prior behavior). */
   retraceHoldMs?: number;
 };
+
+/**
+ * The Finding-state shape's target footprint, as a fraction of the fixed
+ * viewport (window width / findingHeight) — calibrated against what a
+ * multi-letter word like "ROB" already occupies naturally, so short words
+ * (whose unconstrained letterform aspect ratio can otherwise run tall) get
+ * clamped down to a comparable footprint instead of dominating the screen.
+ * Purely geometric — no per-word-length branching.
+ *
+ * ~17.5% larger than the original calibration (0.8 / 0.34) — the shape
+ * read as too small, with too much empty space around it. Single letters
+ * are height-bound in practice, so this is the lever that actually grows
+ * their rendered size; the width budget is raised by the same proportion
+ * for consistency, though it isn't the binding constraint for any word
+ * tested so far.
+ */
+const FINDING_SHAPE_BUDGET_WIDTH = 0.94;
+const FINDING_SHAPE_BUDGET_HEIGHT = 0.4;
 
 export function HomeShapeMap({
   word,
@@ -78,43 +97,63 @@ export function HomeShapeMap({
   );
 
   /**
-   * How much the word's own bounding box should grow: compares its size at
-   * Home's canvas against what the SAME layout function would produce at
-   * Finding's (taller, same-width) canvas — not a ratio of the two canvases'
-   * own dimensions. This is what keeps a wide word like "ROBZ" (already
-   * width-bound at Home's size) from being blown up past the screen edge:
-   * the target box is computed the same width-bound way, so it comes out
-   * close to its Home size instead of scaling with the canvas's height.
+   * The Finding-state target geometry, computed ONCE from fixed inputs only
+   * — the word, the window's own (layout-independent) width, and the fixed
+   * `findingHeight` — never from Home's own live, keyboard-dependent canvas
+   * measurement. `findingBox` is the word's complete bounding box at that
+   * fixed viewport; `fitScale` then clamps it (never enlarges) so a single
+   * letter's naturally tall, unconstrained-aspect-ratio footprint can't
+   * dominate the viewport the way a multi-letter word's forced-wide aspect
+   * ratio never does. Both are pure functions of `word` — the same input
+   * always produces the same target, regardless of animation state, Home's
+   * current measured size, or keyboard timing.
    */
-  const wordScale = useMemo(() => {
-    if (!findingHeight || canvasWidth <= 0 || canvasHeight <= 0) {
-      return 1;
+  const findingBox = useMemo(() => {
+    if (!findingHeight || window.width <= 0) {
+      return null;
     }
-    const homeBox = boundingBox2(layoutHomeRoutePoints(normalizedWord, { width: canvasWidth, height: canvasHeight }));
-    if (!homeBox || homeBox.width <= 0 || homeBox.height <= 0) {
-      return 1;
-    }
-    const targetBox = boundingBox2(
-      layoutHomeRoutePoints(normalizedWord, { width: canvasWidth, height: findingHeight }),
+    return boundingBox2(
+      layoutHomeRoutePoints(normalizedWord, { width: window.width, height: findingHeight }),
     );
-    if (!targetBox) {
+  }, [findingHeight, normalizedWord, window.width]);
+
+  const fitScale = useMemo(() => {
+    if (!findingBox || findingBox.width <= 0 || findingBox.height <= 0 || !findingHeight) {
       return 1;
     }
-    return Math.min(targetBox.width / homeBox.width, targetBox.height / homeBox.height);
-  }, [canvasHeight, canvasWidth, findingHeight, normalizedWord]);
+    return Math.min(
+      1,
+      (window.width * FINDING_SHAPE_BUDGET_WIDTH) / findingBox.width,
+      (findingHeight * FINDING_SHAPE_BUDGET_HEIGHT) / findingBox.height,
+    );
+  }, [findingBox, findingHeight, window.width]);
 
   /**
    * Captured once, on the rising edge of `searching`, and held until searching
    * ends. Reading/writing a ref during render is safe here: it's a pure
    * snapshot of values already computed earlier in this same render, and the
    * component never reads a value it hasn't also written first.
+   *
+   * `growScaleEnd` is solved backward from the deterministic target above:
+   * given whatever Home's own box happens to measure right now (`homeBox` —
+   * live, and fine to be so, since it only describes the animation's
+   * starting point), it's the multiplier that lands EXACTLY on the fixed
+   * `findingBox × fitScale` target by construction — not a ratio that merely
+   * happens to cancel out Home's raciness, but one built to guarantee it.
    */
-  const frozenRef = useRef<{ scene: typeof scene; width: number; height: number; wordScale: number } | null>(
+  const frozenRef = useRef<{ scene: typeof scene; width: number; height: number; growScaleEnd: number } | null>(
     null,
   );
   if (searching) {
     if (!frozenRef.current && canvasWidth > 0 && canvasHeight > 0) {
-      frozenRef.current = { scene, width: canvasWidth, height: canvasHeight, wordScale };
+      const homeBox = boundingBox2(
+        layoutHomeRoutePoints(normalizedWord, { width: canvasWidth, height: canvasHeight }),
+      );
+      const growScaleEnd =
+        homeBox && homeBox.height > 0 && findingBox && findingBox.height > 0
+          ? (findingBox.height * fitScale) / homeBox.height
+          : 1;
+      frozenRef.current = { scene, width: canvasWidth, height: canvasHeight, growScaleEnd };
     }
   } else {
     frozenRef.current = null;
@@ -123,9 +162,11 @@ export function HomeShapeMap({
   const activeScene = frozen ? frozen.scene : scene;
   const activeCanvasWidth = frozen ? frozen.width : canvasWidth;
   const activeCanvasHeight = frozen ? frozen.height : canvasHeight;
+  /** While actively searching, the drawn route turns coral — the thing the city is revealing — reverting to the quiet idle color the moment searching ends. */
+  const routeColor = searching ? colors.accent : colors.text;
   const growScale =
     frozen && growProgress
-      ? growProgress.interpolate({ inputRange: [0, 1], outputRange: [1, frozen.wordScale] })
+      ? growProgress.interpolate({ inputRange: [0, 1], outputRange: [1, frozen.growScaleEnd] })
       : null;
 
   useEffect(() => {
@@ -377,7 +418,13 @@ export function HomeShapeMap({
 
         <View pointerEvents="none" style={StyleSheet.absoluteFill}>
           {activeScene.route.map((segment) => (
-            <RouteSegment key={`${normalizedWord}-${segment.key}`} segment={segment} progress={progress} styles={styles} />
+            <RouteSegment
+              key={`${normalizedWord}-${segment.key}`}
+              segment={segment}
+              progress={progress}
+              styles={styles}
+              color={routeColor}
+            />
           ))}
         </View>
       </Animated.View>
@@ -389,10 +436,12 @@ function RouteSegment({
   segment,
   progress,
   styles,
+  color,
 }: {
   segment: HomeSegment;
   progress: Animated.Value;
   styles: ReturnType<typeof createStyles>;
+  color: string;
 }) {
   const reveal = progress.interpolate({
     inputRange: [segment.startProgress, Math.max(segment.endProgress, segment.startProgress + 0.001)],
@@ -415,6 +464,7 @@ function RouteSegment({
           styles.routeLine,
           {
             width: segment.length,
+            backgroundColor: color,
             transform: [{ translateX: reveal }],
           },
         ]}
@@ -461,7 +511,7 @@ function createStyles(colors: ThemeColors) {
       bottom: 0,
       left: 0,
       borderRadius: HOME_ROUTE_WIDTH / 2,
-      backgroundColor: colors.text,
+      // backgroundColor is set per-segment (idle vs. searching color) — see RouteSegment.
     },
   });
 }

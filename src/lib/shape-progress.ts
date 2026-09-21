@@ -179,12 +179,38 @@ export function shapeProgressCoordinates(
   shapeCoordinates: readonly Coordinate[],
   progress: number,
 ): Coordinate[] {
+  return splitShapeAtProgress(shapeCoordinates, progress).completed;
+}
+
+/** The mirror of `shapeProgressCoordinates` — everything from the same progress cut point to the shape's end. */
+export function remainingShapeProgressCoordinates(
+  shapeCoordinates: readonly Coordinate[],
+  progress: number,
+): Coordinate[] {
+  return splitShapeAtProgress(shapeCoordinates, progress).remaining;
+}
+
+/**
+ * Cuts the shape's own coordinates at `progress` (0–1 along its total
+ * length) into a completed prefix and a remaining suffix that share the
+ * exact same interpolated cut point — so a map drawing both as separate
+ * overlays never shows a seam or gap between them. Shared by
+ * `shapeProgressCoordinates` and `remainingShapeProgressCoordinates` so
+ * there is exactly one place that computes where the cut falls.
+ */
+function splitShapeAtProgress(
+  shapeCoordinates: readonly Coordinate[],
+  progress: number,
+): { completed: Coordinate[]; remaining: Coordinate[] } {
   const first = shapeCoordinates[0];
-  if (!first || shapeCoordinates.length < 2 || progress <= 0) {
-    return [];
+  if (!first || shapeCoordinates.length < 2) {
+    return { completed: [], remaining: [] };
+  }
+  if (progress <= 0) {
+    return { completed: [], remaining: [...shapeCoordinates] };
   }
   if (progress >= 1) {
-    return [...shapeCoordinates];
+    return { completed: [...shapeCoordinates], remaining: [] };
   }
 
   const local = coordinatesToLocalMeters(first, [...shapeCoordinates]);
@@ -210,16 +236,15 @@ export function shapeProgressCoordinates(
       segmentLength === 0
         ? 0
         : (targetLength - traveled) / segmentLength;
-    completed.push(
-      interpolateCoordinate(
-        shapeCoordinates[index] as Coordinate,
-        geographicEnd,
-        ratio,
-      ),
+    const cutPoint = interpolateCoordinate(
+      shapeCoordinates[index] as Coordinate,
+      geographicEnd,
+      ratio,
     );
-    break;
+    completed.push(cutPoint);
+    return { completed, remaining: [cutPoint, ...shapeCoordinates.slice(index + 1)] };
   }
-  return completed;
+  return { completed, remaining: [] };
 }
 
 function interpolateCoordinate(

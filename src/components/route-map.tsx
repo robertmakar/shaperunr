@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef } from 'react';
+import { forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useRef } from 'react';
 import { Platform, StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 import MapView, { Marker, Polyline } from 'react-native-maps';
 
@@ -33,9 +33,27 @@ export type RouteMapProps = {
   regionPaddingFactor?: number;
   /** Screen-pixel padding used by `fitToCoordinates`. Defaults to the existing hero padding — pass smaller values for a shorter/narrower preview so the route still fills most of the frame. */
   fitEdgePadding?: { top: number; right: number; bottom: number; left: number };
+  /**
+   * When provided, replaces the default single coral `coordinates` line with
+   * two segments — the traced portion in `colors.accent`, the rest in a
+   * quiet muted route color — split from the exact same underlying shape
+   * geometry (see `shape-progress.ts`'s `shapeProgressCoordinates` /
+   * `remainingShapeProgressCoordinates`), so they always meet with no gap.
+   * `coordinates` itself is still used for the map's bounds and start/end
+   * markers either way.
+   */
+  targetProgress?: {
+    completedCoordinates: Coordinate[];
+    remainingCoordinates: Coordinate[];
+  };
 };
 
-export function RouteMap({
+/** Imperative handle for callers that need to re-trigger the map's own existing fit-to-route framing on demand (e.g. a "recenter" control) rather than reimplementing camera logic. */
+export type RouteMapHandle = {
+  recenter: () => void;
+};
+
+export const RouteMap = forwardRef<RouteMapHandle, RouteMapProps>(function RouteMap({
   coordinates,
   start,
   end,
@@ -48,7 +66,8 @@ export function RouteMap({
   style,
   regionPaddingFactor,
   fitEdgePadding,
-}: RouteMapProps) {
+  targetProgress,
+}, forwardedRef) {
   const mapRef = useRef<MapView>(null);
   const colors = useThemeColors();
   const resolvedAppearance = useResolvedAppearance();
@@ -95,6 +114,8 @@ export function RouteMap({
     }
     fitRoute();
   }, [fitRoute, followUser]);
+
+  useImperativeHandle(forwardedRef, () => ({ recenter: fitRoute }), [fitRoute]);
 
   return (
     <View style={[styles.frame, height ? { height } : styles.flex, style]}>
@@ -143,7 +164,28 @@ export function RouteMap({
           ) : null,
         )}
 
-        {coordinates.length > 1 ? (
+        {targetProgress ? (
+          <>
+            {targetProgress.remainingCoordinates.length > 1 ? (
+              <Polyline
+                coordinates={targetProgress.remainingCoordinates}
+                strokeColor={colors.routeMuted}
+                strokeWidth={5}
+                lineCap="round"
+                lineJoin="round"
+              />
+            ) : null}
+            {targetProgress.completedCoordinates.length > 1 ? (
+              <Polyline
+                coordinates={targetProgress.completedCoordinates}
+                strokeColor={colors.accent}
+                strokeWidth={5}
+                lineCap="round"
+                lineJoin="round"
+              />
+            ) : null}
+          </>
+        ) : coordinates.length > 1 ? (
           <Polyline
             coordinates={coordinates}
             strokeColor={colors.accent}
@@ -177,7 +219,7 @@ export function RouteMap({
       </MapView>
     </View>
   );
-}
+});
 
 function createStyles(colors: ThemeColors) {
   return StyleSheet.create({

@@ -47,6 +47,21 @@ export function formatCoordinatePair(coordinate: { latitude: number; longitude: 
   return `${coordinate.latitude.toFixed(4)}, ${coordinate.longitude.toFixed(4)}`;
 }
 
+const SHORT_MONTHS = [
+  'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
+  'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC',
+] as const;
+
+/** "21 SEP" — deliberately not locale-dependent (unlike `toLocaleDateString`), so it reads the same on every device. */
+export function formatHistoryDate(isoString: string): string {
+  const date = new Date(isoString);
+  if (Number.isNaN(date.getTime())) {
+    return '';
+  }
+  const month = SHORT_MONTHS[date.getMonth()] ?? '';
+  return `${date.getDate()} ${month}`;
+}
+
 export function formatPace(distanceKm: number, durationMin: number, unit: DistanceUnit = 'km'): string {
   if (distanceKm <= 0) {
     return '–';
