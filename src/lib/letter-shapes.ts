@@ -7,6 +7,19 @@ export type LetterShape = {
   strokes: LetterStroke[];
 };
 
+/**
+ * `'smooth'` is the original, unchanged ellipse-based geometry (LETTER_SHAPES
+ * below) — the default everywhere, so existing behavior never changes.
+ * `'angular'` is a polygonal approximation of the same letters, for letters
+ * whose smooth form uses a curve — real street grids are dominated by
+ * straight/orthogonal segments, so an angular target may be easier to
+ * follow with real streets while staying visually recognizable.
+ * `'hybrid'` is reserved for a future, more conservative middle ground; it
+ * is not implemented in this iteration (see getLetterShapeVariant) and
+ * currently falls back to 'smooth'.
+ */
+export type LetterShapeVariant = 'smooth' | 'angular' | 'hybrid';
+
 function line(...pairs: Array<[number, number]>): LetterStroke {
   return pairs.map(([x, y]) => vec2(x, y));
 }
@@ -125,6 +138,90 @@ const LETTER_SHAPES: Record<string, LetterStroke[]> = {
   Z: [line([0.1, 1], [0.9, 1], [0.1, 0], [0.9, 0])],
 };
 
+/**
+ * A closed, chamfered octagon standing in for a circle — a rectangle would
+ * read as a "box", not a letter; cutting the four corners keeps a
+ * recognizable round silhouette while every edge is a straight segment a
+ * real street corner could plausibly match. Shared by O and (plus its
+ * diagonal tail) Q.
+ */
+function chamferedOctagon(): LetterStroke {
+  return line(
+    [0.32, 0.96],
+    [0.68, 0.96],
+    [0.9, 0.78],
+    [0.9, 0.22],
+    [0.68, 0.04],
+    [0.32, 0.04],
+    [0.1, 0.22],
+    [0.1, 0.78],
+    [0.32, 0.96],
+  );
+}
+
+/**
+ * Angular counterparts for the letters whose smooth form (above) uses
+ * `ellipse()` — plus S, whose smooth form is already a polyline but reads
+ * as curved and is deliberately simplified here to fewer, sharper corners.
+ * Every other letter is already built from straight segments, so it has no
+ * separate angular entry (getLetterShapeVariant falls back to the smooth
+ * definition for those, which is correct: they are already "angular").
+ */
+const LETTER_SHAPES_ANGULAR: Partial<Record<string, LetterStroke[]>> = {
+  O: [chamferedOctagon()],
+  Q: [chamferedOctagon(), line([0.62, 0.28], [0.88, 0.04])],
+  // Open on the right, mirroring the smooth C's 55°-305° arc (gap facing right).
+  C: [
+    line(
+      [0.86, 0.86],
+      [0.62, 0.96],
+      [0.32, 0.96],
+      [0.12, 0.78],
+      [0.1, 0.5],
+      [0.12, 0.22],
+      [0.32, 0.04],
+      [0.62, 0.04],
+      [0.86, 0.14],
+    ),
+  ],
+  // Same outer opening as C (gap on the right, matching the smooth G's 40°-320° arc) plus the inward bar that makes it read as G, not C.
+  G: [
+    line(
+      [0.88, 0.62],
+      [0.68, 0.94],
+      [0.34, 0.96],
+      [0.12, 0.78],
+      [0.08, 0.5],
+      [0.12, 0.22],
+      [0.34, 0.04],
+      [0.68, 0.06],
+      [0.86, 0.28],
+    ),
+    line([0.86, 0.42], [0.54, 0.42]),
+  ],
+  // Vertical stem and top bar are already straight in the smooth version — only the curved hook at the bottom becomes a short chamfered polyline.
+  J: [
+    line([0.2, 1], [0.84, 1], [0.84, 0.32]),
+    line([0.84, 0.32], [0.78, 0.1], [0.5, 0.02], [0.28, 0.06], [0.2, 0.22]),
+  ],
+  // Straight vertical sides, open top, chamfered (not rounded) bottom "cup".
+  U: [line([0.16, 1], [0.16, 0.28], [0.26, 0.08], [0.74, 0.08], [0.84, 0.28], [0.84, 1])],
+  // Fewer, sharper corners than the smooth 12-point S — still a top hook, a diagonal spine, and a bottom hook.
+  S: [
+    line(
+      [0.82, 0.84],
+      [0.5, 1],
+      [0.22, 0.84],
+      [0.22, 0.64],
+      [0.6, 0.5],
+      [0.78, 0.36],
+      [0.78, 0.16],
+      [0.5, 0],
+      [0.18, 0.16],
+    ),
+  ],
+};
+
 export function getSupportedLetters(): string[] {
   return Object.keys(LETTER_SHAPES).sort();
 }
@@ -140,6 +237,30 @@ export function getLetterShape(char: string): LetterShape | null {
     char: normalized,
     strokes: strokes.map((stroke) => stroke.map((point) => ({ ...point }))),
   };
+}
+
+/**
+ * Variant-aware lookup. `getLetterShape` above is unchanged and keeps
+ * returning the smooth shape, so every existing caller is unaffected.
+ * `'angular'` returns the polygonal approximation for the seven curved
+ * letters above, and falls back to the smooth (already straight-segment)
+ * definition for every other letter — never null just because a letter
+ * has no distinct angular form. `'hybrid'` is not implemented this
+ * iteration (see the LetterShapeVariant doc comment) and also falls back
+ * to smooth, conservatively rather than silently substituting angular.
+ */
+export function getLetterShapeVariant(char: string, variant: LetterShapeVariant): LetterShape | null {
+  if (variant === 'angular') {
+    const normalized = char.toUpperCase();
+    const angularStrokes = LETTER_SHAPES_ANGULAR[normalized];
+    if (angularStrokes) {
+      return {
+        char: normalized,
+        strokes: angularStrokes.map((stroke) => stroke.map((point) => ({ ...point }))),
+      };
+    }
+  }
+  return getLetterShape(char);
 }
 
 export function flattenLetterStrokes(shape: LetterShape): Vec2[] {

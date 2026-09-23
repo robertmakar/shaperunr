@@ -1,0 +1,4939 @@
+{
+  "generatedAt": "2026-09-23T14:25:41.590Z",
+  "rows": [
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r0-s1.0-e282.8-n-282.8",
+      "parity": true,
+      "goalCount": 168,
+      "inkedGoals": 145,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 1637,
+        "progress": 0.8821383417168525,
+        "cost": 225.7654939122615,
+        "feasible": true,
+        "shapeScore": 0.624486650391461,
+        "targetCoverage": 0.6875,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.35576691393021603,
+        "routeLengthMeters": 711.5338278604322,
+        "heading": 0.6183786547673611
+      },
+      "counterfactual": {
+        "stateId": 1637,
+        "progress": 0.8821383417168525,
+        "cost": 225.7654939122615,
+        "feasible": true,
+        "shapeScore": 0.624486650391461,
+        "targetCoverage": 0.6875,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.35576691393021603,
+        "routeLengthMeters": 711.5338278604322,
+        "heading": 0.6183786547673611
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r0-s1.0-e0-n-400",
+      "parity": true,
+      "goalCount": 191,
+      "inkedGoals": 88,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 605,
+        "progress": 1,
+        "cost": 284.74119954690883,
+        "feasible": true,
+        "shapeScore": 0.5763543366472113,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.32194394131690945,
+        "routeLengthMeters": 643.8878826338191,
+        "heading": 0.5272591213981926
+      },
+      "counterfactual": {
+        "stateId": 605,
+        "progress": 1,
+        "cost": 284.74119954690883,
+        "feasible": true,
+        "shapeScore": 0.5763543366472113,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.32194394131690945,
+        "routeLengthMeters": 643.8878826338191,
+        "heading": 0.5272591213981926
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r0-s1.2-e800-n0",
+      "parity": true,
+      "goalCount": 44,
+      "inkedGoals": 18,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 5305,
+        "progress": 0.921356906880571,
+        "cost": 715.9144495820437,
+        "feasible": true,
+        "shapeScore": 0.5827554638825276,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3749916211286269,
+        "routeLengthMeters": 899.9798907087045,
+        "heading": 0.6481603789651519
+      },
+      "counterfactual": {
+        "stateId": 5305,
+        "progress": 0.921356906880571,
+        "cost": 715.9144495820437,
+        "feasible": true,
+        "shapeScore": 0.5827554638825276,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3749916211286269,
+        "routeLengthMeters": 899.9798907087045,
+        "heading": 0.6481603789651519
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r22.5-s1.0-e-565.7-n-565.7",
+      "parity": true,
+      "goalCount": 155,
+      "inkedGoals": 123,
+      "completionGoals": 6,
+      "completionGoalCostSpread": 310.91153402379,
+      "completionGoals_costShape": [
+        {
+          "cost": 299.98904580251593,
+          "shape": 0.7066138090436407,
+          "feasible": true
+        },
+        {
+          "cost": 396.1086736252306,
+          "shape": 0.6953614708044756,
+          "feasible": true
+        },
+        {
+          "cost": 409.971966606234,
+          "shape": 0.699983211145819,
+          "feasible": true
+        },
+        {
+          "cost": 500.9176590225879,
+          "shape": 0.7385105404211346,
+          "feasible": true
+        },
+        {
+          "cost": 597.0372868453026,
+          "shape": 0.7376766264291778,
+          "feasible": true
+        },
+        {
+          "cost": 610.900579826306,
+          "shape": 0.738988779961347,
+          "feasible": true
+        }
+      ],
+      "production": {
+        "stateId": 523,
+        "progress": 0.8843568510870615,
+        "cost": 96.61064210294866,
+        "feasible": true,
+        "shapeScore": 0.6482679137982397,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.29896067383032937,
+        "routeLengthMeters": 597.9213476606586,
+        "heading": 0.6898406557377644
+      },
+      "counterfactual": {
+        "stateId": 1334,
+        "progress": 1,
+        "cost": 299.98904580251593,
+        "feasible": true,
+        "shapeScore": 0.7066138090436407,
+        "targetCoverage": 0.7708333333333334,
+        "finalCoverage": 0.7083333333333334,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true
+        ],
+        "routeTarget": 0.3717311206556656,
+        "routeLengthMeters": 743.4622413113311,
+        "heading": 0.6162988342255994
+      },
+      "changed": true,
+      "cls": "A_final_letter_completed",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r0-s1.2-e565.7-n565.7",
+      "parity": true,
+      "goalCount": 145,
+      "inkedGoals": 70,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 2470,
+        "progress": 0.8843568510870614,
+        "cost": 364.2207591883,
+        "feasible": true,
+        "shapeScore": 0.5999448981084896,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.4039495728201475,
+        "routeLengthMeters": 969.4789747683542,
+        "heading": 0.6328975191305426
+      },
+      "counterfactual": {
+        "stateId": 2470,
+        "progress": 0.8843568510870614,
+        "cost": 364.2207591883,
+        "feasible": true,
+        "shapeScore": 0.5999448981084896,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.4039495728201475,
+        "routeLengthMeters": 969.4789747683542,
+        "heading": 0.6328975191305426
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r90-s0.6-e0-n-400",
+      "parity": true,
+      "goalCount": 41,
+      "inkedGoals": 29,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 594,
+        "progress": 0.9621663676111768,
+        "cost": 295.683597944732,
+        "feasible": true,
+        "shapeScore": 0.43283496215248135,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.3806942745588266,
+        "routeLengthMeters": 456.8331294705919,
+        "heading": 0.5673786864529105
+      },
+      "counterfactual": {
+        "stateId": 594,
+        "progress": 0.9621663676111768,
+        "cost": 295.683597944732,
+        "feasible": true,
+        "shapeScore": 0.43283496215248135,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.3806942745588266,
+        "routeLengthMeters": 456.8331294705919,
+        "heading": 0.5673786864529105
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r180-s0.8-e282.8-n-282.8",
+      "parity": true,
+      "goalCount": 74,
+      "inkedGoals": 51,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 399,
+        "progress": 0.9183705896750294,
+        "cost": 132.4655114095806,
+        "feasible": true,
+        "shapeScore": 0.5111572781099661,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.3213852705404316,
+        "routeLengthMeters": 514.2164328646907,
+        "heading": 0.5899519171157058
+      },
+      "counterfactual": {
+        "stateId": 399,
+        "progress": 0.9183705896750294,
+        "cost": 132.4655114095806,
+        "feasible": true,
+        "shapeScore": 0.5111572781099661,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.3213852705404316,
+        "routeLengthMeters": 514.2164328646907,
+        "heading": 0.5899519171157058
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r0-s1.2-e-400-n0",
+      "parity": true,
+      "goalCount": 91,
+      "inkedGoals": 19,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 1759,
+        "progress": 0.8843568510870614,
+        "cost": 749.3362734207944,
+        "feasible": true,
+        "shapeScore": 0.5519020741190841,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.20833333333333334,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3612528570971572,
+        "routeLengthMeters": 867.0068570331773,
+        "heading": 0.4657740499418956
+      },
+      "counterfactual": {
+        "stateId": 1759,
+        "progress": 0.8843568510870614,
+        "cost": 749.3362734207944,
+        "feasible": true,
+        "shapeScore": 0.5519020741190841,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.20833333333333334,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3612528570971572,
+        "routeLengthMeters": 867.0068570331773,
+        "heading": 0.4657740499418956
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r180-s1.0-e565.7-n565.7",
+      "parity": true,
+      "goalCount": 280,
+      "inkedGoals": 192,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 2568,
+        "progress": 0.9845793796329334,
+        "cost": 241.97047429504707,
+        "feasible": true,
+        "shapeScore": 0.5733072214778056,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.25,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.3723326692109248,
+        "routeLengthMeters": 744.6653384218497,
+        "heading": 0.5560484398330613
+      },
+      "counterfactual": {
+        "stateId": 2568,
+        "progress": 0.9845793796329334,
+        "cost": 241.97047429504707,
+        "feasible": true,
+        "shapeScore": 0.5733072214778056,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.25,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.3723326692109248,
+        "routeLengthMeters": 744.6653384218497,
+        "heading": 0.5560484398330613
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r135-s1.0-e0-n0",
+      "parity": true,
+      "goalCount": 23,
+      "inkedGoals": 17,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 627,
+        "progress": 0.931562706107128,
+        "cost": 637.9202082523228,
+        "feasible": true,
+        "shapeScore": 0.6543095387506684,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.3658513577525918,
+        "routeLengthMeters": 731.7027155051837,
+        "heading": 0.5536650959642347
+      },
+      "counterfactual": {
+        "stateId": 627,
+        "progress": 0.931562706107128,
+        "cost": 637.9202082523228,
+        "feasible": true,
+        "shapeScore": 0.6543095387506684,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.3658513577525918,
+        "routeLengthMeters": 731.7027155051837,
+        "heading": 0.5536650959642347
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r0-s1.0-e565.7-n565.7",
+      "parity": true,
+      "goalCount": 73,
+      "inkedGoals": 42,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 1271,
+        "progress": 0.8843568510870615,
+        "cost": 401.30516575074273,
+        "feasible": true,
+        "shapeScore": 0.5986566641989772,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.3333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.40421236809428013,
+        "routeLengthMeters": 808.4247361885605,
+        "heading": 0.6043809351176486
+      },
+      "counterfactual": {
+        "stateId": 1271,
+        "progress": 0.8843568510870615,
+        "cost": 401.30516575074273,
+        "feasible": true,
+        "shapeScore": 0.5986566641989772,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.3333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.40421236809428013,
+        "routeLengthMeters": 808.4247361885605,
+        "heading": 0.6043809351176486
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r180-s1.4-e282.8-n-282.8",
+      "parity": true,
+      "goalCount": 73,
+      "inkedGoals": 61,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 2834,
+        "progress": 0.9053892098454924,
+        "cost": 472.40994754173244,
+        "feasible": true,
+        "shapeScore": 0.5654856471267183,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.35985659008546156,
+        "routeLengthMeters": 1007.5984522392926,
+        "heading": 0.5151170810968749
+      },
+      "counterfactual": {
+        "stateId": 2834,
+        "progress": 0.9053892098454924,
+        "cost": 472.40994754173244,
+        "feasible": true,
+        "shapeScore": 0.5654856471267183,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.35985659008546156,
+        "routeLengthMeters": 1007.5984522392926,
+        "heading": 0.5151170810968749
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r315-s0.8-e0-n0",
+      "parity": true,
+      "goalCount": 57,
+      "inkedGoals": 37,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 205,
+        "progress": 0.918678533137514,
+        "cost": 206.72652359696477,
+        "feasible": true,
+        "shapeScore": 0.6804976600852539,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.3262234676802439,
+        "routeLengthMeters": 521.9575482883904,
+        "heading": 0.5589383389475082
+      },
+      "counterfactual": {
+        "stateId": 205,
+        "progress": 0.918678533137514,
+        "cost": 206.72652359696477,
+        "feasible": true,
+        "shapeScore": 0.6804976600852539,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.3262234676802439,
+        "routeLengthMeters": 521.9575482883904,
+        "heading": 0.5589383389475082
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r22.5-s1.4-e282.8-n282.8",
+      "parity": true,
+      "goalCount": 143,
+      "inkedGoals": 124,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 2182,
+        "progress": 0.8843568510870614,
+        "cost": 278.37108370911176,
+        "feasible": true,
+        "shapeScore": 0.7316172723525435,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.25,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4129073031545288,
+        "routeLengthMeters": 1156.1404488326807,
+        "heading": 0.6194311509467171
+      },
+      "counterfactual": {
+        "stateId": 2182,
+        "progress": 0.8843568510870614,
+        "cost": 278.37108370911176,
+        "feasible": true,
+        "shapeScore": 0.7316172723525435,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.25,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4129073031545288,
+        "routeLengthMeters": 1156.1404488326807,
+        "heading": 0.6194311509467171
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r22.5-s0.6-e0-n0",
+      "parity": true,
+      "goalCount": 56,
+      "inkedGoals": 22,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 94,
+        "progress": 0.8843568510870614,
+        "cost": -12.189587556349123,
+        "feasible": true,
+        "shapeScore": 0.6346591947779289,
+        "targetCoverage": 0.7708333333333334,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.2654134638739851,
+        "routeLengthMeters": 318.4961566487821,
+        "heading": 0.47686606155522887
+      },
+      "counterfactual": {
+        "stateId": 94,
+        "progress": 0.8843568510870614,
+        "cost": -12.189587556349123,
+        "feasible": true,
+        "shapeScore": 0.6346591947779289,
+        "targetCoverage": 0.7708333333333334,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.2654134638739851,
+        "routeLengthMeters": 318.4961566487821,
+        "heading": 0.47686606155522887
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r315-s0.8-e0-n-400",
+      "parity": true,
+      "goalCount": 68,
+      "inkedGoals": 52,
+      "completionGoals": 4,
+      "completionGoalCostSpread": 141.3293793266729,
+      "completionGoals_costShape": [
+        {
+          "cost": 244.26707821086018,
+          "shape": 0.6583946289029696,
+          "feasible": true
+        },
+        {
+          "cost": 282.4237521456714,
+          "shape": 0.6734294716728846,
+          "feasible": true
+        },
+        {
+          "cost": 347.4397836027219,
+          "shape": 0.7177924334603084,
+          "feasible": true
+        },
+        {
+          "cost": 385.59645753753307,
+          "shape": 0.7321070043377469,
+          "feasible": true
+        }
+      ],
+      "production": {
+        "stateId": 1668,
+        "progress": 0.9475542877173199,
+        "cost": 79.62383776779241,
+        "feasible": true,
+        "shapeScore": 0.6657901856649284,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.375,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.4509914314888522,
+        "routeLengthMeters": 721.5862903821637,
+        "heading": 0.5918935109231601
+      },
+      "counterfactual": {
+        "stateId": 2741,
+        "progress": 0.8843568510870614,
+        "cost": 244.26707821086018,
+        "feasible": true,
+        "shapeScore": 0.6583946289029696,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.5833333333333334,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          true
+        ],
+        "routeTarget": 0.6207549906100583,
+        "routeLengthMeters": 993.2079849760936,
+        "heading": 0.5839955859328888
+      },
+      "changed": true,
+      "cls": "A_final_letter_completed",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/4000",
+      "placementId": "sf-r22.5-s0.6-e640-n0",
+      "parity": true,
+      "goalCount": 138,
+      "inkedGoals": 132,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 2755,
+        "progress": 0.9095301799416158,
+        "cost": 485.7997668543336,
+        "feasible": true,
+        "shapeScore": 0.659235058687731,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3719476083331718,
+        "routeLengthMeters": 892.6742599996126,
+        "heading": 0.6167215674088335
+      },
+      "counterfactual": {
+        "stateId": 2755,
+        "progress": 0.9095301799416158,
+        "cost": 485.7997668543336,
+        "feasible": true,
+        "shapeScore": 0.659235058687731,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3719476083331718,
+        "routeLengthMeters": 892.6742599996126,
+        "heading": 0.6167215674088335
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/4000",
+      "placementId": "sf-r22.5-s0.6-e-452.5-n-452.5",
+      "parity": true,
+      "goalCount": 132,
+      "inkedGoals": 102,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 139,
+        "progress": 0.8843568510870614,
+        "cost": 129.35457456887622,
+        "feasible": true,
+        "shapeScore": 0.6516409826537382,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.30603218507053287,
+        "routeLengthMeters": 734.4772441692788,
+        "heading": 0.6044930723712024
+      },
+      "counterfactual": {
+        "stateId": 139,
+        "progress": 0.8843568510870614,
+        "cost": 129.35457456887622,
+        "feasible": true,
+        "shapeScore": 0.6516409826537382,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.30603218507053287,
+        "routeLengthMeters": 734.4772441692788,
+        "heading": 0.6044930723712024
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/4000",
+      "placementId": "sf-r157.5-s0.6-e-452.5-n-452.5",
+      "parity": true,
+      "goalCount": 168,
+      "inkedGoals": 110,
+      "completionGoals": 1,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [
+        {
+          "cost": 1066.4797612442474,
+          "shape": 0.6920504613805103,
+          "feasible": true
+        }
+      ],
+      "production": {
+        "stateId": 2651,
+        "progress": 0.8910451532829334,
+        "cost": 647.3311918290432,
+        "feasible": true,
+        "shapeScore": 0.6753598671535698,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.16666666666666666,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.3677202444276493,
+        "routeLengthMeters": 882.5285866263583,
+        "heading": 0.6314865251841706
+      },
+      "counterfactual": {
+        "stateId": 4998,
+        "progress": 0.8910451532829334,
+        "cost": 1066.4797612442474,
+        "feasible": true,
+        "shapeScore": 0.6920504613805103,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.4166666666666667,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true
+        ],
+        "routeTarget": 0.5548931003182136,
+        "routeLengthMeters": 1331.7434407637127,
+        "heading": 0.5622278450277425
+      },
+      "changed": true,
+      "cls": "A_final_letter_completed",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/4000",
+      "placementId": "sf-r337.5-s0.6-e640-n0",
+      "parity": true,
+      "goalCount": 16,
+      "inkedGoals": 13,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 1471,
+        "progress": 0.9370087222056738,
+        "cost": 372.4221089905685,
+        "feasible": true,
+        "shapeScore": 0.6442412806702901,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.2727468505218503,
+        "routeLengthMeters": 654.592441252441,
+        "heading": 0.5405013583320589
+      },
+      "counterfactual": {
+        "stateId": 1471,
+        "progress": 0.9370087222056738,
+        "cost": 372.4221089905685,
+        "feasible": true,
+        "shapeScore": 0.6442412806702901,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.2727468505218503,
+        "routeLengthMeters": 654.592441252441,
+        "heading": 0.5405013583320589
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Alexandria/4000",
+      "placementId": "sf-r135-s0.6-e0-n0",
+      "parity": true,
+      "goalCount": 61,
+      "inkedGoals": 47,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 2588,
+        "progress": 0.956124317989805,
+        "cost": 824.0188081799768,
+        "feasible": true,
+        "shapeScore": 0.6735074822715251,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3505354207991407,
+        "routeLengthMeters": 841.2850099179376,
+        "heading": 0.5972312870233553
+      },
+      "counterfactual": {
+        "stateId": 2588,
+        "progress": 0.956124317989805,
+        "cost": 824.0188081799768,
+        "feasible": true,
+        "shapeScore": 0.6735074822715251,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3505354207991407,
+        "routeLengthMeters": 841.2850099179376,
+        "heading": 0.5972312870233553
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r90-s0.8-e800-n0",
+      "parity": true,
+      "goalCount": 68,
+      "inkedGoals": 18,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 289,
+        "progress": 0.9375376595428238,
+        "cost": 30.34479434634895,
+        "feasible": true,
+        "shapeScore": 0.5375917458632221,
+        "targetCoverage": 0.75,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.21214843605776865,
+        "routeLengthMeters": 339.43749769242993,
+        "heading": 0.5651703369154187
+      },
+      "counterfactual": {
+        "stateId": 289,
+        "progress": 0.9375376595428238,
+        "cost": 30.34479434634895,
+        "feasible": true,
+        "shapeScore": 0.5375917458632221,
+        "targetCoverage": 0.75,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.21214843605776865,
+        "routeLengthMeters": 339.43749769242993,
+        "heading": 0.5651703369154187
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r45-s0.6-e-565.7-n565.7",
+      "parity": true,
+      "goalCount": 244,
+      "inkedGoals": 178,
+      "completionGoals": 4,
+      "completionGoalCostSpread": 103.48600267220661,
+      "completionGoals_costShape": [
+        {
+          "cost": 420.1745733281481,
+          "shape": 0.7200921264218358,
+          "feasible": true
+        },
+        {
+          "cost": 427.5388342940933,
+          "shape": 0.5757803315542502,
+          "feasible": true
+        },
+        {
+          "cost": 516.2963150344095,
+          "shape": 0.7147989343107589,
+          "feasible": true
+        },
+        {
+          "cost": 523.6605760003547,
+          "shape": 0.568522068918598,
+          "feasible": true
+        }
+      ],
+      "production": {
+        "stateId": 1728,
+        "progress": 0.8803839354882449,
+        "cost": 227.44819183308945,
+        "feasible": true,
+        "shapeScore": 0.6896638171531889,
+        "targetCoverage": 0.8333333333333334,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.4090156846640488,
+        "routeLengthMeters": 490.81882159685887,
+        "heading": 0.6142258827994808
+      },
+      "counterfactual": {
+        "stateId": 3556,
+        "progress": 1,
+        "cost": 420.1745733281481,
+        "feasible": true,
+        "shapeScore": 0.7200921264218358,
+        "targetCoverage": 0.8958333333333334,
+        "finalCoverage": 0.4583333333333333,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "routeTarget": 0.49685696581112043,
+        "routeLengthMeters": 596.2283589733448,
+        "heading": 0.5763196282495133
+      },
+      "changed": true,
+      "cls": "A_final_letter_completed",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r90-s1.0-e800-n0",
+      "parity": true,
+      "goalCount": 135,
+      "inkedGoals": 127,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 591,
+        "progress": 0.912271747901937,
+        "cost": 200.2687402069414,
+        "feasible": true,
+        "shapeScore": 0.5244310051754175,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.24837499743594005,
+        "routeLengthMeters": 496.7499948718803,
+        "heading": 0.5209970263765099
+      },
+      "counterfactual": {
+        "stateId": 591,
+        "progress": 0.912271747901937,
+        "cost": 200.2687402069414,
+        "feasible": true,
+        "shapeScore": 0.5244310051754175,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.24837499743594005,
+        "routeLengthMeters": 496.7499948718803,
+        "heading": 0.5209970263765099
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r0-s0.8-e0-n800",
+      "parity": true,
+      "goalCount": 0,
+      "inkedGoals": 0,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 358,
+        "progress": 0.8398920744397432,
+        "cost": 210.5155855803971,
+        "feasible": true,
+        "shapeScore": 0.5138547031862385,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.34549495656059814,
+        "routeLengthMeters": 552.7919304969572,
+        "heading": 0.5427737853367456
+      },
+      "counterfactual": {
+        "stateId": 358,
+        "progress": 0.8398920744397432,
+        "cost": 210.5155855803971,
+        "feasible": true,
+        "shapeScore": 0.5138547031862385,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.34549495656059814,
+        "routeLengthMeters": 552.7919304969572,
+        "heading": 0.5427737853367456
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r0-s0.6-e0-n800",
+      "parity": true,
+      "goalCount": 17,
+      "inkedGoals": 14,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 177,
+        "progress": 0.952025051546028,
+        "cost": 129.14601435660654,
+        "feasible": true,
+        "shapeScore": 0.5472665185732903,
+        "targetCoverage": 0.8125,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.31664975026211817,
+        "routeLengthMeters": 379.9797003145418,
+        "heading": 0.5488233273905556
+      },
+      "counterfactual": {
+        "stateId": 177,
+        "progress": 0.952025051546028,
+        "cost": 129.14601435660654,
+        "feasible": true,
+        "shapeScore": 0.5472665185732903,
+        "targetCoverage": 0.8125,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.31664975026211817,
+        "routeLengthMeters": 379.9797003145418,
+        "heading": 0.5488233273905556
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r292.5-s0.8-e400-n0",
+      "parity": true,
+      "goalCount": 90,
+      "inkedGoals": 37,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 147,
+        "progress": 0.9555352233526818,
+        "cost": 205.62718828172137,
+        "feasible": true,
+        "shapeScore": 0.5990738357635623,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.23830497345514878,
+        "routeLengthMeters": 381.287957528238,
+        "heading": 0.5189563689883486
+      },
+      "counterfactual": {
+        "stateId": 147,
+        "progress": 0.9555352233526818,
+        "cost": 205.62718828172137,
+        "feasible": true,
+        "shapeScore": 0.5990738357635623,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.23830497345514878,
+        "routeLengthMeters": 381.287957528238,
+        "heading": 0.5189563689883486
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r337.5-s0.8-e282.8-n-282.8",
+      "parity": true,
+      "goalCount": 14,
+      "inkedGoals": 13,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 578,
+        "progress": 0.9534675407095331,
+        "cost": 312.9134797280509,
+        "feasible": true,
+        "shapeScore": 0.6202958028000546,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.30544931439938156,
+        "routeLengthMeters": 488.7189030390107,
+        "heading": 0.6109567099207135
+      },
+      "counterfactual": {
+        "stateId": 578,
+        "progress": 0.9534675407095331,
+        "cost": 312.9134797280509,
+        "feasible": true,
+        "shapeScore": 0.6202958028000546,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.30544931439938156,
+        "routeLengthMeters": 488.7189030390107,
+        "heading": 0.6109567099207135
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r292.5-s1.0-e-565.7-n-565.7",
+      "parity": true,
+      "goalCount": 15,
+      "inkedGoals": 10,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 320,
+        "progress": 0.9555352233526818,
+        "cost": 346.6015763679562,
+        "feasible": true,
+        "shapeScore": 0.6391063199694651,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3166658461752226,
+        "routeLengthMeters": 633.3316923504451,
+        "heading": 0.49769672434353773
+      },
+      "counterfactual": {
+        "stateId": 320,
+        "progress": 0.9555352233526818,
+        "cost": 346.6015763679562,
+        "feasible": true,
+        "shapeScore": 0.6391063199694651,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3166658461752226,
+        "routeLengthMeters": 633.3316923504451,
+        "heading": 0.49769672434353773
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r112.5-s0.8-e0-n0",
+      "parity": true,
+      "goalCount": 36,
+      "inkedGoals": 29,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 137,
+        "progress": 0.9190088785533665,
+        "cost": 198.42243560521558,
+        "feasible": true,
+        "shapeScore": 0.5900658367949634,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.20833333333333334,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.33390411750308957,
+        "routeLengthMeters": 534.2465880049431,
+        "heading": 0.46804436076988265
+      },
+      "counterfactual": {
+        "stateId": 137,
+        "progress": 0.9190088785533665,
+        "cost": 198.42243560521558,
+        "feasible": true,
+        "shapeScore": 0.5900658367949634,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.20833333333333334,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.33390411750308957,
+        "routeLengthMeters": 534.2465880049431,
+        "heading": 0.46804436076988265
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r315-s0.8-e0-n0",
+      "parity": true,
+      "goalCount": 84,
+      "inkedGoals": 68,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 52,
+        "progress": 0.9320818807104478,
+        "cost": 18.02614450961445,
+        "feasible": true,
+        "shapeScore": 0.6538049076775723,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.16666666666666666,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.27019503149960095,
+        "routeLengthMeters": 432.3120503993616,
+        "heading": 0.5360206438213928
+      },
+      "counterfactual": {
+        "stateId": 52,
+        "progress": 0.9320818807104478,
+        "cost": 18.02614450961445,
+        "feasible": true,
+        "shapeScore": 0.6538049076775723,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.16666666666666666,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.27019503149960095,
+        "routeLengthMeters": 432.3120503993616,
+        "heading": 0.5360206438213928
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r180-s1.0-e-565.7-n565.7",
+      "parity": true,
+      "goalCount": 36,
+      "inkedGoals": 17,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 1374,
+        "progress": 0.9350670163048737,
+        "cost": 249.71424920806163,
+        "feasible": true,
+        "shapeScore": 0.5652505637273911,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0.16666666666666666,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4457233117043824,
+        "routeLengthMeters": 891.4466234087648,
+        "heading": 0.6246181268349181
+      },
+      "counterfactual": {
+        "stateId": 1374,
+        "progress": 0.9350670163048737,
+        "cost": 249.71424920806163,
+        "feasible": true,
+        "shapeScore": 0.5652505637273911,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0.16666666666666666,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4457233117043824,
+        "routeLengthMeters": 891.4466234087648,
+        "heading": 0.6246181268349181
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r67.5-s0.8-e-565.7-n565.7",
+      "parity": true,
+      "goalCount": 237,
+      "inkedGoals": 228,
+      "completionGoals": 26,
+      "completionGoalCostSpread": 911.4355511819514,
+      "completionGoals_costShape": [
+        {
+          "cost": 576.8239349891995,
+          "shape": 0.707319237332415,
+          "feasible": true
+        },
+        {
+          "cost": 591.0108910133034,
+          "shape": 0.7075151654229519,
+          "feasible": true
+        },
+        {
+          "cost": 653.608417117018,
+          "shape": 0.7031858569138291,
+          "feasible": true
+        },
+        {
+          "cost": 673.4362167744671,
+          "shape": 0.7071739449970211,
+          "feasible": true
+        },
+        {
+          "cost": 705.4723107704438,
+          "shape": 0.6952156010600509,
+          "feasible": true
+        },
+        {
+          "cost": 712.6016077235765,
+          "shape": 0.6960966518900323,
+          "feasible": true
+        },
+        {
+          "cost": 745.9562394699486,
+          "shape": 0.7064010159113085,
+          "feasible": true
+        },
+        {
+          "cost": 760.1431954940525,
+          "shape": 0.7054163347224647,
+          "feasible": true
+        },
+        {
+          "cost": 780.665454568267,
+          "shape": 0.6833438780354301,
+          "feasible": true
+        },
+        {
+          "cost": 822.7407215977671,
+          "shape": 0.7017986188887407,
+          "feasible": true
+        },
+        {
+          "cost": 874.6046152511929,
+          "shape": 0.6954603970120955,
+          "feasible": true
+        },
+        {
+          "cost": 881.7339122043256,
+          "shape": 0.6962647582684544,
+          "feasible": true
+        },
+        {
+          "cost": 949.7977590490161,
+          "shape": 0.6850311973847438,
+          "feasible": true
+        },
+        {
+          "cost": 961.4397221701506,
+          "shape": 0.6718499387301826,
+          "feasible": true
+        },
+        {
+          "cost": 1043.7946220850476,
+          "shape": 0.6558261953495772,
+          "feasible": true
+        },
+        {
+          "cost": 1130.7510584808742,
+          "shape": 0.6319798396050031,
+          "feasible": true
+        },
+        {
+          "cost": 1134.1479345987186,
+          "shape": 0.6504449841687032,
+          "feasible": true
+        },
+        {
+          "cost": 1194.2095419630562,
+          "shape": 0.63685349663568,
+          "feasible": true
+        },
+        {
+          "cost": 1204.4812333020616,
+          "shape": 0.6344925728909074,
+          "feasible": true
+        },
+        {
+          "cost": 1212.111557247119,
+          "shape": 0.6407477015280585,
+          "feasible": true
+        },
+        {
+          "cost": 1287.3830146949513,
+          "shape": 0.6271604774944024,
+          "feasible": true
+        },
+        {
+          "cost": 1298.5484628615004,
+          "shape": 0.634191288037686,
+          "feasible": true
+        },
+        {
+          "cost": 1376.3071562680939,
+          "shape": 0.6209336830290836,
+          "feasible": true
+        },
+        {
+          "cost": 1380.333591506296,
+          "shape": 0.6337972141051849,
+          "feasible": true
+        },
+        {
+          "cost": 1432.7952660467054,
+          "shape": 0.6187269861988567,
+          "feasible": true
+        },
+        {
+          "cost": 1488.259486171151,
+          "shape": 0.6215437902280243,
+          "feasible": false
+        }
+      ],
+      "production": {
+        "stateId": 853,
+        "progress": 0.9184870976807108,
+        "cost": 260.7970096479422,
+        "feasible": true,
+        "shapeScore": 0.6622875043653279,
+        "targetCoverage": 0.75,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.23108317389235564,
+        "routeLengthMeters": 369.73307822776906,
+        "heading": 0.4745101846810098
+      },
+      "counterfactual": {
+        "stateId": 5208,
+        "progress": 0.9904512645222954,
+        "cost": 576.8239349891995,
+        "feasible": true,
+        "shapeScore": 0.707319237332415,
+        "targetCoverage": 0.8125,
+        "finalCoverage": 0.6666666666666666,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          true
+        ],
+        "routeTarget": 0.3764384967516605,
+        "routeLengthMeters": 602.301594802657,
+        "heading": 0.49793672431118113
+      },
+      "changed": true,
+      "cls": "A_final_letter_completed",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/4000",
+      "placementId": "sf-r292.5-s0.8-e-905.1-n905.1",
+      "parity": true,
+      "goalCount": 53,
+      "inkedGoals": 51,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 8122,
+        "progress": 0.9897572798269647,
+        "cost": 724.339828183354,
+        "feasible": true,
+        "shapeScore": 0.7173597863002122,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4490559049432973,
+        "routeLengthMeters": 1436.9788958185516,
+        "heading": 0.5695242396949217
+      },
+      "counterfactual": {
+        "stateId": 8122,
+        "progress": 0.9897572798269647,
+        "cost": 724.339828183354,
+        "feasible": true,
+        "shapeScore": 0.7173597863002122,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4490559049432973,
+        "routeLengthMeters": 1436.9788958185516,
+        "heading": 0.5695242396949217
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/4000",
+      "placementId": "sf-r315-s0.6-e-905.1-n905.1",
+      "parity": true,
+      "goalCount": 62,
+      "inkedGoals": 31,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 6958,
+        "progress": 0.9350191841098778,
+        "cost": 738.6847656180693,
+        "feasible": true,
+        "shapeScore": 0.7396406682184301,
+        "targetCoverage": 0.7291666666666667,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.387129442099332,
+        "routeLengthMeters": 929.1106610383969,
+        "heading": 0.5335303230511349
+      },
+      "counterfactual": {
+        "stateId": 6958,
+        "progress": 0.9350191841098778,
+        "cost": 738.6847656180693,
+        "feasible": true,
+        "shapeScore": 0.7396406682184301,
+        "targetCoverage": 0.7291666666666667,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.387129442099332,
+        "routeLengthMeters": 929.1106610383969,
+        "heading": 0.5335303230511349
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/4000",
+      "placementId": "sf-r135-s0.6-e0-n1280",
+      "parity": true,
+      "goalCount": 71,
+      "inkedGoals": 51,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 5143,
+        "progress": 0.9599402536207153,
+        "cost": 562.754653598839,
+        "feasible": true,
+        "shapeScore": 0.7198485696103146,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.3253903426533848,
+        "routeLengthMeters": 780.9368223681237,
+        "heading": 0.674730377490635
+      },
+      "counterfactual": {
+        "stateId": 5143,
+        "progress": 0.9599402536207153,
+        "cost": 562.754653598839,
+        "feasible": true,
+        "shapeScore": 0.7198485696103146,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.3253903426533848,
+        "routeLengthMeters": 780.9368223681237,
+        "heading": 0.674730377490635
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/4000",
+      "placementId": "sf-r337.5-s0.6-e1280-n0",
+      "parity": true,
+      "goalCount": 23,
+      "inkedGoals": 0,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 4090,
+        "progress": 0.9533496007905045,
+        "cost": 705.1046903336076,
+        "feasible": true,
+        "shapeScore": 0.6830238540672643,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.34228833885542786,
+        "routeLengthMeters": 821.4920132530269,
+        "heading": 0.5183161864831617
+      },
+      "counterfactual": {
+        "stateId": 4090,
+        "progress": 0.9533496007905045,
+        "cost": 705.1046903336076,
+        "feasible": true,
+        "shapeScore": 0.6830238540672643,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.34228833885542786,
+        "routeLengthMeters": 821.4920132530269,
+        "heading": 0.5183161864831617
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "ROBZ",
+      "caseLabel": "Zamalek/4000",
+      "placementId": "sf-r67.5-s0.6-e0-n640",
+      "parity": true,
+      "goalCount": 3,
+      "inkedGoals": 3,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 223,
+        "progress": 0.9945102892555842,
+        "cost": 184.65621852343358,
+        "feasible": true,
+        "shapeScore": 0.6383040413714871,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3331002574468247,
+        "routeLengthMeters": 799.4406178723792,
+        "heading": 0.4814689940380937
+      },
+      "counterfactual": {
+        "stateId": 223,
+        "progress": 0.9945102892555842,
+        "cost": 184.65621852343358,
+        "feasible": true,
+        "shapeScore": 0.6383040413714871,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3331002574468247,
+        "routeLengthMeters": 799.4406178723792,
+        "heading": 0.4814689940380937
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r67.5-s1.4-e0-n-400",
+      "parity": true,
+      "goalCount": 61,
+      "inkedGoals": 40,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 8150,
+        "progress": 0.927362198636295,
+        "cost": 537.9033003923489,
+        "feasible": true,
+        "shapeScore": 0.6922511667213763,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.041666666666666664,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.46346400824690426,
+        "routeLengthMeters": 1297.699223091331,
+        "heading": 0.5795786902445768
+      },
+      "counterfactual": {
+        "stateId": 8150,
+        "progress": 0.927362198636295,
+        "cost": 537.9033003923489,
+        "feasible": true,
+        "shapeScore": 0.6922511667213763,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.041666666666666664,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.46346400824690426,
+        "routeLengthMeters": 1297.699223091331,
+        "heading": 0.5795786902445768
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r22.5-s0.8-e-282.8-n282.8",
+      "parity": true,
+      "goalCount": 68,
+      "inkedGoals": 60,
+      "completionGoals": 7,
+      "completionGoalCostSpread": 1163.6655735825223,
+      "completionGoals_costShape": [
+        {
+          "cost": 529.067128920924,
+          "shape": 0.6796728938939348,
+          "feasible": true
+        },
+        {
+          "cost": 614.465108359915,
+          "shape": 0.6715425344634871,
+          "feasible": true
+        },
+        {
+          "cost": 663.10773652782,
+          "shape": 0.6403801041905679,
+          "feasible": true
+        },
+        {
+          "cost": 748.505715966811,
+          "shape": 0.6365819169637398,
+          "feasible": true
+        },
+        {
+          "cost": 1457.8993532197399,
+          "shape": 0.6080284750548965,
+          "feasible": true
+        },
+        {
+          "cost": 1570.3172224363257,
+          "shape": 0.6045545060742419,
+          "feasible": true
+        },
+        {
+          "cost": 1692.7327025034463,
+          "shape": 0.5988756985678807,
+          "feasible": true
+        }
+      ],
+      "production": {
+        "stateId": 1014,
+        "progress": 0.9162062866427096,
+        "cost": 404.26720932045885,
+        "feasible": true,
+        "shapeScore": 0.6413745923299279,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.041666666666666664,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4445922823060013,
+        "routeLengthMeters": 711.3476516896014,
+        "heading": 0.6402940933927341
+      },
+      "counterfactual": {
+        "stateId": 2846,
+        "progress": 0.9162062866427096,
+        "cost": 529.067128920924,
+        "feasible": true,
+        "shapeScore": 0.6796728938939348,
+        "targetCoverage": 0.6875,
+        "finalCoverage": 0.6666666666666666,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "routeTarget": 0.6684421087319609,
+        "routeLengthMeters": 1069.5073739711365,
+        "heading": 0.6831752483500311
+      },
+      "changed": true,
+      "cls": "A_final_letter_completed",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r22.5-s1.0-e0-n-400",
+      "parity": true,
+      "goalCount": 250,
+      "inkedGoals": 223,
+      "completionGoals": 8,
+      "completionGoalCostSpread": 249.11480014092643,
+      "completionGoals_costShape": [
+        {
+          "cost": 326.57734321632137,
+          "shape": 0.6978092303133427,
+          "feasible": true
+        },
+        {
+          "cost": 337.17172076359816,
+          "shape": 0.7030684044966106,
+          "feasible": true
+        },
+        {
+          "cost": 395.3159331081477,
+          "shape": 0.6771267883665991,
+          "feasible": true
+        },
+        {
+          "cost": 395.79733071826627,
+          "shape": 0.6925556522929326,
+          "feasible": true
+        },
+        {
+          "cost": 402.8601388459274,
+          "shape": 0.6952684218208759,
+          "feasible": true
+        },
+        {
+          "cost": 453.9415430628158,
+          "shape": 0.6667753381429152,
+          "feasible": true
+        },
+        {
+          "cost": 464.7096589165401,
+          "shape": 0.6651050150484213,
+          "feasible": true
+        },
+        {
+          "cost": 575.6921433572478,
+          "shape": 0.6555626480881533,
+          "feasible": true
+        }
+      ],
+      "production": {
+        "stateId": 2600,
+        "progress": 0.9087436716401741,
+        "cost": 107.95989153485182,
+        "feasible": true,
+        "shapeScore": 0.6474508147935912,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.373636167033654,
+        "routeLengthMeters": 747.2723340673074,
+        "heading": 0.6015884043725401
+      },
+      "counterfactual": {
+        "stateId": 7343,
+        "progress": 0.9036065436457795,
+        "cost": 326.57734321632137,
+        "feasible": true,
+        "shapeScore": 0.6978092303133427,
+        "targetCoverage": 0.6875,
+        "finalCoverage": 0.4583333333333333,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false,
+          true
+        ],
+        "routeTarget": 0.6135124280841258,
+        "routeLengthMeters": 1227.0248561682506,
+        "heading": 0.6516441997614307
+      },
+      "changed": true,
+      "cls": "A_final_letter_completed",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r90-s1.2-e0-n-400",
+      "parity": true,
+      "goalCount": 85,
+      "inkedGoals": 47,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 6563,
+        "progress": 0.8964651744704643,
+        "cost": 458.6234035632306,
+        "feasible": true,
+        "shapeScore": 0.6329169093292639,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.45468322407232287,
+        "routeLengthMeters": 1091.239737773574,
+        "heading": 0.5321366651975965
+      },
+      "counterfactual": {
+        "stateId": 6563,
+        "progress": 0.8964651744704643,
+        "cost": 458.6234035632306,
+        "feasible": true,
+        "shapeScore": 0.6329169093292639,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.45468322407232287,
+        "routeLengthMeters": 1091.239737773574,
+        "heading": 0.5321366651975965
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r45-s0.6-e0-n800",
+      "parity": true,
+      "goalCount": 4,
+      "inkedGoals": 4,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 600,
+        "progress": 0.9570052167565484,
+        "cost": 412.6469507310164,
+        "feasible": true,
+        "shapeScore": 0.6862746630423368,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.625,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        "routeTarget": 0.7082030759820516,
+        "routeLengthMeters": 849.8436911784609,
+        "heading": 0.5542808078549992
+      },
+      "counterfactual": {
+        "stateId": 600,
+        "progress": 0.9570052167565484,
+        "cost": 412.6469507310164,
+        "feasible": true,
+        "shapeScore": 0.6862746630423368,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.625,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        "routeTarget": 0.7082030759820516,
+        "routeLengthMeters": 849.8436911784609,
+        "heading": 0.5542808078549992
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r202.5-s0.8-e-800-n0",
+      "parity": true,
+      "goalCount": 35,
+      "inkedGoals": 35,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 3267,
+        "progress": 0.9937862881559105,
+        "cost": 175.86002199742916,
+        "feasible": true,
+        "shapeScore": 0.6724595896660742,
+        "targetCoverage": 0.6875,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.4333803416083376,
+        "routeLengthMeters": 693.4085465733398,
+        "heading": 0.5222171059727561
+      },
+      "counterfactual": {
+        "stateId": 3267,
+        "progress": 0.9937862881559105,
+        "cost": 175.86002199742916,
+        "feasible": true,
+        "shapeScore": 0.6724595896660742,
+        "targetCoverage": 0.6875,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.4333803416083376,
+        "routeLengthMeters": 693.4085465733398,
+        "heading": 0.5222171059727561
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r45-s1.0-e0-n-400",
+      "parity": true,
+      "goalCount": 0,
+      "inkedGoals": 0,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 3586,
+        "progress": 0.7729434373375138,
+        "cost": 326.15262594374195,
+        "feasible": true,
+        "shapeScore": 0.6916703681686656,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4051600427671221,
+        "routeLengthMeters": 810.3200855342437,
+        "heading": 0.6270904047079199
+      },
+      "counterfactual": {
+        "stateId": 3586,
+        "progress": 0.7729434373375138,
+        "cost": 326.15262594374195,
+        "feasible": true,
+        "shapeScore": 0.6916703681686656,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4051600427671221,
+        "routeLengthMeters": 810.3200855342437,
+        "heading": 0.6270904047079199
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r202.5-s0.6-e-800-n0",
+      "parity": true,
+      "goalCount": 151,
+      "inkedGoals": 132,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 1923,
+        "progress": 0.9921246641422948,
+        "cost": 248.9409017411394,
+        "feasible": true,
+        "shapeScore": 0.6650001216013984,
+        "targetCoverage": 0.8333333333333334,
+        "finalCoverage": 0.20833333333333334,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.45289793966953895,
+        "routeLengthMeters": 543.4775276034463,
+        "heading": 0.5209071270997236
+      },
+      "counterfactual": {
+        "stateId": 1923,
+        "progress": 0.9921246641422948,
+        "cost": 248.9409017411394,
+        "feasible": true,
+        "shapeScore": 0.6650001216013984,
+        "targetCoverage": 0.8333333333333334,
+        "finalCoverage": 0.20833333333333334,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.45289793966953895,
+        "routeLengthMeters": 543.4775276034463,
+        "heading": 0.5209071270997236
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r0-s1.4-e0-n-400",
+      "parity": true,
+      "goalCount": 114,
+      "inkedGoals": 34,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 7121,
+        "progress": 0.895578330809099,
+        "cost": 418.66007965740926,
+        "feasible": true,
+        "shapeScore": 0.62158879187363,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.42150874753067763,
+        "routeLengthMeters": 1180.224493085896,
+        "heading": 0.5853658711808155
+      },
+      "counterfactual": {
+        "stateId": 7121,
+        "progress": 0.895578330809099,
+        "cost": 418.66007965740926,
+        "feasible": true,
+        "shapeScore": 0.62158879187363,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.42150874753067763,
+        "routeLengthMeters": 1180.224493085896,
+        "heading": 0.5853658711808155
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r292.5-s1.2-e565.7-n565.7",
+      "parity": true,
+      "goalCount": 129,
+      "inkedGoals": 124,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 5867,
+        "progress": 0.9954197702098234,
+        "cost": 344.58570159591994,
+        "feasible": true,
+        "shapeScore": 0.6965708715458292,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.3333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.45036370887690363,
+        "routeLengthMeters": 1080.8729013045674,
+        "heading": 0.6636095411308037
+      },
+      "counterfactual": {
+        "stateId": 5867,
+        "progress": 0.9954197702098234,
+        "cost": 344.58570159591994,
+        "feasible": true,
+        "shapeScore": 0.6965708715458292,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.3333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.45036370887690363,
+        "routeLengthMeters": 1080.8729013045674,
+        "heading": 0.6636095411308037
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r112.5-s1.0-e565.7-n565.7",
+      "parity": true,
+      "goalCount": 24,
+      "inkedGoals": 21,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 3537,
+        "progress": 0.9575343517977967,
+        "cost": 371.5572403761448,
+        "feasible": true,
+        "shapeScore": 0.6360200483991345,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.4166666666666667,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "routeTarget": 0.3723976275922565,
+        "routeLengthMeters": 744.7952551845125,
+        "heading": 0.5417154467356412
+      },
+      "counterfactual": {
+        "stateId": 3537,
+        "progress": 0.9575343517977967,
+        "cost": 371.5572403761448,
+        "feasible": true,
+        "shapeScore": 0.6360200483991345,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.4166666666666667,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "routeTarget": 0.3723976275922565,
+        "routeLengthMeters": 744.7952551845125,
+        "heading": 0.5417154467356412
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r22.5-s1.2-e282.8-n-282.8",
+      "parity": true,
+      "goalCount": 71,
+      "inkedGoals": 64,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 7987,
+        "progress": 0.9139821267492027,
+        "cost": 364.5559507367412,
+        "feasible": true,
+        "shapeScore": 0.7175540983262539,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.16666666666666666,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.5325127980151296,
+        "routeLengthMeters": 1278.0307152363093,
+        "heading": 0.6424294159299873
+      },
+      "counterfactual": {
+        "stateId": 7987,
+        "progress": 0.9139821267492027,
+        "cost": 364.5559507367412,
+        "feasible": true,
+        "shapeScore": 0.7175540983262539,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.16666666666666666,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.5325127980151296,
+        "routeLengthMeters": 1278.0307152363093,
+        "heading": 0.6424294159299873
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r90-s1.0-e0-n-400",
+      "parity": true,
+      "goalCount": 163,
+      "inkedGoals": 93,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 5261,
+        "progress": 0.9080591475968459,
+        "cost": 371.9407694049412,
+        "feasible": true,
+        "shapeScore": 0.5919720398403416,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4580511165439454,
+        "routeLengthMeters": 916.1022330878906,
+        "heading": 0.5292164710393827
+      },
+      "counterfactual": {
+        "stateId": 5261,
+        "progress": 0.9080591475968459,
+        "cost": 371.9407694049412,
+        "feasible": true,
+        "shapeScore": 0.5919720398403416,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4580511165439454,
+        "routeLengthMeters": 916.1022330878906,
+        "heading": 0.5292164710393827
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r202.5-s1.0-e-800-n0",
+      "parity": true,
+      "goalCount": 9,
+      "inkedGoals": 7,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 2414,
+        "progress": 0.9990227211553036,
+        "cost": 371.3966099958464,
+        "feasible": true,
+        "shapeScore": 0.6336186495522785,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.399388393481017,
+        "routeLengthMeters": 798.7767869620332,
+        "heading": 0.49738434806206233
+      },
+      "counterfactual": {
+        "stateId": 2414,
+        "progress": 0.9990227211553036,
+        "cost": 371.3966099958464,
+        "feasible": true,
+        "shapeScore": 0.6336186495522785,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.399388393481017,
+        "routeLengthMeters": 798.7767869620332,
+        "heading": 0.49738434806206233
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r45-s1.2-e565.7-n565.7",
+      "parity": true,
+      "goalCount": 108,
+      "inkedGoals": 100,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 3475,
+        "progress": 0.8891202583328298,
+        "cost": 636.1718270350287,
+        "feasible": true,
+        "shapeScore": 0.692895453449579,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.39330947500542585,
+        "routeLengthMeters": 943.9427400130212,
+        "heading": 0.5375867058516156
+      },
+      "counterfactual": {
+        "stateId": 3475,
+        "progress": 0.8891202583328298,
+        "cost": 636.1718270350287,
+        "feasible": true,
+        "shapeScore": 0.692895453449579,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.39330947500542585,
+        "routeLengthMeters": 943.9427400130212,
+        "heading": 0.5375867058516156
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r157.5-s0.8-e0-n0",
+      "parity": true,
+      "goalCount": 57,
+      "inkedGoals": 52,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 887,
+        "progress": 0.9784069409047049,
+        "cost": 468.1542169869446,
+        "feasible": true,
+        "shapeScore": 0.6239375138438811,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.5,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "routeTarget": 0.3770495033998474,
+        "routeLengthMeters": 603.2792054397554,
+        "heading": 0.564746009868259
+      },
+      "counterfactual": {
+        "stateId": 887,
+        "progress": 0.9784069409047049,
+        "cost": 468.1542169869446,
+        "feasible": true,
+        "shapeScore": 0.6239375138438811,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.5,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "routeTarget": 0.3770495033998474,
+        "routeLengthMeters": 603.2792054397554,
+        "heading": 0.564746009868259
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r0-s1.2-e-282.8-n-282.8",
+      "parity": true,
+      "goalCount": 111,
+      "inkedGoals": 63,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 5917,
+        "progress": 0.9213102673413572,
+        "cost": 371.7252042211895,
+        "feasible": true,
+        "shapeScore": 0.6239602083920082,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.16666666666666666,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.47692448020906303,
+        "routeLengthMeters": 1144.6187525017504,
+        "heading": 0.5886140025647338
+      },
+      "counterfactual": {
+        "stateId": 5917,
+        "progress": 0.9213102673413572,
+        "cost": 371.7252042211895,
+        "feasible": true,
+        "shapeScore": 0.6239602083920082,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.16666666666666666,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.47692448020906303,
+        "routeLengthMeters": 1144.6187525017504,
+        "heading": 0.5886140025647338
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r0-s1.0-e-282.8-n-282.8",
+      "parity": true,
+      "goalCount": 100,
+      "inkedGoals": 80,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 903,
+        "progress": 0.8816159742982115,
+        "cost": 330.125473577505,
+        "feasible": true,
+        "shapeScore": 0.5311836445720338,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.27327052075126074,
+        "routeLengthMeters": 546.541041502521,
+        "heading": 0.48946639746237164
+      },
+      "counterfactual": {
+        "stateId": 903,
+        "progress": 0.8816159742982115,
+        "cost": 330.125473577505,
+        "feasible": true,
+        "shapeScore": 0.5311836445720338,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.27327052075126074,
+        "routeLengthMeters": 546.541041502521,
+        "heading": 0.48946639746237164
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r67.5-s1.2-e400-n0",
+      "parity": true,
+      "goalCount": 315,
+      "inkedGoals": 209,
+      "completionGoals": 1,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [
+        {
+          "cost": 1059.9782564135135,
+          "shape": 0.6156921394018084,
+          "feasible": false
+        }
+      ],
+      "production": {
+        "stateId": 3205,
+        "progress": 0.8920509211988806,
+        "cost": 633.6723641977974,
+        "feasible": true,
+        "shapeScore": 0.6381106682976234,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.08333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.3805162285893651,
+        "routeLengthMeters": 913.238948614475,
+        "heading": 0.5142512116596183
+      },
+      "counterfactual": {
+        "stateId": 8278,
+        "progress": 0.9828841507676706,
+        "cost": 1059.9782564135135,
+        "feasible": false,
+        "shapeScore": 0.6156921394018084,
+        "targetCoverage": 0.47916666666666663,
+        "finalCoverage": 0.4583333333333333,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "routeTarget": 0.39303378391749244,
+        "routeLengthMeters": 943.2810814019806,
+        "heading": 0.4590897241657273
+      },
+      "changed": true,
+      "cls": "D_feasibility_lost",
+      "clearlyWorse": true
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r45-s1.2-e0-n-400",
+      "parity": true,
+      "goalCount": 108,
+      "inkedGoals": 108,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 5094,
+        "progress": 0.9854952900496801,
+        "cost": 731.5519351140803,
+        "feasible": true,
+        "shapeScore": 0.7209274052484718,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.25,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.49642362482169716,
+        "routeLengthMeters": 1191.4166995720718,
+        "heading": 0.5818184998667651
+      },
+      "counterfactual": {
+        "stateId": 5094,
+        "progress": 0.9854952900496801,
+        "cost": 731.5519351140803,
+        "feasible": true,
+        "shapeScore": 0.7209274052484718,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.25,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.49642362482169716,
+        "routeLengthMeters": 1191.4166995720718,
+        "heading": 0.5818184998667651
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r0-s1.0-e0-n-400",
+      "parity": true,
+      "goalCount": 128,
+      "inkedGoals": 52,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 5927,
+        "progress": 0.9902788444817834,
+        "cost": 355.03597710461605,
+        "feasible": true,
+        "shapeScore": 0.5189096727168431,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0.041666666666666664,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.4749031611775262,
+        "routeLengthMeters": 949.8063223550516,
+        "heading": 0.5478588307026159
+      },
+      "counterfactual": {
+        "stateId": 5927,
+        "progress": 0.9902788444817834,
+        "cost": 355.03597710461605,
+        "feasible": true,
+        "shapeScore": 0.5189096727168431,
+        "targetCoverage": 0.6458333333333333,
+        "finalCoverage": 0.041666666666666664,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.4749031611775262,
+        "routeLengthMeters": 949.8063223550516,
+        "heading": 0.5478588307026159
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r90-s1.0-e-282.8-n-282.8",
+      "parity": true,
+      "goalCount": 109,
+      "inkedGoals": 94,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 3668,
+        "progress": 0.9053299255472153,
+        "cost": 621.3962146892078,
+        "feasible": true,
+        "shapeScore": 0.5736384938144933,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.25,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4402294593320543,
+        "routeLengthMeters": 880.458918664108,
+        "heading": 0.5032868073555011
+      },
+      "counterfactual": {
+        "stateId": 3668,
+        "progress": 0.9053299255472153,
+        "cost": 621.3962146892078,
+        "feasible": true,
+        "shapeScore": 0.5736384938144933,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.25,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.4402294593320543,
+        "routeLengthMeters": 880.458918664108,
+        "heading": 0.5032868073555011
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r22.5-s1.0-e282.8-n-282.8",
+      "parity": true,
+      "goalCount": 215,
+      "inkedGoals": 207,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 7409,
+        "progress": 0.9017906294704608,
+        "cost": 298.3005022260189,
+        "feasible": true,
+        "shapeScore": 0.742554108078905,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.3333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.6028011447248395,
+        "routeLengthMeters": 1205.6022894496778,
+        "heading": 0.6630237253216333
+      },
+      "counterfactual": {
+        "stateId": 7409,
+        "progress": 0.9017906294704608,
+        "cost": 298.3005022260189,
+        "feasible": true,
+        "shapeScore": 0.742554108078905,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0.3333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.6028011447248395,
+        "routeLengthMeters": 1205.6022894496778,
+        "heading": 0.6630237253216333
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r180-s1.4-e400-n0",
+      "parity": true,
+      "goalCount": 42,
+      "inkedGoals": 0,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 7551,
+        "progress": 0.9162062866427094,
+        "cost": 857.7495585357509,
+        "feasible": true,
+        "shapeScore": 0.5936490741971083,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.4647908051571471,
+        "routeLengthMeters": 1301.4142544400108,
+        "heading": 0.5549638391659347
+      },
+      "counterfactual": {
+        "stateId": 7551,
+        "progress": 0.9162062866427094,
+        "cost": 857.7495585357509,
+        "feasible": true,
+        "shapeScore": 0.5936490741971083,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.4647908051571471,
+        "routeLengthMeters": 1301.4142544400108,
+        "heading": 0.5549638391659347
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/2000",
+      "placementId": "sf-r247.5-s1.2-e-565.7-n-565.7",
+      "parity": true,
+      "goalCount": 21,
+      "inkedGoals": 18,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 5150,
+        "progress": 0.9282498251086839,
+        "cost": 593.4691082609972,
+        "feasible": true,
+        "shapeScore": 0.6733851668025314,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.45278076489901947,
+        "routeLengthMeters": 1086.6738357576457,
+        "heading": 0.5655281703465513
+      },
+      "counterfactual": {
+        "stateId": 5150,
+        "progress": 0.9282498251086839,
+        "cost": 593.4691082609972,
+        "feasible": true,
+        "shapeScore": 0.6733851668025314,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.45278076489901947,
+        "routeLengthMeters": 1086.6738357576457,
+        "heading": 0.5655281703465513
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Alexandria/4000",
+      "placementId": "sf-r90-s0.6-e1280-n0",
+      "parity": true,
+      "goalCount": 29,
+      "inkedGoals": 8,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 8416,
+        "progress": 0.9000732935261879,
+        "cost": 603.590131179089,
+        "feasible": true,
+        "shapeScore": 0.5771102673641417,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.3511503143381446,
+        "routeLengthMeters": 842.7607544115461,
+        "heading": 0.5714521013773978
+      },
+      "counterfactual": {
+        "stateId": 8416,
+        "progress": 0.9000732935261879,
+        "cost": 603.590131179089,
+        "feasible": true,
+        "shapeScore": 0.5771102673641417,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.3511503143381446,
+        "routeLengthMeters": 842.7607544115461,
+        "heading": 0.5714521013773978
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r0-s1.2-e800-n0",
+      "parity": true,
+      "goalCount": 64,
+      "inkedGoals": 56,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 3997,
+        "progress": 0.990393536595628,
+        "cost": 1011.2568224163662,
+        "feasible": true,
+        "shapeScore": 0.552782991425823,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.3333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.49842029215280464,
+        "routeLengthMeters": 1196.2087011667295,
+        "heading": 0.5854435774995552
+      },
+      "counterfactual": {
+        "stateId": 3997,
+        "progress": 0.990393536595628,
+        "cost": 1011.2568224163662,
+        "feasible": true,
+        "shapeScore": 0.552782991425823,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.3333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.49842029215280464,
+        "routeLengthMeters": 1196.2087011667295,
+        "heading": 0.5854435774995552
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r67.5-s1.2-e-565.7-n565.7",
+      "parity": true,
+      "goalCount": 22,
+      "inkedGoals": 10,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 5892,
+        "progress": 0.8995123318106917,
+        "cost": 641.155313777532,
+        "feasible": true,
+        "shapeScore": 0.6941270956919,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.36237463133706826,
+        "routeLengthMeters": 869.6991152089627,
+        "heading": 0.49640078175907115
+      },
+      "counterfactual": {
+        "stateId": 5892,
+        "progress": 0.8995123318106917,
+        "cost": 641.155313777532,
+        "feasible": true,
+        "shapeScore": 0.6941270956919,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.36237463133706826,
+        "routeLengthMeters": 869.6991152089627,
+        "heading": 0.49640078175907115
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r45-s1.2-e0-n-400",
+      "parity": true,
+      "goalCount": 15,
+      "inkedGoals": 15,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 1969,
+        "progress": 0.9859709569335166,
+        "cost": 345.1876461500006,
+        "feasible": true,
+        "shapeScore": 0.7085124069601814,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.5416666666666666,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          true,
+          false,
+          true
+        ],
+        "routeTarget": 0.43119819458239367,
+        "routeLengthMeters": 1034.8756669977436,
+        "heading": 0.6026645095471262
+      },
+      "counterfactual": {
+        "stateId": 1969,
+        "progress": 0.9859709569335166,
+        "cost": 345.1876461500006,
+        "feasible": true,
+        "shapeScore": 0.7085124069601814,
+        "targetCoverage": 0.625,
+        "finalCoverage": 0.5416666666666666,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          true,
+          false,
+          true
+        ],
+        "routeTarget": 0.43119819458239367,
+        "routeLengthMeters": 1034.8756669977436,
+        "heading": 0.6026645095471262
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r45-s0.8-e800-n0",
+      "parity": true,
+      "goalCount": 121,
+      "inkedGoals": 120,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 1356,
+        "progress": 0.9706675966974826,
+        "cost": 564.079194286588,
+        "feasible": true,
+        "shapeScore": 0.6520210015043713,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.25,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.39654961150992446,
+        "routeLengthMeters": 634.479378415879,
+        "heading": 0.4841927260007856
+      },
+      "counterfactual": {
+        "stateId": 1356,
+        "progress": 0.9706675966974826,
+        "cost": 564.079194286588,
+        "feasible": true,
+        "shapeScore": 0.6520210015043713,
+        "targetCoverage": 0.6666666666666667,
+        "finalCoverage": 0.25,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.39654961150992446,
+        "routeLengthMeters": 634.479378415879,
+        "heading": 0.4841927260007856
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r112.5-s0.8-e-565.7-n565.7",
+      "parity": true,
+      "goalCount": 30,
+      "inkedGoals": 25,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 8046,
+        "progress": 0.9514147957237528,
+        "cost": 640.9915796182624,
+        "feasible": true,
+        "shapeScore": 0.6725015503016897,
+        "targetCoverage": 0.7291666666666667,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.48424776178221035,
+        "routeLengthMeters": 774.7964188515363,
+        "heading": 0.5166125752376077
+      },
+      "counterfactual": {
+        "stateId": 8046,
+        "progress": 0.9514147957237528,
+        "cost": 640.9915796182624,
+        "feasible": true,
+        "shapeScore": 0.6725015503016897,
+        "targetCoverage": 0.7291666666666667,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.48424776178221035,
+        "routeLengthMeters": 774.7964188515363,
+        "heading": 0.5166125752376077
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r67.5-s1.0-e800-n0",
+      "parity": true,
+      "goalCount": 22,
+      "inkedGoals": 20,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 2320,
+        "progress": 0.9872579021012229,
+        "cost": 835.5722512243394,
+        "feasible": true,
+        "shapeScore": 0.630307652155195,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.4583333333333333,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "routeTarget": 0.429020352111806,
+        "routeLengthMeters": 858.040704223611,
+        "heading": 0.6160636492606805
+      },
+      "counterfactual": {
+        "stateId": 2320,
+        "progress": 0.9872579021012229,
+        "cost": 835.5722512243394,
+        "feasible": true,
+        "shapeScore": 0.630307652155195,
+        "targetCoverage": 0.6041666666666667,
+        "finalCoverage": 0.4583333333333333,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          false,
+          true
+        ],
+        "routeTarget": 0.429020352111806,
+        "routeLengthMeters": 858.040704223611,
+        "heading": 0.6160636492606805
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r90-s0.6-e-565.7-n565.7",
+      "parity": true,
+      "goalCount": 309,
+      "inkedGoals": 122,
+      "completionGoals": 3,
+      "completionGoalCostSpread": 85.25565654154309,
+      "completionGoals_costShape": [
+        {
+          "cost": 399.74147920675415,
+          "shape": 0.5892114717590008,
+          "feasible": true
+        },
+        {
+          "cost": 443.5968081962316,
+          "shape": 0.5953352361201741,
+          "feasible": true
+        },
+        {
+          "cost": 484.99713574829724,
+          "shape": 0.5928820055728456,
+          "feasible": true
+        }
+      ],
+      "production": {
+        "stateId": 1135,
+        "progress": 0.9108733260583701,
+        "cost": 212.0305125768503,
+        "feasible": true,
+        "shapeScore": 0.4276763932266377,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.26073995273854683,
+        "routeLengthMeters": 312.8879432862558,
+        "heading": 0.4512068018546447
+      },
+      "counterfactual": {
+        "stateId": 7840,
+        "progress": 0.9819328017606919,
+        "cost": 399.74147920675415,
+        "feasible": true,
+        "shapeScore": 0.5892114717590008,
+        "targetCoverage": 0.7708333333333334,
+        "finalCoverage": 0.5833333333333334,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "routeTarget": 0.43225211407258296,
+        "routeLengthMeters": 518.7025368870989,
+        "heading": 0.48560863357292705
+      },
+      "changed": true,
+      "cls": "A_final_letter_completed",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r337.5-s0.8-e800-n0",
+      "parity": true,
+      "goalCount": 140,
+      "inkedGoals": 109,
+      "completionGoals": 3,
+      "completionGoalCostSpread": 155.1108204289527,
+      "completionGoals_costShape": [
+        {
+          "cost": 567.4002721081217,
+          "shape": 0.7354322196020475,
+          "feasible": true
+        },
+        {
+          "cost": 595.1934102727998,
+          "shape": 0.7343547746686775,
+          "feasible": true
+        },
+        {
+          "cost": 722.5110925370744,
+          "shape": 0.7285983100403594,
+          "feasible": true
+        }
+      ],
+      "production": {
+        "stateId": 1510,
+        "progress": 0.9119787350069419,
+        "cost": 283.2304082503551,
+        "feasible": true,
+        "shapeScore": 0.6742538469055219,
+        "targetCoverage": 0.7708333333333334,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.42998044950068637,
+        "routeLengthMeters": 687.9687192010978,
+        "heading": 0.590186520987504
+      },
+      "counterfactual": {
+        "stateId": 3366,
+        "progress": 0.9486509131901377,
+        "cost": 567.4002721081217,
+        "feasible": true,
+        "shapeScore": 0.7354322196020475,
+        "targetCoverage": 0.8541666666666666,
+        "finalCoverage": 0.7916666666666666,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "routeTarget": 0.6076320046179966,
+        "routeLengthMeters": 972.2112073887939,
+        "heading": 0.5849342870250037
+      },
+      "changed": true,
+      "cls": "A_final_letter_completed",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r315-s0.8-e800-n0",
+      "parity": true,
+      "goalCount": 112,
+      "inkedGoals": 105,
+      "completionGoals": 32,
+      "completionGoalCostSpread": 476.0519732912438,
+      "completionGoals_costShape": [
+        {
+          "cost": 551.1859290288863,
+          "shape": 0.6397070330109539,
+          "feasible": true
+        },
+        {
+          "cost": 583.8857313105427,
+          "shape": 0.6360410210252355,
+          "feasible": true
+        },
+        {
+          "cost": 594.9153210683402,
+          "shape": 0.6568104526769137,
+          "feasible": true
+        },
+        {
+          "cost": 627.9476059527807,
+          "shape": 0.6640856684638509,
+          "feasible": true
+        },
+        {
+          "cost": 634.9712334268298,
+          "shape": 0.6523428476543686,
+          "feasible": true
+        },
+        {
+          "cost": 639.4410474949301,
+          "shape": 0.6432545236999011,
+          "feasible": true
+        },
+        {
+          "cost": 666.6812032579445,
+          "shape": 0.6406655069810352,
+          "feasible": true
+        },
+        {
+          "cost": 668.0035183112703,
+          "shape": 0.6621558347562313,
+          "feasible": true
+        },
+        {
+          "cost": 670.0217403432997,
+          "shape": 0.6719103402637997,
+          "feasible": true
+        },
+        {
+          "cost": 690.5893283575061,
+          "shape": 0.6401838946484936,
+          "feasible": true
+        },
+        {
+          "cost": 729.9934191343787,
+          "shape": 0.6538557046187068,
+          "feasible": true
+        },
+        {
+          "cost": 763.0257040188192,
+          "shape": 0.6608559274369553,
+          "feasible": true
+        },
+        {
+          "cost": 763.2946347033838,
+          "shape": 0.6641351764220835,
+          "feasible": true
+        },
+        {
+          "cost": 778.0861750327696,
+          "shape": 0.6415865678500172,
+          "feasible": true
+        },
+        {
+          "cost": 783.2161133909581,
+          "shape": 0.6549936713564813,
+          "feasible": true
+        },
+        {
+          "cost": 816.2483982753986,
+          "shape": 0.6629363354597086,
+          "feasible": true
+        },
+        {
+          "cost": 820.4784122615376,
+          "shape": 0.6535771216739629,
+          "feasible": true
+        },
+        {
+          "cost": 832.4361353522573,
+          "shape": 0.656034183808681,
+          "feasible": true
+        },
+        {
+          "cost": 853.5106971459782,
+          "shape": 0.6658632517871498,
+          "feasible": true
+        },
+        {
+          "cost": 860.5752571909965,
+          "shape": 0.6596083468169849,
+          "feasible": true
+        },
+        {
+          "cost": 865.4684202366979,
+          "shape": 0.6674240377264887,
+          "feasible": true
+        },
+        {
+          "cost": 869.8052907737436,
+          "shape": 0.656944941302153,
+          "feasible": true
+        },
+        {
+          "cost": 876.0359453126216,
+          "shape": 0.6520486810247228,
+          "feasible": true
+        },
+        {
+          "cost": 892.821016155162,
+          "shape": 0.6573542813942219,
+          "feasible": true
+        },
+        {
+          "cost": 893.607542075437,
+          "shape": 0.6705737821776263,
+          "feasible": true
+        },
+        {
+          "cost": 902.8375756581842,
+          "shape": 0.6658761174803702,
+          "feasible": true
+        },
+        {
+          "cost": 909.0682301970621,
+          "shape": 0.6634217974690331,
+          "feasible": true
+        },
+        {
+          "cost": 925.8533010396026,
+          "shape": 0.6677417483815097,
+          "feasible": true
+        },
+        {
+          "cost": 962.4280835276375,
+          "shape": 0.6503292659858684,
+          "feasible": true
+        },
+        {
+          "cost": 994.2056174356896,
+          "shape": 0.6418195302025428,
+          "feasible": true
+        },
+        {
+          "cost": 995.460368412078,
+          "shape": 0.6643571294395919,
+          "feasible": true
+        },
+        {
+          "cost": 1027.2379023201302,
+          "shape": 0.6566471543656823,
+          "feasible": true
+        }
+      ],
+      "production": {
+        "stateId": 2249,
+        "progress": 0.9066122182244599,
+        "cost": 447.59125455458565,
+        "feasible": true,
+        "shapeScore": 0.6267106950472807,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.2916666666666667,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.38727617880537957,
+        "routeLengthMeters": 619.641886088607,
+        "heading": 0.46988678002980006
+      },
+      "counterfactual": {
+        "stateId": 2984,
+        "progress": 0.9358501903854508,
+        "cost": 551.1859290288863,
+        "feasible": true,
+        "shapeScore": 0.6397070330109539,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.4166666666666667,
+        "finalPhysical": true,
+        "finalInOrder": true,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "routeTarget": 0.43030709063704436,
+        "routeLengthMeters": 688.4913450192706,
+        "heading": 0.4722995770447519
+      },
+      "changed": true,
+      "cls": "A_final_letter_completed",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r337.5-s1.2-e0-n-400",
+      "parity": true,
+      "goalCount": 73,
+      "inkedGoals": 38,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 1569,
+        "progress": 0.904179479509353,
+        "cost": 525.2734518656127,
+        "feasible": true,
+        "shapeScore": 0.6841758802271543,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.5118813280324084,
+        "routeLengthMeters": 1228.5151872777794,
+        "heading": 0.6113588237371526
+      },
+      "counterfactual": {
+        "stateId": 1569,
+        "progress": 0.904179479509353,
+        "cost": 525.2734518656127,
+        "feasible": true,
+        "shapeScore": 0.6841758802271543,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "routeTarget": 0.5118813280324084,
+        "routeLengthMeters": 1228.5151872777794,
+        "heading": 0.6113588237371526
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r337.5-s0.6-e800-n0",
+      "parity": true,
+      "goalCount": 39,
+      "inkedGoals": 19,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 859,
+        "progress": 0.9766022313813384,
+        "cost": 397.99269248852306,
+        "feasible": true,
+        "shapeScore": 0.6606042416699658,
+        "targetCoverage": 0.8333333333333334,
+        "finalCoverage": 0.5416666666666666,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "routeTarget": 0.40686661850749345,
+        "routeLengthMeters": 488.23994220899175,
+        "heading": 0.48332806911183007
+      },
+      "counterfactual": {
+        "stateId": 859,
+        "progress": 0.9766022313813384,
+        "cost": 397.99269248852306,
+        "feasible": true,
+        "shapeScore": 0.6606042416699658,
+        "targetCoverage": 0.8333333333333334,
+        "finalCoverage": 0.5416666666666666,
+        "finalPhysical": true,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "routeTarget": 0.40686661850749345,
+        "routeLengthMeters": 488.23994220899175,
+        "heading": 0.48332806911183007
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/2000",
+      "placementId": "sf-r135-s0.6-e0-n400",
+      "parity": true,
+      "goalCount": 6,
+      "inkedGoals": 2,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 238,
+        "progress": 0.9267035653169746,
+        "cost": 94.4146011202706,
+        "feasible": true,
+        "shapeScore": 0.6190361269044635,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.3981765834781304,
+        "routeLengthMeters": 477.8119001737562,
+        "heading": 0.5163924021230942
+      },
+      "counterfactual": {
+        "stateId": 238,
+        "progress": 0.9267035653169746,
+        "cost": 94.4146011202706,
+        "feasible": true,
+        "shapeScore": 0.6190361269044635,
+        "targetCoverage": 0.7083333333333333,
+        "finalCoverage": 0,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "routeTarget": 0.3981765834781304,
+        "routeLengthMeters": 477.8119001737562,
+        "heading": 0.5163924021230942
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/4000",
+      "placementId": "sf-r315-s0.6-e0-n0",
+      "parity": true,
+      "goalCount": 110,
+      "inkedGoals": 88,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 2566,
+        "progress": 0.8957229202496629,
+        "cost": 484.99050516836405,
+        "feasible": true,
+        "shapeScore": 0.7234861535026613,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.41618668027448086,
+        "routeLengthMeters": 998.8480326587534,
+        "heading": 0.5838788920357474
+      },
+      "counterfactual": {
+        "stateId": 2566,
+        "progress": 0.8957229202496629,
+        "cost": 484.99050516836405,
+        "feasible": true,
+        "shapeScore": 0.7234861535026613,
+        "targetCoverage": 0.5833333333333333,
+        "finalCoverage": 0.125,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        "routeTarget": 0.41618668027448086,
+        "routeLengthMeters": 998.8480326587534,
+        "heading": 0.5838788920357474
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    },
+    {
+      "word": "CAIRO",
+      "caseLabel": "Zamalek/4000",
+      "placementId": "sf-r0-s0.6-e1280-n0",
+      "parity": true,
+      "goalCount": 97,
+      "inkedGoals": 91,
+      "completionGoals": 0,
+      "completionGoalCostSpread": null,
+      "completionGoals_costShape": [],
+      "production": {
+        "stateId": 6056,
+        "progress": 0.9928988327354231,
+        "cost": 1389.140500068236,
+        "feasible": true,
+        "shapeScore": 0.5314643826450074,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.3333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.38288064797126015,
+        "routeLengthMeters": 918.9135551310233,
+        "heading": 0.5330353858514285
+      },
+      "counterfactual": {
+        "stateId": 6056,
+        "progress": 0.9928988327354231,
+        "cost": 1389.140500068236,
+        "feasible": true,
+        "shapeScore": 0.5314643826450074,
+        "targetCoverage": 0.5625,
+        "finalCoverage": 0.3333333333333333,
+        "finalPhysical": false,
+        "finalInOrder": false,
+        "wordPhysical": false,
+        "lettersPhysical": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "routeTarget": 0.38288064797126015,
+        "routeLengthMeters": 918.9135551310233,
+        "heading": 0.5330353858514285
+      },
+      "changed": false,
+      "cls": "F_no_change",
+      "clearlyWorse": false
+    }
+  ]
+}

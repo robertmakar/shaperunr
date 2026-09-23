@@ -1,0 +1,725 @@
+ShapeRunr geometry-variant benchmark (DEVELOPMENT ONLY): smooth vs angular
+Measurement only — no placement/search/scoring/product-gate parameter was changed for this comparison.
+generated from 60 requests (each request searched both variants in one call)
+
+ALEXANDRIA
+  I
+    1000m
+      runs: 3
+      smooth:
+        graph feasible: total=102 mean=34.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.776
+        coverage: median 0.563
+        order: median 0.767
+        backtrack: median 0.000
+        largestGap: median 0.083
+        targetSpan: median 0.521
+        shapeDistanceMeters: median 777.540
+        routeDistanceMeters: median 1529.478
+        shape/target: median 0.778
+        route/target: median 1.529
+        wordTraversal: 3/9 candidates
+        lettersVisitedInOrder: 9/9 candidates
+      angular:
+        graph feasible: total=102 mean=34.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.776
+        coverage: median 0.563
+        order: median 0.767
+        backtrack: median 0.000
+        largestGap: median 0.083
+        targetSpan: median 0.521
+        shapeDistanceMeters: median 777.540
+        routeDistanceMeters: median 1529.478
+        shape/target: median 0.778
+        route/target: median 1.529
+        wordTraversal: 3/9 candidates
+        lettersVisitedInOrder: 9/9 candidates
+    2000m
+      runs: 3
+      smooth:
+        graph feasible: total=36 mean=12.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.773
+        coverage: median 0.613
+        order: median 0.745
+        backtrack: median 0.000
+        largestGap: median 0.125
+        targetSpan: median 0.527
+        shapeDistanceMeters: median 1312.558
+        routeDistanceMeters: median 1855.828
+        shape/target: median 0.656
+        route/target: median 0.928
+        wordTraversal: 3/9 candidates
+        lettersVisitedInOrder: 9/9 candidates
+      angular:
+        graph feasible: total=36 mean=12.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.773
+        coverage: median 0.613
+        order: median 0.745
+        backtrack: median 0.000
+        largestGap: median 0.125
+        targetSpan: median 0.527
+        shapeDistanceMeters: median 1312.558
+        routeDistanceMeters: median 1855.828
+        shape/target: median 0.656
+        route/target: median 0.928
+        wordTraversal: 3/9 candidates
+        lettersVisitedInOrder: 9/9 candidates
+  O
+    1000m
+      runs: 3
+      smooth:
+        graph feasible: total=12 mean=4.000 (n=3 requests)
+        routed: total=9 mean=3.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.779
+        coverage: median 0.637
+        order: median 0.693
+        backtrack: median 0.000
+        largestGap: median 0.000
+        targetSpan: median 0.702
+        shapeDistanceMeters: median 857.293
+        routeDistanceMeters: median 1765.627
+        shape/target: median 0.857
+        route/target: median 1.766
+        wordTraversal: 9/9 candidates
+        lettersVisitedInOrder: 9/9 candidates
+      angular:
+        graph feasible: total=18 mean=6.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.772
+        coverage: median 0.713
+        order: median 0.651
+        backtrack: median 0.000
+        largestGap: median 0.021
+        targetSpan: median 0.491
+        shapeDistanceMeters: median 804.543
+        routeDistanceMeters: median 1591.334
+        shape/target: median 0.805
+        route/target: median 1.591
+        wordTraversal: 3/9 candidates
+        lettersVisitedInOrder: 9/9 candidates
+    2000m
+      runs: 3
+      smooth:
+        graph feasible: total=3 mean=1.000 (n=3 requests)
+        routed: total=3 mean=1.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.779
+        coverage: median 0.563
+        order: median 0.716
+        backtrack: median 0.000
+        largestGap: median 0.083
+        targetSpan: median 0.619
+        shapeDistanceMeters: median 1153.201
+        routeDistanceMeters: median 1765.627
+        shape/target: median 0.577
+        route/target: median 0.883
+        wordTraversal: 3/3 candidates
+        lettersVisitedInOrder: 3/3 candidates
+      angular:
+        graph feasible: total=0 mean=0.000 (n=3 requests)
+        routed: total=0 mean=0.000
+        accepted: total=0 mean=0.000
+        shapeScore: median n/a
+        coverage: median n/a
+        order: median n/a
+        backtrack: median n/a
+        largestGap: median n/a
+        targetSpan: median n/a
+        shapeDistanceMeters: median n/a
+        routeDistanceMeters: median n/a
+        shape/target: median n/a
+        route/target: median n/a
+  R
+    1000m
+      runs: 3
+      smooth:
+        graph feasible: total=15 mean=5.000 (n=3 requests)
+        routed: total=15 mean=5.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.643
+        coverage: median 0.500
+        order: median 0.504
+        backtrack: median 0.126
+        largestGap: median 0.083
+        targetSpan: median 0.370
+        shapeDistanceMeters: median 395.542
+        routeDistanceMeters: median 872.222
+        shape/target: median 0.396
+        route/target: median 0.872
+        wordTraversal: 3/6 candidates
+        lettersVisitedInOrder: 3/6 candidates
+      angular:
+        graph feasible: total=15 mean=5.000 (n=3 requests)
+        routed: total=15 mean=5.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.643
+        coverage: median 0.500
+        order: median 0.504
+        backtrack: median 0.126
+        largestGap: median 0.083
+        targetSpan: median 0.370
+        shapeDistanceMeters: median 395.542
+        routeDistanceMeters: median 872.222
+        shape/target: median 0.396
+        route/target: median 0.872
+        wordTraversal: 3/6 candidates
+        lettersVisitedInOrder: 3/6 candidates
+    2000m
+      runs: 3
+      smooth:
+        graph feasible: total=6 mean=2.000 (n=3 requests)
+        routed: total=6 mean=2.000
+        accepted: total=6 mean=2.000
+        shapeScore: median 0.755
+        coverage: median 0.688
+        order: median 0.662
+        backtrack: median 0.004
+        largestGap: median 0.094
+        targetSpan: median 0.590
+        shapeDistanceMeters: median 1172.238
+        routeDistanceMeters: median 1676.285
+        shape/target: median 0.586
+        route/target: median 0.838
+        wordTraversal: 6/6 candidates
+        lettersVisitedInOrder: 6/6 candidates
+      angular:
+        graph feasible: total=6 mean=2.000 (n=3 requests)
+        routed: total=6 mean=2.000
+        accepted: total=6 mean=2.000
+        shapeScore: median 0.755
+        coverage: median 0.688
+        order: median 0.662
+        backtrack: median 0.004
+        largestGap: median 0.094
+        targetSpan: median 0.590
+        shapeDistanceMeters: median 1172.238
+        routeDistanceMeters: median 1676.285
+        shape/target: median 0.586
+        route/target: median 0.838
+        wordTraversal: 6/6 candidates
+        lettersVisitedInOrder: 6/6 candidates
+  ROBZ
+    2000m
+      runs: 3
+      smooth:
+        graph feasible: total=48 mean=16.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.648
+        coverage: median 0.662
+        order: median 0.504
+        backtrack: median 0.114
+        largestGap: median 0.083
+        targetSpan: median 0.148
+        shapeDistanceMeters: median 654.728
+        routeDistanceMeters: median 1338.108
+        shape/target: median 0.327
+        route/target: median 0.669
+        wordTraversal: 0/9 candidates
+        lettersVisitedInOrder: 0/9 candidates
+      angular:
+        graph feasible: total=72 mean=24.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.710
+        coverage: median 0.775
+        order: median 0.584
+        backtrack: median 0.137
+        largestGap: median 0.083
+        targetSpan: median 0.099
+        shapeDistanceMeters: median 527.967
+        routeDistanceMeters: median 1254.666
+        shape/target: median 0.264
+        route/target: median 0.627
+        wordTraversal: 0/9 candidates
+        lettersVisitedInOrder: 6/9 candidates
+    4000m
+      runs: 3
+      smooth:
+        graph feasible: total=15 mean=5.000 (n=3 requests)
+        routed: total=15 mean=5.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.674
+        coverage: median 0.762
+        order: median 0.520
+        backtrack: median 0.125
+        largestGap: median 0.125
+        targetSpan: median 0.155
+        shapeDistanceMeters: median 841.285
+        routeDistanceMeters: median 1551.908
+        shape/target: median 0.210
+        route/target: median 0.388
+        wordTraversal: 0/9 candidates
+        lettersVisitedInOrder: 0/9 candidates
+      angular:
+        graph feasible: total=18 mean=6.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.658
+        coverage: median 0.750
+        order: median 0.493
+        backtrack: median 0.201
+        largestGap: median 0.125
+        targetSpan: median 0.156
+        shapeDistanceMeters: median 908.126
+        routeDistanceMeters: median 1672.245
+        shape/target: median 0.227
+        route/target: median 0.418
+        wordTraversal: 0/9 candidates
+        lettersVisitedInOrder: 0/9 candidates
+  CAIRO
+    2000m
+      runs: 3
+      smooth:
+        graph feasible: total=75 mean=25.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.686
+        coverage: median 0.738
+        order: median 0.533
+        backtrack: median 0.160
+        largestGap: median 0.083
+        targetSpan: median 0.224
+        shapeDistanceMeters: median 882.973
+        routeDistanceMeters: median 1619.261
+        shape/target: median 0.441
+        route/target: median 0.810
+        wordTraversal: 0/9 candidates
+        lettersVisitedInOrder: 3/9 candidates
+      angular:
+        graph feasible: total=27 mean=9.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.708
+        coverage: median 0.762
+        order: median 0.605
+        backtrack: median 0.135
+        largestGap: median 0.125
+        targetSpan: median 0.215
+        shapeDistanceMeters: median 888.584
+        routeDistanceMeters: median 1669.547
+        shape/target: median 0.444
+        route/target: median 0.835
+        wordTraversal: 0/9 candidates
+        lettersVisitedInOrder: 3/9 candidates
+    4000m
+      runs: 3
+      smooth:
+        graph feasible: total=1 mean=1.000 (n=1 requests)
+        routed: total=1 mean=1.000
+        accepted: total=0 mean=0.000
+        shapeScore: median n/a
+        coverage: median n/a
+        order: median n/a
+        backtrack: median n/a
+        largestGap: median n/a
+        targetSpan: median n/a
+        shapeDistanceMeters: median 842.761
+        routeDistanceMeters: median 2520.206
+        shape/target: median 0.211
+        route/target: median 0.630
+      angular:
+        graph feasible: total=0 mean=0.000 (n=1 requests)
+        routed: total=0 mean=0.000
+        accepted: total=0 mean=0.000
+        shapeScore: median n/a
+        coverage: median n/a
+        order: median n/a
+        backtrack: median n/a
+        largestGap: median n/a
+        targetSpan: median n/a
+        shapeDistanceMeters: median n/a
+        routeDistanceMeters: median n/a
+        shape/target: median n/a
+        route/target: median n/a
+
+ZAMALEK
+  I
+    1000m
+      runs: 3
+      smooth:
+        graph feasible: total=67 mean=22.333 (n=3 requests)
+        routed: total=13 mean=4.333
+        accepted: total=6 mean=2.000
+        shapeScore: median 0.837
+        coverage: median 0.738
+        order: median 0.834
+        backtrack: median 0.000
+        largestGap: median 0.042
+        targetSpan: median 0.777
+        shapeDistanceMeters: median 751.249
+        routeDistanceMeters: median 4044.585
+        shape/target: median 0.751
+        route/target: median 4.045
+        wordTraversal: 6/6 candidates
+        lettersVisitedInOrder: 6/6 candidates
+      angular:
+        graph feasible: total=66 mean=22.000 (n=3 requests)
+        routed: total=12 mean=4.000
+        accepted: total=6 mean=2.000
+        shapeScore: median 0.837
+        coverage: median 0.738
+        order: median 0.834
+        backtrack: median 0.000
+        largestGap: median 0.042
+        targetSpan: median 0.777
+        shapeDistanceMeters: median 751.249
+        routeDistanceMeters: median 4044.585
+        shape/target: median 0.751
+        route/target: median 4.045
+        wordTraversal: 6/6 candidates
+        lettersVisitedInOrder: 6/6 candidates
+    2000m
+      runs: 3
+      smooth:
+        graph feasible: total=21 mean=7.000 (n=3 requests)
+        routed: total=12 mean=4.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.801
+        coverage: median 0.537
+        order: median 0.842
+        backtrack: median 0.000
+        largestGap: median 0.125
+        targetSpan: median 0.573
+        shapeDistanceMeters: median 1092.865
+        routeDistanceMeters: median 7286.193
+        shape/target: median 0.546
+        route/target: median 3.643
+        wordTraversal: 6/9 candidates
+        lettersVisitedInOrder: 9/9 candidates
+      angular:
+        graph feasible: total=21 mean=7.000 (n=3 requests)
+        routed: total=12 mean=4.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.801
+        coverage: median 0.537
+        order: median 0.842
+        backtrack: median 0.000
+        largestGap: median 0.125
+        targetSpan: median 0.573
+        shapeDistanceMeters: median 1092.865
+        routeDistanceMeters: median 7286.193
+        shape/target: median 0.546
+        route/target: median 3.643
+        wordTraversal: 6/9 candidates
+        lettersVisitedInOrder: 9/9 candidates
+  O
+    1000m
+      runs: 3
+      smooth:
+        graph feasible: total=21 mean=7.000 (n=3 requests)
+        routed: total=15 mean=5.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.776
+        coverage: median 0.563
+        order: median 0.704
+        backtrack: median 0.000
+        largestGap: median 0.104
+        targetSpan: median 0.673
+        shapeDistanceMeters: median 1134.163
+        routeDistanceMeters: median 1842.833
+        shape/target: median 1.134
+        route/target: median 1.843
+        wordTraversal: 6/9 candidates
+        lettersVisitedInOrder: 9/9 candidates
+      angular:
+        graph feasible: total=15 mean=5.000 (n=3 requests)
+        routed: total=15 mean=5.000
+        accepted: total=6 mean=2.000
+        shapeScore: median 0.753
+        coverage: median 0.713
+        order: median 0.597
+        backtrack: median 0.000
+        largestGap: median 0.021
+        targetSpan: median 0.675
+        shapeDistanceMeters: median 1066.822
+        routeDistanceMeters: median 1598.465
+        shape/target: median 1.067
+        route/target: median 1.598
+        wordTraversal: 6/9 candidates
+        lettersVisitedInOrder: 9/9 candidates
+    2000m
+      runs: 3
+      smooth:
+        graph feasible: total=9 mean=3.000 (n=3 requests)
+        routed: total=6 mean=2.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.809
+        coverage: median 0.700
+        order: median 0.723
+        backtrack: median 0.000
+        largestGap: median 0.167
+        targetSpan: median 0.773
+        shapeDistanceMeters: median 1528.645
+        routeDistanceMeters: median 1956.586
+        shape/target: median 0.764
+        route/target: median 0.978
+        wordTraversal: 3/3 candidates
+        lettersVisitedInOrder: 3/3 candidates
+      angular:
+        graph feasible: total=6 mean=2.000 (n=3 requests)
+        routed: total=6 mean=2.000
+        accepted: total=3 mean=1.000
+        shapeScore: median 0.710
+        coverage: median 0.675
+        order: median 0.597
+        backtrack: median 0.001
+        largestGap: median 0.135
+        targetSpan: median 0.495
+        shapeDistanceMeters: median 1631.410
+        routeDistanceMeters: median 5200.663
+        shape/target: median 0.816
+        route/target: median 2.600
+        wordTraversal: 3/6 candidates
+        lettersVisitedInOrder: 6/6 candidates
+  R
+    1000m
+      runs: 3
+      smooth:
+        graph feasible: total=24 mean=8.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.681
+        coverage: median 0.613
+        order: median 0.548
+        backtrack: median 0.103
+        largestGap: median 0.198
+        targetSpan: median 0.409
+        shapeDistanceMeters: median 442.391
+        routeDistanceMeters: median 855.255
+        shape/target: median 0.442
+        route/target: median 0.855
+        wordTraversal: 3/6 candidates
+        lettersVisitedInOrder: 6/6 candidates
+      angular:
+        graph feasible: total=24 mean=8.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.681
+        coverage: median 0.613
+        order: median 0.548
+        backtrack: median 0.103
+        largestGap: median 0.198
+        targetSpan: median 0.409
+        shapeDistanceMeters: median 442.391
+        routeDistanceMeters: median 855.255
+        shape/target: median 0.442
+        route/target: median 0.855
+        wordTraversal: 3/6 candidates
+        lettersVisitedInOrder: 6/6 candidates
+    2000m
+      runs: 3
+      smooth:
+        graph feasible: total=3 mean=1.000 (n=3 requests)
+        routed: total=3 mean=1.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.656
+        coverage: median 0.512
+        order: median 0.557
+        backtrack: median 0.145
+        largestGap: median 0.313
+        targetSpan: median 0.212
+        shapeDistanceMeters: median 723.976
+        routeDistanceMeters: median 788.795
+        shape/target: median 0.362
+        route/target: median 0.394
+        wordTraversal: 0/3 candidates
+        lettersVisitedInOrder: 3/3 candidates
+      angular:
+        graph feasible: total=3 mean=1.000 (n=3 requests)
+        routed: total=3 mean=1.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.656
+        coverage: median 0.512
+        order: median 0.557
+        backtrack: median 0.145
+        largestGap: median 0.313
+        targetSpan: median 0.212
+        shapeDistanceMeters: median 723.976
+        routeDistanceMeters: median 788.795
+        shape/target: median 0.362
+        route/target: median 0.394
+        wordTraversal: 0/3 candidates
+        lettersVisitedInOrder: 3/3 candidates
+  ROBZ
+    2000m
+      runs: 3
+      smooth:
+        graph feasible: total=36 mean=12.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.655
+        coverage: median 0.675
+        order: median 0.511
+        backtrack: median 0.102
+        largestGap: median 0.104
+        targetSpan: median 0.251
+        shapeDistanceMeters: median 434.349
+        routeDistanceMeters: median 6407.046
+        shape/target: median 0.217
+        route/target: median 3.204
+        wordTraversal: 0/6 candidates
+        lettersVisitedInOrder: 0/6 candidates
+      angular:
+        graph feasible: total=51 mean=17.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.674
+        coverage: median 0.725
+        order: median 0.537
+        backtrack: median 0.187
+        largestGap: median 0.083
+        targetSpan: median 0.122
+        shapeDistanceMeters: median 500.693
+        routeDistanceMeters: median 1414.421
+        shape/target: median 0.250
+        route/target: median 0.707
+        wordTraversal: 0/9 candidates
+        lettersVisitedInOrder: 3/9 candidates
+    4000m
+      runs: 3
+      smooth:
+        graph feasible: total=15 mean=5.000 (n=3 requests)
+        routed: total=15 mean=5.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.720
+        coverage: median 0.762
+        order: median 0.587
+        backtrack: median 0.117
+        largestGap: median 0.104
+        targetSpan: median 0.275
+        shapeDistanceMeters: median 821.492
+        routeDistanceMeters: median 7988.748
+        shape/target: median 0.205
+        route/target: median 1.997
+        wordTraversal: 0/9 candidates
+        lettersVisitedInOrder: 6/9 candidates
+      angular:
+        graph feasible: total=3 mean=1.000 (n=3 requests)
+        routed: total=3 mean=1.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.710
+        coverage: median 0.838
+        order: median 0.535
+        backtrack: median 0.230
+        largestGap: median 0.104
+        targetSpan: median 0.278
+        shapeDistanceMeters: median 1430.503
+        routeDistanceMeters: median 8489.576
+        shape/target: median 0.358
+        route/target: median 2.122
+        wordTraversal: 0/3 candidates
+        lettersVisitedInOrder: 0/3 candidates
+  CAIRO
+    2000m
+      runs: 3
+      smooth:
+        graph feasible: total=36 mean=12.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.673
+        coverage: median 0.762
+        order: median 0.489
+        backtrack: median 0.198
+        largestGap: median 0.104
+        targetSpan: median 0.315
+        shapeDistanceMeters: median 704.638
+        routeDistanceMeters: median 6153.334
+        shape/target: median 0.352
+        route/target: median 3.077
+        wordTraversal: 0/9 candidates
+        lettersVisitedInOrder: 0/9 candidates
+      angular:
+        graph feasible: total=27 mean=9.000 (n=3 requests)
+        routed: total=18 mean=6.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.681
+        coverage: median 0.675
+        order: median 0.522
+        backtrack: median 0.142
+        largestGap: median 0.125
+        targetSpan: median 0.204
+        shapeDistanceMeters: median 752.937
+        routeDistanceMeters: median 6101.072
+        shape/target: median 0.376
+        route/target: median 3.051
+        wordTraversal: 0/9 candidates
+        lettersVisitedInOrder: 0/9 candidates
+    4000m
+      runs: 3
+      smooth:
+        graph feasible: total=2 mean=2.000 (n=1 requests)
+        routed: total=2 mean=2.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.723
+        coverage: median 0.738
+        order: median 0.635
+        backtrack: median 0.197
+        largestGap: median 0.104
+        targetSpan: median 0.472
+        shapeDistanceMeters: median 958.881
+        routeDistanceMeters: median 3845.120
+        shape/target: median 0.240
+        route/target: median 0.961
+        wordTraversal: 0/1 candidates
+        lettersVisitedInOrder: 1/1 candidates
+      angular:
+        graph feasible: total=1 mean=1.000 (n=1 requests)
+        routed: total=1 mean=1.000
+        accepted: total=0 mean=0.000
+        shapeScore: median 0.598
+        coverage: median 0.787
+        order: median 0.307
+        backtrack: median 0.131
+        largestGap: median 0.104
+        targetSpan: median 0.161
+        shapeDistanceMeters: median 1429.779
+        routeDistanceMeters: median 8733.187
+        shape/target: median 0.357
+        route/target: median 2.183
+        wordTraversal: 0/1 candidates
+        lettersVisitedInOrder: 0/1 candidates
+
+=== OVERALL BY VARIANT ===
+smooth:
+  graph feasible: total=547 mean=9.768 (n=56 requests)
+  routed: total=241 mean=4.304
+  accepted: total=30 mean=0.536
+  shapeScore: median 0.722
+  coverage: median 0.650
+  order: median 0.611
+  backtrack: median 0.102
+  largestGap: median 0.104
+  targetSpan: median 0.441
+  shapeDistanceMeters: median 841.285
+  routeDistanceMeters: median 1765.627
+  shape/target: median 0.442
+  route/target: median 0.928
+  wordTraversal: 51/130 candidates
+  lettersVisitedInOrder: 85/130 candidates
+angular:
+  graph feasible: total=511 mean=9.125 (n=56 requests)
+  routed: total=235 mean=4.196
+  accepted: total=33 mean=0.589
+  shapeScore: median 0.710
+  coverage: median 0.688
+  order: median 0.597
+  backtrack: median 0.103
+  largestGap: median 0.104
+  targetSpan: median 0.409
+  shapeDistanceMeters: median 804.543
+  routeDistanceMeters: median 1669.547
+  shape/target: median 0.444
+  route/target: median 0.928
+  wordTraversal: 42/127 candidates
+  lettersVisitedInOrder: 87/127 candidates

@@ -1,4 +1,5 @@
 import type { Coordinate } from '@/lib/geo';
+import type { LetterShapeVariant } from '@/lib/letter-shapes';
 import type { ShapeMatchResult, ShapeScoreBreakdown } from '@/lib/shape-match';
 import type { WordShape } from '@/lib/word-shape';
 
@@ -67,6 +68,8 @@ export type GeneratedRoute = {
     northMeters?: number;
     distanceFromUserMeters?: number;
     connected?: boolean;
+    /** Which letter geometry produced this route's target shape. Absent on routes built before this field existed (the legacy candidate-generator.ts path never sets it) — always present for graph_constrained routes. */
+    geometryVariant?: LetterShapeVariant;
   };
 };
 

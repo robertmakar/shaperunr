@@ -14,6 +14,7 @@ import {
   resamplePolyline,
   type Vec2,
 } from '@/lib/geometry';
+import type { LetterShapeVariant } from '@/lib/letter-shapes';
 import { coordinatesToLocalMeters } from '@/lib/shape-projection';
 import { scoreOrderedPath } from '@/lib/shape-order';
 import { buildWalkableWordShape } from './walkable-target';
@@ -73,6 +74,16 @@ export type TargetIdentity = {
 export type ProductIdentityContext = {
   word?: string;
   targetDistance?: number;
+  /**
+   * Which letter geometry to analyze the identity against. When omitted,
+   * analyzeGeneratedRouteIdentity falls back to the route's own
+   * `metadata.geometryVariant` (defaulting to 'smooth' if that's also
+   * absent) — so every existing caller that doesn't set this explicitly
+   * keeps getting the geometry the candidate actually used, not always
+   * 'smooth' regardless of variant (see analyzeTargetIdentity's own
+   * geometryVariant parameter for the fix itself).
+   */
+  geometryVariant?: LetterShapeVariant;
 };
 
 export function coverageThresholdMeters(target: readonly Vec2[]): number {
@@ -87,6 +98,8 @@ export function analyzeTargetIdentity(input: {
   target: readonly Vec2[];
   word?: string;
   requestedDistanceMeters?: number;
+  /** Defaults to 'smooth' — see ProductIdentityContext.geometryVariant. Pass the SAME variant that produced `route`/`target`, or letter-boundary analysis will be computed against the wrong geometry (this was previously always 'smooth' regardless of the actual candidate's variant). */
+  geometryVariant?: LetterShapeVariant;
 }): TargetIdentity {
   const route = input.route.map((point) => ({ ...point }));
   const target = input.target.map((point) => ({ ...point }));
@@ -124,7 +137,7 @@ export function analyzeTargetIdentity(input: {
       ? 0
       : sampledRoute.reduce((sum, point) => sum + distanceToPolyline(point, target), 0) / sampledRoute.length;
 
-  const letters = letterIdentities(input.word ?? '', target, route, threshold);
+  const letters = letterIdentities(input.word ?? '', target, route, threshold, input.geometryVariant ?? 'smooth');
   const visited = letters.filter((item) => item.meaningfullyVisited);
   const lettersVisitedInOrder = isIncreasing(visited.map((item) => item.startProgress));
   const wordTraversal = letters.length === 0 ? 0 : visited.length / letters.length;
@@ -179,6 +192,13 @@ export function analyzeGeneratedRouteIdentity(
     target: coordinatesToLocalMeters(origin, route.targetCoordinates),
     word: context.word,
     requestedDistanceMeters: context.targetDistance,
+    // Correctness fix: previously this was never passed, so identity
+    // analysis always used 'smooth' letter boundaries even for an angular
+    // candidate. route.metadata.geometryVariant already records which
+    // geometry actually produced this route (tagged since the shared-budget
+    // work) — use that as the default so every existing caller is fixed
+    // automatically, while still allowing an explicit override.
+    geometryVariant: context.geometryVariant ?? route.metadata.geometryVariant ?? 'smooth',
   });
 }
 
@@ -187,8 +207,9 @@ function letterIdentities(
   target: readonly Vec2[],
   route: readonly Vec2[],
   wordThreshold: number,
+  geometryVariant: LetterShapeVariant,
 ): LetterIdentity[] {
-  const shape = buildWalkableWordShape(word);
+  const shape = buildWalkableWordShape(word, { letterVariant: geometryVariant });
   if (!shape.word || shape.letters.length === 0 || target.length < 2) {
     return [];
   }

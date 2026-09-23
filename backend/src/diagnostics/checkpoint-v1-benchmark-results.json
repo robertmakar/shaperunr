@@ -1,0 +1,5070 @@
+{
+  "generatedAt": "2026-09-22T00:20:03.713Z",
+  "config": {
+    "checkpointCount": 12,
+    "snapCandidates": 3,
+    "checkpointBeamWidth": 8,
+    "maxCandidateRoutes": 8
+  },
+  "cases": [
+    {
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 16,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.624486650391461,
+              "coverage": 0.5375,
+              "order": 0.5902703860218176,
+              "backtrack": 0,
+              "targetSpan": 0.4135763476553053,
+              "distanceRatio": 0.35576691393021603,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7071428571428572,
+              "perLetterRawInk": [
+                0.42857142857142855,
+                1,
+                1,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7529736027176591,
+              "coverage": 0.825,
+              "order": 0.6006167453671346,
+              "backtrack": 0.13356979640525962,
+              "targetSpan": 0.47025468557299255,
+              "distanceRatio": 0.7926926586988301,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9642857142857143,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.8571428571428571,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 34.10704199999964,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5763543366472113,
+              "coverage": 0.45,
+              "order": 0.5244430186703096,
+              "backtrack": 0,
+              "targetSpan": 0.11449120673724456,
+              "distanceRatio": 0.32194394131690945,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7642857142857142,
+              "perLetterRawInk": [
+                1,
+                0.8,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6425357139466004,
+              "coverage": 0.5875,
+              "order": 0.4842091079211328,
+              "backtrack": 0.16246488707799092,
+              "targetSpan": 0.23235174770030345,
+              "distanceRatio": 0.78200808312314,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8785714285714286,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 27.292999999999665,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5827554638825276,
+              "coverage": 0.4625,
+              "order": 0.5391141890133062,
+              "backtrack": 0,
+              "targetSpan": 0.09468663070234289,
+              "distanceRatio": 0.3749916211286269,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.39999999999999997,
+              "perLetterRawInk": [
+                0.5714285714285714,
+                0.6,
+                0.42857142857142855,
+                0
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6908307315037688,
+              "coverage": 0.6625,
+              "order": 0.4965433226043292,
+              "backtrack": 0.09778616422442826,
+              "targetSpan": 0.1965458695864022,
+              "distanceRatio": 0.8899624683464195,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7785714285714286,
+              "perLetterRawInk": [
+                1,
+                0.8,
+                0.7142857142857143,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 10,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 39.93945799999892,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6482679137982397,
+              "coverage": 0.725,
+              "order": 0.4959865498358602,
+              "backtrack": 0,
+              "targetSpan": 0.45065200163141983,
+              "distanceRatio": 0.29896067383032937,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6928571428571428,
+              "perLetterRawInk": [
+                0.7142857142857143,
+                0.8,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7668645499358656,
+              "coverage": 0.975,
+              "order": 0.5629976283020508,
+              "backtrack": 0.12014872000395466,
+              "targetSpan": 0.16899500031104928,
+              "distanceRatio": 0.6486855245021567,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 1,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 25.487708000000566,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5999448981084896,
+              "coverage": 0.5125,
+              "order": 0.5501945795631787,
+              "backtrack": 0,
+              "targetSpan": 0.2832959317284741,
+              "distanceRatio": 0.4039495728201475,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6785714285714285,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.6,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6728577959483127,
+              "coverage": 0.8,
+              "order": 0.45192327288455747,
+              "backtrack": 0.11567083656699763,
+              "targetSpan": 0.4164256874347201,
+              "distanceRatio": 1.1692325694293557,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9142857142857144,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 42.1059580000001,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.43283496215248135,
+              "coverage": 0.3125,
+              "order": 0.3316297018169193,
+              "backtrack": 0,
+              "targetSpan": 0.10265583962342306,
+              "distanceRatio": 0.3806942745588266,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.4142857142857143,
+              "perLetterRawInk": [
+                0.42857142857142855,
+                0.8,
+                0.42857142857142855,
+                0
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.5865471067938635,
+              "coverage": 0.525,
+              "order": 0.39411643848864814,
+              "backtrack": 0.2480706832392856,
+              "targetSpan": 0.1689665721775846,
+              "distanceRatio": 0.8008046339244012,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6571428571428571,
+              "perLetterRawInk": [
+                0.7142857142857143,
+                0.6,
+                0.7142857142857143,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 24.576790999999503,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5111572781099661,
+              "coverage": 0.275,
+              "order": 0.5154281995169002,
+              "backtrack": 0,
+              "targetSpan": 0.2914588024349596,
+              "distanceRatio": 0.3213852705404316,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.4285714285714286,
+              "perLetterRawInk": [
+                0.2857142857142857,
+                0.8,
+                0.42857142857142855,
+                0.2
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6310831561059066,
+              "coverage": 0.55,
+              "order": 0.4385403439155546,
+              "backtrack": 0.16724484826672656,
+              "targetSpan": 0.1994614273193942,
+              "distanceRatio": 0.8682661868711502,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8214285714285714,
+              "perLetterRawInk": [
+                0.5714285714285714,
+                1,
+                0.7142857142857143,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 25.300333000001046,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5519020741190841,
+              "coverage": 0.4125,
+              "order": 0.4872764045242258,
+              "backtrack": 0,
+              "targetSpan": 0.16044452271736592,
+              "distanceRatio": 0.3612528570971572,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7428571428571429,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                0.7142857142857143,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7057459689274285,
+              "coverage": 0.6375,
+              "order": 0.5690930618638671,
+              "backtrack": 0.09161562966537919,
+              "targetSpan": 0.19614998914242032,
+              "distanceRatio": 0.8182401834262768,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 1,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 35.69420799999898,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5733072214778056,
+              "coverage": 0.4125,
+              "order": 0.5441383118410246,
+              "backtrack": 0,
+              "targetSpan": 0.1949333692709958,
+              "distanceRatio": 0.3723326692109248,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5857142857142857,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.6,
+                0.2857142857142857,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7045327758685033,
+              "coverage": 0.725,
+              "order": 0.5425361015671056,
+              "backtrack": 0.1194812612276093,
+              "targetSpan": 0.4400953647483612,
+              "distanceRatio": 0.8684063300669229,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9142857142857144,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 31.338165999999546,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6543095387506684,
+              "coverage": 0.725,
+              "order": 0.5418088244071285,
+              "backtrack": 0.30107149029503744,
+              "targetSpan": 0.16609061423571964,
+              "distanceRatio": 0.3658513577525918,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6928571428571428,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                0.7142857142857143,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "backtrack",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7745494963218746,
+              "coverage": 0.925,
+              "order": 0.5810982274847148,
+              "backtrack": 0.14374753303004043,
+              "targetSpan": 0.0961287131010885,
+              "distanceRatio": 0.7093678199207744,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8642857142857143,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 10,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 31.85595900000044,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5986566641989772,
+              "coverage": 0.525,
+              "order": 0.5415524556131969,
+              "backtrack": 0,
+              "targetSpan": 0.11926892199077778,
+              "distanceRatio": 0.40421236809428013,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6071428571428571,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.6,
+                0.5714285714285714,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6967295965003651,
+              "coverage": 0.7125,
+              "order": 0.45630754566792453,
+              "backtrack": 0.06170026913705533,
+              "targetSpan": 0.336580645017168,
+              "distanceRatio": 0.9712262470298706,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.95,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 40.621250000000146,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5654856471267183,
+              "coverage": 0.4375,
+              "order": 0.4974853114059439,
+              "backtrack": 0,
+              "targetSpan": 0.4378951699643335,
+              "distanceRatio": 0.35985659008546156,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7571428571428572,
+              "perLetterRawInk": [
+                0.42857142857142855,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6663948430702115,
+              "coverage": 0.6375,
+              "order": 0.516715118359816,
+              "backtrack": 0.13240152925357515,
+              "targetSpan": 0.34214053018380514,
+              "distanceRatio": 0.7272713771636231,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8285714285714286,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 10,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 30.699666000000434,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6804976600852539,
+              "coverage": 0.6625,
+              "order": 0.5729491299989368,
+              "backtrack": 0,
+              "targetSpan": 0.05929971319097871,
+              "distanceRatio": 0.3262234676802439,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8285714285714285,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7484937221510339,
+              "coverage": 0.85,
+              "order": 0.5437090244192686,
+              "backtrack": 0.13888947925086248,
+              "targetSpan": 0.28579517345286753,
+              "distanceRatio": 0.7533764116583738,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9285714285714286,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                0.8571428571428571,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 23.124499999999898,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.7316172723525435,
+              "coverage": 0.85,
+              "order": 0.5985427327570794,
+              "backtrack": 0,
+              "targetSpan": 0.34443860184548053,
+              "distanceRatio": 0.4129073031545288,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8142857142857143,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.766213511511599,
+              "coverage": 0.9375,
+              "order": 0.45249941334073274,
+              "backtrack": 0.10591282872800632,
+              "targetSpan": 0.20624153686374333,
+              "distanceRatio": 1.017227412692926,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8785714285714286,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 41.42274999999972,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6346591947779289,
+              "coverage": 0.6625,
+              "order": 0.5038839713195682,
+              "backtrack": 0,
+              "targetSpan": 0.14797230209918466,
+              "distanceRatio": 0.2654134638739851,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.55,
+              "perLetterRawInk": [
+                0.42857142857142855,
+                0.8,
+                0.5714285714285714,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.725655465481107,
+              "coverage": 0.85,
+              "order": 0.4067421537432675,
+              "backtrack": 0.1497346761487951,
+              "targetSpan": 0.21780291805957583,
+              "distanceRatio": 0.9609870357748116,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7714285714285714,
+              "perLetterRawInk": [
+                0.7142857142857143,
+                0.8,
+                0.5714285714285714,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 27.742416000000958,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6657901856649284,
+              "coverage": 0.5875,
+              "order": 0.5569725909185721,
+              "backtrack": 0,
+              "targetSpan": 0.22021982952758185,
+              "distanceRatio": 0.4509914314888522,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5785714285714286,
+              "perLetterRawInk": [
+                0.2857142857142857,
+                0.8,
+                0.42857142857142855,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.719912467718089,
+              "coverage": 0.8125,
+              "order": 0.4919544504789863,
+              "backtrack": 0.2531076382365919,
+              "targetSpan": 0.11482834240219975,
+              "distanceRatio": 0.794125460131831,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8642857142857143,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "backtrack",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 24.23858299999847,
+            "acceptedCandidateCount": 0
+          }
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 5,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.659235058687731,
+              "coverage": 0.7625,
+              "order": 0.4872784545653636,
+              "backtrack": 0,
+              "targetSpan": 0.15538425473629636,
+              "distanceRatio": 0.3719476083331718,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6357142857142857,
+              "perLetterRawInk": [
+                0.5714285714285714,
+                0.6,
+                0.5714285714285714,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6894570609270011,
+              "coverage": 0.975,
+              "order": 0.44073274648263405,
+              "backtrack": 0.1414603257243685,
+              "targetSpan": 0.19364647565631904,
+              "distanceRatio": 1.3373077303939898,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9142857142857144,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 39.44133299999521,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6516409826537382,
+              "coverage": 0.7,
+              "order": 0.4984169617251132,
+              "backtrack": 0,
+              "targetSpan": 0.20074680373611933,
+              "distanceRatio": 0.30603218507053287,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7642857142857142,
+              "perLetterRawInk": [
+                1,
+                0.8,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7300264881221058,
+              "coverage": 0.8875,
+              "order": 0.5390760324318349,
+              "backtrack": 0.06610691186143575,
+              "targetSpan": 0.1830311016298236,
+              "distanceRatio": 0.5231526695118413,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9285714285714286,
+              "perLetterRawInk": [
+                0.7142857142857143,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 9,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 27.806083000003127,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6753598671535698,
+              "coverage": 0.75,
+              "order": 0.520312392562128,
+              "backtrack": 0,
+              "targetSpan": 0.42015382199551793,
+              "distanceRatio": 0.3677202444276493,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6357142857142858,
+              "perLetterRawInk": [
+                0.2857142857142857,
+                0.8,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7828248237171627,
+              "coverage": 0.9875,
+              "order": 0.45455364704732176,
+              "backtrack": 0.08558676080931127,
+              "targetSpan": 0.21758945908561045,
+              "distanceRatio": 0.9828938537974805,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9142857142857143,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 43.43383300000278,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6442412806702901,
+              "coverage": 0.6875,
+              "order": 0.5050754307753305,
+              "backtrack": 0,
+              "targetSpan": 0.12038183594177848,
+              "distanceRatio": 0.2727468505218503,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.55,
+              "perLetterRawInk": [
+                0.42857142857142855,
+                0.8,
+                0.5714285714285714,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7630948018084803,
+              "coverage": 0.925,
+              "order": 0.5330323520265287,
+              "backtrack": 0.11946887266635277,
+              "targetSpan": 0.5078231881311217,
+              "distanceRatio": 0.7827732533059344,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8642857142857143,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 10,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 33.330167000000074,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6735074822715251,
+              "coverage": 0.7875,
+              "order": 0.5637418557354165,
+              "backtrack": 0.2578431034317528,
+              "targetSpan": 0.16962038843726007,
+              "distanceRatio": 0.3505354207991407,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7285714285714285,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "backtrack",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7883166110564552,
+              "coverage": 0.9375,
+              "order": 0.5750738881405222,
+              "backtrack": 0.12238882208059589,
+              "targetSpan": 0.28028746150413714,
+              "distanceRatio": 0.7917207769028162,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8785714285714286,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 39.16704200000095,
+            "acceptedCandidateCount": 0
+          }
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 12,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5375917458632221,
+              "coverage": 0.3875,
+              "order": 0.5039708341737744,
+              "backtrack": 0,
+              "targetSpan": 0.2962449922057727,
+              "distanceRatio": 0.21214843605776865,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6285714285714286,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                0.8571428571428571,
+                0
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.5821827477846466,
+              "coverage": 0.5,
+              "order": 0.4948845522335772,
+              "backtrack": 0.017524953139604692,
+              "targetSpan": 0.1693220000098741,
+              "distanceRatio": 0.39789629893197886,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8142857142857143,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 6,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 35.537624999997206,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6896638171531889,
+              "coverage": 0.725,
+              "order": 0.5628703934649523,
+              "backtrack": 0,
+              "targetSpan": 0.4234896547859742,
+              "distanceRatio": 0.4090156846640488,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7142857142857143,
+              "perLetterRawInk": [
+                1,
+                0.6,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7884935982518385,
+              "coverage": 0.95,
+              "order": 0.5127794105029,
+              "backtrack": 0.09344414373693367,
+              "targetSpan": 0.22514243376237372,
+              "distanceRatio": 1.0306315303767213,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9142857142857143,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 40.68829199999891,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5244310051754175,
+              "coverage": 0.4,
+              "order": 0.4591072775420174,
+              "backtrack": 0,
+              "targetSpan": 0.18009474363014671,
+              "distanceRatio": 0.24837499743594005,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6785714285714286,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                0.8571428571428571,
+                0.2
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.36078824877238996,
+              "coverage": 0.675,
+              "order": 0.14999701704824067,
+              "backtrack": 0.020029972561114804,
+              "targetSpan": 0.16895376539050538,
+              "distanceRatio": 3.541398176086932,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8071428571428572,
+              "perLetterRawInk": [
+                0.42857142857142855,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 105.92637500000274,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5138547031862385,
+              "coverage": 0.425,
+              "order": 0.4376486506835061,
+              "backtrack": 0,
+              "targetSpan": 0.1350813496401672,
+              "distanceRatio": 0.34549495656059814,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5,
+              "perLetterRawInk": [
+                0.42857142857142855,
+                0.8,
+                0.5714285714285714,
+                0.2
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6250612018952195,
+              "coverage": 0.6125,
+              "order": 0.5358021795103052,
+              "backtrack": 0.1099811972588435,
+              "targetSpan": 0.4918574568236498,
+              "distanceRatio": 0.4408681185156518,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6785714285714286,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.7142857142857143,
+                0
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 21.765458000001672,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5472665185732903,
+              "coverage": 0.475,
+              "order": 0.4399154454331704,
+              "backtrack": 0,
+              "targetSpan": 0.21710047819417932,
+              "distanceRatio": 0.31664975026211817,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7071428571428572,
+              "perLetterRawInk": [
+                0.5714285714285714,
+                0.8,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6584244987530312,
+              "coverage": 0.675,
+              "order": 0.4916381904738289,
+              "backtrack": 0.22190903760759786,
+              "targetSpan": 0.34164546875801005,
+              "distanceRatio": 0.7380164048533971,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8785714285714286,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                0.8571428571428571,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 22.811374999997497,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5990738357635623,
+              "coverage": 0.5625,
+              "order": 0.46036678740146875,
+              "backtrack": 0,
+              "targetSpan": 0.3219494421595496,
+              "distanceRatio": 0.23830497345514878,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5857142857142856,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                0.2857142857142857,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6602546443451196,
+              "coverage": 0.65,
+              "order": 0.4561635979186497,
+              "backtrack": 0.04454409877731912,
+              "targetSpan": 0.2565870192636129,
+              "distanceRatio": 0.5841776441505464,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5857142857142857,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.6,
+                0.2857142857142857,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 30.54279200000019,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6202958028000546,
+              "coverage": 0.625,
+              "order": 0.45875948286104185,
+              "backtrack": 0,
+              "targetSpan": 0.07836448858998749,
+              "distanceRatio": 0.30544931439938156,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5642857142857143,
+              "perLetterRawInk": [
+                0.5714285714285714,
+                1,
+                0.2857142857142857,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7606809556055558,
+              "coverage": 0.9,
+              "order": 0.45652828845843313,
+              "backtrack": 0.10641121907706158,
+              "targetSpan": 0.15441346844289572,
+              "distanceRatio": 1.0059437488453302,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8642857142857143,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 45.634500000000116,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6391063199694651,
+              "coverage": 0.775,
+              "order": 0.42335259603382625,
+              "backtrack": 0,
+              "targetSpan": 0.12797547971446785,
+              "distanceRatio": 0.3166658461752226,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7571428571428571,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.42857142857142855,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6522587758442442,
+              "coverage": 0.8,
+              "order": 0.3470364972898743,
+              "backtrack": 0.3034636149179217,
+              "targetSpan": 0.36586884835947786,
+              "distanceRatio": 0.7412906137998061,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7285714285714286,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.7142857142857143,
+                0.2
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "shapeScore",
+              "order",
+              "backtrack",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 9,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 30.691957999995793,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5900658367949634,
+              "coverage": 0.5125,
+              "order": 0.4490908581806746,
+              "backtrack": 0,
+              "targetSpan": 0.09459867913303939,
+              "distanceRatio": 0.33390411750308957,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6,
+              "perLetterRawInk": [
+                0.5714285714285714,
+                0.8,
+                0.42857142857142855,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6462991638812001,
+              "coverage": 0.8125,
+              "order": 0.39176438978194605,
+              "backtrack": 0.12945366314778312,
+              "targetSpan": 0.10409000137210331,
+              "distanceRatio": 0.4967849766773423,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7928571428571429,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.8,
+                0.7142857142857143,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 19.884084000004805,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6538049076775723,
+              "coverage": 0.6375,
+              "order": 0.5388588481876274,
+              "backtrack": 0,
+              "targetSpan": 0.10096406355277517,
+              "distanceRatio": 0.27019503149960095,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6571428571428571,
+              "perLetterRawInk": [
+                0.7142857142857143,
+                0.8,
+                0.7142857142857143,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7905432407061468,
+              "coverage": 0.975,
+              "order": 0.47778760253410385,
+              "backtrack": 0.10894388924780327,
+              "targetSpan": 0.1613704848628698,
+              "distanceRatio": 1.0093471146928288,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9642857142857143,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 26.25195800000074,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5652505637273911,
+              "coverage": 0.3875,
+              "order": 0.5352793059548975,
+              "backtrack": 0,
+              "targetSpan": 0.24953194628450476,
+              "distanceRatio": 0.4457233117043824,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5357142857142857,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                0.6,
+                0.2857142857142857,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6736828367561034,
+              "coverage": 0.6,
+              "order": 0.5481737819899566,
+              "backtrack": 0.10884678561649512,
+              "targetSpan": 0.18322810228090514,
+              "distanceRatio": 0.787560816402403,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8071428571428572,
+              "perLetterRawInk": [
+                1,
+                0.8,
+                0.42857142857142855,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 28.072416000002704,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6622875043653279,
+              "coverage": 0.7125,
+              "order": 0.5552783762234473,
+              "backtrack": 0,
+              "targetSpan": 0.2523753167957605,
+              "distanceRatio": 0.23108317389235564,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6357142857142857,
+              "perLetterRawInk": [
+                0.5714285714285714,
+                0.6,
+                0.5714285714285714,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7683960684582753,
+              "coverage": 0.9375,
+              "order": 0.5003625919745062,
+              "backtrack": 0.18613507306162702,
+              "targetSpan": 0.4381897336391355,
+              "distanceRatio": 0.9481904551808954,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8785714285714286,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 30.96875,
+            "acceptedCandidateCount": 0
+          }
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 5,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.7173597863002122,
+              "coverage": 0.8125,
+              "order": 0.5635764321341514,
+              "backtrack": 0,
+              "targetSpan": 0.2294226899031504,
+              "distanceRatio": 0.4490559049432973,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7571428571428571,
+              "perLetterRawInk": [
+                0.5714285714285714,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7775690290833547,
+              "coverage": 0.9625,
+              "order": 0.5040982162100399,
+              "backtrack": 0.10816464568385606,
+              "targetSpan": 0.10116197715118158,
+              "distanceRatio": 0.8806831838344644,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8928571428571428,
+              "perLetterRawInk": [
+                0.5714285714285714,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 41.13362500000221,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.7396406682184301,
+              "coverage": 0.925,
+              "order": 0.5870707414679918,
+              "backtrack": 0,
+              "targetSpan": 0.38326866581852465,
+              "distanceRatio": 0.387129442099332,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9142857142857144,
+              "perLetterRawInk": [
+                0.8571428571428571,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.8111553750707715,
+              "coverage": 0.975,
+              "order": 0.5765270037158196,
+              "backtrack": 0.1045341755456373,
+              "targetSpan": 0.6103691771693064,
+              "distanceRatio": 0.9154970699947571,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9142857142857144,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 35.68120799999451,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.7198485696103146,
+              "coverage": 0.7625,
+              "order": 0.6336176632077594,
+              "backtrack": 0,
+              "targetSpan": 0.1032412275254134,
+              "distanceRatio": 0.3253903426533848,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6357142857142857,
+              "perLetterRawInk": [
+                0.5714285714285714,
+                0.8,
+                0.5714285714285714,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7935127740990733,
+              "coverage": 0.9625,
+              "order": 0.5716753787420944,
+              "backtrack": 0.0489799615529889,
+              "targetSpan": 0.21219068722978685,
+              "distanceRatio": 0.7618353920008378,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 1,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 46.620917000007466,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6830238540672643,
+              "coverage": 0.7375,
+              "order": 0.549068436592589,
+              "backtrack": 0,
+              "targetSpan": 0.55257106944778,
+              "distanceRatio": 0.34228833885542786,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7642857142857142,
+              "perLetterRawInk": [
+                1,
+                0.8,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7611069710427233,
+              "coverage": 0.875,
+              "order": 0.43955499657332037,
+              "backtrack": 0.044132398410242905,
+              "targetSpan": 0.36383051170549624,
+              "distanceRatio": 0.9941127848650133,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9142857142857144,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 9,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 53.717124999995576,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6383040413714871,
+              "coverage": 0.7125,
+              "order": 0.43873825304092856,
+              "backtrack": 0,
+              "targetSpan": 0.16301481237141227,
+              "distanceRatio": 0.3331002574468247,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8142857142857143,
+              "perLetterRawInk": [
+                1,
+                0.8,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7189666129471947,
+              "coverage": 0.85,
+              "order": 0.5458408361100838,
+              "backtrack": 0.17647570263624957,
+              "targetSpan": 0.44944292550115555,
+              "distanceRatio": 0.5613389365611056,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8642857142857143,
+              "perLetterRawInk": [
+                1,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 22.68087500000547,
+            "acceptedCandidateCount": 0
+          }
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 25,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6922511667213763,
+              "coverage": 0.775,
+              "order": 0.5220962856856801,
+              "backtrack": 0,
+              "targetSpan": 0.24645846175172928,
+              "distanceRatio": 0.46346400824690426,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8414285714285714,
+              "perLetterRawInk": [
+                1,
+                0.75,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6932171391959154,
+              "coverage": 0.9,
+              "order": 0.42608304151580983,
+              "backtrack": 0.1300374733829716,
+              "targetSpan": 0.2514408815386825,
+              "distanceRatio": 1.2535331422822984,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8283333333333334,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.875,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 67.6414999999979,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6413745923299279,
+              "coverage": 0.5875,
+              "order": 0.5068463786686761,
+              "backtrack": 0,
+              "targetSpan": 0.1177149521239962,
+              "distanceRatio": 0.4445922823060013,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6121428571428571,
+              "perLetterRawInk": [
+                1,
+                0.375,
+                1,
+                0.2857142857142857,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7244089489093498,
+              "coverage": 0.875,
+              "order": 0.4150046092272893,
+              "backtrack": 0.10303656438091068,
+              "targetSpan": 0.13388468312613572,
+              "distanceRatio": 1.0714071579126576,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7616666666666666,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.875,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 57.38779199999408,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6474508147935912,
+              "coverage": 0.65,
+              "order": 0.4970474776415076,
+              "backtrack": 0,
+              "targetSpan": 0.1910330884757388,
+              "distanceRatio": 0.373636167033654,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7121428571428571,
+              "perLetterRawInk": [
+                1,
+                0.875,
+                1,
+                0.2857142857142857,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7769601336456139,
+              "coverage": 0.9375,
+              "order": 0.4853116716933751,
+              "backtrack": 0.10300860627340155,
+              "targetSpan": 0.23065360792276546,
+              "distanceRatio": 0.9546350862024388,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9314285714285715,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 59.18549999999232,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6329169093292639,
+              "coverage": 0.4875,
+              "order": 0.6041985209065036,
+              "backtrack": 0,
+              "targetSpan": 0.1834906953028405,
+              "distanceRatio": 0.45468322407232287,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8664285714285714,
+              "perLetterRawInk": [
+                1,
+                0.875,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6681865241592364,
+              "coverage": 0.6375,
+              "order": 0.48790747948937796,
+              "backtrack": 0.07942514344873337,
+              "targetSpan": 0.11923154878976527,
+              "distanceRatio": 0.8296845995558906,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9333333333333332,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 59.60216599999694,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6862746630423368,
+              "coverage": 0.575,
+              "order": 0.532742269559059,
+              "backtrack": 0.005729447238644413,
+              "targetSpan": 0.12626371506676706,
+              "distanceRatio": 0.7082030759820516,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7326190476190476,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.625,
+                1,
+                0.5714285714285714,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6087701846413487,
+              "coverage": 0.525,
+              "order": 0.4524659145151314,
+              "backtrack": 0.00839839348323868,
+              "targetSpan": 0.2593794821609189,
+              "distanceRatio": 0.43584443142570073,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5142857142857142,
+              "perLetterRawInk": [
+                0,
+                1,
+                1,
+                0.5714285714285714,
+                0
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 7,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 49.41616599999543,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6724595896660742,
+              "coverage": 0.7125,
+              "order": 0.5137498326507857,
+              "backtrack": 0,
+              "targetSpan": 0.4225960370367308,
+              "distanceRatio": 0.4333803416083376,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6259523809523809,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.625,
+                1,
+                0.5714285714285714,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7179911221149461,
+              "coverage": 0.9375,
+              "order": 0.4104134915130192,
+              "backtrack": 0.06635789693574672,
+              "targetSpan": 0.3674295431285229,
+              "distanceRatio": 1.179814681796542,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9199999999999999,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 100.77666699999827,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6916703681686656,
+              "coverage": 0.675,
+              "order": 0.5981304739512501,
+              "backtrack": 0,
+              "targetSpan": 0.3805527019882168,
+              "distanceRatio": 0.4051600427671221,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7178571428571429,
+              "perLetterRawInk": [
+                1,
+                0.875,
+                1,
+                0.7142857142857143,
+                0
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7892138487925545,
+              "coverage": 0.9375,
+              "order": 0.5785336197669252,
+              "backtrack": 0.07115369820186826,
+              "targetSpan": 0.4065320056059572,
+              "distanceRatio": 0.7924901938694027,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9333333333333332,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 10,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 53.59879200000432,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6650001216013984,
+              "coverage": 0.7375,
+              "order": 0.4713224678042355,
+              "backtrack": 0.008637629434834848,
+              "targetSpan": 0.2244321703056717,
+              "distanceRatio": 0.45289793966953895,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7997619047619048,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.875,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.679356293299915,
+              "coverage": 0.925,
+              "order": 0.4002969924222766,
+              "backtrack": 0.044952188016962026,
+              "targetSpan": 0.26645701604084765,
+              "distanceRatio": 1.3262440811347607,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8699999999999999,
+              "perLetterRawInk": [
+                1,
+                0.75,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 87.22333300000173,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.62158879187363,
+              "coverage": 0.5,
+              "order": 0.598721239092483,
+              "backtrack": 0,
+              "targetSpan": 0.43203001632041543,
+              "distanceRatio": 0.42150874753067763,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5978571428571429,
+              "perLetterRawInk": [
+                0,
+                0.875,
+                1,
+                0.7142857142857143,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6872875308438605,
+              "coverage": 0.7,
+              "order": 0.5083691187562498,
+              "backtrack": 0.14631955071003674,
+              "targetSpan": 0.5317684316331978,
+              "distanceRatio": 0.8796896536002269,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8647619047619047,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 66.98595899999782,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6965708715458292,
+              "coverage": 0.8,
+              "order": 0.517239095869653,
+              "backtrack": 0.05225205136287047,
+              "targetSpan": 0.20706115080613113,
+              "distanceRatio": 0.45036370887690363,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.733095238095238,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.875,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7823703825966404,
+              "coverage": 0.9375,
+              "order": 0.5114258371404845,
+              "backtrack": 0.12895636760370793,
+              "targetSpan": 0.26222526970634585,
+              "distanceRatio": 0.9398124235021007,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 1,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 64.95137500000419,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6360200483991345,
+              "coverage": 0.6625,
+              "order": 0.46182097076612233,
+              "backtrack": 0,
+              "targetSpan": 0.21206620788332053,
+              "distanceRatio": 0.3723976275922565,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7845238095238095,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.875,
+                1,
+                0.7142857142857143,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7604945180047692,
+              "coverage": 0.8875,
+              "order": 0.4745204655458931,
+              "backtrack": 0.09203553922278818,
+              "targetSpan": 0.27017845011543307,
+              "distanceRatio": 0.9574584435656633,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8949999999999999,
+              "perLetterRawInk": [
+                1,
+                0.875,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 79.59399999999732,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.7175540983262539,
+              "coverage": 0.85,
+              "order": 0.5182237390036663,
+              "backtrack": 0,
+              "targetSpan": 0.2015479762641591,
+              "distanceRatio": 0.5325127980151296,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8914285714285715,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7856983701699892,
+              "coverage": 0.9375,
+              "order": 0.525466274719779,
+              "backtrack": 0.14896085971056647,
+              "targetSpan": 0.20905784882928938,
+              "distanceRatio": 0.9456964262148302,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.96,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 60.896292000004905,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5919720398403416,
+              "coverage": 0.45,
+              "order": 0.5662848632790498,
+              "backtrack": 0,
+              "targetSpan": 0.22409876068635354,
+              "distanceRatio": 0.4580511165439454,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6907142857142856,
+              "perLetterRawInk": [
+                1,
+                0.625,
+                1,
+                0.42857142857142855,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7055973918102063,
+              "coverage": 0.7375,
+              "order": 0.5286913190527289,
+              "backtrack": 0.23861038853366706,
+              "targetSpan": 0.47346420594434896,
+              "distanceRatio": 0.9418214630154459,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8247619047619047,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 61.669999999998254,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6336186495522785,
+              "coverage": 0.6625,
+              "order": 0.44017012207777556,
+              "backtrack": 0,
+              "targetSpan": 0.13908104953302766,
+              "distanceRatio": 0.399388393481017,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6545238095238095,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.625,
+                1,
+                0.7142857142857143,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.5801852003267675,
+              "coverage": 0.825,
+              "order": 0.3410614728075037,
+              "backtrack": 0.03245496898650474,
+              "targetSpan": 0.5430524703869701,
+              "distanceRatio": 1.5761347499389606,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.822857142857143,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                0.7142857142857143,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 108.2378330000065,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.692895453449579,
+              "coverage": 0.65,
+              "order": 0.6157561309105014,
+              "backtrack": 0.04844174530576845,
+              "targetSpan": 0.1824043888831549,
+              "distanceRatio": 0.39330947500542585,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8014285714285714,
+              "perLetterRawInk": [
+                1,
+                0.75,
+                1,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7638203110027698,
+              "coverage": 0.9,
+              "order": 0.5585251257278934,
+              "backtrack": 0.12052229823298372,
+              "targetSpan": 0.24839913338860714,
+              "distanceRatio": 1.1565961664486073,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8433333333333334,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.75,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 79.46554099999776,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6239375138438811,
+              "coverage": 0.6125,
+              "order": 0.44579392031219317,
+              "backtrack": 0,
+              "targetSpan": 0.29707673612905383,
+              "distanceRatio": 0.3770495033998474,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7195238095238095,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.75,
+                1,
+                0.7142857142857143,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7694504689457794,
+              "coverage": 0.9125,
+              "order": 0.5129109836911042,
+              "backtrack": 0.13186899414841058,
+              "targetSpan": 0.34795932556501574,
+              "distanceRatio": 0.8956685050129182,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8797619047619047,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.875,
+                1,
+                0.8571428571428571,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 65.33162499999162,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6239602083920082,
+              "coverage": 0.5625,
+              "order": 0.5587631503237839,
+              "backtrack": 0,
+              "targetSpan": 0.45855141212593936,
+              "distanceRatio": 0.47692448020906303,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7978571428571428,
+              "perLetterRawInk": [
+                1,
+                0.875,
+                1,
+                0.7142857142857143,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6681192262342891,
+              "coverage": 0.625,
+              "order": 0.5071624283839792,
+              "backtrack": 0.112120875000502,
+              "targetSpan": 0.22581710504197838,
+              "distanceRatio": 0.8389344402156899,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8533333333333333,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 58.76045800000429,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5311836445720338,
+              "coverage": 0.4,
+              "order": 0.5080817164629093,
+              "backtrack": 0,
+              "targetSpan": 0.24868474619052156,
+              "distanceRatio": 0.27327052075126074,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5214285714285715,
+              "perLetterRawInk": [
+                0,
+                0.75,
+                1,
+                0.8571428571428571,
+                0
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6547899772923951,
+              "coverage": 0.65,
+              "order": 0.47699743192726307,
+              "backtrack": 0.22792652381257797,
+              "targetSpan": 0.3485705777295935,
+              "distanceRatio": 0.832976344664433,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8933333333333333,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 53.935083999997005,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6381106682976234,
+              "coverage": 0.7125,
+              "order": 0.43239985919718127,
+              "backtrack": 0,
+              "targetSpan": 0.16252865765064894,
+              "distanceRatio": 0.3805162285893651,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6895238095238094,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                1,
+                1,
+                0.7142857142857143,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7289162983653474,
+              "coverage": 0.8625,
+              "order": 0.387472598948393,
+              "backtrack": 0.11064362083166539,
+              "targetSpan": 0.22573393473476377,
+              "distanceRatio": 1.0169354087348883,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7961904761904762,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                0.7142857142857143,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 68.7855419999978,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.7209274052484718,
+              "coverage": 0.7625,
+              "order": 0.5851672279000941,
+              "backtrack": 0,
+              "targetSpan": 0.21433106664111318,
+              "distanceRatio": 0.49642362482169716,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7997619047619048,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.875,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.8047351053706199,
+              "coverage": 0.9375,
+              "order": 0.5581659536926487,
+              "backtrack": 0.08884934812167124,
+              "targetSpan": 0.21501936402789878,
+              "distanceRatio": 0.9718217755480306,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.9333333333333332,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 60.229582999993,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5189096727168431,
+              "coverage": 0.3875,
+              "order": 0.3989806827331559,
+              "backtrack": 0,
+              "targetSpan": 0.09760860175671737,
+              "distanceRatio": 0.4749031611775262,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.643095238095238,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.625,
+                1,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7182580179609523,
+              "coverage": 0.7,
+              "order": 0.5643967291410832,
+              "backtrack": 0.11880669669885344,
+              "targetSpan": 0.22048617846249124,
+              "distanceRatio": 0.9224318465524288,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8247619047619047,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 61.13116600000649,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5736384938144933,
+              "coverage": 0.4875,
+              "order": 0.48981260295313966,
+              "backtrack": 0,
+              "targetSpan": 0.16865269037477842,
+              "distanceRatio": 0.4402294593320543,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6414285714285715,
+              "perLetterRawInk": [
+                0,
+                0.75,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6452695109982519,
+              "coverage": 0.5875,
+              "order": 0.45317334017753635,
+              "backtrack": 0.1948881220546922,
+              "targetSpan": 0.19760102048636596,
+              "distanceRatio": 0.9080331981028212,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8533333333333333,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 65.96975000000384,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.742554108078905,
+              "coverage": 0.8,
+              "order": 0.5807161808975869,
+              "backtrack": 0,
+              "targetSpan": 0.29337247457905585,
+              "distanceRatio": 0.6028011447248395,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8092857142857142,
+              "perLetterRawInk": [
+                1,
+                0.875,
+                1,
+                0.5714285714285714,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7752910516673658,
+              "coverage": 0.875,
+              "order": 0.5218639476631903,
+              "backtrack": 0.16838873112323652,
+              "targetSpan": 0.22059270753528545,
+              "distanceRatio": 0.9970980628634907,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7592857142857142,
+              "perLetterRawInk": [
+                1,
+                0.625,
+                1,
+                0.5714285714285714,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 58.50899999999092,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5936490741971083,
+              "coverage": 0.5,
+              "order": 0.5431048591428335,
+              "backtrack": 0,
+              "targetSpan": 0.22306171731439656,
+              "distanceRatio": 0.4647908051571471,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7464285714285714,
+              "perLetterRawInk": [
+                1,
+                0.875,
+                1,
+                0.8571428571428571,
+                0
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7424420224028683,
+              "coverage": 0.75,
+              "order": 0.562089342908596,
+              "backtrack": 0.09609973900329617,
+              "targetSpan": 0.22336968154878425,
+              "distanceRatio": 1.005708051910011,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8933333333333333,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 77.67170800000895,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6733851668025314,
+              "coverage": 0.65,
+              "order": 0.5329397447078765,
+              "backtrack": 0,
+              "targetSpan": 0.2392653540912714,
+              "distanceRatio": 0.45278076489901947,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8414285714285714,
+              "perLetterRawInk": [
+                1,
+                0.75,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7551429369851672,
+              "coverage": 0.9,
+              "order": 0.49777189615620393,
+              "backtrack": 0.09157944918508767,
+              "targetSpan": 0.2038509276336931,
+              "distanceRatio": 0.8152579202971239,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8814285714285715,
+              "perLetterRawInk": [
+                1,
+                0.75,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 8,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 70.08650000000489,
+            "acceptedCandidateCount": 0
+          }
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 1,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5771102673641417,
+              "coverage": 0.4375,
+              "order": 0.5625122227220459,
+              "backtrack": 0,
+              "targetSpan": 0.23042139358219937,
+              "distanceRatio": 0.3511503143381446,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6645238095238095,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.875,
+                1,
+                0.7142857142857143,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6679424630946231,
+              "coverage": 0.6875,
+              "order": 0.4891520986166997,
+              "backtrack": 0.07574693641732676,
+              "targetSpan": 0.3746878966984039,
+              "distanceRatio": 0.7742946910222749,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.76,
+              "perLetterRawInk": [
+                0,
+                1,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 9,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 94.65795800002525,
+            "acceptedCandidateCount": 0
+          }
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 12,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.552782991425823,
+              "coverage": 0.45,
+              "order": 0.45320302978452404,
+              "backtrack": 0.06900617218251956,
+              "targetSpan": 0.1606695527224296,
+              "distanceRatio": 0.49842029215280464,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6509523809523808,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.75,
+                1,
+                0.5714285714285714,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.639856977360215,
+              "coverage": 0.5875,
+              "order": 0.4643281488353312,
+              "backtrack": 0.06905467704683882,
+              "targetSpan": 0.20982343753150196,
+              "distanceRatio": 1.0697217236498273,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7347619047619047,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.75,
+                1,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 9,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 96.12899999998626,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6941270956919,
+              "coverage": 0.775,
+              "order": 0.567351497431448,
+              "backtrack": 0,
+              "targetSpan": 0.4674668237480495,
+              "distanceRatio": 0.36237463133706826,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8264285714285714,
+              "perLetterRawInk": [
+                1,
+                0.875,
+                1,
+                0.8571428571428571,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.799964811851199,
+              "coverage": 0.975,
+              "order": 0.5331173698346429,
+              "backtrack": 0.07336168771727916,
+              "targetSpan": 0.60179793995929,
+              "distanceRatio": 1.0418239140348184,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8547619047619047,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.75,
+                1,
+                0.8571428571428571,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 112.49312500000815,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.7085124069601814,
+              "coverage": 0.7625,
+              "order": 0.5699756988809731,
+              "backtrack": 0,
+              "targetSpan": 0.6145473760930418,
+              "distanceRatio": 0.43119819458239367,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6830952380952381,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.625,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7705648102215447,
+              "coverage": 0.8875,
+              "order": 0.5994676771914318,
+              "backtrack": 0.19147551471512259,
+              "targetSpan": 0.515719067328295,
+              "distanceRatio": 0.7369750717703689,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.822857142857143,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                0.7142857142857143,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 52.06979100001627,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6520210015043713,
+              "coverage": 0.6375,
+              "order": 0.5409093543584625,
+              "backtrack": 0.13214458620513747,
+              "targetSpan": 0.06539254244776271,
+              "distanceRatio": 0.39654961150992446,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7159523809523808,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.875,
+                1,
+                0.5714285714285714,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7716520169331406,
+              "coverage": 0.9,
+              "order": 0.5440851300356688,
+              "backtrack": 0.2053667076508966,
+              "targetSpan": 0.3892449635339885,
+              "distanceRatio": 1.0685156984849642,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8266666666666665,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                1,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 70.34470899999724,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6725015503016897,
+              "coverage": 0.725,
+              "order": 0.4851657427422107,
+              "backtrack": 0,
+              "targetSpan": 0.12905396165742977,
+              "distanceRatio": 0.48424776178221035,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7707142857142857,
+              "perLetterRawInk": [
+                1,
+                0.625,
+                1,
+                0.42857142857142855,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7697474657968534,
+              "coverage": 0.9125,
+              "order": 0.48880401493439607,
+              "backtrack": 0.11912662990862737,
+              "targetSpan": 0.1638161528951712,
+              "distanceRatio": 0.9517836349628969,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8528571428571429,
+              "perLetterRawInk": [
+                1,
+                0.75,
+                1,
+                0.7142857142857143,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 61.90758299999288,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.630307652155195,
+              "coverage": 0.6625,
+              "order": 0.4473639997628808,
+              "backtrack": 0.09686984016262927,
+              "targetSpan": 0.16109266249801452,
+              "distanceRatio": 0.429020352111806,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7104761904761905,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                1,
+                1,
+                0.2857142857142857,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7532678286266623,
+              "coverage": 0.925,
+              "order": 0.4809964842319883,
+              "backtrack": 0.17564296938010523,
+              "targetSpan": 0.20421026739497433,
+              "distanceRatio": 1.073734551472317,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8283333333333334,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.875,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 71.82170800000313,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.4276763932266377,
+              "coverage": 0.2625,
+              "order": 0.3634170916012914,
+              "backtrack": 0,
+              "targetSpan": 0.24112750924712356,
+              "distanceRatio": 0.26073995273854683,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.40714285714285714,
+              "perLetterRawInk": [
+                0,
+                0.75,
+                1,
+                0.2857142857142857,
+                0
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "lengthRatio",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7060450007536354,
+              "coverage": 0.7625,
+              "order": 0.49027200528097425,
+              "backtrack": 0.10706097125672388,
+              "targetSpan": 0.7786410273088665,
+              "distanceRatio": 0.9574619228219992,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.96,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 60.27716700002202,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6742538469055219,
+              "coverage": 0.75,
+              "order": 0.4898829822729717,
+              "backtrack": 0,
+              "targetSpan": 0.518302445912975,
+              "distanceRatio": 0.42998044950068637,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6716666666666666,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.625,
+                1,
+                1,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6889523554358908,
+              "coverage": 0.775,
+              "order": 0.366025019496895,
+              "backtrack": 0.14518434775529124,
+              "targetSpan": 0.08736381014399552,
+              "distanceRatio": 0.9445689509118962,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.725,
+              "perLetterRawInk": [
+                0,
+                0.625,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 9,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 62.58741700000246,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6267106950472807,
+              "coverage": 0.4875,
+              "order": 0.5220929652012607,
+              "backtrack": 0,
+              "targetSpan": 0.08279458223502519,
+              "distanceRatio": 0.38727617880537957,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.6223809523809523,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.75,
+                1,
+                0.42857142857142855,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7203785987997561,
+              "coverage": 0.8125,
+              "order": 0.45872543601560284,
+              "backtrack": 0.12165662976934664,
+              "targetSpan": 0.23059619463677827,
+              "distanceRatio": 0.8353056333689113,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.72,
+              "perLetterRawInk": [
+                0,
+                1,
+                1,
+                1,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 9,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 63.95358299999498,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6841758802271543,
+              "coverage": 0.75,
+              "order": 0.49741690265811145,
+              "backtrack": 0,
+              "targetSpan": 0.3411862564028085,
+              "distanceRatio": 0.5118813280324084,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7657142857142857,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                0.42857142857142855,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7482572475149509,
+              "coverage": 0.825,
+              "order": 0.4792525337944043,
+              "backtrack": 0.2068151443640147,
+              "targetSpan": 0.1942527274691611,
+              "distanceRatio": 0.9900375081512648,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7883333333333333,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.875,
+                1,
+                1,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 10,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 64.02054200001294,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6606042416699658,
+              "coverage": 0.775,
+              "order": 0.48922699465659336,
+              "backtrack": 0.17346379337193094,
+              "targetSpan": 0.3148140676631389,
+              "distanceRatio": 0.40686661850749345,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8397619047619047,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.875,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7513408195327552,
+              "coverage": 0.9125,
+              "order": 0.47948853305844386,
+              "backtrack": 0.10960364299465403,
+              "targetSpan": 0.17182086508804462,
+              "distanceRatio": 0.9093720824210609,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.96,
+              "perLetterRawInk": [
+                1,
+                1,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 10,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 55.8566250000149,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.6190361269044635,
+              "coverage": 0.55,
+              "order": 0.4851707146484838,
+              "backtrack": 0,
+              "targetSpan": 0.21481504423346032,
+              "distanceRatio": 0.3981765834781304,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.5464285714285715,
+              "perLetterRawInk": [
+                0,
+                0.875,
+                1,
+                0.8571428571428571,
+                0
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.7232353741352385,
+              "coverage": 0.85,
+              "order": 0.48745124847088916,
+              "backtrack": 0.34600372349281433,
+              "targetSpan": 0.2325884973552122,
+              "distanceRatio": 0.8623166840538378,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7980952380952381,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                1,
+                1,
+                0.8571428571428571,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "backtrack",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 42.85241699998733,
+            "acceptedCandidateCount": 0
+          }
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 2,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.7234861535026613,
+              "coverage": 0.7375,
+              "order": 0.6351164732284386,
+              "backtrack": 0,
+              "targetSpan": 0.47247671971340843,
+              "distanceRatio": 0.41618668027448086,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.7633333333333333,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.75,
+                1,
+                1,
+                0.4
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.8017597639783588,
+              "coverage": 0.875,
+              "order": 0.5683684121818275,
+              "backtrack": 0.10807203136239285,
+              "targetSpan": 0.22389010515268226,
+              "distanceRatio": 0.9915810704171393,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.8683333333333334,
+              "perLetterRawInk": [
+                0.6666666666666666,
+                0.875,
+                1,
+                1,
+                0.8
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": true,
+            "connectedSegmentCount": 11,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 69.24399999997695,
+            "acceptedCandidateCount": 0
+          }
+        },
+        {
+          "candidateRank": -1,
+          "geometryVariant": "smooth",
+          "production": {
+            "routeQuality": {
+              "shapeScore": 0.5314643826450074,
+              "coverage": 0.375,
+              "order": 0.4548921991466797,
+              "backtrack": 0,
+              "targetSpan": 0.2197912505485019,
+              "distanceRatio": 0.38288064797126015,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.733095238095238,
+              "perLetterRawInk": [
+                0.3333333333333333,
+                0.875,
+                1,
+                0.8571428571428571,
+                0.6
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "shapeScore",
+              "coverage",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ]
+          },
+          "checkpointV1": {
+            "routeQuality": {
+              "shapeScore": 0.6640047533586957,
+              "coverage": 0.625,
+              "order": 0.4900050933658828,
+              "backtrack": 0.058407118019185036,
+              "targetSpan": 0.24615641700701058,
+              "distanceRatio": 0.8215320008493252,
+              "wordTraversal": false,
+              "allLettersCoveredAndOrdered": false,
+              "rawInkCoverageMean": 0.925,
+              "perLetterRawInk": [
+                1,
+                0.625,
+                1,
+                1,
+                1
+              ]
+            },
+            "passesProductGate": false,
+            "productGateRejectionReasons": [
+              "connected",
+              "shapeScore",
+              "order",
+              "targetSpan",
+              "wordTraversal"
+            ],
+            "checkpointsAttempted": 12,
+            "candidateCount": 1,
+            "fullyConnectedBest": false,
+            "connectedSegmentCount": 9,
+            "totalSegmentCount": 11,
+            "generationRuntimeMs": 100.20162500001607,
+            "acceptedCandidateCount": 0
+          }
+        }
+      ]
+    }
+  ]
+}

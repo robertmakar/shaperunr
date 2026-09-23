@@ -1,0 +1,2070 @@
+{
+  "generatedAt": "2026-09-22T12:44:18.093Z",
+  "candidates": [
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": true,
+      "newGateReasons": [],
+      "shapeScore": 0.7529736027176591,
+      "coverage": 0.825,
+      "backtrack": 0.13356979640525962,
+      "largestGap": 0.05,
+      "lengthRatio": 0.7926926586988301,
+      "targetSpan": 0.47025468557299255,
+      "rawOrder": 0.6006167453671346,
+      "recalibratedOrderB": 0.6906171133980268
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6425357139466004,
+      "coverage": 0.5875,
+      "backtrack": 0.16246488707799092,
+      "largestGap": 0.0875,
+      "lengthRatio": 0.78200808312314,
+      "targetSpan": 0.23235174770030345,
+      "rawOrder": 0.4842091079211328,
+      "recalibratedOrderB": 0.574209100510209
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6908307315037688,
+      "coverage": 0.6625,
+      "backtrack": 0.09778616422442826,
+      "largestGap": 0.075,
+      "lengthRatio": 0.8899624683464195,
+      "targetSpan": 0.1965458695864022,
+      "rawOrder": 0.4965433226043292,
+      "recalibratedOrderB": 0.5851405793463715
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": true,
+      "newGateReasons": [],
+      "shapeScore": 0.7668645499358656,
+      "coverage": 0.975,
+      "backtrack": 0.12014872000395466,
+      "largestGap": 0.0125,
+      "lengthRatio": 0.6486855245021567,
+      "targetSpan": 0.16899500031104928,
+      "rawOrder": 0.5629976283020508,
+      "recalibratedOrderB": 0.65562382163028
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore"
+      ],
+      "shapeScore": 0.6728577959483127,
+      "coverage": 0.8,
+      "backtrack": 0.11567083656699763,
+      "largestGap": 0.075,
+      "lengthRatio": 1.1692325694293557,
+      "targetSpan": 0.4164256874347201,
+      "rawOrder": 0.45192327288455747,
+      "recalibratedOrderB": 0.541926259155008
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "coverage",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "coverage",
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.5865471067938635,
+      "coverage": 0.525,
+      "backtrack": 0.2480706832392856,
+      "largestGap": 0.0875,
+      "lengthRatio": 0.8008046339244012,
+      "targetSpan": 0.1689665721775846,
+      "rawOrder": 0.39411643848864814,
+      "recalibratedOrderB": 0.48449867886017234
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "coverage",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "coverage",
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.6310831561059066,
+      "coverage": 0.55,
+      "backtrack": 0.16724484826672656,
+      "largestGap": 0.09999999999999999,
+      "lengthRatio": 0.8682661868711502,
+      "targetSpan": 0.1994614273193942,
+      "rawOrder": 0.4385403439155546,
+      "recalibratedOrderB": 0.5281223004362835
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": true,
+      "newGateReasons": [],
+      "shapeScore": 0.7057459689274285,
+      "coverage": 0.6375,
+      "backtrack": 0.09161562966537919,
+      "largestGap": 0.0625,
+      "lengthRatio": 0.8182401834262768,
+      "targetSpan": 0.19614998914242032,
+      "rawOrder": 0.5690930618638671,
+      "recalibratedOrderB": 0.6590930618637917
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": true,
+      "newGateReasons": [],
+      "shapeScore": 0.7045327758685033,
+      "coverage": 0.725,
+      "backtrack": 0.1194812612276093,
+      "largestGap": 0.075,
+      "lengthRatio": 0.8684063300669229,
+      "targetSpan": 0.4400953647483612,
+      "rawOrder": 0.5425361015671056,
+      "recalibratedOrderB": 0.6325357227931196
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "completeness"
+      ],
+      "shapeScore": 0.7745494963218746,
+      "coverage": 0.925,
+      "backtrack": 0.14374753303004043,
+      "largestGap": 0.05,
+      "lengthRatio": 0.7093678199207744,
+      "targetSpan": 0.0961287131010885,
+      "rawOrder": 0.5810982274847148,
+      "recalibratedOrderB": 0.66412672627334
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6967295965003651,
+      "coverage": 0.7125,
+      "backtrack": 0.06170026913705533,
+      "largestGap": 0.075,
+      "lengthRatio": 0.9712262470298706,
+      "targetSpan": 0.336580645017168,
+      "rawOrder": 0.45630754566792453,
+      "recalibratedOrderB": 0.545568198573068
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6663948430702115,
+      "coverage": 0.6375,
+      "backtrack": 0.13240152925357515,
+      "largestGap": 0.0875,
+      "lengthRatio": 0.7272713771636231,
+      "targetSpan": 0.34214053018380514,
+      "rawOrder": 0.516715118359816,
+      "recalibratedOrderB": 0.6067162340371276
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7484937221510339,
+      "coverage": 0.85,
+      "backtrack": 0.13888947925086248,
+      "largestGap": 0.075,
+      "lengthRatio": 0.7533764116583738,
+      "targetSpan": 0.28579517345286753,
+      "rawOrder": 0.5437090244192686,
+      "recalibratedOrderB": 0.6337090244190268
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.766213511511599,
+      "coverage": 0.9375,
+      "backtrack": 0.10591282872800632,
+      "largestGap": 0.05,
+      "lengthRatio": 1.017227412692926,
+      "targetSpan": 0.20624153686374333,
+      "rawOrder": 0.45249941334073274,
+      "recalibratedOrderB": 0.5430118059090641
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.725655465481107,
+      "coverage": 0.85,
+      "backtrack": 0.1497346761487951,
+      "largestGap": 0.05,
+      "lengthRatio": 0.9609870357748116,
+      "targetSpan": 0.21780291805957583,
+      "rawOrder": 0.4067421537432675,
+      "recalibratedOrderB": 0.49674215374364256
+    },
+    {
+      "caseIndex": 0,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "backtrack",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "backtrack",
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.719912467718089,
+      "coverage": 0.8125,
+      "backtrack": 0.2531076382365919,
+      "largestGap": 0.0625,
+      "lengthRatio": 0.794125460131831,
+      "targetSpan": 0.11482834240219975,
+      "rawOrder": 0.4919544504789863,
+      "recalibratedOrderB": 0.5813541593238395
+    },
+    {
+      "caseIndex": 1,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6894570609270011,
+      "coverage": 0.975,
+      "backtrack": 0.1414603257243685,
+      "largestGap": 0.0125,
+      "lengthRatio": 1.3373077303939898,
+      "targetSpan": 0.19364647565631904,
+      "rawOrder": 0.44073274648263405,
+      "recalibratedOrderB": 0.5303831521684031
+    },
+    {
+      "caseIndex": 1,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "lengthRatio",
+        "completeness"
+      ],
+      "shapeScore": 0.7300264881221058,
+      "coverage": 0.8875,
+      "backtrack": 0.06610691186143575,
+      "largestGap": 0.0625,
+      "lengthRatio": 0.5231526695118413,
+      "targetSpan": 0.1830311016298236,
+      "rawOrder": 0.5390760324318349,
+      "recalibratedOrderB": 0.629075153710189
+    },
+    {
+      "caseIndex": 1,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7828248237171627,
+      "coverage": 0.9875,
+      "backtrack": 0.08558676080931127,
+      "largestGap": 0.0125,
+      "lengthRatio": 0.9828938537974805,
+      "targetSpan": 0.21758945908561045,
+      "rawOrder": 0.45455364704732176,
+      "recalibratedOrderB": 0.5447643370180946
+    },
+    {
+      "caseIndex": 1,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "completeness"
+      ],
+      "shapeScore": 0.7630948018084803,
+      "coverage": 0.925,
+      "backtrack": 0.11946887266635277,
+      "largestGap": 0.0625,
+      "lengthRatio": 0.7827732533059344,
+      "targetSpan": 0.5078231881311217,
+      "rawOrder": 0.5330323520265287,
+      "recalibratedOrderB": 0.6259520637431657
+    },
+    {
+      "caseIndex": 1,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7883166110564552,
+      "coverage": 0.9375,
+      "backtrack": 0.12238882208059589,
+      "largestGap": 0.05,
+      "lengthRatio": 0.7917207769028162,
+      "targetSpan": 0.28028746150413714,
+      "rawOrder": 0.5750738881405222,
+      "recalibratedOrderB": 0.6727164629249768
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "shapeScore",
+        "coverage",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "shapeScore",
+        "coverage",
+        "lengthRatio",
+        "completeness"
+      ],
+      "shapeScore": 0.5821827477846466,
+      "coverage": 0.5,
+      "backtrack": 0.017524953139604692,
+      "largestGap": 0.09999999999999999,
+      "lengthRatio": 0.39789629893197886,
+      "targetSpan": 0.1693220000098741,
+      "rawOrder": 0.4948845522335772,
+      "recalibratedOrderB": 0.5848845522334862
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "continuity"
+      ],
+      "shapeScore": 0.7884935982518385,
+      "coverage": 0.95,
+      "backtrack": 0.09344414373693367,
+      "largestGap": 0.025,
+      "lengthRatio": 1.0306315303767213,
+      "targetSpan": 0.22514243376237372,
+      "rawOrder": 0.5127794105029,
+      "recalibratedOrderB": 0.6037385940510129
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.36078824877238996,
+      "coverage": 0.675,
+      "backtrack": 0.020029972561114804,
+      "largestGap": 0.075,
+      "lengthRatio": 3.541398176086932,
+      "targetSpan": 0.16895376539050538,
+      "rawOrder": 0.14999701704824067,
+      "recalibratedOrderB": 0.22668716477164869
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6250612018952195,
+      "coverage": 0.6125,
+      "backtrack": 0.1099811972588435,
+      "largestGap": 0.18750000000000003,
+      "lengthRatio": 0.4408681185156518,
+      "targetSpan": 0.4918574568236498,
+      "rawOrder": 0.5358021795103052,
+      "recalibratedOrderB": 0.6258027801950943
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore"
+      ],
+      "shapeScore": 0.6584244987530312,
+      "coverage": 0.675,
+      "backtrack": 0.22190903760759786,
+      "largestGap": 0.05,
+      "lengthRatio": 0.7380164048533971,
+      "targetSpan": 0.34164546875801005,
+      "rawOrder": 0.4916381904738289,
+      "recalibratedOrderB": 0.5816350438707144
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6602546443451196,
+      "coverage": 0.65,
+      "backtrack": 0.04454409877731912,
+      "largestGap": 0.11249999999999999,
+      "lengthRatio": 0.5841776441505464,
+      "targetSpan": 0.2565870192636129,
+      "rawOrder": 0.4561635979186497,
+      "recalibratedOrderB": 0.5461635979190594
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7606809556055558,
+      "coverage": 0.9,
+      "backtrack": 0.10641121907706158,
+      "largestGap": 0.0875,
+      "lengthRatio": 1.0059437488453302,
+      "targetSpan": 0.15441346844289572,
+      "rawOrder": 0.45652828845843313,
+      "recalibratedOrderB": 0.5464634944079972
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "shapeScore",
+        "order",
+        "backtrack",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "shapeScore",
+        "backtrack",
+        "completeness"
+      ],
+      "shapeScore": 0.6522587758442442,
+      "coverage": 0.8,
+      "backtrack": 0.3034636149179217,
+      "largestGap": 0.15,
+      "lengthRatio": 0.7412906137998061,
+      "targetSpan": 0.36586884835947786,
+      "rawOrder": 0.3470364972898743,
+      "recalibratedOrderB": 0.43883348512987647
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6462991638812001,
+      "coverage": 0.8125,
+      "backtrack": 0.12945366314778312,
+      "largestGap": 0.05,
+      "lengthRatio": 0.4967849766773423,
+      "targetSpan": 0.10409000137210331,
+      "rawOrder": 0.39176438978194605,
+      "recalibratedOrderB": 0.48183043488854055
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": true,
+      "newGateReasons": [],
+      "shapeScore": 0.7905432407061468,
+      "coverage": 0.975,
+      "backtrack": 0.10894388924780327,
+      "largestGap": 0.025,
+      "lengthRatio": 1.0093471146928288,
+      "targetSpan": 0.1613704848628698,
+      "rawOrder": 0.47778760253410385,
+      "recalibratedOrderB": 0.568529258419165
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6736828367561034,
+      "coverage": 0.6,
+      "backtrack": 0.10884678561649512,
+      "largestGap": 0.075,
+      "lengthRatio": 0.787560816402403,
+      "targetSpan": 0.18322810228090514,
+      "rawOrder": 0.5481737819899566,
+      "recalibratedOrderB": 0.6381709803807973
+    },
+    {
+      "caseIndex": 2,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.7683960684582753,
+      "coverage": 0.9375,
+      "backtrack": 0.18613507306162702,
+      "largestGap": 0.037500000000000006,
+      "lengthRatio": 0.9481904551808954,
+      "targetSpan": 0.4381897336391355,
+      "rawOrder": 0.5003625919745062,
+      "recalibratedOrderB": 0.5893494936494994
+    },
+    {
+      "caseIndex": 3,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.7775690290833547,
+      "coverage": 0.9625,
+      "backtrack": 0.10816464568385606,
+      "largestGap": 0.025,
+      "lengthRatio": 0.8806831838344644,
+      "targetSpan": 0.10116197715118158,
+      "rawOrder": 0.5040982162100399,
+      "recalibratedOrderB": 0.5955449375081509
+    },
+    {
+      "caseIndex": 3,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.8111553750707715,
+      "coverage": 0.975,
+      "backtrack": 0.1045341755456373,
+      "largestGap": 0.0125,
+      "lengthRatio": 0.9154970699947571,
+      "targetSpan": 0.6103691771693064,
+      "rawOrder": 0.5765270037158196,
+      "recalibratedOrderB": 0.667691338900861
+    },
+    {
+      "caseIndex": 3,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7935127740990733,
+      "coverage": 0.9625,
+      "backtrack": 0.0489799615529889,
+      "largestGap": 0.0125,
+      "lengthRatio": 0.7618353920008378,
+      "targetSpan": 0.21219068722978685,
+      "rawOrder": 0.5716753787420944,
+      "recalibratedOrderB": 0.6603323771984508
+    },
+    {
+      "caseIndex": 3,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "completeness"
+      ],
+      "shapeScore": 0.7611069710427233,
+      "coverage": 0.875,
+      "backtrack": 0.044132398410242905,
+      "largestGap": 0.0875,
+      "lengthRatio": 0.9941127848650133,
+      "targetSpan": 0.36383051170549624,
+      "rawOrder": 0.43955499657332037,
+      "recalibratedOrderB": 0.5288472200296057
+    },
+    {
+      "caseIndex": 3,
+      "candidateRank": -1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7189666129471947,
+      "coverage": 0.85,
+      "backtrack": 0.17647570263624957,
+      "largestGap": 0.0875,
+      "lengthRatio": 0.5613389365611056,
+      "targetSpan": 0.44944292550115555,
+      "rawOrder": 0.5458408361100838,
+      "recalibratedOrderB": 0.6367792724045123
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.6932171391959154,
+      "coverage": 0.9,
+      "backtrack": 0.1300374733829716,
+      "largestGap": 0.05,
+      "lengthRatio": 1.2535331422822984,
+      "targetSpan": 0.2514408815386825,
+      "rawOrder": 0.42608304151580983,
+      "recalibratedOrderB": 0.5103101006392637
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7244089489093498,
+      "coverage": 0.875,
+      "backtrack": 0.10303656438091068,
+      "largestGap": 0.05,
+      "lengthRatio": 1.0714071579126576,
+      "targetSpan": 0.13388468312613572,
+      "rawOrder": 0.4150046092272893,
+      "recalibratedOrderB": 0.5004214646290991
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": true,
+      "newGateReasons": [],
+      "shapeScore": 0.7769601336456139,
+      "coverage": 0.9375,
+      "backtrack": 0.10300860627340155,
+      "largestGap": 0.037500000000000006,
+      "lengthRatio": 0.9546350862024388,
+      "targetSpan": 0.23065360792276546,
+      "rawOrder": 0.4853116716933751,
+      "recalibratedOrderB": 0.5388461118799452
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6681865241592364,
+      "coverage": 0.6375,
+      "backtrack": 0.07942514344873337,
+      "largestGap": 0.075,
+      "lengthRatio": 0.8296845995558906,
+      "targetSpan": 0.11923154878976527,
+      "rawOrder": 0.48790747948937796,
+      "recalibratedOrderB": 0.5587101383921228
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "shapeScore",
+        "coverage",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "shapeScore",
+        "coverage",
+        "lengthRatio",
+        "continuity",
+        "completeness",
+        "sequenceIntegrity"
+      ],
+      "shapeScore": 0.6087701846413487,
+      "coverage": 0.525,
+      "backtrack": 0.00839839348323868,
+      "largestGap": 0.18750000000000003,
+      "lengthRatio": 0.43584443142570073,
+      "targetSpan": 0.2593794821609189,
+      "rawOrder": 0.4524659145151314,
+      "recalibratedOrderB": 0.5411091321770428
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": true,
+      "newGateReasons": [],
+      "shapeScore": 0.7179911221149461,
+      "coverage": 0.9375,
+      "backtrack": 0.06635789693574672,
+      "largestGap": 0.0625,
+      "lengthRatio": 1.179814681796542,
+      "targetSpan": 0.3674295431285229,
+      "rawOrder": 0.4104134915130192,
+      "recalibratedOrderB": 0.4614890864993131
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "completeness"
+      ],
+      "shapeScore": 0.7892138487925545,
+      "coverage": 0.9375,
+      "backtrack": 0.07115369820186826,
+      "largestGap": 0.05,
+      "lengthRatio": 0.7924901938694027,
+      "targetSpan": 0.4065320056059572,
+      "rawOrder": 0.5785336197669252,
+      "recalibratedOrderB": 0.6756070739717074
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore"
+      ],
+      "shapeScore": 0.679356293299915,
+      "coverage": 0.925,
+      "backtrack": 0.044952188016962026,
+      "largestGap": 0.05,
+      "lengthRatio": 1.3262440811347607,
+      "targetSpan": 0.26645701604084765,
+      "rawOrder": 0.4002969924222766,
+      "recalibratedOrderB": 0.4906413565787462
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6872875308438605,
+      "coverage": 0.7,
+      "backtrack": 0.14631955071003674,
+      "largestGap": 0.0625,
+      "lengthRatio": 0.8796896536002269,
+      "targetSpan": 0.5317684316331978,
+      "rawOrder": 0.5083691187562498,
+      "recalibratedOrderB": 0.6037009026629728
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7823703825966404,
+      "coverage": 0.9375,
+      "backtrack": 0.12895636760370793,
+      "largestGap": 0.037500000000000006,
+      "lengthRatio": 0.9398124235021007,
+      "targetSpan": 0.26222526970634585,
+      "rawOrder": 0.5114258371404845,
+      "recalibratedOrderB": 0.6046274582794999
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7604945180047692,
+      "coverage": 0.8875,
+      "backtrack": 0.09203553922278818,
+      "largestGap": 0.05,
+      "lengthRatio": 0.9574584435656633,
+      "targetSpan": 0.27017845011543307,
+      "rawOrder": 0.4745204655458931,
+      "recalibratedOrderB": 0.5286433442041052
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7856983701699892,
+      "coverage": 0.9375,
+      "backtrack": 0.14896085971056647,
+      "largestGap": 0.05,
+      "lengthRatio": 0.9456964262148302,
+      "targetSpan": 0.20905784882928938,
+      "rawOrder": 0.525466274719779,
+      "recalibratedOrderB": 0.6328781773859684
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7055973918102063,
+      "coverage": 0.7375,
+      "backtrack": 0.23861038853366706,
+      "largestGap": 0.075,
+      "lengthRatio": 0.9418214630154459,
+      "targetSpan": 0.47346420594434896,
+      "rawOrder": 0.5286913190527289,
+      "recalibratedOrderB": 0.6206516032231041
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.5801852003267675,
+      "coverage": 0.825,
+      "backtrack": 0.03245496898650474,
+      "largestGap": 0.09999999999999999,
+      "lengthRatio": 1.5761347499389606,
+      "targetSpan": 0.5430524703869701,
+      "rawOrder": 0.3410614728075037,
+      "recalibratedOrderB": 0.35736396818911265
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7638203110027698,
+      "coverage": 0.9,
+      "backtrack": 0.12052229823298372,
+      "largestGap": 0.037500000000000006,
+      "lengthRatio": 1.1565961664486073,
+      "targetSpan": 0.24839913338860714,
+      "rawOrder": 0.5585251257278934,
+      "recalibratedOrderB": 0.6458752301492914
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7694504689457794,
+      "coverage": 0.9125,
+      "backtrack": 0.13186899414841058,
+      "largestGap": 0.025,
+      "lengthRatio": 0.8956685050129182,
+      "targetSpan": 0.34795932556501574,
+      "rawOrder": 0.5129109836911042,
+      "recalibratedOrderB": 0.598237250484867
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6681192262342891,
+      "coverage": 0.625,
+      "backtrack": 0.112120875000502,
+      "largestGap": 0.0625,
+      "lengthRatio": 0.8389344402156899,
+      "targetSpan": 0.22581710504197838,
+      "rawOrder": 0.5071624283839792,
+      "recalibratedOrderB": 0.5950606532823733
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.6547899772923951,
+      "coverage": 0.65,
+      "backtrack": 0.22792652381257797,
+      "largestGap": 0.075,
+      "lengthRatio": 0.832976344664433,
+      "targetSpan": 0.3485705777295935,
+      "rawOrder": 0.47699743192726307,
+      "recalibratedOrderB": 0.5814052663112709
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7289162983653474,
+      "coverage": 0.8625,
+      "backtrack": 0.11064362083166539,
+      "largestGap": 0.05,
+      "lengthRatio": 1.0169354087348883,
+      "targetSpan": 0.22573393473476377,
+      "rawOrder": 0.387472598948393,
+      "recalibratedOrderB": 0.46588220004254666
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.8047351053706199,
+      "coverage": 0.9375,
+      "backtrack": 0.08884934812167124,
+      "largestGap": 0.05,
+      "lengthRatio": 0.9718217755480306,
+      "targetSpan": 0.21501936402789878,
+      "rawOrder": 0.5581659536926487,
+      "recalibratedOrderB": 0.5977206499344109
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7182580179609523,
+      "coverage": 0.7,
+      "backtrack": 0.11880669669885344,
+      "largestGap": 0.0625,
+      "lengthRatio": 0.9224318465524288,
+      "targetSpan": 0.22048617846249124,
+      "rawOrder": 0.5643967291410832,
+      "recalibratedOrderB": 0.6544376614103274
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "shapeScore",
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.6452695109982519,
+      "coverage": 0.5875,
+      "backtrack": 0.1948881220546922,
+      "largestGap": 0.11249999999999999,
+      "lengthRatio": 0.9080331981028212,
+      "targetSpan": 0.19760102048636596,
+      "rawOrder": 0.45317334017753635,
+      "recalibratedOrderB": 0.5380616039544751
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7752910516673658,
+      "coverage": 0.875,
+      "backtrack": 0.16838873112323652,
+      "largestGap": 0.05,
+      "lengthRatio": 0.9970980628634907,
+      "targetSpan": 0.22059270753528545,
+      "rawOrder": 0.5218639476631903,
+      "recalibratedOrderB": 0.6187639302395801
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7424420224028683,
+      "coverage": 0.75,
+      "backtrack": 0.09609973900329617,
+      "largestGap": 0.05,
+      "lengthRatio": 1.005708051910011,
+      "targetSpan": 0.22336968154878425,
+      "rawOrder": 0.562089342908596,
+      "recalibratedOrderB": 0.6537233320225084
+    },
+    {
+      "caseIndex": 4,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "completeness"
+      ],
+      "shapeScore": 0.7551429369851672,
+      "coverage": 0.9,
+      "backtrack": 0.09157944918508767,
+      "largestGap": 0.037500000000000006,
+      "lengthRatio": 0.8152579202971239,
+      "targetSpan": 0.2038509276336931,
+      "rawOrder": 0.49777189615620393,
+      "recalibratedOrderB": 0.5807883750007943
+    },
+    {
+      "caseIndex": 5,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "shapeScore",
+        "continuity",
+        "completeness",
+        "sequenceIntegrity"
+      ],
+      "shapeScore": 0.6679424630946231,
+      "coverage": 0.6875,
+      "backtrack": 0.07574693641732676,
+      "largestGap": 0.15,
+      "lengthRatio": 0.7742946910222749,
+      "targetSpan": 0.3746878966984039,
+      "rawOrder": 0.4891520986166997,
+      "recalibratedOrderB": 0.5644212685463197
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.639856977360215,
+      "coverage": 0.5875,
+      "backtrack": 0.06905467704683882,
+      "largestGap": 0.11249999999999999,
+      "lengthRatio": 1.0697217236498273,
+      "targetSpan": 0.20982343753150196,
+      "rawOrder": 0.4643281488353312,
+      "recalibratedOrderB": 0.5456420728652025
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.799964811851199,
+      "coverage": 0.975,
+      "backtrack": 0.07336168771727916,
+      "largestGap": 0.025,
+      "lengthRatio": 1.0418239140348184,
+      "targetSpan": 0.60179793995929,
+      "rawOrder": 0.5331173698346429,
+      "recalibratedOrderB": 0.6196840399312861
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.7705648102215447,
+      "coverage": 0.8875,
+      "backtrack": 0.19147551471512259,
+      "largestGap": 0.0625,
+      "lengthRatio": 0.7369750717703689,
+      "targetSpan": 0.515719067328295,
+      "rawOrder": 0.5994676771914318,
+      "recalibratedOrderB": 0.6879880860648546
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7716520169331406,
+      "coverage": 0.9,
+      "backtrack": 0.2053667076508966,
+      "largestGap": 0.05,
+      "lengthRatio": 1.0685156984849642,
+      "targetSpan": 0.3892449635339885,
+      "rawOrder": 0.5440851300356688,
+      "recalibratedOrderB": 0.6325385983345138
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7697474657968534,
+      "coverage": 0.9125,
+      "backtrack": 0.11912662990862737,
+      "largestGap": 0.037500000000000006,
+      "lengthRatio": 0.9517836349628969,
+      "targetSpan": 0.1638161528951712,
+      "rawOrder": 0.48880401493439607,
+      "recalibratedOrderB": 0.576951492667757
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "completeness"
+      ],
+      "shapeScore": 0.7532678286266623,
+      "coverage": 0.925,
+      "backtrack": 0.17564296938010523,
+      "largestGap": 0.025,
+      "lengthRatio": 1.073734551472317,
+      "targetSpan": 0.20421026739497433,
+      "rawOrder": 0.4809964842319883,
+      "recalibratedOrderB": 0.5567067847577427
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "wordTraversal"
+      ],
+      "newGatePasses": true,
+      "newGateReasons": [],
+      "shapeScore": 0.7060450007536354,
+      "coverage": 0.7625,
+      "backtrack": 0.10706097125672388,
+      "largestGap": 0.037500000000000006,
+      "lengthRatio": 0.9574619228219992,
+      "targetSpan": 0.7786410273088665,
+      "rawOrder": 0.49027200528097425,
+      "recalibratedOrderB": 0.5684721291657705
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "shapeScore",
+        "continuity",
+        "completeness",
+        "sequenceIntegrity"
+      ],
+      "shapeScore": 0.6889523554358908,
+      "coverage": 0.775,
+      "backtrack": 0.14518434775529124,
+      "largestGap": 0.15,
+      "lengthRatio": 0.9445689509118962,
+      "targetSpan": 0.08736381014399552,
+      "rawOrder": 0.366025019496895,
+      "recalibratedOrderB": 0.45210438119323254
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "continuity",
+        "completeness",
+        "sequenceIntegrity"
+      ],
+      "shapeScore": 0.7203785987997561,
+      "coverage": 0.8125,
+      "backtrack": 0.12165662976934664,
+      "largestGap": 0.13749999999999998,
+      "lengthRatio": 0.8353056333689113,
+      "targetSpan": 0.23059619463677827,
+      "rawOrder": 0.45872543601560284,
+      "recalibratedOrderB": 0.5340365808188958
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "completeness"
+      ],
+      "shapeScore": 0.7482572475149509,
+      "coverage": 0.825,
+      "backtrack": 0.2068151443640147,
+      "largestGap": 0.0625,
+      "lengthRatio": 0.9900375081512648,
+      "targetSpan": 0.1942527274691611,
+      "rawOrder": 0.4792525337944043,
+      "recalibratedOrderB": 0.533754487078723
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected"
+      ],
+      "shapeScore": 0.7513408195327552,
+      "coverage": 0.9125,
+      "backtrack": 0.10960364299465403,
+      "largestGap": 0.025,
+      "lengthRatio": 0.9093720824210609,
+      "targetSpan": 0.17182086508804462,
+      "rawOrder": 0.47948853305844386,
+      "recalibratedOrderB": 0.5609209323942613
+    },
+    {
+      "caseIndex": 6,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "backtrack",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "backtrack",
+        "completeness"
+      ],
+      "shapeScore": 0.7232353741352385,
+      "coverage": 0.85,
+      "backtrack": 0.34600372349281433,
+      "largestGap": 0.075,
+      "lengthRatio": 0.8623166840538378,
+      "targetSpan": 0.2325884973552122,
+      "rawOrder": 0.48745124847088916,
+      "recalibratedOrderB": 0.5694006589030414
+    },
+    {
+      "caseIndex": 7,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "continuity",
+        "completeness"
+      ],
+      "shapeScore": 0.8017597639783588,
+      "coverage": 0.875,
+      "backtrack": 0.10807203136239285,
+      "largestGap": 0.05,
+      "lengthRatio": 0.9915810704171393,
+      "targetSpan": 0.22389010515268226,
+      "rawOrder": 0.5683684121818275,
+      "recalibratedOrderB": 0.6536836510542593
+    },
+    {
+      "caseIndex": 7,
+      "candidateRank": -1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "oldGatePasses": false,
+      "oldGateReasons": [
+        "connected",
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "newGatePasses": false,
+      "newGateReasons": [
+        "connected",
+        "shapeScore",
+        "completeness"
+      ],
+      "shapeScore": 0.6640047533586957,
+      "coverage": 0.625,
+      "backtrack": 0.058407118019185036,
+      "largestGap": 0.0625,
+      "lengthRatio": 0.8215320008493252,
+      "targetSpan": 0.24615641700701058,
+      "rawOrder": 0.4900050933658828,
+      "recalibratedOrderB": 0.5394897891994268
+    }
+  ],
+  "summary": {
+    "oldPassCount": 0,
+    "newPassCount": 8,
+    "oldFailNewPassCount": 8,
+    "oldPassNewFailCount": 0
+  }
+}

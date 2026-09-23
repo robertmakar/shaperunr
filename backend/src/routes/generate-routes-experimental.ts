@@ -8,14 +8,16 @@ import { z } from 'zod';
 import { isValidCoordinate } from '@/lib/geo';
 
 import { config } from '../config';
+import { readExperimentalHistory } from '../diagnostics/experimental-history';
 import {
   attachExperimentalDiagnostics,
   buildExperimentalViabilityDiagnostics,
   getLastExperimentalDiagnostics,
+  persistExperimentalHistory,
   rememberExperimentalDiagnostics,
 } from '../generation/experimental-diagnostics';
 import { toExperimentalUserResponse } from '../generation/experimental-product';
-import { runExperimentalPipeline } from '../generation/graph-constrained-pipeline';
+import { runExperimentalPipelineMultiVariant } from '../generation/graph-constrained-pipeline';
 import { checkValhallaStatus, ValhallaRequestError } from '../routing/valhalla';
 import type { ApiErrorBody, GenerateRoutesRequest } from '../types';
 
@@ -24,6 +26,13 @@ const generateBodySchema = z.object({
   latitude: z.number(),
   longitude: z.number(),
   targetDistance: z.number(),
+  /**
+   * DEV/BENCHMARK ONLY. Omitted by the real app, which always gets the
+   * unchanged default (['smooth']) — this field exists so the geometry-
+   * variant benchmark can opt a single request into comparing multiple
+   * letter geometries without a separate endpoint.
+   */
+  geometryVariants: z.array(z.enum(['smooth', 'angular', 'hybrid'])).optional(),
 });
 
 export const generateRoutesExperimentalRouter = Router();
@@ -44,6 +53,11 @@ generateRoutesExperimentalRouter.get('/diagnostics/generate-experimental-last.js
     return;
   }
   res.json(last.json);
+});
+
+/** Bounded — always the most recent 50 records, never the full (unbounded) history file. */
+generateRoutesExperimentalRouter.get('/diagnostics/generate-experimental-history.json', (_req, res) => {
+  res.json({ records: readExperimentalHistory(50) });
 });
 
 generateRoutesExperimentalRouter.post('/generate-routes-experimental', async (req, res) => {
@@ -105,11 +119,14 @@ generateRoutesExperimentalRouter.post('/generate-routes-experimental', async (re
   }
 
   try {
-    const report = await runExperimentalPipeline({
-      word,
-      start,
-      targetDistanceMeters: parsed.data.targetDistance,
-    });
+    const report = await runExperimentalPipelineMultiVariant(
+      {
+        word,
+        start,
+        targetDistanceMeters: parsed.data.targetDistance,
+      },
+      parsed.data.geometryVariants ?? ['smooth'],
+    );
     const request = {
       word,
       latitude: start.latitude,
@@ -118,6 +135,7 @@ generateRoutesExperimentalRouter.post('/generate-routes-experimental', async (re
     };
     const diagnostics = buildExperimentalViabilityDiagnostics(request, report);
     rememberExperimentalDiagnostics(diagnostics);
+    persistExperimentalHistory(request, report, diagnostics);
     const body = attachExperimentalDiagnostics(
       toExperimentalUserResponse(report, parsed.data.targetDistance),
       diagnostics,

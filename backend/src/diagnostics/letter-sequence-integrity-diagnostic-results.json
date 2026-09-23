@@ -1,0 +1,6444 @@
+{
+  "generatedAt": "2026-09-22T10:43:31.063Z",
+  "cases": [
+    {
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 16,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 21,
+              "totalRouteDistanceUnits": 375.36910163547316,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 20,
+              "medianSampleIndex": 10
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 313.05599196229383,
+              "firstSampleIndex": 21,
+              "lastSampleIndex": 42,
+              "medianSampleIndex": 31.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 8,
+              "totalRouteDistanceUnits": 132.22580783498282,
+              "firstSampleIndex": 43,
+              "lastSampleIndex": 54,
+              "medianSampleIndex": 48.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 427.9713870482677,
+              "firstSampleIndex": 56,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 67.5
+            }
+          ],
+          "wholeRouteOrder": 0.6006167453671346,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9642857142857143,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 28,
+              "totalRouteDistanceUnits": 499.82916597083715,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 27,
+              "medianSampleIndex": 13.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 420.10765835524364,
+              "firstSampleIndex": 28,
+              "lastSampleIndex": 51,
+              "medianSampleIndex": 39.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 237.16725202110436,
+              "firstSampleIndex": 52,
+              "lastSampleIndex": 66,
+              "medianSampleIndex": 59
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 11,
+              "totalRouteDistanceUnits": 187.25735231623227,
+              "firstSampleIndex": 67,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 73
+            }
+          ],
+          "wholeRouteOrder": 0.4842091079211328,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8785714285714286,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 34,
+              "totalRouteDistanceUnits": 820.395640072715,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 33,
+              "medianSampleIndex": 16.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 344.7857363418487,
+              "firstSampleIndex": 36,
+              "lastSampleIndex": 51,
+              "medianSampleIndex": 43.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 269.3963322696359,
+              "firstSampleIndex": 52,
+              "lastSampleIndex": 71,
+              "medianSampleIndex": 61.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 6,
+              "totalRouteDistanceUnits": 121.18184286455809,
+              "firstSampleIndex": 74,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 76.5
+            }
+          ],
+          "wholeRouteOrder": 0.4965433226043292,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.7785714285714286,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 326.1937937213897,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 21,
+              "medianSampleIndex": 10.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 27,
+              "totalRouteDistanceUnits": 398.66247198977305,
+              "firstSampleIndex": 23,
+              "lastSampleIndex": 49,
+              "medianSampleIndex": 36
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 124.10131372269711,
+              "firstSampleIndex": 50,
+              "lastSampleIndex": 62,
+              "medianSampleIndex": 56
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 257.5919489865992,
+              "firstSampleIndex": 63,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 71
+            }
+          ],
+          "wholeRouteOrder": 0.5629976283020508,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 1,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 397.03571214138947,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 18,
+              "medianSampleIndex": 13
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 32,
+              "totalRouteDistanceUnits": 938.8161098295418,
+              "firstSampleIndex": 13,
+              "lastSampleIndex": 57,
+              "medianSampleIndex": 28.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 339.16101448270933,
+              "firstSampleIndex": 41,
+              "lastSampleIndex": 66,
+              "medianSampleIndex": 51.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 383.1860399686142,
+              "firstSampleIndex": 67,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 73
+            }
+          ],
+          "wholeRouteOrder": 0.45192327288455747,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9142857142857144,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 264.4542212857078,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 24,
+              "medianSampleIndex": 12
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 122.29209336529081,
+              "firstSampleIndex": 25,
+              "lastSampleIndex": 55,
+              "medianSampleIndex": 42
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 30,
+              "totalRouteDistanceUnits": 316.58409027511743,
+              "firstSampleIndex": 32,
+              "lastSampleIndex": 70,
+              "medianSampleIndex": 48
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 93.20864224613567,
+              "firstSampleIndex": 71,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 75
+            }
+          ],
+          "wholeRouteOrder": 0.39411643848864814,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.6571428571428571,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 242.75285959752108,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 19,
+              "medianSampleIndex": 17
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 221.54651398114805,
+              "firstSampleIndex": 17,
+              "lastSampleIndex": 58,
+              "medianSampleIndex": 35.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 26,
+              "totalRouteDistanceUnits": 380.22843197557,
+              "firstSampleIndex": 30,
+              "lastSampleIndex": 65,
+              "medianSampleIndex": 50
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 218.26275049910993,
+              "firstSampleIndex": 66,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 72.5
+            }
+          ],
+          "wholeRouteOrder": 0.4385403439155546,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.8214285714285714,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 464.5180607800322,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 21,
+              "medianSampleIndex": 10.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 366.32691921589736,
+              "firstSampleIndex": 22,
+              "lastSampleIndex": 41,
+              "medianSampleIndex": 31.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 368.65800049419653,
+              "firstSampleIndex": 43,
+              "lastSampleIndex": 61,
+              "medianSampleIndex": 52
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 375.6697437148736,
+              "firstSampleIndex": 63,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 71
+            }
+          ],
+          "wholeRouteOrder": 0.5690930618638671,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 1,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 19,
+              "totalRouteDistanceUnits": 352.1819879438731,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 23,
+              "medianSampleIndex": 19
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 174.57550384787544,
+              "firstSampleIndex": 18,
+              "lastSampleIndex": 38,
+              "medianSampleIndex": 26.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 19,
+              "totalRouteDistanceUnits": 331.1635836862417,
+              "firstSampleIndex": 32,
+              "lastSampleIndex": 57,
+              "medianSampleIndex": 37
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 347.0745669797772,
+              "firstSampleIndex": 58,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 68.5
+            }
+          ],
+          "wholeRouteOrder": 0.5425361015671056,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9142857142857144,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 33,
+              "totalRouteDistanceUnits": 547.7850250993073,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 32,
+              "medianSampleIndex": 16
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 212.54234382781462,
+              "firstSampleIndex": 33,
+              "lastSampleIndex": 49,
+              "medianSampleIndex": 41
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 252.04725806787107,
+              "firstSampleIndex": 51,
+              "lastSampleIndex": 70,
+              "medianSampleIndex": 60.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 7,
+              "totalRouteDistanceUnits": 94.1186480406003,
+              "firstSampleIndex": 73,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 76
+            }
+          ],
+          "wholeRouteOrder": 0.5810982274847148,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8642857142857143,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 296.7414362550179,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 21,
+              "medianSampleIndex": 14
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 34,
+              "totalRouteDistanceUnits": 677.2897746585153,
+              "firstSampleIndex": 11,
+              "lastSampleIndex": 59,
+              "medianSampleIndex": 32
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 268.6442107206948,
+              "firstSampleIndex": 43,
+              "lastSampleIndex": 64,
+              "medianSampleIndex": 56.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 286.8307081020684,
+              "firstSampleIndex": 66,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 72.5
+            }
+          ],
+          "wholeRouteOrder": 0.45630754566792453,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.95,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 520.1836436088565,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 22,
+              "medianSampleIndex": 11
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 27,
+              "totalRouteDistanceUnits": 608.0886537552678,
+              "firstSampleIndex": 23,
+              "lastSampleIndex": 50,
+              "medianSampleIndex": 36.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 384.9726611595081,
+              "firstSampleIndex": 52,
+              "lastSampleIndex": 70,
+              "medianSampleIndex": 61
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 7,
+              "totalRouteDistanceUnits": 151.02166977692107,
+              "firstSampleIndex": 73,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 76
+            }
+          ],
+          "wholeRouteOrder": 0.516715118359816,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8285714285714286,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "Z",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 278.26113970187373,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 19,
+              "medianSampleIndex": 9.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 206.8650470310695,
+              "firstSampleIndex": 21,
+              "lastSampleIndex": 36,
+              "medianSampleIndex": 28.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 25,
+              "totalRouteDistanceUnits": 319.676431320684,
+              "firstSampleIndex": 37,
+              "lastSampleIndex": 68,
+              "medianSampleIndex": 53
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 188.28687921269398,
+              "firstSampleIndex": 48,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 56.5
+            }
+          ],
+          "wholeRouteOrder": 0.5437090244192686,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9285714285714286,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "Z",
+            "B",
+            "Z",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 583.538837294028,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 17,
+              "medianSampleIndex": 8.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 11,
+              "totalRouteDistanceUnits": 293.95695796131474,
+              "firstSampleIndex": 18,
+              "lastSampleIndex": 29,
+              "medianSampleIndex": 23.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 381.4615782936451,
+              "firstSampleIndex": 30,
+              "lastSampleIndex": 73,
+              "medianSampleIndex": 56
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 28,
+              "totalRouteDistanceUnits": 809.22041820679,
+              "firstSampleIndex": 40,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 61
+            }
+          ],
+          "wholeRouteOrder": 0.45249941334073274,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8785714285714286,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 29,
+              "totalRouteDistanceUnits": 347.55869067795595,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 41,
+              "medianSampleIndex": 19
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 165.31215290191724,
+              "firstSampleIndex": 7,
+              "lastSampleIndex": 48,
+              "medianSampleIndex": 35.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 108.99719397936573,
+              "firstSampleIndex": 49,
+              "lastSampleIndex": 59,
+              "medianSampleIndex": 54
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 270.9969553417057,
+              "firstSampleIndex": 60,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 69.5
+            }
+          ],
+          "wholeRouteOrder": 0.4067421537432675,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.7714285714285714,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "Z",
+            "B",
+            "Z",
+            "B",
+            "Z",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 21,
+              "totalRouteDistanceUnits": 293.06930740566645,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 20,
+              "medianSampleIndex": 10
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 175.37038023818673,
+              "firstSampleIndex": 21,
+              "lastSampleIndex": 34,
+              "medianSampleIndex": 27.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 5,
+              "totalSampleCount": 27,
+              "totalRouteDistanceUnits": 327.8982370843845,
+              "firstSampleIndex": 35,
+              "lastSampleIndex": 75,
+              "medianSampleIndex": 60
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 5,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 183.30167925663162,
+              "firstSampleIndex": 55,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 66
+            }
+          ],
+          "wholeRouteOrder": 0.4919544504789863,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.8642857142857143,
+          "currentWordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 5,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 28,
+              "totalRouteDistanceUnits": 938.564544910646,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 40,
+              "medianSampleIndex": 22
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 630.7124659736396,
+              "firstSampleIndex": 14,
+              "lastSampleIndex": 53,
+              "medianSampleIndex": 37
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 11,
+              "totalRouteDistanceUnits": 335.2114656604309,
+              "firstSampleIndex": 47,
+              "lastSampleIndex": 62,
+              "medianSampleIndex": 51.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 411.18738758346217,
+              "firstSampleIndex": 66,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 72.5
+            }
+          ],
+          "wholeRouteOrder": 0.44073274648263405,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9142857142857144,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 7,
+              "totalRouteDistanceUnits": 95.35947378785778,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 6,
+              "medianSampleIndex": 3
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 26,
+              "totalRouteDistanceUnits": 361.915133120731,
+              "firstSampleIndex": 7,
+              "lastSampleIndex": 33,
+              "medianSampleIndex": 20
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 269.27283894234404,
+              "firstSampleIndex": 36,
+              "lastSampleIndex": 59,
+              "medianSampleIndex": 47.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 292.73440884201165,
+              "firstSampleIndex": 60,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 69.5
+            }
+          ],
+          "wholeRouteOrder": 0.5390760324318349,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9285714285714286,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "Z",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 19,
+              "totalRouteDistanceUnits": 500.82977505929637,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 18,
+              "medianSampleIndex": 9
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 320.4793135644648,
+              "firstSampleIndex": 19,
+              "lastSampleIndex": 31,
+              "medianSampleIndex": 25
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 478.47165222139597,
+              "firstSampleIndex": 33,
+              "lastSampleIndex": 72,
+              "medianSampleIndex": 53
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 463.17921639328836,
+              "firstSampleIndex": 50,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 60
+            }
+          ],
+          "wholeRouteOrder": 0.45455364704732176,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9142857142857143,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 34,
+              "totalRouteDistanceUnits": 715.0813159408464,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 33,
+              "medianSampleIndex": 16.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 171.78486508145554,
+              "firstSampleIndex": 36,
+              "lastSampleIndex": 46,
+              "medianSampleIndex": 41
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 253.01549597734095,
+              "firstSampleIndex": 48,
+              "lastSampleIndex": 67,
+              "medianSampleIndex": 64.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 269.3095688144764,
+              "firstSampleIndex": 64,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 66.5
+            }
+          ],
+          "wholeRouteOrder": 0.5330323520265287,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8642857142857143,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 471.4899487418753,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 22,
+              "medianSampleIndex": 11
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 8,
+              "totalRouteDistanceUnits": 102.54503500760711,
+              "firstSampleIndex": 25,
+              "lastSampleIndex": 39,
+              "medianSampleIndex": 35
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 25,
+              "totalRouteDistanceUnits": 433.14614628595433,
+              "firstSampleIndex": 33,
+              "lastSampleIndex": 69,
+              "medianSampleIndex": 39
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 255.70007719981714,
+              "firstSampleIndex": 64,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 68.5
+            }
+          ],
+          "wholeRouteOrder": 0.5750738881405222,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8785714285714286,
+          "currentWordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 12,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 21,
+              "totalRouteDistanceUnits": 149.579469662132,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 20,
+              "medianSampleIndex": 10
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 112.5742404948043,
+              "firstSampleIndex": 21,
+              "lastSampleIndex": 36,
+              "medianSampleIndex": 28.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 26,
+              "totalRouteDistanceUnits": 194.2848966653592,
+              "firstSampleIndex": 37,
+              "lastSampleIndex": 65,
+              "medianSampleIndex": 51
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 100.41698021891344,
+              "firstSampleIndex": 66,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 72.5
+            }
+          ],
+          "wholeRouteOrder": 0.4948845522335772,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8142857142857143,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 125.22984284450864,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 15,
+              "medianSampleIndex": 8.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 19,
+              "totalRouteDistanceUnits": 208.31959215774532,
+              "firstSampleIndex": 6,
+              "lastSampleIndex": 57,
+              "medianSampleIndex": 29.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 28,
+              "totalRouteDistanceUnits": 371.37703973822227,
+              "firstSampleIndex": 21,
+              "lastSampleIndex": 64,
+              "medianSampleIndex": 48
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 185.73999115096805,
+              "firstSampleIndex": 65,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 72
+            }
+          ],
+          "wholeRouteOrder": 0.5127794105029,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.9142857142857143,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "O",
+            "R",
+            "O",
+            "Z",
+            "B",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 3,
+              "totalRouteDistanceUnits": 89.64539352586145,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 23,
+              "medianSampleIndex": 12
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 9,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 160.19600053120985,
+              "firstSampleIndex": 2,
+              "lastSampleIndex": 74,
+              "medianSampleIndex": 33.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 14,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 865.7029814592959,
+              "firstSampleIndex": 3,
+              "lastSampleIndex": 76,
+              "medianSampleIndex": 43
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 8,
+              "totalSampleCount": 27,
+              "totalRouteDistanceUnits": 1236.8653747619273,
+              "firstSampleIndex": 5,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 43
+            }
+          ],
+          "wholeRouteOrder": 0.14999701704824067,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.8071428571428572,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 195.6218528650347,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 23,
+              "medianSampleIndex": 11.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 27,
+              "totalRouteDistanceUnits": 229.34425430778876,
+              "firstSampleIndex": 26,
+              "lastSampleIndex": 53,
+              "medianSampleIndex": 39.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 122.83279660936053,
+              "firstSampleIndex": 54,
+              "lastSampleIndex": 74,
+              "medianSampleIndex": 64
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 2,
+              "totalRouteDistanceUnits": 8.928974552215521,
+              "firstSampleIndex": 78,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 78.5
+            }
+          ],
+          "wholeRouteOrder": 0.5358021795103052,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.6785714285714286,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 236.45973343788808,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 27,
+              "medianSampleIndex": 24.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 180.33069327177526,
+              "firstSampleIndex": 23,
+              "lastSampleIndex": 43,
+              "medianSampleIndex": 27
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 129.3990240229772,
+              "firstSampleIndex": 44,
+              "lastSampleIndex": 57,
+              "medianSampleIndex": 50.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 227.55959305766822,
+              "firstSampleIndex": 58,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 68.5
+            }
+          ],
+          "wholeRouteOrder": 0.4916381904738289,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8785714285714286,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 21,
+              "totalRouteDistanceUnits": 228.69385529788957,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 20,
+              "medianSampleIndex": 10
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 7,
+              "totalRouteDistanceUnits": 70.98867574487642,
+              "firstSampleIndex": 22,
+              "lastSampleIndex": 28,
+              "medianSampleIndex": 25
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 110.06991802243624,
+              "firstSampleIndex": 29,
+              "lastSampleIndex": 41,
+              "medianSampleIndex": 35
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 38,
+              "totalRouteDistanceUnits": 402.1675900019359,
+              "firstSampleIndex": 42,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 60.5
+            }
+          ],
+          "wholeRouteOrder": 0.4561635979186497,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.5857142857142857,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 32,
+              "totalRouteDistanceUnits": 592.9277137510904,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 31,
+              "medianSampleIndex": 15.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 154.371464746632,
+              "firstSampleIndex": 32,
+              "lastSampleIndex": 41,
+              "medianSampleIndex": 36.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 28,
+              "totalRouteDistanceUnits": 491.4304623957674,
+              "firstSampleIndex": 42,
+              "lastSampleIndex": 74,
+              "medianSampleIndex": 58
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 5,
+              "totalRouteDistanceUnits": 78.05014530350634,
+              "firstSampleIndex": 75,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 77
+            }
+          ],
+          "wholeRouteOrder": 0.45652828845843313,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8642857142857143,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 277.26078322121884,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 17,
+              "medianSampleIndex": 8.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 42,
+              "totalRouteDistanceUnits": 691.6686978043736,
+              "firstSampleIndex": 18,
+              "lastSampleIndex": 69,
+              "medianSampleIndex": 55
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 237.06404603563948,
+              "firstSampleIndex": 51,
+              "lastSampleIndex": 77,
+              "medianSampleIndex": 64.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 2,
+              "totalRouteDistanceUnits": 18.766850982273485,
+              "firstSampleIndex": 78,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 78.5
+            }
+          ],
+          "wholeRouteOrder": 0.3470364972898743,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.7285714285714286,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 35,
+              "totalRouteDistanceUnits": 320.72649625445337,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 35,
+              "medianSampleIndex": 17.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 80.49174233302287,
+              "firstSampleIndex": 36,
+              "lastSampleIndex": 45,
+              "medianSampleIndex": 40.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 115.20285441338793,
+              "firstSampleIndex": 47,
+              "lastSampleIndex": 63,
+              "medianSampleIndex": 55
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 149.3064829652594,
+              "firstSampleIndex": 64,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 71.5
+            }
+          ],
+          "wholeRouteOrder": 0.39176438978194605,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.7928571428571429,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 163.30357717660007,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 9,
+              "medianSampleIndex": 4.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 185.89178416872437,
+              "firstSampleIndex": 10,
+              "lastSampleIndex": 45,
+              "medianSampleIndex": 32
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 32,
+              "totalRouteDistanceUnits": 538.8597311139363,
+              "firstSampleIndex": 16,
+              "lastSampleIndex": 61,
+              "medianSampleIndex": 44.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 386.98150913350077,
+              "firstSampleIndex": 52,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 59
+            }
+          ],
+          "wholeRouteOrder": 0.47778760253410385,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9642857142857143,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 26,
+              "totalRouteDistanceUnits": 449.157870920543,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 25,
+              "medianSampleIndex": 12.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 293.47672395201096,
+              "firstSampleIndex": 26,
+              "lastSampleIndex": 42,
+              "medianSampleIndex": 34
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 5,
+              "totalRouteDistanceUnits": 63.858336741125704,
+              "firstSampleIndex": 45,
+              "lastSampleIndex": 50,
+              "medianSampleIndex": 47.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 388.3438007845499,
+              "firstSampleIndex": 55,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 67
+            }
+          ],
+          "wholeRouteOrder": 0.5481737819899566,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8071428571428572,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 167.68490114339636,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 34,
+              "medianSampleIndex": 18.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 36,
+              "totalRouteDistanceUnits": 576.23577444792,
+              "firstSampleIndex": 6,
+              "lastSampleIndex": 49,
+              "medianSampleIndex": 26
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 201.61679125422108,
+              "firstSampleIndex": 50,
+              "lastSampleIndex": 65,
+              "medianSampleIndex": 57.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 190.58371992008676,
+              "firstSampleIndex": 67,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 73
+            }
+          ],
+          "wholeRouteOrder": 0.5003625919745062,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.8785714285714286,
+          "currentWordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 5,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z",
+            "B",
+            "Z",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 633.414370134921,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 21,
+              "medianSampleIndex": 10.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 435.92062281321626,
+              "firstSampleIndex": 22,
+              "lastSampleIndex": 37,
+              "medianSampleIndex": 29.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 496.0803547486903,
+              "firstSampleIndex": 38,
+              "lastSampleIndex": 70,
+              "medianSampleIndex": 56
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 545.7121757695993,
+              "firstSampleIndex": 53,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 62
+            }
+          ],
+          "wholeRouteOrder": 0.5040982162100399,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.8928571428571428,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 510.07029104196346,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 19,
+              "medianSampleIndex": 9.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 28,
+              "totalRouteDistanceUnits": 596.2636763615264,
+              "firstSampleIndex": 20,
+              "lastSampleIndex": 47,
+              "medianSampleIndex": 33.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 481.35477386415647,
+              "firstSampleIndex": 48,
+              "lastSampleIndex": 69,
+              "medianSampleIndex": 58.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 192.56481349672785,
+              "firstSampleIndex": 71,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 75
+            }
+          ],
+          "wholeRouteOrder": 0.5765270037158196,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9142857142857144,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 26,
+              "totalRouteDistanceUnits": 518.7879973839514,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 25,
+              "medianSampleIndex": 12.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 11,
+              "totalRouteDistanceUnits": 173.90674410580775,
+              "firstSampleIndex": 26,
+              "lastSampleIndex": 44,
+              "medianSampleIndex": 38
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 391.42535016909784,
+              "firstSampleIndex": 35,
+              "lastSampleIndex": 67,
+              "medianSampleIndex": 40.5
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 213.15929740480993,
+              "firstSampleIndex": 68,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 73.5
+            }
+          ],
+          "wholeRouteOrder": 0.5716753787420944,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 1,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "O",
+            "B",
+            "O",
+            "B",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 25,
+              "totalRouteDistanceUnits": 644.3563682415291,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 24,
+              "medianSampleIndex": 12
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 512.7674175505365,
+              "firstSampleIndex": 25,
+              "lastSampleIndex": 56,
+              "medianSampleIndex": 43
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 391.90066627882607,
+              "firstSampleIndex": 30,
+              "lastSampleIndex": 69,
+              "medianSampleIndex": 47
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 262.76723576596646,
+              "firstSampleIndex": 70,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 74.5
+            }
+          ],
+          "wholeRouteOrder": 0.43955499657332037,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9142857142857144,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "intendedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "observedSequence": [
+            "R",
+            "O",
+            "B",
+            "Z"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "R",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 29,
+              "totalRouteDistanceUnits": 467.0831137715562,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 28,
+              "medianSampleIndex": 14
+            },
+            {
+              "letter": "O",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 324.24467707734243,
+              "firstSampleIndex": 29,
+              "lastSampleIndex": 52,
+              "medianSampleIndex": 40.5
+            },
+            {
+              "letter": "B",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 202.0741544994399,
+              "firstSampleIndex": 53,
+              "lastSampleIndex": 71,
+              "medianSampleIndex": 62
+            },
+            {
+              "letter": "Z",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 8,
+              "totalRouteDistanceUnits": 119.34096104802086,
+              "firstSampleIndex": 72,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 75.5
+            }
+          ],
+          "wholeRouteOrder": 0.5458408361100838,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8642857142857143,
+          "currentWordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 25,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 8,
+              "totalRouteDistanceUnits": 249.53021634076757,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 7,
+              "medianSampleIndex": 3.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 11,
+              "totalRouteDistanceUnits": 405.46206840342586,
+              "firstSampleIndex": 8,
+              "lastSampleIndex": 18,
+              "medianSampleIndex": 13
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 251.9667840435481,
+              "firstSampleIndex": 20,
+              "lastSampleIndex": 35,
+              "medianSampleIndex": 29
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 5,
+              "totalSampleCount": 41,
+              "totalRouteDistanceUnits": 1403.327736552702,
+              "firstSampleIndex": 24,
+              "lastSampleIndex": 76,
+              "medianSampleIndex": 42.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 256.37280090186283,
+              "firstSampleIndex": 50,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 65
+            }
+          ],
+          "wholeRouteOrder": 0.42608304151580983,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.8283333333333334,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 8,
+              "totalRouteDistanceUnits": 126.2282296134008,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 7,
+              "medianSampleIndex": 3.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 28,
+              "totalRouteDistanceUnits": 504.5268749847569,
+              "firstSampleIndex": 8,
+              "lastSampleIndex": 35,
+              "medianSampleIndex": 21.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 209.04163739779707,
+              "firstSampleIndex": 37,
+              "lastSampleIndex": 50,
+              "medianSampleIndex": 43.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 388.41843966937006,
+              "firstSampleIndex": 43,
+              "lastSampleIndex": 75,
+              "medianSampleIndex": 55.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 6,
+              "totalRouteDistanceUnits": 78.62679332422537,
+              "firstSampleIndex": 61,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 70
+            }
+          ],
+          "wholeRouteOrder": 0.4150046092272893,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.7616666666666666,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 19,
+              "totalRouteDistanceUnits": 390.0879787920075,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 18,
+              "medianSampleIndex": 9
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 291.3879167322972,
+              "firstSampleIndex": 19,
+              "lastSampleIndex": 33,
+              "medianSampleIndex": 26
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 280.3212985882505,
+              "firstSampleIndex": 35,
+              "lastSampleIndex": 50,
+              "medianSampleIndex": 42.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 321.4250383164064,
+              "firstSampleIndex": 51,
+              "lastSampleIndex": 66,
+              "medianSampleIndex": 58.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 248.872680497611,
+              "firstSampleIndex": 67,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 73
+            }
+          ],
+          "wholeRouteOrder": 0.4853116716933751,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9314285714285715,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 237.95589365377577,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 11,
+              "medianSampleIndex": 5.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 27,
+              "totalRouteDistanceUnits": 595.422849379561,
+              "firstSampleIndex": 12,
+              "lastSampleIndex": 38,
+              "medianSampleIndex": 25
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 259.06700816640887,
+              "firstSampleIndex": 39,
+              "lastSampleIndex": 50,
+              "medianSampleIndex": 44.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 380.955712754614,
+              "firstSampleIndex": 51,
+              "lastSampleIndex": 68,
+              "medianSampleIndex": 59.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 11,
+              "totalRouteDistanceUnits": 238.89345996791803,
+              "firstSampleIndex": 69,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 74
+            }
+          ],
+          "wholeRouteOrder": 0.48790747948937796,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9333333333333332,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "A",
+            "I",
+            "R"
+          ],
+          "sequenceValid": false,
+          "missingLetters": [
+            "C",
+            "O"
+          ],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": false,
+              "blockCount": 0,
+              "totalSampleCount": 0,
+              "totalRouteDistanceUnits": 0,
+              "firstSampleIndex": null,
+              "lastSampleIndex": null,
+              "medianSampleIndex": null
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 28,
+              "totalRouteDistanceUnits": 169.1892351949109,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 27,
+              "medianSampleIndex": 13.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 150.11745452915105,
+              "firstSampleIndex": 30,
+              "lastSampleIndex": 53,
+              "medianSampleIndex": 41.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 26,
+              "totalRouteDistanceUnits": 163.58536628509,
+              "firstSampleIndex": 54,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 66.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": false,
+              "blockCount": 0,
+              "totalSampleCount": 0,
+              "totalRouteDistanceUnits": 0,
+              "firstSampleIndex": null,
+              "lastSampleIndex": null,
+              "medianSampleIndex": null
+            }
+          ],
+          "wholeRouteOrder": 0.4524659145151314,
+          "jumpFit": 0,
+          "broadOrderPass": false,
+          "continuityValid": false,
+          "meanRawInk": 0.5142857142857142,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 33,
+              "totalRouteDistanceUnits": 643.5457737566837,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 40,
+              "medianSampleIndex": 26.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 281.3389619475681,
+              "firstSampleIndex": 23,
+              "lastSampleIndex": 46,
+              "medianSampleIndex": 35.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 189.41342155367994,
+              "firstSampleIndex": 47,
+              "lastSampleIndex": 56,
+              "medianSampleIndex": 51.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 263.851376809366,
+              "firstSampleIndex": 57,
+              "lastSampleIndex": 75,
+              "medianSampleIndex": 70.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 8,
+              "totalRouteDistanceUnits": 135.86838515405188,
+              "firstSampleIndex": 69,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 74
+            }
+          ],
+          "wholeRouteOrder": 0.4104134915130192,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9199999999999999,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 188.67362997721062,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 14,
+              "medianSampleIndex": 4
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 26,
+              "totalRouteDistanceUnits": 458.34000529853586,
+              "firstSampleIndex": 3,
+              "lastSampleIndex": 37,
+              "medianSampleIndex": 10
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 224.01441491563983,
+              "firstSampleIndex": 39,
+              "lastSampleIndex": 52,
+              "medianSampleIndex": 45.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 310.23582157221136,
+              "firstSampleIndex": 53,
+              "lastSampleIndex": 69,
+              "medianSampleIndex": 61
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 172.91052716793257,
+              "firstSampleIndex": 70,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 74.5
+            }
+          ],
+          "wholeRouteOrder": 0.5785336197669252,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.9333333333333332,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 35,
+              "totalRouteDistanceUnits": 600.7182698174995,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 44,
+              "medianSampleIndex": 27.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 248.64818486485143,
+              "firstSampleIndex": 23,
+              "lastSampleIndex": 49,
+              "medianSampleIndex": 38.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 5,
+              "totalRouteDistanceUnits": 51.44041481180296,
+              "firstSampleIndex": 50,
+              "lastSampleIndex": 61,
+              "medianSampleIndex": 56
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 271.43201818482765,
+              "firstSampleIndex": 53,
+              "lastSampleIndex": 71,
+              "medianSampleIndex": 60.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 8,
+              "totalRouteDistanceUnits": 108.90433363387595,
+              "firstSampleIndex": 72,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 75.5
+            }
+          ],
+          "wholeRouteOrder": 0.4002969924222766,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8699999999999999,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 430.021039483379,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 15,
+              "medianSampleIndex": 7.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 21,
+              "totalRouteDistanceUnits": 542.1759370480189,
+              "firstSampleIndex": 16,
+              "lastSampleIndex": 36,
+              "medianSampleIndex": 26
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 8,
+              "totalRouteDistanceUnits": 186.269480527882,
+              "firstSampleIndex": 38,
+              "lastSampleIndex": 45,
+              "medianSampleIndex": 41.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 638.3860447935449,
+              "firstSampleIndex": 46,
+              "lastSampleIndex": 68,
+              "medianSampleIndex": 57
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 208.4854165509403,
+              "firstSampleIndex": 71,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 75
+            }
+          ],
+          "wholeRouteOrder": 0.5083691187562498,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8647619047619047,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 316.00449382586413,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 13,
+              "medianSampleIndex": 6.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 423.6119109357509,
+              "firstSampleIndex": 14,
+              "lastSampleIndex": 31,
+              "medianSampleIndex": 22.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 5,
+              "totalRouteDistanceUnits": 114.19610098038366,
+              "firstSampleIndex": 33,
+              "lastSampleIndex": 37,
+              "medianSampleIndex": 35
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 27,
+              "totalRouteDistanceUnits": 636.8410296978747,
+              "firstSampleIndex": 38,
+              "lastSampleIndex": 64,
+              "medianSampleIndex": 51
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 353.704000187272,
+              "firstSampleIndex": 65,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 72
+            }
+          ],
+          "wholeRouteOrder": 0.5114258371404845,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 1,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 473.8133366968125,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 40,
+              "medianSampleIndex": 32.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 25,
+              "totalRouteDistanceUnits": 475.7776218746409,
+              "firstSampleIndex": 20,
+              "lastSampleIndex": 48,
+              "medianSampleIndex": 36
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 5,
+              "totalRouteDistanceUnits": 89.89560270363079,
+              "firstSampleIndex": 50,
+              "lastSampleIndex": 54,
+              "medianSampleIndex": 52
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 430.51583292942996,
+              "firstSampleIndex": 55,
+              "lastSampleIndex": 74,
+              "medianSampleIndex": 64.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 5,
+              "totalRouteDistanceUnits": 66.32244026096237,
+              "firstSampleIndex": 75,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 77
+            }
+          ],
+          "wholeRouteOrder": 0.4745204655458931,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8949999999999999,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 19,
+              "totalRouteDistanceUnits": 480.5616757306705,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 18,
+              "medianSampleIndex": 9
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 382.0835725226596,
+              "firstSampleIndex": 19,
+              "lastSampleIndex": 34,
+              "medianSampleIndex": 26.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 5,
+              "totalRouteDistanceUnits": 114.91997441195726,
+              "firstSampleIndex": 36,
+              "lastSampleIndex": 40,
+              "medianSampleIndex": 38
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 29,
+              "totalRouteDistanceUnits": 706.4503791780053,
+              "firstSampleIndex": 41,
+              "lastSampleIndex": 69,
+              "medianSampleIndex": 55
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 201.37232120986963,
+              "firstSampleIndex": 71,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 75
+            }
+          ],
+          "wholeRouteOrder": 0.525466274719779,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.96,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 264.15707185230497,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 12,
+              "medianSampleIndex": 6
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 359.61527645545357,
+              "firstSampleIndex": 13,
+              "lastSampleIndex": 30,
+              "medianSampleIndex": 21.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 244.7872487997804,
+              "firstSampleIndex": 32,
+              "lastSampleIndex": 43,
+              "medianSampleIndex": 37.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 27,
+              "totalRouteDistanceUnits": 523.448061267749,
+              "firstSampleIndex": 44,
+              "lastSampleIndex": 75,
+              "medianSampleIndex": 70.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 6,
+              "totalRouteDistanceUnits": 52.24838875160475,
+              "firstSampleIndex": 68,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 72.5
+            }
+          ],
+          "wholeRouteOrder": 0.5286913190527289,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8247619047619047,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 25,
+              "totalRouteDistanceUnits": 719.3721938978427,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 48,
+              "medianSampleIndex": 29.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 25,
+              "totalRouteDistanceUnits": 755.2230274852416,
+              "firstSampleIndex": 9,
+              "lastSampleIndex": 52,
+              "medianSampleIndex": 35
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 3,
+              "totalRouteDistanceUnits": 73.8128245674555,
+              "firstSampleIndex": 54,
+              "lastSampleIndex": 56,
+              "medianSampleIndex": 55
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 21,
+              "totalRouteDistanceUnits": 634.8940745400743,
+              "firstSampleIndex": 57,
+              "lastSampleIndex": 77,
+              "medianSampleIndex": 67
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 2,
+              "totalRouteDistanceUnits": 39.78025184721048,
+              "firstSampleIndex": 78,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 78.5
+            }
+          ],
+          "wholeRouteOrder": 0.3410614728075037,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.822857142857143,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 295.35818343491883,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 9,
+              "medianSampleIndex": 4.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 450.64377525323573,
+              "firstSampleIndex": 10,
+              "lastSampleIndex": 25,
+              "medianSampleIndex": 17.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 19,
+              "totalRouteDistanceUnits": 526.9096386277769,
+              "firstSampleIndex": 26,
+              "lastSampleIndex": 53,
+              "medianSampleIndex": 44
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 21,
+              "totalRouteDistanceUnits": 599.8561149307387,
+              "firstSampleIndex": 40,
+              "lastSampleIndex": 65,
+              "medianSampleIndex": 51
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 394.2553755629855,
+              "firstSampleIndex": 67,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 73
+            }
+          ],
+          "wholeRouteOrder": 0.5585251257278934,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8433333333333334,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 158.24241039010735,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 9,
+              "medianSampleIndex": 4.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 182.48279884023253,
+              "firstSampleIndex": 10,
+              "lastSampleIndex": 21,
+              "medianSampleIndex": 15.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 7,
+              "totalRouteDistanceUnits": 101.74670494311714,
+              "firstSampleIndex": 23,
+              "lastSampleIndex": 29,
+              "medianSampleIndex": 26
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 34,
+              "totalRouteDistanceUnits": 506.74790469490705,
+              "firstSampleIndex": 30,
+              "lastSampleIndex": 73,
+              "medianSampleIndex": 63.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 144.28379382537773,
+              "firstSampleIndex": 57,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 67.5
+            }
+          ],
+          "wholeRouteOrder": 0.5129109836911042,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8797619047619047,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 308.69134643748436,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 13,
+              "medianSampleIndex": 6.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 438.6621264682372,
+              "firstSampleIndex": 14,
+              "lastSampleIndex": 33,
+              "medianSampleIndex": 23.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 207.9837015511941,
+              "firstSampleIndex": 35,
+              "lastSampleIndex": 50,
+              "medianSampleIndex": 45.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 474.80445845309066,
+              "firstSampleIndex": 45,
+              "lastSampleIndex": 69,
+              "medianSampleIndex": 49
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 191.1293248952519,
+              "firstSampleIndex": 71,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 75
+            }
+          ],
+          "wholeRouteOrder": 0.5071624283839792,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8533333333333333,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 262.0093351663487,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 15,
+              "medianSampleIndex": 4
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 221.2637952423349,
+              "firstSampleIndex": 4,
+              "lastSampleIndex": 28,
+              "medianSampleIndex": 10
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 168.0029801225556,
+              "firstSampleIndex": 31,
+              "lastSampleIndex": 41,
+              "medianSampleIndex": 36
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 336.4625565855119,
+              "firstSampleIndex": 42,
+              "lastSampleIndex": 74,
+              "medianSampleIndex": 63.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 260.7590701922559,
+              "firstSampleIndex": 57,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 68
+            }
+          ],
+          "wholeRouteOrder": 0.47699743192726307,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.8933333333333333,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 380.0969430291025,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 17,
+              "medianSampleIndex": 5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 612.3438468100987,
+              "firstSampleIndex": 4,
+              "lastSampleIndex": 38,
+              "medianSampleIndex": 12
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 206.9379383733506,
+              "firstSampleIndex": 40,
+              "lastSampleIndex": 53,
+              "medianSampleIndex": 48
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 604.0688614214438,
+              "firstSampleIndex": 46,
+              "lastSampleIndex": 71,
+              "medianSampleIndex": 52
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 7,
+              "totalRouteDistanceUnits": 161.12207068472554,
+              "firstSampleIndex": 73,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 76
+            }
+          ],
+          "wholeRouteOrder": 0.387472598948393,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.7961904761904762,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 227.6460986519029,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 10,
+              "medianSampleIndex": 3
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 431.53428956300667,
+              "firstSampleIndex": 3,
+              "lastSampleIndex": 27,
+              "medianSampleIndex": 7
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 7,
+              "totalRouteDistanceUnits": 170.7669769211815,
+              "firstSampleIndex": 28,
+              "lastSampleIndex": 34,
+              "medianSampleIndex": 31
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 25,
+              "totalRouteDistanceUnits": 597.2463856373671,
+              "firstSampleIndex": 35,
+              "lastSampleIndex": 61,
+              "medianSampleIndex": 59.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 482.6543673172266,
+              "firstSampleIndex": 59,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 61
+            }
+          ],
+          "wholeRouteOrder": 0.5581659536926487,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.9333333333333332,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 337.2924394578166,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 16,
+              "medianSampleIndex": 8
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 280.32822143808005,
+              "firstSampleIndex": 17,
+              "lastSampleIndex": 32,
+              "medianSampleIndex": 24.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 309.4593554159629,
+              "firstSampleIndex": 34,
+              "lastSampleIndex": 48,
+              "medianSampleIndex": 41
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 305.2926444892429,
+              "firstSampleIndex": 52,
+              "lastSampleIndex": 66,
+              "medianSampleIndex": 59
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 241.0932318774603,
+              "firstSampleIndex": 68,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 73.5
+            }
+          ],
+          "wholeRouteOrder": 0.5643967291410832,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8247619047619047,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 328.000534891861,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 15,
+              "medianSampleIndex": 7.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 303.4255286464969,
+              "firstSampleIndex": 16,
+              "lastSampleIndex": 34,
+              "medianSampleIndex": 25
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 6,
+              "totalRouteDistanceUnits": 111.92874737136887,
+              "firstSampleIndex": 36,
+              "lastSampleIndex": 41,
+              "medianSampleIndex": 38.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 27,
+              "totalRouteDistanceUnits": 501.5203129528132,
+              "firstSampleIndex": 42,
+              "lastSampleIndex": 75,
+              "medianSampleIndex": 66.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 11,
+              "totalRouteDistanceUnits": 157.73378979941668,
+              "firstSampleIndex": 60,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 69.5
+            }
+          ],
+          "wholeRouteOrder": 0.45317334017753635,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.8533333333333333,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 413.77398275031766,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 17,
+              "medianSampleIndex": 8.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 358.1984126013836,
+              "firstSampleIndex": 18,
+              "lastSampleIndex": 34,
+              "medianSampleIndex": 26
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 5,
+              "totalRouteDistanceUnits": 100.96939031264515,
+              "firstSampleIndex": 36,
+              "lastSampleIndex": 40,
+              "medianSampleIndex": 38
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 26,
+              "totalRouteDistanceUnits": 584.284081756685,
+              "firstSampleIndex": 41,
+              "lastSampleIndex": 66,
+              "medianSampleIndex": 53.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 274.82406635037563,
+              "firstSampleIndex": 67,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 73
+            }
+          ],
+          "wholeRouteOrder": 0.5218639476631903,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.7592857142857142,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 237.24747549428636,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 8,
+              "medianSampleIndex": 4
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 21,
+              "totalRouteDistanceUnits": 602.1777723609514,
+              "firstSampleIndex": 10,
+              "lastSampleIndex": 33,
+              "medianSampleIndex": 20
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 375.74674031722077,
+              "firstSampleIndex": 20,
+              "lastSampleIndex": 46,
+              "medianSampleIndex": 27.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 562.079887251837,
+              "firstSampleIndex": 47,
+              "lastSampleIndex": 64,
+              "medianSampleIndex": 55.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 452.57630785260886,
+              "firstSampleIndex": 65,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 72
+            }
+          ],
+          "wholeRouteOrder": 0.562089342908596,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8933333333333333,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 297.29428615571135,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 13,
+              "medianSampleIndex": 6.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 412.52417044091845,
+              "firstSampleIndex": 14,
+              "lastSampleIndex": 33,
+              "medianSampleIndex": 23.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 269.4310205923477,
+              "firstSampleIndex": 35,
+              "lastSampleIndex": 47,
+              "medianSampleIndex": 41
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 287.1535391399974,
+              "firstSampleIndex": 48,
+              "lastSampleIndex": 75,
+              "medianSampleIndex": 60
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 208.03458389441042,
+              "firstSampleIndex": 58,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 65
+            }
+          ],
+          "wholeRouteOrder": 0.49777189615620393,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8814285714285715,
+          "currentWordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 1,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": false,
+          "missingLetters": [
+            "C"
+          ],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": false,
+              "blockCount": 0,
+              "totalSampleCount": 0,
+              "totalRouteDistanceUnits": 0,
+              "firstSampleIndex": null,
+              "lastSampleIndex": null,
+              "medianSampleIndex": null
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 408.96642170258934,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 19,
+              "medianSampleIndex": 9.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 458.402366576582,
+              "firstSampleIndex": 21,
+              "lastSampleIndex": 44,
+              "medianSampleIndex": 32.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 19,
+              "totalRouteDistanceUnits": 373.9619910423692,
+              "firstSampleIndex": 45,
+              "lastSampleIndex": 63,
+              "medianSampleIndex": 54
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 302.11537313638235,
+              "firstSampleIndex": 64,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 71.5
+            }
+          ],
+          "wholeRouteOrder": 0.4891520986166997,
+          "jumpFit": 0,
+          "broadOrderPass": false,
+          "continuityValid": false,
+          "meanRawInk": 0.76,
+          "currentWordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 12,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 347.12338581355533,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 13,
+              "medianSampleIndex": 6.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 290.58174973717513,
+              "firstSampleIndex": 14,
+              "lastSampleIndex": 25,
+              "medianSampleIndex": 19.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 229.29357919594887,
+              "firstSampleIndex": 27,
+              "lastSampleIndex": 35,
+              "medianSampleIndex": 31
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 36,
+              "totalRouteDistanceUnits": 1003.008028911153,
+              "firstSampleIndex": 36,
+              "lastSampleIndex": 78,
+              "medianSampleIndex": 57
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": false,
+              "blockCount": 1,
+              "totalSampleCount": 1,
+              "totalRouteDistanceUnits": 0,
+              "firstSampleIndex": 79,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 79
+            }
+          ],
+          "wholeRouteOrder": 0.4643281488353312,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.7347619047619047,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 232.12389161075467,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 9,
+              "medianSampleIndex": 4.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 373.3747852078225,
+              "firstSampleIndex": 10,
+              "lastSampleIndex": 24,
+              "medianSampleIndex": 17
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 21,
+              "totalRouteDistanceUnits": 525.1197520400597,
+              "firstSampleIndex": 26,
+              "lastSampleIndex": 50,
+              "medianSampleIndex": 40.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 506.58873090147785,
+              "firstSampleIndex": 39,
+              "lastSampleIndex": 68,
+              "medianSampleIndex": 46.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 11,
+              "totalRouteDistanceUnits": 263.5247972717241,
+              "firstSampleIndex": 69,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 74
+            }
+          ],
+          "wholeRouteOrder": 0.5331173698346429,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8547619047619047,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 370.1062207704588,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 17,
+              "medianSampleIndex": 8.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 25,
+              "totalRouteDistanceUnits": 521.435254114393,
+              "firstSampleIndex": 18,
+              "lastSampleIndex": 42,
+              "medianSampleIndex": 30
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 245.5923532306495,
+              "firstSampleIndex": 44,
+              "lastSampleIndex": 59,
+              "medianSampleIndex": 55.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 223.55182935320352,
+              "firstSampleIndex": 55,
+              "lastSampleIndex": 70,
+              "medianSampleIndex": 58
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 6,
+              "totalRouteDistanceUnits": 101.7628908726904,
+              "firstSampleIndex": 73,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 76
+            }
+          ],
+          "wholeRouteOrder": 0.5994676771914318,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.822857142857143,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 131.33524442301947,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 9,
+              "medianSampleIndex": 3
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 347.393800352265,
+              "firstSampleIndex": 3,
+              "lastSampleIndex": 31,
+              "medianSampleIndex": 14.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 231.2841348254762,
+              "firstSampleIndex": 21,
+              "lastSampleIndex": 45,
+              "medianSampleIndex": 27
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 294.9842325865455,
+              "firstSampleIndex": 46,
+              "lastSampleIndex": 75,
+              "medianSampleIndex": 65.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 4,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 154.86103880648295,
+              "firstSampleIndex": 59,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 70.5
+            }
+          ],
+          "wholeRouteOrder": 0.5440851300356688,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8266666666666665,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 15,
+              "totalRouteDistanceUnits": 253.81932588033058,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 14,
+              "medianSampleIndex": 7
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 222.86781900653938,
+              "firstSampleIndex": 15,
+              "lastSampleIndex": 28,
+              "medianSampleIndex": 21.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 7,
+              "totalRouteDistanceUnits": 90.92029069807543,
+              "firstSampleIndex": 30,
+              "lastSampleIndex": 47,
+              "medianSampleIndex": 40
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 27,
+              "totalRouteDistanceUnits": 429.26453593699415,
+              "firstSampleIndex": 35,
+              "lastSampleIndex": 76,
+              "medianSampleIndex": 54
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 257.96805210148574,
+              "firstSampleIndex": 61,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 75
+            }
+          ],
+          "wholeRouteOrder": 0.48880401493439607,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8528571428571429,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 206.9276286659427,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 8,
+              "medianSampleIndex": 4
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 502.1575856412933,
+              "firstSampleIndex": 9,
+              "lastSampleIndex": 37,
+              "medianSampleIndex": 30.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 162.152316255715,
+              "firstSampleIndex": 29,
+              "lastSampleIndex": 42,
+              "medianSampleIndex": 35
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 28,
+              "totalRouteDistanceUnits": 600.6677028666344,
+              "firstSampleIndex": 43,
+              "lastSampleIndex": 72,
+              "medianSampleIndex": 67.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 8,
+              "totalRouteDistanceUnits": 155.56306728614103,
+              "firstSampleIndex": 67,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 70
+            }
+          ],
+          "wholeRouteOrder": 0.4809964842319883,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.8283333333333334,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 11,
+              "totalRouteDistanceUnits": 139.86638237641253,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 10,
+              "medianSampleIndex": 5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 26,
+              "totalRouteDistanceUnits": 338.76112646852965,
+              "firstSampleIndex": 16,
+              "lastSampleIndex": 41,
+              "medianSampleIndex": 28.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 5,
+              "totalRouteDistanceUnits": 55.75203891730319,
+              "firstSampleIndex": 43,
+              "lastSampleIndex": 47,
+              "medianSampleIndex": 45
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 272.76958283367793,
+              "firstSampleIndex": 48,
+              "lastSampleIndex": 69,
+              "medianSampleIndex": 58.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 100.55036056681105,
+              "firstSampleIndex": 70,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 74.5
+            }
+          ],
+          "wholeRouteOrder": 0.49027200528097425,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.96,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": false,
+          "missingLetters": [
+            "C"
+          ],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": false,
+              "blockCount": 0,
+              "totalSampleCount": 0,
+              "totalRouteDistanceUnits": 0,
+              "firstSampleIndex": null,
+              "lastSampleIndex": null,
+              "medianSampleIndex": null
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 200.44790366322337,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 12,
+              "medianSampleIndex": 6
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 7,
+              "totalRouteDistanceUnits": 103.18302980198142,
+              "firstSampleIndex": 14,
+              "lastSampleIndex": 20,
+              "medianSampleIndex": 17
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 41,
+              "totalRouteDistanceUnits": 699.1492209672878,
+              "firstSampleIndex": 21,
+              "lastSampleIndex": 61,
+              "medianSampleIndex": 41
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 17,
+              "totalRouteDistanceUnits": 292.98884064176474,
+              "firstSampleIndex": 62,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 70.5
+            }
+          ],
+          "wholeRouteOrder": 0.366025019496895,
+          "jumpFit": 0,
+          "broadOrderPass": false,
+          "continuityValid": false,
+          "meanRawInk": 0.725,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": false,
+          "missingLetters": [
+            "C"
+          ],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": false,
+              "blockCount": 0,
+              "totalSampleCount": 0,
+              "totalRouteDistanceUnits": 0,
+              "firstSampleIndex": null,
+              "lastSampleIndex": null,
+              "medianSampleIndex": null
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 24,
+              "totalRouteDistanceUnits": 342.7096401284702,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 23,
+              "medianSampleIndex": 11.5
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 276.6572816534631,
+              "firstSampleIndex": 24,
+              "lastSampleIndex": 52,
+              "medianSampleIndex": 38
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 26,
+              "totalRouteDistanceUnits": 363.303237415595,
+              "firstSampleIndex": 31,
+              "lastSampleIndex": 69,
+              "medianSampleIndex": 44
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 120.06960886204797,
+              "firstSampleIndex": 70,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 74.5
+            }
+          ],
+          "wholeRouteOrder": 0.45872543601560284,
+          "jumpFit": 0,
+          "broadOrderPass": false,
+          "continuityValid": false,
+          "meanRawInk": 0.72,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 12,
+              "totalRouteDistanceUnits": 300.9113758044465,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 11,
+              "medianSampleIndex": 5.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 21,
+              "totalRouteDistanceUnits": 533.3253941434057,
+              "firstSampleIndex": 12,
+              "lastSampleIndex": 32,
+              "medianSampleIndex": 22
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 19,
+              "totalRouteDistanceUnits": 496.513892918416,
+              "firstSampleIndex": 33,
+              "lastSampleIndex": 51,
+              "medianSampleIndex": 42
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 590.1328647021018,
+              "firstSampleIndex": 52,
+              "lastSampleIndex": 76,
+              "medianSampleIndex": 67.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 5,
+              "totalRouteDistanceUnits": 82.41094576590064,
+              "firstSampleIndex": 67,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 72.5
+            }
+          ],
+          "wholeRouteOrder": 0.4792525337944043,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.7883333333333333,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": false,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 9,
+              "totalRouteDistanceUnits": 99.20425002046173,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 8,
+              "medianSampleIndex": 4
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 11,
+              "totalRouteDistanceUnits": 131.64574434712924,
+              "firstSampleIndex": 9,
+              "lastSampleIndex": 19,
+              "medianSampleIndex": 14
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 4,
+              "totalRouteDistanceUnits": 40.93649134418466,
+              "firstSampleIndex": 21,
+              "lastSampleIndex": 24,
+              "medianSampleIndex": 22.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 29,
+              "totalRouteDistanceUnits": 365.3513773564276,
+              "firstSampleIndex": 25,
+              "lastSampleIndex": 53,
+              "medianSampleIndex": 39
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 23,
+              "totalRouteDistanceUnits": 284.972289609916,
+              "firstSampleIndex": 55,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 67
+            }
+          ],
+          "wholeRouteOrder": 0.47948853305844386,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.96,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 16,
+              "totalRouteDistanceUnits": 173.8685047349556,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 25,
+              "medianSampleIndex": 9.5
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 22,
+              "totalRouteDistanceUnits": 243.65487926889767,
+              "firstSampleIndex": 5,
+              "lastSampleIndex": 37,
+              "medianSampleIndex": 20
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 140.7022198690574,
+              "firstSampleIndex": 39,
+              "lastSampleIndex": 53,
+              "medianSampleIndex": 47.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 10,
+              "totalRouteDistanceUnits": 97.8794648886847,
+              "firstSampleIndex": 47,
+              "lastSampleIndex": 61,
+              "medianSampleIndex": 51
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 209.61107110775302,
+              "firstSampleIndex": 62,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 70.5
+            }
+          ],
+          "wholeRouteOrder": 0.48745124847088916,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.7980952380952381,
+          "currentWordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 2,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "C",
+            "A",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 335.0672224863341,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 28,
+              "medianSampleIndex": 18
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 503.04991806495457,
+              "firstSampleIndex": 11,
+              "lastSampleIndex": 33,
+              "medianSampleIndex": 27
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 6,
+              "totalRouteDistanceUnits": 147.33877702741833,
+              "firstSampleIndex": 35,
+              "lastSampleIndex": 40,
+              "medianSampleIndex": 37.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 30,
+              "totalRouteDistanceUnits": 712.6866468446094,
+              "firstSampleIndex": 41,
+              "lastSampleIndex": 73,
+              "medianSampleIndex": 62.5
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 7,
+              "totalRouteDistanceUnits": 108.03839201835427,
+              "firstSampleIndex": 59,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 66
+            }
+          ],
+          "wholeRouteOrder": 0.5683684121818275,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": false,
+          "meanRawInk": 0.8683333333333334,
+          "currentWordTraversal": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "intendedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "O"
+          ],
+          "observedSequence": [
+            "C",
+            "A",
+            "I",
+            "R",
+            "I",
+            "R",
+            "O",
+            "R",
+            "O"
+          ],
+          "sequenceValid": true,
+          "missingLetters": [],
+          "reorderedPairs": [],
+          "hasRevisit": true,
+          "visitationConfidence": [
+            {
+              "letter": "C",
+              "letterIndex": 0,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 268.90790008459555,
+              "firstSampleIndex": 0,
+              "lastSampleIndex": 12,
+              "medianSampleIndex": 6
+            },
+            {
+              "letter": "A",
+              "letterIndex": 1,
+              "visited": true,
+              "blockCount": 1,
+              "totalSampleCount": 13,
+              "totalRouteDistanceUnits": 276.44820786837374,
+              "firstSampleIndex": 13,
+              "lastSampleIndex": 25,
+              "medianSampleIndex": 19
+            },
+            {
+              "letter": "I",
+              "letterIndex": 2,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 14,
+              "totalRouteDistanceUnits": 271.7147759425577,
+              "firstSampleIndex": 27,
+              "lastSampleIndex": 42,
+              "medianSampleIndex": 34.5
+            },
+            {
+              "letter": "R",
+              "letterIndex": 3,
+              "visited": true,
+              "blockCount": 3,
+              "totalSampleCount": 20,
+              "totalRouteDistanceUnits": 370.9263091831366,
+              "firstSampleIndex": 34,
+              "lastSampleIndex": 64,
+              "medianSampleIndex": 49
+            },
+            {
+              "letter": "O",
+              "letterIndex": 4,
+              "visited": true,
+              "blockCount": 2,
+              "totalSampleCount": 18,
+              "totalRouteDistanceUnits": 341.86759595903476,
+              "firstSampleIndex": 56,
+              "lastSampleIndex": 79,
+              "medianSampleIndex": 61.5
+            }
+          ],
+          "wholeRouteOrder": 0.4900050933658828,
+          "jumpFit": 0,
+          "broadOrderPass": true,
+          "continuityValid": true,
+          "meanRawInk": 0.925,
+          "currentWordTraversal": false
+        }
+      ]
+    }
+  ]
+}

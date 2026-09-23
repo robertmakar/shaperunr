@@ -147,14 +147,14 @@ const emptyDiag = buildExperimentalViabilityDiagnostics(
 const tests: SelfTest[] = [
   {
     name: 'O diagnostic names product rules without changing generation',
-    passed: oDiag.rejectedBy === 'product_threshold: shapeScore,coverage,order' && oDiag.stages.productAccepted === 0,
+    passed: oDiag.rejectedBy === 'product_threshold: shapeScore,coverage' && oDiag.stages.productAccepted === 0,
     detail: oDiag.rejectedBy,
   },
   {
     name: 'O best routed snapshot is before product filter',
     passed:
       oDiag.bestRoutedBeforeProduct?.shapeScore === 0.604 &&
-      oDiag.bestRoutedBeforeProduct.productRejections.join(',') === 'shapeScore,coverage,order',
+      oDiag.bestRoutedBeforeProduct.productRejections.join(',') === 'shapeScore,coverage',
     detail: JSON.stringify(oDiag.bestRoutedBeforeProduct?.productRejections),
   },
   {

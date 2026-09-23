@@ -1,0 +1,217 @@
+Multi-letter traversal diagnostics (DEVELOPMENT ONLY) — observation only, no algorithm change.
+
+=== ROBZ — Alexandria 2000m ===
+status=ok placementsEvaluated=1360 graphFeasible=16 routed=6 accepted=3 elapsed=13047ms
+graph-search regions actually used: [{"id":"shape","startProgress":0,"endProgress":1}]
+letter boundaries (projected): R[0.00-0.21] O[0.28-0.42] B[0.50-0.72] Z[0.84-1.00]
+inter-letter gap: totalFlattened=3.911 totalLetterInk=2.990 gap=0.921 (23.6% of target length)
+failure mode counts (feasible + sampled rejected, n=26): reached_all_but_other_gate=24, no_data=1, never_reached_later_letters=1
+-- furthest through the word --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.414 order=0.590 coverage=0.537 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest targetSpan --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.451 order=0.496 coverage=0.725 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest order score --
+  [smooth] rank=-1 feasible=true routed=false 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.344 order=0.599 coverage=0.850 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- (no multi-letter-but-wrong-order example among feasible candidates) --
+-- (no first-letter-only example among feasible candidates) --
+
+=== ROBZ — Alexandria 4000m ===
+status=ok placementsEvaluated=1360 graphFeasible=5 routed=5 accepted=3 elapsed=19263ms
+graph-search regions actually used: [{"id":"shape","startProgress":0,"endProgress":1}]
+letter boundaries (projected): R[0.00-0.21] O[0.28-0.42] B[0.50-0.72] Z[0.84-1.00]
+inter-letter gap: totalFlattened=3.911 totalLetterInk=2.990 gap=0.921 (23.6% of target length)
+failure mode counts (feasible + sampled rejected, n=15): reached_all_but_other_gate=10, no_data=2, never_reached_later_letters=3
+-- furthest through the word --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.155 order=0.487 coverage=0.762 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest targetSpan --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.420 order=0.520 coverage=0.750 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest order score --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.170 order=0.564 coverage=0.787 backtrack=0.258
+    failureMode=reached_all_but_other_gate
+-- (no multi-letter-but-wrong-order example among feasible candidates) --
+-- (no first-letter-only example among feasible candidates) --
+
+=== ROBZ — Zamalek 2000m ===
+status=ok placementsEvaluated=1360 graphFeasible=12 routed=6 accepted=2 elapsed=9128ms
+graph-search regions actually used: [{"id":"shape","startProgress":0,"endProgress":1}]
+letter boundaries (projected): R[0.00-0.21] O[0.28-0.42] B[0.50-0.72] Z[0.84-1.00]
+inter-letter gap: totalFlattened=3.911 totalLetterInk=2.990 gap=0.921 (23.6% of target length)
+failure mode counts (feasible + sampled rejected, n=22): reached_all_but_other_gate=20, never_reached_later_letters=1, no_data=1
+-- furthest through the word --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.296 order=0.504 coverage=0.388 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest targetSpan --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.423 order=0.563 coverage=0.725 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest order score --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.423 order=0.563 coverage=0.725 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- (no multi-letter-but-wrong-order example among feasible candidates) --
+-- (no first-letter-only example among feasible candidates) --
+
+=== ROBZ — Zamalek 4000m ===
+status=ok placementsEvaluated=1360 graphFeasible=5 routed=5 accepted=3 elapsed=21924ms
+graph-search regions actually used: [{"id":"shape","startProgress":0,"endProgress":1}]
+letter boundaries (projected): R[0.00-0.21] O[0.28-0.42] B[0.50-0.72] Z[0.84-1.00]
+inter-letter gap: totalFlattened=3.911 totalLetterInk=2.990 gap=0.921 (23.6% of target length)
+failure mode counts (feasible + sampled rejected, n=15): reached_all_but_other_gate=8, never_reached_later_letters=6, no_data=1
+-- furthest through the word --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.229 order=0.564 coverage=0.813 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest targetSpan --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.553 order=0.549 coverage=0.738 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest order score --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: R -> O -> B -> Z
+    lettersVisited=ROBZ inOrder=true firstMissing=none maxIndex=3/3
+    wordTraversal=false targetSpan=0.103 order=0.634 coverage=0.762 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- (no multi-letter-but-wrong-order example among feasible candidates) --
+-- (no first-letter-only example among feasible candidates) --
+
+=== CAIRO — Alexandria 2000m ===
+status=ok placementsEvaluated=1360 graphFeasible=25 routed=6 accepted=3 elapsed=23715ms
+graph-search regions actually used: [{"id":"shape","startProgress":0,"endProgress":1}]
+letter boundaries (projected): C[0.00-0.11] A[0.14-0.38] I[0.45-0.51] R[0.56-0.77] O[0.85-0.99]
+inter-letter gap: totalFlattened=3.012 totalLetterInk=2.322 gap=0.691 (22.9% of target length)
+failure mode counts (feasible + sampled rejected, n=35): reached_all_but_other_gate=32, never_reached_later_letters=3
+-- furthest through the word --
+  [smooth] rank=-1 feasible=true routed=false 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.246 order=0.522 coverage=0.775 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest targetSpan --
+  [smooth] rank=-1 feasible=true routed=false 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.459 order=0.559 coverage=0.563 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest order score --
+  [smooth] rank=-1 feasible=true routed=false 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.182 order=0.616 coverage=0.650 backtrack=0.048
+    failureMode=reached_all_but_other_gate
+-- (no multi-letter-but-wrong-order example among feasible candidates) --
+-- (no first-letter-only example among feasible candidates) --
+
+=== CAIRO — Alexandria 4000m ===
+status=weak_candidates placementsEvaluated=1360 graphFeasible=1 routed=1 accepted=0 elapsed=46003ms
+graph-search regions actually used: [{"id":"shape","startProgress":0,"endProgress":1}]
+letter boundaries (projected): C[0.00-0.11] A[0.14-0.38] I[0.45-0.51] R[0.56-0.77] O[0.85-0.99]
+inter-letter gap: totalFlattened=3.012 totalLetterInk=2.322 gap=0.691 (22.9% of target length)
+failure mode counts (feasible + sampled rejected, n=11): reached_all_but_other_gate=3, never_reached_later_letters=8
+-- furthest through the word --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.230 order=0.563 coverage=0.438 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest targetSpan --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.230 order=0.563 coverage=0.438 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest order score --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.230 order=0.563 coverage=0.438 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- (no multi-letter-but-wrong-order example among feasible candidates) --
+-- (no first-letter-only example among feasible candidates) --
+
+=== CAIRO — Zamalek 2000m ===
+status=ok placementsEvaluated=1360 graphFeasible=12 routed=6 accepted=3 elapsed=20825ms
+graph-search regions actually used: [{"id":"shape","startProgress":0,"endProgress":1}]
+letter boundaries (projected): C[0.00-0.11] A[0.14-0.38] I[0.45-0.51] R[0.56-0.77] O[0.85-0.99]
+inter-letter gap: totalFlattened=3.012 totalLetterInk=2.322 gap=0.691 (22.9% of target length)
+failure mode counts (feasible + sampled rejected, n=22): reached_all_but_other_gate=17, never_reached_later_letters=2, no_data=3
+-- furthest through the word --
+  [smooth] rank=-1 feasible=true routed=false 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.161 order=0.453 coverage=0.450 backtrack=0.069
+    failureMode=reached_all_but_other_gate
+-- highest targetSpan --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.615 order=0.570 coverage=0.762 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest order score --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.615 order=0.570 coverage=0.762 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- (no multi-letter-but-wrong-order example among feasible candidates) --
+-- (no first-letter-only example among feasible candidates) --
+
+=== CAIRO — Zamalek 4000m ===
+status=ok placementsEvaluated=1360 graphFeasible=2 routed=2 accepted=1 elapsed=51435ms
+graph-search regions actually used: [{"id":"shape","startProgress":0,"endProgress":1}]
+letter boundaries (projected): C[0.00-0.11] A[0.14-0.38] I[0.45-0.51] R[0.56-0.77] O[0.85-0.99]
+inter-letter gap: totalFlattened=3.012 totalLetterInk=2.322 gap=0.691 (22.9% of target length)
+failure mode counts (feasible + sampled rejected, n=12): reached_all_but_other_gate=5, never_reached_later_letters=7
+-- furthest through the word --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.472 order=0.635 coverage=0.738 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest targetSpan --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.472 order=0.635 coverage=0.738 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- highest order score --
+  [smooth] rank=-1 feasible=true routed=true 
+    sequence: C -> A -> I -> R -> O
+    lettersVisited=CAIRO inOrder=true firstMissing=none maxIndex=4/4
+    wordTraversal=false targetSpan=0.472 order=0.635 coverage=0.738 backtrack=0.000
+    failureMode=reached_all_but_other_gate
+-- (no multi-letter-but-wrong-order example among feasible candidates) --
+-- (no first-letter-only example among feasible candidates) --

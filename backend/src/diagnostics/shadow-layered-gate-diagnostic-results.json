@@ -1,0 +1,6705 @@
+{
+  "generatedAt": "2026-09-22T11:18:23.008Z",
+  "scale": 500,
+  "connectorArcHeight": 200,
+  "scenarios": [
+    {
+      "label": "A. Correct (R->O->B->Z)",
+      "intendedLetters": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "sequenceValid": true,
+      "missingLetters": [],
+      "reorderedPairs": [],
+      "hasRevisit": false,
+      "revisitedLetters": [],
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "wholeRouteOrder": 0.40993655359643033,
+      "jumpFit": 0,
+      "physicalShapeScore": 0.561462123829841,
+      "meanRawInk": 1
+    },
+    {
+      "label": "B. Skip (R->O->Z)",
+      "intendedLetters": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "observedSequence": [
+        "R",
+        "O",
+        "Z"
+      ],
+      "sequenceValid": false,
+      "missingLetters": [
+        "B"
+      ],
+      "reorderedPairs": [],
+      "hasRevisit": false,
+      "revisitedLetters": [],
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "B"
+        ]
+      },
+      "wholeRouteOrder": 0.24849381910557528,
+      "jumpFit": 0,
+      "physicalShapeScore": 0.49827585113044587,
+      "meanRawInk": 0.75
+    },
+    {
+      "label": "C. Reverse (Z->B->O->R)",
+      "intendedLetters": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "observedSequence": [
+        "Z",
+        "B",
+        "O",
+        "R"
+      ],
+      "sequenceValid": false,
+      "missingLetters": [],
+      "reorderedPairs": [
+        {
+          "earlier": "O",
+          "later": "R"
+        },
+        {
+          "earlier": "B",
+          "later": "R"
+        },
+        {
+          "earlier": "Z",
+          "later": "R"
+        },
+        {
+          "earlier": "B",
+          "later": "O"
+        },
+        {
+          "earlier": "Z",
+          "later": "O"
+        },
+        {
+          "earlier": "Z",
+          "later": "B"
+        }
+      ],
+      "hasRevisit": false,
+      "revisitedLetters": [],
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "wholeRouteOrder": 0.23077120791860667,
+      "jumpFit": 1,
+      "physicalShapeScore": 0.4958500782045846,
+      "meanRawInk": 1
+    },
+    {
+      "label": "D. Reorder (R->B->O->Z) [CRITICAL TEST]",
+      "intendedLetters": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "observedSequence": [
+        "R",
+        "B",
+        "O",
+        "Z"
+      ],
+      "sequenceValid": false,
+      "missingLetters": [],
+      "reorderedPairs": [
+        {
+          "earlier": "B",
+          "later": "O"
+        }
+      ],
+      "hasRevisit": false,
+      "revisitedLetters": [],
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "wholeRouteOrder": 0.2135550079976491,
+      "jumpFit": 0,
+      "physicalShapeScore": 0.47317592256947855,
+      "meanRawInk": 1
+    },
+    {
+      "label": "E. Local revisit (R->O->R->B->Z)",
+      "intendedLetters": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "observedSequence": [
+        "R",
+        "O",
+        "R",
+        "B",
+        "Z"
+      ],
+      "sequenceValid": true,
+      "missingLetters": [],
+      "reorderedPairs": [],
+      "hasRevisit": true,
+      "revisitedLetters": [
+        "R"
+      ],
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "wholeRouteOrder": 0.28359613223317287,
+      "jumpFit": 0,
+      "physicalShapeScore": 0.4332410840428022,
+      "meanRawInk": 1
+    },
+    {
+      "label": "F. Large detour within a letter (correct order preserved)",
+      "intendedLetters": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "Z"
+      ],
+      "sequenceValid": true,
+      "missingLetters": [],
+      "reorderedPairs": [],
+      "hasRevisit": true,
+      "revisitedLetters": [
+        "B",
+        "Z"
+      ],
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "wholeRouteOrder": 0.2990767406607965,
+      "jumpFit": 0,
+      "physicalShapeScore": 0.4009589315688798,
+      "meanRawInk": 1
+    },
+    {
+      "label": "G. Legitimate spatial crossing (correct order preserved)",
+      "intendedLetters": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "sequenceValid": true,
+      "missingLetters": [],
+      "reorderedPairs": [],
+      "hasRevisit": false,
+      "revisitedLetters": [],
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "wholeRouteOrder": 0.384295069280091,
+      "jumpFit": 0,
+      "physicalShapeScore": 0.513480403864581,
+      "meanRawInk": 1
+    },
+    {
+      "label": "H. Near-letter confusion (R passes close to O without intending to visit it)",
+      "intendedLetters": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "sequenceValid": true,
+      "missingLetters": [],
+      "reorderedPairs": [],
+      "hasRevisit": false,
+      "revisitedLetters": [],
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "wholeRouteOrder": 0.40861772582787415,
+      "jumpFit": 0,
+      "physicalShapeScore": 0.5617815690448745,
+      "meanRawInk": 1
+    }
+  ],
+  "combined": [
+    {
+      "caseIndex": 0,
+      "candidateIndex": 0,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7529736027176591,
+      "coverage": 0.825,
+      "order": 0.6006167453671346,
+      "backtrack": 0.13356979640525962,
+      "largestGap": 0.05,
+      "targetSpan": 0.47025468557299255,
+      "lengthRatio": 0.7926926586988301,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.6006167453671346,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9642857142857143,
+      "l1Passes": true,
+      "l1Reasons": [],
+      "l2Passes": true,
+      "l2Reasons": [],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.6006167453671346,
+        "label": "physical:PASS completeness:PASS sequence:PASS order:0.601"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6425357139466004,
+      "coverage": 0.5875,
+      "order": 0.4842091079211328,
+      "backtrack": 0.16246488707799092,
+      "largestGap": 0.0875,
+      "targetSpan": 0.23235174770030345,
+      "lengthRatio": 0.78200808312314,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4842091079211328,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "R"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8785714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4842091079211328,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.484"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 2,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6908307315037688,
+      "coverage": 0.6625,
+      "order": 0.4965433226043292,
+      "backtrack": 0.09778616422442826,
+      "largestGap": 0.075,
+      "targetSpan": 0.1965458695864022,
+      "lengthRatio": 0.8899624683464195,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4965433226043292,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.7785714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4965433226043292,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.497"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 3,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7668645499358656,
+      "coverage": 0.975,
+      "order": 0.5629976283020508,
+      "backtrack": 0.12014872000395466,
+      "largestGap": 0.0125,
+      "targetSpan": 0.16899500031104928,
+      "lengthRatio": 0.6486855245021567,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5629976283020508,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 1,
+      "l1Passes": false,
+      "l1Reasons": [
+        "wholeRouteOrder"
+      ],
+      "l2Passes": true,
+      "l2Reasons": [],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5629976283020508,
+        "label": "physical:PASS completeness:PASS sequence:PASS order:0.563"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 4,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6728577959483127,
+      "coverage": 0.8,
+      "order": 0.45192327288455747,
+      "backtrack": 0.11567083656699763,
+      "largestGap": 0.075,
+      "targetSpan": 0.4164256874347201,
+      "lengthRatio": 1.1692325694293557,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.45192327288455747,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9142857142857144,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.45192327288455747,
+        "label": "physical:FAIL completeness:PASS sequence:PASS order:0.452"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 5,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "coverage",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.5865471067938635,
+      "coverage": 0.525,
+      "order": 0.39411643848864814,
+      "backtrack": 0.2480706832392856,
+      "largestGap": 0.0875,
+      "targetSpan": 0.1689665721775846,
+      "lengthRatio": 0.8008046339244012,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.39411643848864814,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "R"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.6571428571428571,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "coverage",
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "coverage",
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.39411643848864814,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.394"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 6,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "coverage",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6310831561059066,
+      "coverage": 0.55,
+      "order": 0.4385403439155546,
+      "backtrack": 0.16724484826672656,
+      "largestGap": 0.09999999999999999,
+      "targetSpan": 0.1994614273193942,
+      "lengthRatio": 0.8682661868711502,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.4385403439155546,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "R"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8214285714285714,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "coverage",
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "coverage",
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4385403439155546,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.439"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 7,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7057459689274285,
+      "coverage": 0.6375,
+      "order": 0.5690930618638671,
+      "backtrack": 0.09161562966537919,
+      "largestGap": 0.0625,
+      "targetSpan": 0.19614998914242032,
+      "lengthRatio": 0.8182401834262768,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5690930618638671,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 1,
+      "l1Passes": false,
+      "l1Reasons": [
+        "wholeRouteOrder"
+      ],
+      "l2Passes": true,
+      "l2Reasons": [],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5690930618638671,
+        "label": "physical:PASS completeness:PASS sequence:PASS order:0.569"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 8,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7045327758685033,
+      "coverage": 0.725,
+      "order": 0.5425361015671056,
+      "backtrack": 0.1194812612276093,
+      "largestGap": 0.075,
+      "targetSpan": 0.4400953647483612,
+      "lengthRatio": 0.8684063300669229,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5425361015671056,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9142857142857144,
+      "l1Passes": false,
+      "l1Reasons": [
+        "wholeRouteOrder"
+      ],
+      "l2Passes": true,
+      "l2Reasons": [],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5425361015671056,
+        "label": "physical:PASS completeness:PASS sequence:PASS order:0.543"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 9,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7745494963218746,
+      "coverage": 0.925,
+      "order": 0.5810982274847148,
+      "backtrack": 0.14374753303004043,
+      "largestGap": 0.05,
+      "targetSpan": 0.0961287131010885,
+      "lengthRatio": 0.7093678199207744,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5810982274847148,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8642857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5810982274847148,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.581"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 10,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6967295965003651,
+      "coverage": 0.7125,
+      "order": 0.45630754566792453,
+      "backtrack": 0.06170026913705533,
+      "largestGap": 0.075,
+      "targetSpan": 0.336580645017168,
+      "lengthRatio": 0.9712262470298706,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.45630754566792453,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.95,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.45630754566792453,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.456"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 11,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6663948430702115,
+      "coverage": 0.6375,
+      "order": 0.516715118359816,
+      "backtrack": 0.13240152925357515,
+      "largestGap": 0.0875,
+      "targetSpan": 0.34214053018380514,
+      "lengthRatio": 0.7272713771636231,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.516715118359816,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "R",
+          "B",
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8285714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.516715118359816,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.517"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 12,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7484937221510339,
+      "coverage": 0.85,
+      "order": 0.5437090244192686,
+      "backtrack": 0.13888947925086248,
+      "largestGap": 0.075,
+      "targetSpan": 0.28579517345286753,
+      "lengthRatio": 0.7533764116583738,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5437090244192686,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "Z",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "Z",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9285714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5437090244192686,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.544"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 13,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.766213511511599,
+      "coverage": 0.9375,
+      "order": 0.45249941334073274,
+      "backtrack": 0.10591282872800632,
+      "largestGap": 0.05,
+      "targetSpan": 0.20624153686374333,
+      "lengthRatio": 1.017227412692926,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.45249941334073274,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "Z",
+          "B",
+          "Z",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "Z",
+        "B",
+        "Z",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8785714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.45249941334073274,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.452"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 14,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.725655465481107,
+      "coverage": 0.85,
+      "order": 0.4067421537432675,
+      "backtrack": 0.1497346761487951,
+      "largestGap": 0.05,
+      "targetSpan": 0.21780291805957583,
+      "lengthRatio": 0.9609870357748116,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.4067421537432675,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "B"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.7714285714285714,
+      "l1Passes": false,
+      "l1Reasons": [
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4067421537432675,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.407"
+      }
+    },
+    {
+      "caseIndex": 0,
+      "candidateIndex": 15,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "backtrack",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.719912467718089,
+      "coverage": 0.8125,
+      "order": 0.4919544504789863,
+      "backtrack": 0.2531076382365919,
+      "largestGap": 0.0625,
+      "targetSpan": 0.11482834240219975,
+      "lengthRatio": 0.794125460131831,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.4919544504789863,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "Z",
+          "B",
+          "Z",
+          "B",
+          "Z",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "Z",
+        "B",
+        "Z",
+        "B",
+        "Z",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8642857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "backtrack",
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "backtrack",
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4919544504789863,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.492"
+      }
+    },
+    {
+      "caseIndex": 1,
+      "candidateIndex": 0,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6894570609270011,
+      "coverage": 0.975,
+      "order": 0.44073274648263405,
+      "backtrack": 0.1414603257243685,
+      "largestGap": 0.0125,
+      "targetSpan": 0.19364647565631904,
+      "lengthRatio": 1.3373077303939898,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.44073274648263405,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9142857142857144,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.44073274648263405,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.441"
+      }
+    },
+    {
+      "caseIndex": 1,
+      "candidateIndex": 1,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7300264881221058,
+      "coverage": 0.8875,
+      "order": 0.5390760324318349,
+      "backtrack": 0.06610691186143575,
+      "largestGap": 0.0625,
+      "targetSpan": 0.1830311016298236,
+      "lengthRatio": 0.5231526695118413,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5390760324318349,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "R"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9285714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5390760324318349,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.539"
+      }
+    },
+    {
+      "caseIndex": 1,
+      "candidateIndex": 2,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7828248237171627,
+      "coverage": 0.9875,
+      "order": 0.45455364704732176,
+      "backtrack": 0.08558676080931127,
+      "largestGap": 0.0125,
+      "targetSpan": 0.21758945908561045,
+      "lengthRatio": 0.9828938537974805,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.45455364704732176,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "R"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "Z",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "Z",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9142857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.45455364704732176,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.455"
+      }
+    },
+    {
+      "caseIndex": 1,
+      "candidateIndex": 3,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7630948018084803,
+      "coverage": 0.925,
+      "order": 0.5330323520265287,
+      "backtrack": 0.11946887266635277,
+      "largestGap": 0.0625,
+      "targetSpan": 0.5078231881311217,
+      "lengthRatio": 0.7827732533059344,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5330323520265287,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8642857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5330323520265287,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.533"
+      }
+    },
+    {
+      "caseIndex": 1,
+      "candidateIndex": 4,
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7883166110564552,
+      "coverage": 0.9375,
+      "order": 0.5750738881405222,
+      "backtrack": 0.12238882208059589,
+      "largestGap": 0.05,
+      "targetSpan": 0.28028746150413714,
+      "lengthRatio": 0.7917207769028162,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5750738881405222,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8785714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5750738881405222,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.575"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 0,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "coverage",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.5821827477846466,
+      "coverage": 0.5,
+      "order": 0.4948845522335772,
+      "backtrack": 0.017524953139604692,
+      "largestGap": 0.09999999999999999,
+      "targetSpan": 0.1693220000098741,
+      "lengthRatio": 0.39789629893197886,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4948845522335772,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8142857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "coverage",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "coverage",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4948845522335772,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.495"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7884935982518385,
+      "coverage": 0.95,
+      "order": 0.5127794105029,
+      "backtrack": 0.09344414373693367,
+      "largestGap": 0.025,
+      "targetSpan": 0.22514243376237372,
+      "lengthRatio": 1.0306315303767213,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.5127794105029,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9142857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "continuity",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "continuity"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5127794105029,
+        "label": "physical:FAIL completeness:PASS sequence:PASS order:0.513"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 2,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.36078824877238996,
+      "coverage": 0.675,
+      "order": 0.14999701704824067,
+      "backtrack": 0.020029972561114804,
+      "largestGap": 0.075,
+      "targetSpan": 0.16895376539050538,
+      "lengthRatio": 3.541398176086932,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.14999701704824067,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "R",
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "O",
+          "R",
+          "O",
+          "Z",
+          "B",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "O",
+        "R",
+        "O",
+        "Z",
+        "B",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8071428571428572,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.14999701704824067,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.150"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 3,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6250612018952195,
+      "coverage": 0.6125,
+      "order": 0.5358021795103052,
+      "backtrack": 0.1099811972588435,
+      "largestGap": 0.18750000000000003,
+      "targetSpan": 0.4918574568236498,
+      "lengthRatio": 0.4408681185156518,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5358021795103052,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.6785714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5358021795103052,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.536"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 4,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6584244987530312,
+      "coverage": 0.675,
+      "order": 0.4916381904738289,
+      "backtrack": 0.22190903760759786,
+      "largestGap": 0.05,
+      "targetSpan": 0.34164546875801005,
+      "lengthRatio": 0.7380164048533971,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4916381904738289,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8785714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4916381904738289,
+        "label": "physical:FAIL completeness:PASS sequence:PASS order:0.492"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 5,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6602546443451196,
+      "coverage": 0.65,
+      "order": 0.4561635979186497,
+      "backtrack": 0.04454409877731912,
+      "largestGap": 0.11249999999999999,
+      "targetSpan": 0.2565870192636129,
+      "lengthRatio": 0.5841776441505464,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4561635979186497,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "B"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.5857142857142857,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4561635979186497,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.456"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 6,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7606809556055558,
+      "coverage": 0.9,
+      "order": 0.45652828845843313,
+      "backtrack": 0.10641121907706158,
+      "largestGap": 0.0875,
+      "targetSpan": 0.15441346844289572,
+      "lengthRatio": 1.0059437488453302,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.45652828845843313,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8642857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.45652828845843313,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.457"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 7,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "backtrack",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6522587758442442,
+      "coverage": 0.8,
+      "order": 0.3470364972898743,
+      "backtrack": 0.3034636149179217,
+      "largestGap": 0.15,
+      "targetSpan": 0.36586884835947786,
+      "lengthRatio": 0.7412906137998061,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.3470364972898743,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "B",
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.7285714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "backtrack",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "backtrack",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.3470364972898743,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.347"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 8,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6462991638812001,
+      "coverage": 0.8125,
+      "order": 0.39176438978194605,
+      "backtrack": 0.12945366314778312,
+      "largestGap": 0.05,
+      "targetSpan": 0.10409000137210331,
+      "lengthRatio": 0.4967849766773423,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.39176438978194605,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "O",
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.7928571428571429,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.39176438978194605,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.392"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 9,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7905432407061468,
+      "coverage": 0.975,
+      "order": 0.47778760253410385,
+      "backtrack": 0.10894388924780327,
+      "largestGap": 0.025,
+      "targetSpan": 0.1613704848628698,
+      "lengthRatio": 1.0093471146928288,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.47778760253410385,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9642857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "wholeRouteOrder"
+      ],
+      "l2Passes": true,
+      "l2Reasons": [],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.47778760253410385,
+        "label": "physical:PASS completeness:PASS sequence:PASS order:0.478"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 10,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6736828367561034,
+      "coverage": 0.6,
+      "order": 0.5481737819899566,
+      "backtrack": 0.10884678561649512,
+      "largestGap": 0.075,
+      "targetSpan": 0.18322810228090514,
+      "lengthRatio": 0.787560816402403,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5481737819899566,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "B",
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8071428571428572,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5481737819899566,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.548"
+      }
+    },
+    {
+      "caseIndex": 2,
+      "candidateIndex": 11,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7683960684582753,
+      "coverage": 0.9375,
+      "order": 0.5003625919745062,
+      "backtrack": 0.18613507306162702,
+      "largestGap": 0.037500000000000006,
+      "targetSpan": 0.4381897336391355,
+      "lengthRatio": 0.9481904551808954,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.5003625919745062,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "R"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8785714285714286,
+      "l1Passes": false,
+      "l1Reasons": [
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5003625919745062,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.500"
+      }
+    },
+    {
+      "caseIndex": 3,
+      "candidateIndex": 0,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7775690290833547,
+      "coverage": 0.9625,
+      "order": 0.5040982162100399,
+      "backtrack": 0.10816464568385606,
+      "largestGap": 0.025,
+      "targetSpan": 0.10116197715118158,
+      "lengthRatio": 0.8806831838344644,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.5040982162100399,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "R",
+          "B",
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z",
+          "B",
+          "Z",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z",
+        "B",
+        "Z",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8928571428571428,
+      "l1Passes": false,
+      "l1Reasons": [
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5040982162100399,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.504"
+      }
+    },
+    {
+      "caseIndex": 3,
+      "candidateIndex": 1,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.8111553750707715,
+      "coverage": 0.975,
+      "order": 0.5765270037158196,
+      "backtrack": 0.1045341755456373,
+      "largestGap": 0.0125,
+      "targetSpan": 0.6103691771693064,
+      "lengthRatio": 0.9154970699947571,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5765270037158196,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9142857142857144,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5765270037158196,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.577"
+      }
+    },
+    {
+      "caseIndex": 3,
+      "candidateIndex": 2,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7935127740990733,
+      "coverage": 0.9625,
+      "order": 0.5716753787420944,
+      "backtrack": 0.0489799615529889,
+      "largestGap": 0.0125,
+      "targetSpan": 0.21219068722978685,
+      "lengthRatio": 0.7618353920008378,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5716753787420944,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 1,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5716753787420944,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.572"
+      }
+    },
+    {
+      "caseIndex": 3,
+      "candidateIndex": 3,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7611069710427233,
+      "coverage": 0.875,
+      "order": 0.43955499657332037,
+      "backtrack": 0.044132398410242905,
+      "largestGap": 0.0875,
+      "targetSpan": 0.36383051170549624,
+      "lengthRatio": 0.9941127848650133,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.43955499657332037,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "O",
+          "B",
+          "O",
+          "B",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "O",
+        "B",
+        "O",
+        "B",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9142857142857144,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.43955499657332037,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.440"
+      }
+    },
+    {
+      "caseIndex": 3,
+      "candidateIndex": 4,
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7189666129471947,
+      "coverage": 0.85,
+      "order": 0.5458408361100838,
+      "backtrack": 0.17647570263624957,
+      "largestGap": 0.0875,
+      "targetSpan": 0.44944292550115555,
+      "lengthRatio": 0.5613389365611056,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5458408361100838,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "Z"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "firstOccurrenceOrder": [
+          "R",
+          "O",
+          "B",
+          "Z"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "R",
+        "O",
+        "B",
+        "Z"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8642857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5458408361100838,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.546"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 0,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6932171391959154,
+      "coverage": 0.9,
+      "order": 0.42608304151580983,
+      "backtrack": 0.1300374733829716,
+      "largestGap": 0.05,
+      "targetSpan": 0.2514408815386825,
+      "lengthRatio": 1.2535331422822984,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.42608304151580983,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "A",
+          "I",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8283333333333334,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.42608304151580983,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.426"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 1,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7244089489093498,
+      "coverage": 0.875,
+      "order": 0.4150046092272893,
+      "backtrack": 0.10303656438091068,
+      "largestGap": 0.05,
+      "targetSpan": 0.13388468312613572,
+      "lengthRatio": 1.0714071579126576,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4150046092272893,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "R",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.7616666666666666,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4150046092272893,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.415"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 2,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7769601336456139,
+      "coverage": 0.9375,
+      "order": 0.4853116716933751,
+      "backtrack": 0.10300860627340155,
+      "largestGap": 0.037500000000000006,
+      "targetSpan": 0.23065360792276546,
+      "lengthRatio": 0.9546350862024388,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4853116716933751,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9314285714285715,
+      "l1Passes": false,
+      "l1Reasons": [
+        "wholeRouteOrder"
+      ],
+      "l2Passes": true,
+      "l2Reasons": [],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4853116716933751,
+        "label": "physical:PASS completeness:PASS sequence:PASS order:0.485"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 3,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6681865241592364,
+      "coverage": 0.6375,
+      "order": 0.48790747948937796,
+      "backtrack": 0.07942514344873337,
+      "largestGap": 0.075,
+      "targetSpan": 0.11923154878976527,
+      "lengthRatio": 0.8296845995558906,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.48790747948937796,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9333333333333332,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.48790747948937796,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.488"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 4,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "coverage",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6087701846413487,
+      "coverage": 0.525,
+      "order": 0.4524659145151314,
+      "backtrack": 0.00839839348323868,
+      "largestGap": 0.18750000000000003,
+      "targetSpan": 0.2593794821609189,
+      "lengthRatio": 0.43584443142570073,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.4524659145151314,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "R",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "A",
+          "I",
+          "R"
+        ],
+        "firstOccurrenceOrder": [
+          "A",
+          "I",
+          "R"
+        ],
+        "missingLetters": [
+          "C",
+          "O"
+        ],
+        "sequenceValid": false,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "A",
+        "I",
+        "R"
+      ],
+      "broadOrderPass": false,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.5142857142857142,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "coverage",
+        "continuity",
+        "letterCompleteness",
+        "sequenceIntegrity",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "coverage",
+        "continuity",
+        "letterCompleteness",
+        "sequenceIntegrity"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": false,
+        "wholeRouteOrder": 0.4524659145151314,
+        "label": "physical:FAIL completeness:FAIL sequence:FAIL order:0.452"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 5,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7179911221149461,
+      "coverage": 0.9375,
+      "order": 0.4104134915130192,
+      "backtrack": 0.06635789693574672,
+      "largestGap": 0.0625,
+      "targetSpan": 0.3674295431285229,
+      "lengthRatio": 1.179814681796542,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4104134915130192,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9199999999999999,
+      "l1Passes": false,
+      "l1Reasons": [
+        "wholeRouteOrder"
+      ],
+      "l2Passes": true,
+      "l2Reasons": [],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4104134915130192,
+        "label": "physical:PASS completeness:PASS sequence:PASS order:0.410"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 6,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7892138487925545,
+      "coverage": 0.9375,
+      "order": 0.5785336197669252,
+      "backtrack": 0.07115369820186826,
+      "largestGap": 0.05,
+      "targetSpan": 0.4065320056059572,
+      "lengthRatio": 0.7924901938694027,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5785336197669252,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9333333333333332,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5785336197669252,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.579"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 7,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.679356293299915,
+      "coverage": 0.925,
+      "order": 0.4002969924222766,
+      "backtrack": 0.044952188016962026,
+      "largestGap": 0.05,
+      "targetSpan": 0.26645701604084765,
+      "lengthRatio": 1.3262440811347607,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4002969924222766,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8699999999999999,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4002969924222766,
+        "label": "physical:FAIL completeness:PASS sequence:PASS order:0.400"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 8,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6872875308438605,
+      "coverage": 0.7,
+      "order": 0.5083691187562498,
+      "backtrack": 0.14631955071003674,
+      "largestGap": 0.0625,
+      "targetSpan": 0.5317684316331978,
+      "lengthRatio": 0.8796896536002269,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5083691187562498,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "R"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8647619047619047,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5083691187562498,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.508"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 9,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7823703825966404,
+      "coverage": 0.9375,
+      "order": 0.5114258371404845,
+      "backtrack": 0.12895636760370793,
+      "largestGap": 0.037500000000000006,
+      "targetSpan": 0.26222526970634585,
+      "lengthRatio": 0.9398124235021007,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5114258371404845,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "I",
+          "R"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 1,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5114258371404845,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.511"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 10,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7604945180047692,
+      "coverage": 0.8875,
+      "order": 0.4745204655458931,
+      "backtrack": 0.09203553922278818,
+      "largestGap": 0.05,
+      "targetSpan": 0.27017845011543307,
+      "lengthRatio": 0.9574584435656633,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4745204655458931,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "I",
+          "R",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8949999999999999,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4745204655458931,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.475"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 11,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7856983701699892,
+      "coverage": 0.9375,
+      "order": 0.525466274719779,
+      "backtrack": 0.14896085971056647,
+      "largestGap": 0.05,
+      "targetSpan": 0.20905784882928938,
+      "lengthRatio": 0.9456964262148302,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.525466274719779,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "I"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.96,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.525466274719779,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.525"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 12,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7055973918102063,
+      "coverage": 0.7375,
+      "order": 0.5286913190527289,
+      "backtrack": 0.23861038853366706,
+      "largestGap": 0.075,
+      "targetSpan": 0.47346420594434896,
+      "lengthRatio": 0.9418214630154459,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5286913190527289,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8247619047619047,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5286913190527289,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.529"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 13,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.5801852003267675,
+      "coverage": 0.825,
+      "order": 0.3410614728075037,
+      "backtrack": 0.03245496898650474,
+      "largestGap": 0.09999999999999999,
+      "targetSpan": 0.5430524703869701,
+      "lengthRatio": 1.5761347499389606,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.3410614728075037,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "I",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.822857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.3410614728075037,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.341"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 14,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7638203110027698,
+      "coverage": 0.9,
+      "order": 0.5585251257278934,
+      "backtrack": 0.12052229823298372,
+      "largestGap": 0.037500000000000006,
+      "targetSpan": 0.24839913338860714,
+      "lengthRatio": 1.1565961664486073,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5585251257278934,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "A",
+          "I"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8433333333333334,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5585251257278934,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.559"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 15,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7694504689457794,
+      "coverage": 0.9125,
+      "order": 0.5129109836911042,
+      "backtrack": 0.13186899414841058,
+      "largestGap": 0.025,
+      "targetSpan": 0.34795932556501574,
+      "lengthRatio": 0.8956685050129182,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5129109836911042,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "I"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8797619047619047,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5129109836911042,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.513"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 16,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6681192262342891,
+      "coverage": 0.625,
+      "order": 0.5071624283839792,
+      "backtrack": 0.112120875000502,
+      "largestGap": 0.0625,
+      "targetSpan": 0.22581710504197838,
+      "lengthRatio": 0.8389344402156899,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5071624283839792,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "I",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8533333333333333,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5071624283839792,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.507"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 17,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6547899772923951,
+      "coverage": 0.65,
+      "order": 0.47699743192726307,
+      "backtrack": 0.22792652381257797,
+      "largestGap": 0.075,
+      "targetSpan": 0.3485705777295935,
+      "lengthRatio": 0.832976344664433,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.47699743192726307,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "I"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8933333333333333,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.47699743192726307,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.477"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 18,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7289162983653474,
+      "coverage": 0.8625,
+      "order": 0.387472598948393,
+      "backtrack": 0.11064362083166539,
+      "largestGap": 0.05,
+      "targetSpan": 0.22573393473476377,
+      "lengthRatio": 1.0169354087348883,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.387472598948393,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "I",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.7961904761904762,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.387472598948393,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.387"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 19,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.8047351053706199,
+      "coverage": 0.9375,
+      "order": 0.5581659536926487,
+      "backtrack": 0.08884934812167124,
+      "largestGap": 0.05,
+      "targetSpan": 0.21501936402789878,
+      "lengthRatio": 0.9718217755480306,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.5581659536926487,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "R"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.9333333333333332,
+      "l1Passes": false,
+      "l1Reasons": [
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5581659536926487,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.558"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 20,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7182580179609523,
+      "coverage": 0.7,
+      "order": 0.5643967291410832,
+      "backtrack": 0.11880669669885344,
+      "largestGap": 0.0625,
+      "targetSpan": 0.22048617846249124,
+      "lengthRatio": 0.9224318465524288,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5643967291410832,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8247619047619047,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5643967291410832,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.564"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 21,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6452695109982519,
+      "coverage": 0.5875,
+      "order": 0.45317334017753635,
+      "backtrack": 0.1948881220546922,
+      "largestGap": 0.11249999999999999,
+      "targetSpan": 0.19760102048636596,
+      "lengthRatio": 0.9080331981028212,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.45317334017753635,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "I",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8533333333333333,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.45317334017753635,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.453"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 22,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7752910516673658,
+      "coverage": 0.875,
+      "order": 0.5218639476631903,
+      "backtrack": 0.16838873112323652,
+      "largestGap": 0.05,
+      "targetSpan": 0.22059270753528545,
+      "lengthRatio": 0.9970980628634907,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5218639476631903,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "I",
+          "R"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.7592857142857142,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5218639476631903,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.522"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 23,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7424420224028683,
+      "coverage": 0.75,
+      "order": 0.562089342908596,
+      "backtrack": 0.09609973900329617,
+      "largestGap": 0.05,
+      "targetSpan": 0.22336968154878425,
+      "lengthRatio": 1.005708051910011,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.562089342908596,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8933333333333333,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.562089342908596,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.562"
+      }
+    },
+    {
+      "caseIndex": 4,
+      "candidateIndex": 24,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7551429369851672,
+      "coverage": 0.9,
+      "order": 0.49777189615620393,
+      "backtrack": 0.09157944918508767,
+      "largestGap": 0.037500000000000006,
+      "targetSpan": 0.2038509276336931,
+      "lengthRatio": 0.8152579202971239,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.49777189615620393,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "A",
+          "R",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8814285714285715,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.49777189615620393,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.498"
+      }
+    },
+    {
+      "caseIndex": 5,
+      "candidateIndex": 0,
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6679424630946231,
+      "coverage": 0.6875,
+      "order": 0.4891520986166997,
+      "backtrack": 0.07574693641732676,
+      "largestGap": 0.15,
+      "targetSpan": 0.3746878966984039,
+      "lengthRatio": 0.7742946910222749,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.4891520986166997,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "I"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [
+          "C"
+        ],
+        "sequenceValid": false,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": false,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.76,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness",
+        "sequenceIntegrity",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness",
+        "sequenceIntegrity"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": false,
+        "wholeRouteOrder": 0.4891520986166997,
+        "label": "physical:FAIL completeness:FAIL sequence:FAIL order:0.489"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 0,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.639856977360215,
+      "coverage": 0.5875,
+      "order": 0.4643281488353312,
+      "backtrack": 0.06905467704683882,
+      "largestGap": 0.11249999999999999,
+      "targetSpan": 0.20982343753150196,
+      "lengthRatio": 1.0697217236498273,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4643281488353312,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.7347619047619047,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4643281488353312,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.464"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.799964811851199,
+      "coverage": 0.975,
+      "order": 0.5331173698346429,
+      "backtrack": 0.07336168771727916,
+      "largestGap": 0.025,
+      "targetSpan": 0.60179793995929,
+      "lengthRatio": 1.0418239140348184,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5331173698346429,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8547619047619047,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5331173698346429,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.533"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 2,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7705648102215447,
+      "coverage": 0.8875,
+      "order": 0.5994676771914318,
+      "backtrack": 0.19147551471512259,
+      "largestGap": 0.0625,
+      "targetSpan": 0.515719067328295,
+      "lengthRatio": 0.7369750717703689,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.5994676771914318,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "I",
+          "R",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.822857142857143,
+      "l1Passes": false,
+      "l1Reasons": [
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5994676771914318,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.599"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 3,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7716520169331406,
+      "coverage": 0.9,
+      "order": 0.5440851300356688,
+      "backtrack": 0.2053667076508966,
+      "largestGap": 0.05,
+      "targetSpan": 0.3892449635339885,
+      "lengthRatio": 1.0685156984849642,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.5440851300356688,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8266666666666665,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5440851300356688,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.544"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 4,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7697474657968534,
+      "coverage": 0.9125,
+      "order": 0.48880401493439607,
+      "backtrack": 0.11912662990862737,
+      "largestGap": 0.037500000000000006,
+      "targetSpan": 0.1638161528951712,
+      "lengthRatio": 0.9517836349628969,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.48880401493439607,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "I"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8528571428571429,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.48880401493439607,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.489"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 5,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7532678286266623,
+      "coverage": 0.925,
+      "order": 0.4809964842319883,
+      "backtrack": 0.17564296938010523,
+      "largestGap": 0.025,
+      "targetSpan": 0.20421026739497433,
+      "lengthRatio": 1.073734551472317,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4809964842319883,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "I"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8283333333333334,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4809964842319883,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.481"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 6,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7060450007536354,
+      "coverage": 0.7625,
+      "order": 0.49027200528097425,
+      "backtrack": 0.10706097125672388,
+      "largestGap": 0.037500000000000006,
+      "targetSpan": 0.7786410273088665,
+      "lengthRatio": 0.9574619228219992,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.49027200528097425,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.96,
+      "l1Passes": false,
+      "l1Reasons": [
+        "wholeRouteOrder"
+      ],
+      "l2Passes": true,
+      "l2Reasons": [],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.49027200528097425,
+        "label": "physical:PASS completeness:PASS sequence:PASS order:0.490"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 7,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6889523554358908,
+      "coverage": 0.775,
+      "order": 0.366025019496895,
+      "backtrack": 0.14518434775529124,
+      "largestGap": 0.15,
+      "targetSpan": 0.08736381014399552,
+      "lengthRatio": 0.9445689509118962,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.366025019496895,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [
+          "C"
+        ],
+        "sequenceValid": false,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": false,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.725,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness",
+        "sequenceIntegrity",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "continuity",
+        "letterCompleteness",
+        "sequenceIntegrity"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": false,
+        "wholeRouteOrder": 0.366025019496895,
+        "label": "physical:FAIL completeness:FAIL sequence:FAIL order:0.366"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 8,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7203785987997561,
+      "coverage": 0.8125,
+      "order": 0.45872543601560284,
+      "backtrack": 0.12165662976934664,
+      "largestGap": 0.13749999999999998,
+      "targetSpan": 0.23059619463677827,
+      "lengthRatio": 0.8353056333689113,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.45872543601560284,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "I"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [
+          "C"
+        ],
+        "sequenceValid": false,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": false,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.72,
+      "l1Passes": false,
+      "l1Reasons": [
+        "continuity",
+        "letterCompleteness",
+        "sequenceIntegrity",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "continuity",
+        "letterCompleteness",
+        "sequenceIntegrity"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": false,
+        "wholeRouteOrder": 0.45872543601560284,
+        "label": "physical:FAIL completeness:FAIL sequence:FAIL order:0.459"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 9,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7482572475149509,
+      "coverage": 0.825,
+      "order": 0.4792525337944043,
+      "backtrack": 0.2068151443640147,
+      "largestGap": 0.0625,
+      "targetSpan": 0.1942527274691611,
+      "lengthRatio": 0.9900375081512648,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4792525337944043,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "O"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.7883333333333333,
+      "l1Passes": false,
+      "l1Reasons": [
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4792525337944043,
+        "label": "physical:PASS completeness:FAIL sequence:PASS order:0.479"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 10,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7513408195327552,
+      "coverage": 0.9125,
+      "order": 0.47948853305844386,
+      "backtrack": 0.10960364299465403,
+      "largestGap": 0.025,
+      "targetSpan": 0.17182086508804462,
+      "lengthRatio": 0.9093720824210609,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.47948853305844386,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": true,
+        "missingLetters": []
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": false,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.96,
+      "l1Passes": false,
+      "l1Reasons": [
+        "wholeRouteOrder"
+      ],
+      "l2Passes": true,
+      "l2Reasons": [],
+      "l3": {
+        "physicalPass": true,
+        "completenessPass": true,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.47948853305844386,
+        "label": "physical:PASS completeness:PASS sequence:PASS order:0.479"
+      }
+    },
+    {
+      "caseIndex": 6,
+      "candidateIndex": 11,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "backtrack",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.7232353741352385,
+      "coverage": 0.85,
+      "order": 0.48745124847088916,
+      "backtrack": 0.34600372349281433,
+      "largestGap": 0.075,
+      "targetSpan": 0.2325884973552122,
+      "lengthRatio": 0.8623166840538378,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.48745124847088916,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.7980952380952381,
+      "l1Passes": false,
+      "l1Reasons": [
+        "backtrack",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "backtrack",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.48745124847088916,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.487"
+      }
+    },
+    {
+      "caseIndex": 7,
+      "candidateIndex": 0,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.8017597639783588,
+      "coverage": 0.875,
+      "order": 0.5683684121818275,
+      "backtrack": 0.10807203136239285,
+      "largestGap": 0.05,
+      "targetSpan": 0.22389010515268226,
+      "lengthRatio": 0.9915810704171393,
+      "continuityValid": false,
+      "wholeRouteOrder": 0.5683684121818275,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "I"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "C",
+          "A",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "C",
+        "A",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.8683333333333334,
+      "l1Passes": false,
+      "l1Reasons": [
+        "continuity",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "continuity",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.5683684121818275,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.568"
+      }
+    },
+    {
+      "caseIndex": 7,
+      "candidateIndex": 1,
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "currentPasses": false,
+      "currentReasons": [
+        "shapeScore",
+        "order",
+        "targetSpan",
+        "wordTraversal"
+      ],
+      "shapeScore": 0.6640047533586957,
+      "coverage": 0.625,
+      "order": 0.4900050933658828,
+      "backtrack": 0.058407118019185036,
+      "largestGap": 0.0625,
+      "targetSpan": 0.24615641700701058,
+      "lengthRatio": 0.8215320008493252,
+      "continuityValid": true,
+      "wholeRouteOrder": 0.4900050933658828,
+      "jumpFit": 0,
+      "letterCompleteness": {
+        "complete": false,
+        "missingLetters": [
+          "C",
+          "I"
+        ]
+      },
+      "sequence": {
+        "observedSequence": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "I",
+          "R",
+          "O",
+          "R",
+          "O"
+        ],
+        "firstOccurrenceOrder": [
+          "C",
+          "A",
+          "I",
+          "R",
+          "O"
+        ],
+        "missingLetters": [],
+        "sequenceValid": true,
+        "reorderedPairs": [],
+        "hasRevisit": true,
+        "revisitedLetters": []
+      },
+      "observedSequence": [
+        "C",
+        "A",
+        "I",
+        "R",
+        "I",
+        "R",
+        "O",
+        "R",
+        "O"
+      ],
+      "broadOrderPass": true,
+      "currentWordTraversal": false,
+      "meanRawInk": 0.925,
+      "l1Passes": false,
+      "l1Reasons": [
+        "shapeScore",
+        "letterCompleteness",
+        "wholeRouteOrder"
+      ],
+      "l2Passes": false,
+      "l2Reasons": [
+        "shapeScore",
+        "letterCompleteness"
+      ],
+      "l3": {
+        "physicalPass": false,
+        "completenessPass": false,
+        "sequencePass": true,
+        "wholeRouteOrder": 0.4900050933658828,
+        "label": "physical:FAIL completeness:FAIL sequence:PASS order:0.490"
+      }
+    }
+  ],
+  "summary": {
+    "gateAPass": 0,
+    "gateBPass": 1,
+    "gateCPass": 9,
+    "currentFailL2Pass": 9,
+    "currentPassL2Fail": 0,
+    "currentFailSeqInvalid": 4,
+    "currentFailCompletenessInvalid": 65,
+    "currentFailPhysicalInvalid": 31,
+    "currentFailOrderOnly": 0,
+    "categoryCounts": {
+      "A": 0,
+      "B": 1,
+      "C": 0,
+      "D": 1,
+      "E": 0,
+      "F": 7
+    },
+    "revisitCount": 49,
+    "revisitAndL2Pass": 3,
+    "physicalPassSemanticFailCount": 30
+  }
+}

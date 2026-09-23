@@ -2,10 +2,12 @@
  * DEVELOPMENT ONLY. Target-identity metrics: connected span vs local scribble.
  */
 import { polylineLength } from '@/lib/geometry';
+import { offsetCoordinate } from '@/lib/shape-projection';
 import { buildWalkableWordShape } from './walkable-target';
 import { projectWordPlacement } from './street-fit-search';
-import { analyzeTargetIdentity } from './target-identity';
+import { analyzeGeneratedRouteIdentity, analyzeTargetIdentity } from './target-identity';
 import { scorePolylines } from '../scoring/shape-match';
+import type { GeneratedRoute } from '../types';
 
 type Result = { name: string; passed: boolean; detail: string };
 
@@ -114,6 +116,7 @@ const results: Result[] = [
     passed: cornerDetour.targetSpan >= 0.7 && cornerDetour.naiveSpan >= 0.7,
     detail: `span=${cornerDetour.targetSpan.toFixed(3)} naive=${cornerDetour.naiveSpan.toFixed(3)}`,
   },
+  ...geometryVariantPropagationTests(),
 ];
 
 for (const result of results) {
@@ -143,6 +146,101 @@ function lCornerDetour(target: { x: number; y: number }[]): { x: number; y: numb
     { x: corner.x + 40, y: corner.y + 40 },
     { x: corner.x, y: corner.y + 40 },
     end,
+  ];
+}
+
+/**
+ * Regression coverage for the geometryVariant correctness fix: identity
+ * analysis previously always used 'smooth' letter boundaries regardless of
+ * which geometry actually produced the candidate.
+ */
+function geometryVariantPropagationTests(): Result[] {
+  const RO = projectWordPlacement(buildWalkableWordShape('RO'), 2000, {
+    rotationDegrees: 0,
+    scale: 1,
+    eastMeters: 0,
+    northMeters: 0,
+  });
+
+  // Same external route/target for both calls — isolates the effect of the
+  // geometryVariant parameter itself on the internal letter-boundary math
+  // (letterIdentities rebuilds the word shape from this parameter).
+  const identitySmooth = analyzeTargetIdentity({ route: RO.target, target: RO.target, word: 'RO', geometryVariant: 'smooth' });
+  const identityAngular = analyzeTargetIdentity({ route: RO.target, target: RO.target, word: 'RO', geometryVariant: 'angular' });
+  const identityDefault = analyzeTargetIdentity({ route: RO.target, target: RO.target, word: 'RO' });
+
+  const oSmooth = identitySmooth.letters.find((letter) => letter.letter === 'O');
+  const oAngular = identityAngular.letters.find((letter) => letter.letter === 'O');
+  const oDefault = identityDefault.letters.find((letter) => letter.letter === 'O');
+
+  const origin = { latitude: 30.06, longitude: 31.22 };
+  const roCoordinates = RO.target.map((point) => offsetCoordinate(origin, point.x, point.y));
+
+  function fakeRoute(geometryVariant: GeneratedRoute['metadata']['geometryVariant']): GeneratedRoute {
+    return {
+      id: 'test',
+      source: 'valhalla',
+      developmentOnly: true,
+      coordinates: roCoordinates,
+      targetCoordinates: roCoordinates,
+      shapeCoordinates: roCoordinates,
+      connectorCoordinates: [],
+      distanceMeters: polylineLength(RO.target),
+      shapeScore: 0.8,
+      coverage: 0.8,
+      scoreBreakdown: { proximity: 0.8, coverage: 0.8, order: 0.8, lengthFit: 0.8, detour: 0.8, backtrack: 0.8, finalScore: 0.8 },
+      metadata: {
+        rotationDegrees: 0,
+        scale: 1,
+        placement: 'start-anchored',
+        offsetAcrossMeters: 0,
+        method: 'graph_constrained',
+        connectedFromStart: true,
+        connected: true,
+        startSnapDistanceMeters: 0,
+        lengthError: 0,
+        distanceError: 0,
+        detourRatio: 0,
+        backtrackRatio: 0,
+        score: { score: 0.8 } as GeneratedRoute['metadata']['score'],
+        geometryVariant,
+      },
+    };
+  }
+  const routeSmoothIdentity = analyzeGeneratedRouteIdentity(fakeRoute('smooth'), { word: 'RO', targetDistance: 2000 });
+  const routeAngularIdentity = analyzeGeneratedRouteIdentity(fakeRoute('angular'), { word: 'RO', targetDistance: 2000 });
+  const routeUndefinedIdentity = analyzeGeneratedRouteIdentity(fakeRoute(undefined), { word: 'RO', targetDistance: 2000 });
+  const oRouteSmooth = routeSmoothIdentity.letters.find((letter) => letter.letter === 'O');
+  const oRouteAngular = routeAngularIdentity.letters.find((letter) => letter.letter === 'O');
+  const oRouteUndefined = routeUndefinedIdentity.letters.find((letter) => letter.letter === 'O');
+
+  return [
+    {
+      name: 'geometryVariant fix: smooth vs angular produce DIFFERENT O letter boundaries (proves the parameter actually reaches letterIdentities)',
+      passed:
+        oSmooth != null &&
+        oAngular != null &&
+        (Math.abs(oSmooth.startProgress - oAngular.startProgress) > 1e-6 || Math.abs(oSmooth.endProgress - oAngular.endProgress) > 1e-6),
+      detail: `smooth O=[${oSmooth?.startProgress.toFixed(3)}-${oSmooth?.endProgress.toFixed(3)}] angular O=[${oAngular?.startProgress.toFixed(3)}-${oAngular?.endProgress.toFixed(3)}]`,
+    },
+    {
+      name: 'geometryVariant fix: omitting geometryVariant behaves exactly like explicit "smooth" (default unchanged)',
+      passed: oDefault != null && oSmooth != null && oDefault.startProgress === oSmooth.startProgress && oDefault.endProgress === oSmooth.endProgress,
+      detail: `default O=[${oDefault?.startProgress.toFixed(3)}-${oDefault?.endProgress.toFixed(3)}] smooth O=[${oSmooth?.startProgress.toFixed(3)}-${oSmooth?.endProgress.toFixed(3)}]`,
+    },
+    {
+      name: 'geometryVariant fix: analyzeGeneratedRouteIdentity auto-uses route.metadata.geometryVariant (smooth route differs from angular route)',
+      passed:
+        oRouteSmooth != null &&
+        oRouteAngular != null &&
+        (Math.abs(oRouteSmooth.startProgress - oRouteAngular.startProgress) > 1e-6 || Math.abs(oRouteSmooth.endProgress - oRouteAngular.endProgress) > 1e-6),
+      detail: `route smooth O=[${oRouteSmooth?.startProgress.toFixed(3)}-${oRouteSmooth?.endProgress.toFixed(3)}] route angular O=[${oRouteAngular?.startProgress.toFixed(3)}-${oRouteAngular?.endProgress.toFixed(3)}]`,
+    },
+    {
+      name: 'geometryVariant fix: a route with no geometryVariant tag falls back to smooth (legacy routes unaffected)',
+      passed: oRouteUndefined != null && oRouteSmooth != null && oRouteUndefined.startProgress === oRouteSmooth.startProgress && oRouteUndefined.endProgress === oRouteSmooth.endProgress,
+      detail: `route undefined O=[${oRouteUndefined?.startProgress.toFixed(3)}-${oRouteUndefined?.endProgress.toFixed(3)}]`,
+    },
   ];
 }
 

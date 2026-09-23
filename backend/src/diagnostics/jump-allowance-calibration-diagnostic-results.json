@@ -1,0 +1,3345 @@
+{
+  "generatedAt": "2026-09-22T10:27:03.639Z",
+  "cases": [
+    {
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 16,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.6006167453671346,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 0,
+            "B_within_letter": 4,
+            "C_potentially_incorrect": 7
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.6006167453671346,
+              "skipAmount": 0.6863535952903795
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6906167453671346,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.8005817466378031,
+              "order": 0.6726691025645368,
+              "skipAmount": 0.0697963886767689
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.6006167453671346,
+              "skipAmount": 0.6863535952903795
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.6006167453671346,
+              "skipAmount": 0.6863535952903795
+            }
+          },
+          "shapeScore": 0.7529736027176591,
+          "meanRawInk": 0.9642857142857143,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.4842091079211328,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4842091079211328,
+              "skipAmount": 0.9073230295066113
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5742091079211328,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.601454632775464,
+              "order": 0.5383400248709246,
+              "skipAmount": 0.1394908785285876
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4842091079211328,
+              "skipAmount": 0.5657658920763232
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4842091079211328,
+              "skipAmount": 0.6759286181395181
+            }
+          },
+          "shapeScore": 0.6425357139466004,
+          "meanRawInk": 0.8785714285714286,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.4965433226043292,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 4
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4965433226043292,
+              "skipAmount": 1.0501868185564431
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9844139638004787,
+              "order": 0.5851405793463723,
+              "skipAmount": 0.0054551126698324515
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.6077843394214275,
+              "order": 0.5512439131522577,
+              "skipAmount": 0.13727548120250038
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4965433226043292,
+              "skipAmount": 0.8011469569215854
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4965433226043292,
+              "skipAmount": 0.8331437923899347
+            }
+          },
+          "shapeScore": 0.6908307315037688,
+          "meanRawInk": 0.7785714285714286,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5629976283020508,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 5
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5629976283020508,
+              "skipAmount": 0.8113430036460295
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6529976283020508,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.8062905599287162,
+              "order": 0.6355637786956352,
+              "skipAmount": 0.0677983040249493
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5629976283020508,
+              "skipAmount": 0.7232528380812159
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5629976283020508,
+              "skipAmount": 0.7232528380812159
+            }
+          },
+          "shapeScore": 0.7668645499358656,
+          "meanRawInk": 1,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.45192327288455747,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 4,
+            "C_potentially_incorrect": 6
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.45192327288455747,
+              "skipAmount": 1.0606581287119374
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5419232728845574,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.6640807115544785,
+              "order": 0.5116905369244605,
+              "skipAmount": 0.11757175095593253
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.45192327288455747,
+              "skipAmount": 0.8483887440062658
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.45192327288455747,
+              "skipAmount": 0.8483887440062658
+            }
+          },
+          "shapeScore": 0.6728577959483127,
+          "meanRawInk": 0.9142857142857144,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.39411643848864814,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 5,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.39411643848864814,
+              "skipAmount": 1.0883416795079461
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.4841164384886481,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.5672773652687523,
+              "order": 0.44517140136283584,
+              "skipAmount": 0.1514529221559367
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.39411643848864814,
+              "skipAmount": 0.5985036648018689
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.39411643848864814,
+              "skipAmount": 0.6322322747146749
+            }
+          },
+          "shapeScore": 0.5865471067938635,
+          "meanRawInk": 0.6571428571428571,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.4385403439155546,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 4,
+            "C_potentially_incorrect": 6
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4385403439155546,
+              "skipAmount": 0.9619462636879449
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9953580531138738,
+              "order": 0.5281225686958032,
+              "skipAmount": 0.0016246814101441576
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.4869356894861476,
+              "order": 0.4823645559693079,
+              "skipAmount": 0.17957250867984834
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4385403439155546,
+              "skipAmount": 0.5915483295185282
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4385403439155546,
+              "skipAmount": 0.6473725451134605
+            }
+          },
+          "shapeScore": 0.6310831561059066,
+          "meanRawInk": 0.8214285714285714,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5690930618638671,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 2,
+            "C_potentially_incorrect": 6
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5690930618638671,
+              "skipAmount": 0.6953080520295812
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6590930618638671,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.7918841361143931,
+              "order": 0.6403626341141625,
+              "skipAmount": 0.07284055235996242
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5690930618638671,
+              "skipAmount": 0.5476140108776854
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5690930618638671,
+              "skipAmount": 0.5796108463460348
+            }
+          },
+          "shapeScore": 0.7057459689274285,
+          "meanRawInk": 1,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5425361015671056,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 2,
+            "C_potentially_incorrect": 8
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5425361015671056,
+              "skipAmount": 0.6775269891903006
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6325361015671056,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.9452075785510603,
+              "order": 0.627604783636701,
+              "skipAmount": 0.019177347507128906
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5425361015671056,
+              "skipAmount": 0.5828899107973489
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5425361015671056,
+              "skipAmount": 0.5828899107973489
+            }
+          },
+          "shapeScore": 0.7045327758685033,
+          "meanRawInk": 0.9142857142857144,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5810982274847148,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 6
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5810982274847148,
+              "skipAmount": 1.1272868299461778
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9964604610552902,
+              "order": 0.670779668979691,
+              "skipAmount": 0.0012388386306484422
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.4886198533864411,
+              "order": 0.6250740142894946,
+              "skipAmount": 0.17898305131474562
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5810982274847148,
+              "skipAmount": 0.9716485307372769
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5810982274847148,
+              "skipAmount": 1.0115896242626314
+            }
+          },
+          "shapeScore": 0.7745494963218746,
+          "meanRawInk": 0.8642857142857143,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.45630754566792453,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 4,
+            "B_within_letter": 3,
+            "C_potentially_incorrect": 4
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.45630754566792453,
+              "skipAmount": 0.9606462261486525
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9917585292577685,
+              "order": 0.5455658133011236,
+              "skipAmount": 0.0028845147597810206
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.6304178979167547,
+              "order": 0.5130451564804325,
+              "skipAmount": 0.12935373572913583
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.45630754566792453,
+              "skipAmount": 0.5625947140139212
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.45630754566792453,
+              "skipAmount": 0.6053940520592277
+            }
+          },
+          "shapeScore": 0.6967295965003651,
+          "meanRawInk": 0.95,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.516715118359816,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 5
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.516715118359816,
+              "skipAmount": 0.716009208990895
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.606715118359816,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.8204413223239213,
+              "order": 0.5905548373689689,
+              "skipAmount": 0.06284553718662755
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.516715118359816,
+              "skipAmount": 0.6611635495260516
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.516715118359816,
+              "skipAmount": 0.6611635495260516
+            }
+          },
+          "shapeScore": 0.6663948430702115,
+          "meanRawInk": 0.8285714285714286,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5437090244192686,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 4,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5437090244192686,
+              "skipAmount": 1.2568554873622497
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6337090244192685,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.2413628261328995,
+              "order": 0.5654316787712295,
+              "skipAmount": 0.2655230108534852
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5437090244192686,
+              "skipAmount": 0.5907027090514178
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5437090244192686,
+              "skipAmount": 0.8102684223681773
+            }
+          },
+          "shapeScore": 0.7484937221510339,
+          "meanRawInk": 0.9285714285714286,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.45249941334073274,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 4,
+            "B_within_letter": 3,
+            "C_potentially_incorrect": 6
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.45249941334073274,
+              "skipAmount": 1.1986735153830659
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5424994133407327,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.31728703833352245,
+              "order": 0.4810552467907498,
+              "skipAmount": 0.23894953658326712
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.45249941334073274,
+              "skipAmount": 0.5354959762113832
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.45249941334073274,
+              "skipAmount": 0.7517214755552867
+            }
+          },
+          "shapeScore": 0.766213511511599,
+          "meanRawInk": 0.8785714285714286,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.4067421537432675,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 6
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4067421537432675,
+              "skipAmount": 1.1150387116863376
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.49674215374326747,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.650881043070197,
+              "order": 0.46532144761958527,
+              "skipAmount": 0.12219163492543103
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4067421537432675,
+              "skipAmount": 0.8339473735506469
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4067421537432675,
+              "skipAmount": 0.8995905224635853
+            }
+          },
+          "shapeScore": 0.725655465481107,
+          "meanRawInk": 0.7714285714285714,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.4919544504789863,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 4,
+            "B_within_letter": 4,
+            "C_potentially_incorrect": 5
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4919544504789863,
+              "skipAmount": 1.5088447985482347
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9955412472329549,
+              "order": 0.5815531627299522,
+              "skipAmount": 0.001560563468465781
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.4919544504789863,
+              "skipAmount": 0.37914180236580747
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4919544504789863,
+              "skipAmount": 0.7831491773813937
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4919544504789863,
+              "skipAmount": 1.0460559758140484
+            }
+          },
+          "shapeScore": 0.719912467718089,
+          "meanRawInk": 0.8642857142857143,
+          "broadOrderPass": true,
+          "continuityValid": false
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 5,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.44073274648263405,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 4,
+            "B_within_letter": 9,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.44073274648263405,
+              "skipAmount": 0.9548443877241476
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.530732746482634,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.8525378353919557,
+              "order": 0.5174611516679101,
+              "skipAmount": 0.0516117576128155
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.44073274648263405,
+              "skipAmount": 0.5315453459143611
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.44073274648263405,
+              "skipAmount": 0.5831571035271765
+            }
+          },
+          "shapeScore": 0.6894570609270011,
+          "meanRawInk": 0.9142857142857144,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5390760324318349,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 3,
+            "C_potentially_incorrect": 5
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5390760324318349,
+              "skipAmount": 0.704087260604355
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6290760324318349,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.773732885729329,
+              "order": 0.6087119921474745,
+              "skipAmount": 0.07919348999473486
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5390760324318349,
+              "skipAmount": 0.5548334612115117
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5390760324318349,
+              "skipAmount": 0.5883900549208085
+            }
+          },
+          "shapeScore": 0.7300264881221058,
+          "meanRawInk": 0.9285714285714286,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.45455364704732176,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 4,
+            "C_potentially_incorrect": 6
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.45455364704732176,
+              "skipAmount": 1.2122601499050103
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5445536470473217,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.31292498733030116,
+              "order": 0.48271689590704886,
+              "skipAmount": 0.24047625443439458
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.45455364704732176,
+              "skipAmount": 0.6905433773525506
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.45455364704732176,
+              "skipAmount": 0.8651685328543706
+            }
+          },
+          "shapeScore": 0.7828248237171627,
+          "meanRawInk": 0.9142857142857143,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5330323520265287,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 1,
+            "C_potentially_incorrect": 8
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5330323520265287,
+              "skipAmount": 0.7424659817390562
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6230323520265287,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.6190536234335333,
+              "order": 0.5887471781355467,
+              "skipAmount": 0.13333123179826334
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5330323520265287,
+              "skipAmount": 0.5711516345502987
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5330323520265287,
+              "skipAmount": 0.6267687760555096
+            }
+          },
+          "shapeScore": 0.7630948018084803,
+          "meanRawInk": 0.8642857142857143,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5750738881405222,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 10
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5750738881405222,
+              "skipAmount": 1.1673246097210364
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6650738881405223,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.4982799498145295,
+              "order": 0.6199190836238299,
+              "skipAmount": 0.17560201756491467
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5750738881405222,
+              "skipAmount": 0.9701155964478047
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5750738881405222,
+              "skipAmount": 1.0516274040374898
+            }
+          },
+          "shapeScore": 0.7883166110564552,
+          "meanRawInk": 0.8785714285714286,
+          "broadOrderPass": true,
+          "continuityValid": true
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 12,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.4948845522335772,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 3,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4948845522335772,
+              "skipAmount": 0.8140301513997448
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5848845522335772,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.6260159679778964,
+              "order": 0.5512259893515878,
+              "skipAmount": 0.13089441120773626
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4948845522335772,
+              "skipAmount": 0.3705646169592184
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4948845522335772,
+              "skipAmount": 0.48622267629721133
+            }
+          },
+          "shapeScore": 0.5821827477846466,
+          "meanRawInk": 0.8142857142857143,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5127794105029,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 6,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 4
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5127794105029,
+              "skipAmount": 1.2811903789291674
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6027794105029,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.5010180502978179,
+              "order": 0.5578710350297036,
+              "skipAmount": 0.17464368239576372
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5127794105029,
+              "skipAmount": 0.6714487664856771
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5127794105029,
+              "skipAmount": 0.7658767934387788
+            }
+          },
+          "shapeScore": 0.7884935982518385,
+          "meanRawInk": 0.9142857142857143,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.14999701704824067,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 12,
+            "B_within_letter": 8,
+            "C_potentially_incorrect": 13
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.14999701704824067,
+              "skipAmount": 3.625565625370487
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.8521127524822283,
+              "order": 0.22668716477164122,
+              "skipAmount": 0.0517605366312201
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.14999701704824067,
+              "skipAmount": 0.7192654358826429
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.14999701704824067,
+              "skipAmount": 2.019945994955221
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.14999701704824067,
+              "skipAmount": 2.4121246219534704
+            }
+          },
+          "shapeScore": 0.36078824877238996,
+          "meanRawInk": 0.8071428571428572,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5358021795103052,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 2,
+            "C_potentially_incorrect": 6
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5358021795103052,
+              "skipAmount": 0.5426067260502414
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6258021795103053,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.9709110846114942,
+              "order": 0.6231841771253397,
+              "skipAmount": 0.010181120385977016
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5358021795103052,
+              "skipAmount": 0.4487191205116496
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5358021795103052,
+              "skipAmount": 0.4487191205116496
+            }
+          },
+          "shapeScore": 0.6250612018952195,
+          "meanRawInk": 0.6785714285714286,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.4916381904738289,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4916381904738289,
+              "skipAmount": 0.9436145039427386
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5816381904738289,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.5116134662354053,
+              "order": 0.5376834024350154,
+              "skipAmount": 0.17093528681760814
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4916381904738289,
+              "skipAmount": 0.6521939604763951
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4916381904738289,
+              "skipAmount": 0.73328021986624
+            }
+          },
+          "shapeScore": 0.6584244987530312,
+          "meanRawInk": 0.8785714285714286,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.4561635979186497,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 1,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4561635979186497,
+              "skipAmount": 0.6367756644754761
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5461635979186498,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.5368610313630464,
+              "order": 0.5044810907413239,
+              "skipAmount": 0.16209863902293375
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4561635979186497,
+              "skipAmount": 0.3844096186500562
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4561635979186497,
+              "skipAmount": 0.46549587803990117
+            }
+          },
+          "shapeScore": 0.6602546443451196,
+          "meanRawInk": 0.5857142857142857,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.45652828845843313,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 2,
+            "C_potentially_incorrect": 6
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.45652828845843313,
+              "skipAmount": 0.9551757133028276
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9945552634042208,
+              "order": 0.546038262164813,
+              "skipAmount": 0.0019056578085226983
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.6594475441038323,
+              "order": 0.515878567427778,
+              "skipAmount": 0.11919335956365867
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.45652828845843313,
+              "skipAmount": 0.5140442776270675
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.45652828845843313,
+              "skipAmount": 0.6332376371907262
+            }
+          },
+          "shapeScore": 0.7606809556055558,
+          "meanRawInk": 0.8642857142857143,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.3470364972898743,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 4,
+            "B_within_letter": 3,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.3470364972898743,
+              "skipAmount": 0.9205147265049418
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9928267592223282,
+              "order": 0.4363909056198838,
+              "skipAmount": 0.0025106342721851194
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.45817589076575616,
+              "order": 0.38827232745879237,
+              "skipAmount": 0.18963843823198534
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.3470364972898743,
+              "skipAmount": 0.44311615090147405
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.3470364972898743,
+              "skipAmount": 0.5434207539180166
+            }
+          },
+          "shapeScore": 0.6522587758442442,
+          "meanRawInk": 0.7285714285714286,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.39176438978194605,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 3,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.39176438978194605,
+              "skipAmount": 0.960872444066431
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.4817643897819461,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.24965640236879572,
+              "order": 0.41423346599513766,
+              "skipAmount": 0.26262025917092147
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.39176438978194605,
+              "skipAmount": 0.6114602386848963
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.39176438978194605,
+              "skipAmount": 0.7294780326993379
+            }
+          },
+          "shapeScore": 0.6462991638812001,
+          "meanRawInk": 0.7928571428571429,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.47778760253410385,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 5,
+            "B_within_letter": 4,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.47778760253410385,
+              "skipAmount": 1.3790308756946015
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.567787602534104,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.13440968597759217,
+              "order": 0.4898844742720872,
+              "skipAmount": 0.30295660990784273
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.47778760253410385,
+              "skipAmount": 0.6594576267846621
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.47778760253410385,
+              "skipAmount": 0.8502102735345123
+            }
+          },
+          "shapeScore": 0.7905432407061468,
+          "meanRawInk": 0.9642857142857143,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5481737819899566,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 3,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5481737819899566,
+              "skipAmount": 0.5819467641249506
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6381737819899566,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.6030489066997307,
+              "order": 0.6024481835929323,
+              "skipAmount": 0.13893288265509424
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5481737819899566,
+              "skipAmount": 0.427535184870433
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5481737819899566,
+              "skipAmount": 0.4662495584414042
+            }
+          },
+          "shapeScore": 0.6736828367561034,
+          "meanRawInk": 0.8071428571428572,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5003625919745062,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 4,
+            "C_potentially_incorrect": 7
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5003625919745062,
+              "skipAmount": 1.0184738862033715
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9887376905569439,
+              "order": 0.5893489841246311,
+              "skipAmount": 0.003941808305069627
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.4609536937518657,
+              "order": 0.5418484244121741,
+              "skipAmount": 0.18866620718684698
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5003625919745062,
+              "skipAmount": 0.7905772597718052
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5003625919745062,
+              "skipAmount": 0.8167081666709491
+            }
+          },
+          "shapeScore": 0.7683960684582753,
+          "meanRawInk": 0.8785714285714286,
+          "broadOrderPass": true,
+          "continuityValid": false
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 5,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5040982162100399,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 4,
+            "C_potentially_incorrect": 6
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5040982162100399,
+              "skipAmount": 1.0861562747279252
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5940982162100399,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.5216739571993234,
+              "order": 0.5510488723579791,
+              "skipAmount": 0.16741411498023678
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5040982162100399,
+              "skipAmount": 0.83635128776537
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5040982162100399,
+              "skipAmount": 0.8695824742809917
+            }
+          },
+          "shapeScore": 0.7775690290833547,
+          "meanRawInk": 0.8928571428571428,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5765270037158196,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 5
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5765270037158196,
+              "skipAmount": 0.6647054871856162
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6665270037158195,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.8488265156527799,
+              "order": 0.6529213901245697,
+              "skipAmount": 0.05291071952152704
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5765270037158196,
+              "skipAmount": 0.4192462873949247
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5765270037158196,
+              "skipAmount": 0.45181566460336897
+            }
+          },
+          "shapeScore": 0.8111553750707715,
+          "meanRawInk": 0.9142857142857144,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5716753787420944,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 4,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5716753787420944,
+              "skipAmount": 0.8959899483427561
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6616753787420944,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.7223440392855187,
+              "order": 0.6366863422777911,
+              "skipAmount": 0.09717958625006842
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5716753787420944,
+              "skipAmount": 0.41694862708984864
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5716753787420944,
+              "skipAmount": 0.514128213339917
+            }
+          },
+          "shapeScore": 0.7935127740990733,
+          "meanRawInk": 1,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.43955499657332037,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 4,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 5
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.43955499657332037,
+              "skipAmount": 1.2440178358501888
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5295549965733204,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.3692647429746272,
+              "order": 0.47278882344103684,
+              "skipAmount": 0.22075733995888047
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.43955499657332037,
+              "skipAmount": 0.8193491647497112
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.43955499657332037,
+              "skipAmount": 0.8967691574519557
+            }
+          },
+          "shapeScore": 0.7611069710427233,
+          "meanRawInk": 0.9142857142857144,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "ROBZ",
+          "realOrder": 0.5458408361100838,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 3,
+            "C_potentially_incorrect": 5
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5458408361100838,
+              "skipAmount": 0.7731751018071065
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6358408361100838,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.7591820969719761,
+              "order": 0.6141672248375616,
+              "skipAmount": 0.08428626605980835
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5458408361100838,
+              "skipAmount": 0.4188338514979035
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5458408361100838,
+              "skipAmount": 0.501796593473609
+            }
+          },
+          "shapeScore": 0.7189666129471947,
+          "meanRawInk": 0.8642857142857143,
+          "broadOrderPass": true,
+          "continuityValid": true
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 25,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.42608304151580983,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 6,
+            "B_within_letter": 8,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.42608304151580983,
+              "skipAmount": 1.2460791065048027
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.827406395372171,
+              "order": 0.5005496170993051,
+              "skipAmount": 0.06040776161974015
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.42608304151580983,
+              "skipAmount": 0.3869412895286425
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.42608304151580983,
+              "skipAmount": 0.4574909723062651
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.42608304151580983,
+              "skipAmount": 0.8170576602900631
+            }
+          },
+          "shapeScore": 0.6932171391959154,
+          "meanRawInk": 0.8283333333333334,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4150046092272893,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4150046092272893,
+              "skipAmount": 1.08491193258078
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9345420414279654,
+              "order": 0.49911339295580615,
+              "skipAmount": 0.022910285500212124
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.11125719555054969,
+              "order": 0.42501775682683873,
+              "skipAmount": 0.3110599815573076
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4150046092272893,
+              "skipAmount": 0.9057775139177142
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4150046092272893,
+              "skipAmount": 0.9377000694315649
+            }
+          },
+          "shapeScore": 0.7244089489093498,
+          "meanRawInk": 0.7616666666666666,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4853116716933751,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4853116716933751,
+              "skipAmount": 1.0202846367186929
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.5501839736709394,
+              "order": 0.5348282293237596,
+              "skipAmount": 0.1574356092151712
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.4853116716933751,
+              "skipAmount": 0.43532852536142363
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4853116716933751,
+              "skipAmount": 0.6738801920584643
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4853116716933751,
+              "skipAmount": 0.8900332328348437
+            }
+          },
+          "shapeScore": 0.7769601336456139,
+          "meanRawInk": 0.9314285714285715,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.48790747948937796,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 7,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.48790747948937796,
+              "skipAmount": 0.9585672329570722
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.8109630872259839,
+              "order": 0.5608941573397165,
+              "skipAmount": 0.06616291947090563
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.48790747948937796,
+              "skipAmount": 0.363392248944789
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.48790747948937796,
+              "skipAmount": 0.6154779615715518
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.48790747948937796,
+              "skipAmount": 0.8113553698078575
+            }
+          },
+          "shapeScore": 0.6681865241592364,
+          "meanRawInk": 0.9333333333333332,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4524659145151314,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 0,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4524659145151314,
+              "skipAmount": 0.5323926169387752
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.8889341252503355,
+              "order": 0.5324699857876616,
+              "skipAmount": 0.03887305616238257
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.4400642913572522,
+              "order": 0.4920717007372841,
+              "skipAmount": 0.19597749802496173
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4524659145151314,
+              "skipAmount": 0.5323926169387752
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4524659145151314,
+              "skipAmount": 0.5323926169387752
+            }
+          },
+          "shapeScore": 0.6087701846413487,
+          "meanRawInk": 0.5142857142857142,
+          "broadOrderPass": false,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4104134915130192,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 8,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4104134915130192,
+              "skipAmount": 0.7760873037403324
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9947744234935343,
+              "order": 0.4999431896274372,
+              "skipAmount": 0.0018289517772629993
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.4619637517994052,
+              "order": 0.45199022917496556,
+              "skipAmount": 0.1883126868702082
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4104134915130192,
+              "skipAmount": 0.49890560884919705
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4104134915130192,
+              "skipAmount": 0.6288754405911174
+            }
+          },
+          "shapeScore": 0.7179911221149461,
+          "meanRawInk": 0.9199999999999999,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5785336197669252,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 7,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5785336197669252,
+              "skipAmount": 0.9984318755126875
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.5684526480940644,
+              "order": 0.629694358095391,
+              "skipAmount": 0.15104157316707745
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.5785336197669252,
+              "skipAmount": 0.4040597894202929
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5785336197669252,
+              "skipAmount": 0.7000407844488525
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5785336197669252,
+              "skipAmount": 0.9248259439380799
+            }
+          },
+          "shapeScore": 0.7892138487925545,
+          "meanRawInk": 0.9333333333333332,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4002969924222766,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 4
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4002969924222766,
+              "skipAmount": 0.801626054368676
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.4902969924222766,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.45468955899954766,
+              "order": 0.4412190527322359,
+              "skipAmount": 0.1908586543501583
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4002969924222766,
+              "skipAmount": 0.5603143065815502
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4002969924222766,
+              "skipAmount": 0.6544141912194608
+            }
+          },
+          "shapeScore": 0.679356293299915,
+          "meanRawInk": 0.8699999999999999,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5083691187562498,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 7,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5083691187562498,
+              "skipAmount": 0.9237899246791754
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9910480168851189,
+              "order": 0.5975634402759106,
+              "skipAmount": 0.0031331940902083744
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.3624932392633733,
+              "order": 0.5409935102899535,
+              "skipAmount": 0.22312736625781932
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5083691187562498,
+              "skipAmount": 0.7170637001162521
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5083691187562498,
+              "skipAmount": 0.7813995372435032
+            }
+          },
+          "shapeScore": 0.6872875308438605,
+          "meanRawInk": 0.8647619047619047,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5114258371404845,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 9,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5114258371404845,
+              "skipAmount": 1.1451833157169822
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.975756354029357,
+              "order": 0.5992439090031265,
+              "skipAmount": 0.008485276089725047
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.03133619650170494,
+              "order": 0.514246094825638,
+              "skipAmount": 0.33903233122440324
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5114258371404845,
+              "skipAmount": 0.8098489836066178
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5114258371404845,
+              "skipAmount": 0.9265750594332587
+            }
+          },
+          "shapeScore": 0.7823703825966404,
+          "meanRawInk": 1,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4745204655458931,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 7,
+            "C_potentially_incorrect": 4
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4745204655458931,
+              "skipAmount": 1.3208544020766275
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5645204655458931,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.4745204655458931,
+              "skipAmount": 0.46386396924820356
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4745204655458931,
+              "skipAmount": 0.9546566519654662
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4745204655458931,
+              "skipAmount": 1.1000366073528052
+            }
+          },
+          "shapeScore": 0.7604945180047692,
+          "meanRawInk": 0.8949999999999999,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.525466274719779,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 8,
+            "C_potentially_incorrect": 4
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.525466274719779,
+              "skipAmount": 1.049745287113091
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.615466274719779,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.2908655082881466,
+              "order": 0.5516441704657122,
+              "skipAmount": 0.24819707209914865
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.525466274719779,
+              "skipAmount": 0.9356415381145504
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.525466274719779,
+              "skipAmount": 0.9761393555384834
+            }
+          },
+          "shapeScore": 0.7856983701699892,
+          "meanRawInk": 0.96,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5286913190527289,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 0,
+            "B_within_letter": 7,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5286913190527289,
+              "skipAmount": 0.7041667264588274
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9585521844070441,
+              "order": 0.614961015649363,
+              "skipAmount": 0.014506735457534559
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.4898984596572271,
+              "order": 0.5727821804218794,
+              "skipAmount": 0.1785355391199705
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5286913190527289,
+              "skipAmount": 0.7041667264588274
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5286913190527289,
+              "skipAmount": 0.7041667264588274
+            }
+          },
+          "shapeScore": 0.7055973918102063,
+          "meanRawInk": 0.8247619047619047,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.3410614728075037,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 4,
+            "B_within_letter": 13,
+            "C_potentially_incorrect": 0
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.3410614728075037,
+              "skipAmount": 1.2778015544853507
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9833952880319256,
+              "order": 0.42956704873037693,
+              "skipAmount": 0.00581164918882604
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.13529101739856442,
+              "order": 0.3532376643733745,
+              "skipAmount": 0.30264814391050243
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.3410614728075037,
+              "skipAmount": 0.8113738811444884
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.3410614728075037,
+              "skipAmount": 0.9869072995820887
+            }
+          },
+          "shapeScore": 0.5801852003267675,
+          "meanRawInk": 0.822857142857143,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5585251257278934,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 7
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5585251257278934,
+              "skipAmount": 0.7966249835704295
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9639483847357747,
+              "order": 0.645280480354113,
+              "skipAmount": 0.012618065342478835
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.5610239226347344,
+              "order": 0.6090172787650194,
+              "skipAmount": 0.15364162707784296
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5585251257278934,
+              "skipAmount": 0.7949654245764575
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5585251257278934,
+              "skipAmount": 0.7949654245764575
+            }
+          },
+          "shapeScore": 0.7638203110027698,
+          "meanRawInk": 0.8433333333333334,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5129109836911042,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5129109836911042,
+              "skipAmount": 0.7332774128219186
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9184394791134485,
+              "order": 0.5955705368113146,
+              "skipAmount": 0.028546182310293045
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.49909516765100903,
+              "order": 0.557829548779695,
+              "skipAmount": 0.17531669132214683
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5129109836911042,
+              "skipAmount": 0.5798000743890879
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5129109836911042,
+              "skipAmount": 0.5860655496727037
+            }
+          },
+          "shapeScore": 0.7694504689457794,
+          "meanRawInk": 0.8797619047619047,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5071624283839792,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 10,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5071624283839792,
+              "skipAmount": 1.4007278972041841
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.4972646080143571,
+              "order": 0.5519162431052713,
+              "skipAmount": 0.175957387194975
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.5071624283839792,
+              "skipAmount": 0.5921506071299827
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5071624283839792,
+              "skipAmount": 0.9970023178126597
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5071624283839792,
+              "skipAmount": 1.2535160340549694
+            }
+          },
+          "shapeScore": 0.6681192262342891,
+          "meanRawInk": 0.8533333333333333,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.47699743192726307,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 7,
+            "C_potentially_incorrect": 4
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.47699743192726307,
+              "skipAmount": 1.1623363915971026
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.45377057242814345,
+              "order": 0.5178367834457961,
+              "skipAmount": 0.1911802996501498
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.47699743192726307,
+              "skipAmount": 0.46128500985876336
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.47699743192726307,
+              "skipAmount": 0.5230548261241678
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.47699743192726307,
+              "skipAmount": 0.9415185968732797
+            }
+          },
+          "shapeScore": 0.6547899772923951,
+          "meanRawInk": 0.8933333333333333,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.387472598948393,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.387472598948393,
+              "skipAmount": 1.2664618076795982
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.8677747005886595,
+              "order": 0.4655723220013723,
+              "skipAmount": 0.046278854793969176
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.387472598948393,
+              "skipAmount": 0.5202435995607693
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.387472598948393,
+              "skipAmount": 0.9312415230682495
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.387472598948393,
+              "skipAmount": 1.0456440129557756
+            }
+          },
+          "shapeScore": 0.7289162983653474,
+          "meanRawInk": 0.7961904761904762,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5581659536926487,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 4,
+            "B_within_letter": 7,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5581659536926487,
+              "skipAmount": 1.4472728364418672
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.31029750620605967,
+              "order": 0.586092729251194,
+              "skipAmount": 0.2413958728278791
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.5581659536926487,
+              "skipAmount": 0.7536084864240463
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5581659536926487,
+              "skipAmount": 0.6479987917323686
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5581659536926487,
+              "skipAmount": 1.1528491101434373
+            }
+          },
+          "shapeScore": 0.8047351053706199,
+          "meanRawInk": 0.9333333333333332,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5643967291410832,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 0,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 4
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5643967291410832,
+              "skipAmount": 0.6049089045255753
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9846182287046559,
+              "order": 0.6530123697245023,
+              "skipAmount": 0.005383619953370444
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.5424379800982264,
+              "order": 0.6132161473499236,
+              "skipAmount": 0.16014670696562072
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5643967291410832,
+              "skipAmount": 0.6049089045255753
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5643967291410832,
+              "skipAmount": 0.6049089045255753
+            }
+          },
+          "shapeScore": 0.7182580179609523,
+          "meanRawInk": 0.8247619047619047,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.45317334017753635,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 8,
+            "C_potentially_incorrect": 5
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.45317334017753635,
+              "skipAmount": 1.0957277478794882
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9690172809012216,
+              "order": 0.5403848954586463,
+              "skipAmount": 0.010843951684572417
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.020401315699768108,
+              "order": 0.45500945859051545,
+              "skipAmount": 0.34285953950508113
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.45317334017753635,
+              "skipAmount": 0.7861496189797258
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.45317334017753635,
+              "skipAmount": 0.948515884730273
+            }
+          },
+          "shapeScore": 0.6452695109982519,
+          "meanRawInk": 0.8533333333333333,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5218639476631903,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 2,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5218639476631903,
+              "skipAmount": 0.6612609212790729
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9693120675199637,
+              "order": 0.6091020337399871,
+              "skipAmount": 0.010740776368012711
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.2334306952100481,
+              "order": 0.5428727102320946,
+              "skipAmount": 0.26829925667648313
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5218639476631903,
+              "skipAmount": 0.3984882055244935
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5218639476631903,
+              "skipAmount": 0.514049058129858
+            }
+          },
+          "shapeScore": 0.7752910516673658,
+          "meanRawInk": 0.7592857142857142,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.562089342908596,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 9,
+            "C_potentially_incorrect": 3
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.562089342908596,
+              "skipAmount": 1.0663290750253267
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9719309154166507,
+              "order": 0.6495631252960945,
+              "skipAmount": 0.009824179604172284
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.008549091735032488,
+              "order": 0.5628587611647489,
+              "skipAmount": 0.3470078178927386
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.562089342908596,
+              "skipAmount": 0.8923956976025638
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.562089342908596,
+              "skipAmount": 0.9372886314368003
+            }
+          },
+          "shapeScore": 0.7424420224028683,
+          "meanRawInk": 0.8933333333333333,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.49777189615620393,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.49777189615620393,
+              "skipAmount": 0.8791231024980308
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.8976001966755021,
+              "order": 0.5785559138569991,
+              "skipAmount": 0.035839931163574285
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.019734596987676878,
+              "order": 0.49954800988509485,
+              "skipAmount": 0.34309289105431306
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.49777189615620393,
+              "skipAmount": 0.7199002791780591
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.49777189615620393,
+              "skipAmount": 0.8055171709234233
+            }
+          },
+          "shapeScore": 0.7551429369851672,
+          "meanRawInk": 0.8814285714285715,
+          "broadOrderPass": true,
+          "continuityValid": true
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 1,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4891520986166997,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4891520986166997,
+              "skipAmount": 0.7813649844984594
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9342887433859637,
+              "order": 0.5732380855214364,
+              "skipAmount": 0.022998939814912717
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.28260741295076486,
+              "order": 0.5145867657822686,
+              "skipAmount": 0.2510874054672323
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4891520986166997,
+              "skipAmount": 0.6258394932741196
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4891520986166997,
+              "skipAmount": 0.707759052923852
+            }
+          },
+          "shapeScore": 0.6679424630946231,
+          "meanRawInk": 0.76,
+          "broadOrderPass": false,
+          "continuityValid": false
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "graphFeasibleCount": 12,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4643281488353312,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 1,
+            "B_within_letter": 7,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4643281488353312,
+              "skipAmount": 0.9456761991869123
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9143784935261665,
+              "order": 0.5466222132526861,
+              "skipAmount": 0.02996752726584173
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.4643281488353312,
+              "skipAmount": 0.394516648708938
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4643281488353312,
+              "skipAmount": 0.7908001995843497
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4643281488353312,
+              "skipAmount": 0.8720702676123047
+            }
+          },
+          "shapeScore": 0.639856977360215,
+          "meanRawInk": 0.7347619047619047,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5331173698346429,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 9,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5331173698346429,
+              "skipAmount": 1.0221994151582476
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9695618977953262,
+              "order": 0.6203779406362222,
+              "skipAmount": 0.010653335771635825
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.09278829202126626,
+              "order": 0.5414683161165568,
+              "skipAmount": 0.3175240977925568
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5331173698346429,
+              "skipAmount": 0.894841098456072
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5331173698346429,
+              "skipAmount": 0.894841098456072
+            }
+          },
+          "shapeScore": 0.799964811851199,
+          "meanRawInk": 0.8547619047619047,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5994676771914318,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 0,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 4
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5994676771914318,
+              "skipAmount": 0.7250746537091528
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.6894676771914318,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.4228566606059875,
+              "order": 0.6375247766459706,
+              "skipAmount": 0.2020001687879044
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5994676771914318,
+              "skipAmount": 0.7250746537091528
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5994676771914318,
+              "skipAmount": 0.7250746537091528
+            }
+          },
+          "shapeScore": 0.7705648102215447,
+          "meanRawInk": 0.822857142857143,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5440851300356688,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 6,
+            "B_within_letter": 8,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5440851300356688,
+              "skipAmount": 1.5032699441144823
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.8542476204879674,
+              "order": 0.6209674158795859,
+              "skipAmount": 0.05101333282921139
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.5440851300356688,
+              "skipAmount": 0.48805065602191183
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5440851300356688,
+              "skipAmount": 0.7658331114990348
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5440851300356688,
+              "skipAmount": 1.0722360363094177
+            }
+          },
+          "shapeScore": 0.7716520169331406,
+          "meanRawInk": 0.8266666666666665,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.48880401493439607,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 4,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.48880401493439607,
+              "skipAmount": 0.8496114318973487
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9635293085127988,
+              "order": 0.5755216527005479,
+              "skipAmount": 0.012764742020520414
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.10613898921540998,
+              "order": 0.49835652396378294,
+              "skipAmount": 0.3128513537746065
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.48880401493439607,
+              "skipAmount": 0.4244663777233017
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.48880401493439607,
+              "skipAmount": 0.6287936371735262
+            }
+          },
+          "shapeScore": 0.7697474657968534,
+          "meanRawInk": 0.8528571428571429,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4809964842319883,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 7,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4809964842319883,
+              "skipAmount": 1.1189988741291037
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.8407050015739879,
+              "order": 0.5566599343736472,
+              "skipAmount": 0.05575324944910426
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.4809964842319883,
+              "skipAmount": 0.3838008734269594
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4809964842319883,
+              "skipAmount": 0.6732580452927438
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4809964842319883,
+              "skipAmount": 0.8981810794052809
+            }
+          },
+          "shapeScore": 0.7532678286266623,
+          "meanRawInk": 0.8283333333333334,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.49027200528097425,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 10,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.49027200528097425,
+              "skipAmount": 1.1069223910022639
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.8710818430064267,
+              "order": 0.5686693711515526,
+              "skipAmount": 0.045121354947750686
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.04176897076039554,
+              "order": 0.49403121264940986,
+              "skipAmount": 0.33538086023386154
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.49027200528097425,
+              "skipAmount": 0.890174897312511
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.49027200528097425,
+              "skipAmount": 0.9704274722323654
+            }
+          },
+          "shapeScore": 0.7060450007536354,
+          "meanRawInk": 0.96,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.366025019496895,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 9,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.366025019496895,
+              "skipAmount": 1.052629227111092
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9684230139867706,
+              "order": 0.45318309075570434,
+              "skipAmount": 0.011051945104630312
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.15667755661256733,
+              "order": 0.38012599959202603,
+              "skipAmount": 0.2951628551856014
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.366025019496895,
+              "skipAmount": 0.8956739181934517
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.366025019496895,
+              "skipAmount": 0.905417363961877
+            }
+          },
+          "shapeScore": 0.6889523554358908,
+          "meanRawInk": 0.725,
+          "broadOrderPass": false,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.45872543601560284,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.45872543601560284,
+              "skipAmount": 0.8112218184035789
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.8446766507197774,
+              "order": 0.5347463345803828,
+              "skipAmount": 0.05436317224807791
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.19891514404347743,
+              "order": 0.47662779897951585,
+              "skipAmount": 0.28037969958478287
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0.011081748156723026,
+              "order": 0.45972279334970795,
+              "skipAmount": 0.3461213881451469
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.45872543601560284,
+              "skipAmount": 0.5904040236797564
+            }
+          },
+          "shapeScore": 0.7203785987997561,
+          "meanRawInk": 0.72,
+          "broadOrderPass": false,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4792525337944043,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 2,
+            "B_within_letter": 5,
+            "C_potentially_incorrect": 4
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4792525337944043,
+              "skipAmount": 0.9233100457322316
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.600948560143783,
+              "order": 0.5333379042073448,
+              "skipAmount": 0.13966800394967593
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.12257122202617332,
+              "order": 0.49028394377675993,
+              "skipAmount": 0.3071000722908393
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4792525337944043,
+              "skipAmount": 0.5700008001333003
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4792525337944043,
+              "skipAmount": 0.7854299611159636
+            }
+          },
+          "shapeScore": 0.7482572475149509,
+          "meanRawInk": 0.7883333333333333,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.47948853305844386,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.47948853305844386,
+              "skipAmount": 0.6166863880184483
+            },
+            "B_perLetterCount": {
+              "jumpFit": 1,
+              "order": 0.5694885330584438,
+              "skipAmount": 0
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.608527597745689,
+              "order": 0.5342560168555559,
+              "skipAmount": 0.13701534078900884
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.47948853305844386,
+              "skipAmount": 0.44295577900465716
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.47948853305844386,
+              "skipAmount": 0.4662459781385651
+            }
+          },
+          "shapeScore": 0.7513408195327552,
+          "meanRawInk": 0.96,
+          "broadOrderPass": true,
+          "continuityValid": true
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.48745124847088916,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 7,
+            "C_potentially_incorrect": 1
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.48745124847088916,
+              "skipAmount": 1.127177189987929
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.5728104513455252,
+              "order": 0.5390041890919864,
+              "skipAmount": 0.1495163420290662
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.48745124847088916,
+              "skipAmount": 0.45275295603346255
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.48745124847088916,
+              "skipAmount": 0.6293706738897519
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.48745124847088916,
+              "skipAmount": 0.9132942005891317
+            }
+          },
+          "shapeScore": 0.7232353741352385,
+          "meanRawInk": 0.7980952380952381,
+          "broadOrderPass": true,
+          "continuityValid": true
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "graphFeasibleCount": 2,
+      "candidates": [
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.5683684121818275,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 8,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.5683684121818275,
+              "skipAmount": 1.1659633345957505
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9440655248672969,
+              "order": 0.6533343094198842,
+              "skipAmount": 0.019577066296446094
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0,
+              "order": 0.5683684121818275,
+              "skipAmount": 0.41361832563217454
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.5683684121818275,
+              "skipAmount": 0.7632112842818903
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.5683684121818275,
+              "skipAmount": 0.9451455398719277
+            }
+          },
+          "shapeScore": 0.8017597639783588,
+          "meanRawInk": 0.8683333333333334,
+          "broadOrderPass": true,
+          "continuityValid": false
+        },
+        {
+          "candidateRank": -1,
+          "word": "CAIRO",
+          "realOrder": 0.4900050933658828,
+          "realJumpFit": 0,
+          "jumpClassificationCounts": {
+            "A_expected_transition": 3,
+            "B_within_letter": 6,
+            "C_potentially_incorrect": 2
+          },
+          "models": {
+            "A_current": {
+              "jumpFit": 0,
+              "order": 0.4900050933658828,
+              "skipAmount": 0.7513755397353419
+            },
+            "B_perLetterCount": {
+              "jumpFit": 0.9899931152418887,
+              "order": 0.5791044737376527,
+              "skipAmount": 0.0035024096653389347
+            },
+            "C_targetGeometry": {
+              "jumpFit": 0.39059294247916954,
+              "order": 0.5251584581890081,
+              "skipAmount": 0.21329247013229063
+            },
+            "D_boundaryExempt": {
+              "jumpFit": 0,
+              "order": 0.4900050933658828,
+              "skipAmount": 0.38232426342677067
+            },
+            "E_hybrid": {
+              "jumpFit": 0,
+              "order": 0.4900050933658828,
+              "skipAmount": 0.5305577450115195
+            }
+          },
+          "shapeScore": 0.6640047533586957,
+          "meanRawInk": 0.925,
+          "broadOrderPass": true,
+          "continuityValid": true
+        }
+      ]
+    }
+  ]
+}

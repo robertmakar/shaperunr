@@ -1,6 +1,7 @@
 import { DEVELOPMENT_FALLBACK_LOCATION } from '@/constants/location';
 import { boundingBox2, pointsInUnitSquare, type Vec2 } from '@/lib/geometry';
 import { flattenLetterStrokes, getLetterShape } from '@/lib/letter-shapes';
+import { runLetterShapeVariantSelfTests } from '@/lib/letter-shapes-variants.self-test';
 import { scoreRouteAgainstShape } from '@/lib/shape-match';
 import { runShapeMatchSelfTests } from '@/lib/shape-match.self-test';
 import {
@@ -24,6 +25,7 @@ export function runShapePocSelfTests(): SelfTestResult[] {
     projectionTest(),
     ...matchingTests(),
     ...runShapeMatchSelfTests(),
+    ...runLetterShapeVariantSelfTests(),
   ];
 }
 

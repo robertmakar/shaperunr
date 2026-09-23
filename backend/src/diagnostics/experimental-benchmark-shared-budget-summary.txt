@@ -1,0 +1,497 @@
+ShapeRunr shared-budget benchmark (DEVELOPMENT ONLY): baseline (smooth) vs experiment (smooth+angular, shared top-96)
+Measurement only.
+generated from 156 requests
+
+ALEXANDRIA
+  I
+    1000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=102 routed=18 accepted=3
+            shapeScore median=0.776 coverage median=0.563 order median=0.767
+            targetSpan median=0.521 backtrack median=0.000 shape/target median=0.778 route/target median=1.529
+            wordTraversal 3/9
+          duration: avg=2617.000ms min=2566ms max=2705ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=54 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=54 routed=18 accepted=0
+            shapeScore median=0.701 coverage median=0.563 order median=0.586
+            targetSpan median=0.475 backtrack median=0.000 shape/target median=0.694 route/target median=1.398
+            wordTraversal 3/9
+          duration: avg=3856.333ms min=3771ms max=3979ms
+    2000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=36 routed=18 accepted=3
+            shapeScore median=0.773 coverage median=0.613 order median=0.745
+            targetSpan median=0.527 backtrack median=0.000 shape/target median=0.656 route/target median=0.928
+            wordTraversal 3/9
+          duration: avg=3148.667ms min=3111ms max=3175ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=21 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=21 routed=18 accepted=0
+            shapeScore median=0.670 coverage median=0.525 order median=0.604
+            targetSpan median=0.354 backtrack median=0.000 shape/target median=0.579 route/target median=0.881
+            wordTraversal 3/9
+          duration: avg=4710.000ms min=4680ms max=4735ms
+    4000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=5198.333ms min=5192ms max=5210ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=8538.333ms min=8439ms max=8644ms
+  O
+    1000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=12 routed=9 accepted=6
+            shapeScore median=0.779 coverage median=0.637 order median=0.693
+            targetSpan median=0.702 backtrack median=0.000 shape/target median=0.857 route/target median=1.766
+            wordTraversal 9/9
+          duration: avg=5530.000ms min=5446ms max=5664ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=9 routed=6 accepted=6
+            shapeScore median=0.790 coverage median=0.738 order median=0.664
+            targetSpan median=0.778 backtrack median=0.000 shape/target median=0.837 route/target median=1.666
+            wordTraversal 6/6
+          angular: graphFeasible=12 routed=12 accepted=0
+            shapeScore median=0.772 coverage median=0.713 order median=0.651
+            targetSpan median=0.334 backtrack median=0.000 shape/target median=0.805 route/target median=1.591
+            wordTraversal 0/3
+          duration: avg=7933.333ms min=7742ms max=8133ms
+    2000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=3 routed=3 accepted=0
+            shapeScore median=0.779 coverage median=0.563 order median=0.716
+            targetSpan median=0.619 backtrack median=0.000 shape/target median=0.577 route/target median=0.883
+            wordTraversal 3/3
+          duration: avg=8143.333ms min=8037ms max=8285ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=11769.667ms min=11729ms max=11812ms
+    4000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=15732.667ms min=15519ms max=16031ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=23327.000ms min=22802ms max=23719ms
+  R
+    1000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=15 routed=15 accepted=0
+            shapeScore median=0.643 coverage median=0.500 order median=0.504
+            targetSpan median=0.370 backtrack median=0.126 shape/target median=0.396 route/target median=0.872
+            wordTraversal 3/6
+          duration: avg=3319.333ms min=3277ms max=3388ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=6 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=6 routed=6 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=0.240 route/target median=0.864
+          duration: avg=31523.333ms min=5245ms max=83886ms
+    2000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=6 routed=6 accepted=6
+            shapeScore median=0.755 coverage median=0.688 order median=0.662
+            targetSpan median=0.590 backtrack median=0.004 shape/target median=0.586 route/target median=0.838
+            wordTraversal 6/6
+          duration: avg=4683.667ms min=4664ms max=4699ms
+      experiment:
+        runs: 3 (completed: 2, excluded: 1)
+          excluded: timed_out=1
+          smooth: graphFeasible=2 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=2 routed=2 accepted=2
+            shapeScore median=0.738 coverage median=0.662 order median=0.643
+            targetSpan median=0.580 backtrack median=0.009 shape/target median=0.530 route/target median=0.837
+            wordTraversal 2/2
+          duration: avg=7893.500ms min=7852ms max=7935ms
+    4000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=9144.667ms min=8361ms max=9617ms
+      experiment:
+        runs: 3 (completed: 2, excluded: 1)
+          excluded: timed_out=1
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=14761.000ms min=14556ms max=14966ms
+  ROBZ
+    2000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=48 routed=18 accepted=0
+            shapeScore median=0.648 coverage median=0.662 order median=0.504
+            targetSpan median=0.148 backtrack median=0.114 shape/target median=0.327 route/target median=0.669
+            wordTraversal 0/9
+          duration: avg=10367.667ms min=10304ms max=10443ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=27 routed=18 accepted=0
+            shapeScore median=0.624 coverage median=0.537 order median=0.550
+            targetSpan median=0.414 backtrack median=0.113 shape/target median=0.339 route/target median=0.669
+            wordTraversal 0/9
+          angular: graphFeasible=30 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=16887.000ms min=16794ms max=16961ms
+    4000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=15 routed=15 accepted=0
+            shapeScore median=0.674 coverage median=0.762 order median=0.520
+            targetSpan median=0.155 backtrack median=0.125 shape/target median=0.210 route/target median=0.388
+            wordTraversal 0/9
+          duration: avg=19798.333ms min=19757ms max=19875ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=12 routed=12 accepted=0
+            shapeScore median=0.659 coverage median=0.750 order median=0.498
+            targetSpan median=0.201 backtrack median=0.125 shape/target median=0.202 route/target median=0.398
+            wordTraversal 0/9
+          angular: graphFeasible=3 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=68678.000ms min=32570ms max=140447ms
+  CAIRO
+    2000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=75 routed=18 accepted=0
+            shapeScore median=0.686 coverage median=0.738 order median=0.533
+            targetSpan median=0.224 backtrack median=0.160 shape/target median=0.441 route/target median=0.810
+            wordTraversal 0/9
+          duration: avg=23304.333ms min=23275ms max=23332ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=39 routed=15 accepted=0
+            shapeScore median=0.702 coverage median=0.712 order median=0.525
+            targetSpan median=0.172 backtrack median=0.156 shape/target median=0.425 route/target median=0.798
+            wordTraversal 0/6
+          angular: graphFeasible=12 routed=3 accepted=0
+            shapeScore median=0.722 coverage median=0.762 order median=0.605
+            targetSpan median=0.215 backtrack median=0.095 shape/target median=0.555 route/target median=0.862
+            wordTraversal 0/3
+          duration: avg=40258.667ms min=40029ms max=40387ms
+    4000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=3 routed=3 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=0.211 route/target median=0.630
+          duration: avg=45917.000ms min=45368ms max=46737ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=79794.667ms min=79539ms max=79951ms
+
+ZAMALEK
+  I
+    1000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=99 routed=18 accepted=9
+            shapeScore median=0.837 coverage median=0.738 order median=0.834
+            targetSpan median=0.777 backtrack median=0.000 shape/target median=0.751 route/target median=4.045
+            wordTraversal 9/9
+          duration: avg=2796.667ms min=2750ms max=2858ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=63 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=63 routed=18 accepted=6
+            shapeScore median=0.809 coverage median=0.750 order median=0.842
+            targetSpan median=0.760 backtrack median=0.000 shape/target median=0.655 route/target median=6.409
+            wordTraversal 6/9
+          duration: avg=4095.000ms min=4051ms max=4134ms
+    2000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=21 routed=12 accepted=3
+            shapeScore median=0.801 coverage median=0.537 order median=0.842
+            targetSpan median=0.573 backtrack median=0.000 shape/target median=0.546 route/target median=3.643
+            wordTraversal 6/9
+          duration: avg=3370.333ms min=3349ms max=3404ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=15 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=15 routed=9 accepted=3
+            shapeScore median=0.781 coverage median=0.388 order median=0.842
+            targetSpan median=0.413 backtrack median=0.000 shape/target median=0.547 route/target median=3.762
+            wordTraversal 3/9
+          duration: avg=5430.667ms min=5348ms max=5518ms
+    4000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=7432.333ms min=7359ms max=7489ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=12178.667ms min=12056ms max=12259ms
+  O
+    1000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=21 routed=15 accepted=3
+            shapeScore median=0.776 coverage median=0.563 order median=0.704
+            targetSpan median=0.673 backtrack median=0.000 shape/target median=1.134 route/target median=1.843
+            wordTraversal 6/9
+          duration: avg=4940.667ms min=4927ms max=4960ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=15 routed=12 accepted=0
+            shapeScore median=0.737 coverage median=0.469 order median=0.660
+            targetSpan median=0.451 backtrack median=0.000 shape/target median=1.070 route/target median=1.636
+            wordTraversal 3/6
+          angular: graphFeasible=9 routed=6 accepted=0
+            shapeScore median=0.753 coverage median=0.713 order median=0.597
+            targetSpan median=0.675 backtrack median=0.000 shape/target median=0.603 route/target median=1.113
+            wordTraversal 3/3
+          duration: avg=6688.667ms min=6664ms max=6731ms
+    2000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=9 routed=6 accepted=3
+            shapeScore median=0.809 coverage median=0.700 order median=0.723
+            targetSpan median=0.773 backtrack median=0.000 shape/target median=0.764 route/target median=0.978
+            wordTraversal 3/3
+          duration: avg=7413.333ms min=7380ms max=7465ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=6 routed=6 accepted=3
+            shapeScore median=0.809 coverage median=0.700 order median=0.723
+            targetSpan median=0.773 backtrack median=0.000 shape/target median=0.818 route/target median=1.032
+            wordTraversal 3/3
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=10627.667ms min=10581ms max=10692ms
+    4000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=19098.000ms min=19038ms max=19215ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=27800.000ms min=27607ms max=27938ms
+  R
+    1000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=24 routed=18 accepted=0
+            shapeScore median=0.681 coverage median=0.613 order median=0.548
+            targetSpan median=0.409 backtrack median=0.103 shape/target median=0.442 route/target median=0.855
+            wordTraversal 3/6
+          duration: avg=3034.667ms min=2992ms max=3060ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=9 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=9 routed=9 accepted=0
+            shapeScore median=0.706 coverage median=0.713 order median=0.539
+            targetSpan median=0.606 backtrack median=0.061 shape/target median=0.189 route/target median=0.230
+            wordTraversal 3/3
+          duration: avg=4792.333ms min=4784ms max=4798ms
+    2000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=3 routed=3 accepted=0
+            shapeScore median=0.656 coverage median=0.512 order median=0.557
+            targetSpan median=0.212 backtrack median=0.145 shape/target median=0.362 route/target median=0.394
+            wordTraversal 0/3
+          duration: avg=6340.333ms min=4367ms max=8147ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=16897.667ms min=7437ms max=35563ms
+    4000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=11751.333ms min=10683ms max=12300ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=19676.000ms min=18092ms max=20809ms
+  ROBZ
+    2000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=36 routed=18 accepted=0
+            shapeScore median=0.655 coverage median=0.675 order median=0.511
+            targetSpan median=0.251 backtrack median=0.102 shape/target median=0.217 route/target median=3.204
+            wordTraversal 0/6
+          duration: avg=10677.333ms min=10666ms max=10695ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=24 routed=12 accepted=0
+            shapeScore median=0.690 coverage median=0.725 order median=0.563
+            targetSpan median=0.423 backtrack median=0.050 shape/target median=0.217 route/target median=1.808
+            wordTraversal 0/3
+          angular: graphFeasible=27 routed=6 accepted=0
+            shapeScore median=0.691 coverage median=0.775 order median=0.553
+            targetSpan median=0.188 backtrack median=0.168 shape/target median=0.375 route/target median=0.626
+            wordTraversal 0/6
+          duration: avg=17672.000ms min=17429ms max=17805ms
+    4000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=15 routed=15 accepted=0
+            shapeScore median=0.720 coverage median=0.762 order median=0.587
+            targetSpan median=0.275 backtrack median=0.117 shape/target median=0.205 route/target median=1.997
+            wordTraversal 0/9
+          duration: avg=26953.667ms min=25352ms max=29172ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=6 routed=6 accepted=0
+            shapeScore median=0.740 coverage median=0.925 order median=0.587
+            targetSpan median=0.275 backtrack median=0.205 shape/target median=0.296 route/target median=2.061
+            wordTraversal 0/3
+          angular: graphFeasible=3 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=43530.333ms min=42073ms max=46115ms
+  CAIRO
+    2000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=36 routed=18 accepted=0
+            shapeScore median=0.673 coverage median=0.762 order median=0.489
+            targetSpan median=0.315 backtrack median=0.198 shape/target median=0.352 route/target median=3.077
+            wordTraversal 0/9
+          duration: avg=24958.667ms min=24547ms max=25744ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=15 routed=9 accepted=0
+            shapeScore median=0.673 coverage median=0.725 order median=0.541
+            targetSpan median=0.129 backtrack median=0.182 shape/target median=0.387 route/target median=3.113
+            wordTraversal 0/9
+          angular: graphFeasible=15 routed=9 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=0.259 route/target median=3.005
+          duration: avg=43928.667ms min=41521ms max=46508ms
+    4000m
+      baseline:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=6 routed=6 accepted=0
+            shapeScore median=0.723 coverage median=0.738 order median=0.635
+            targetSpan median=0.472 backtrack median=0.197 shape/target median=0.240 route/target median=0.961
+            wordTraversal 0/3
+          duration: avg=55702.000ms min=50748ms max=58393ms
+      experiment:
+        runs: 3 (completed: 3, excluded: 0)
+          smooth: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          angular: graphFeasible=0 routed=0 accepted=0
+            shapeScore median=n/a coverage median=n/a order median=n/a
+            targetSpan median=n/a backtrack median=n/a shape/target median=n/a route/target median=n/a
+          duration: avg=95289.667ms min=92552ms max=99751ms
+
+=== OVERALL ===
+total requests: 156
+  completed: 154
+  timed_out: 2
+baseline:
+  runs: 78 (completed: 78, excluded: 0)
+    smooth: graphFeasible=585 routed=252 accepted=36
+      shapeScore median=0.723 coverage median=0.662 order median=0.635
+      targetSpan median=0.472 backtrack median=0.102 shape/target median=0.442 route/target median=0.945
+      wordTraversal 54/135
+    duration: avg=13129.782ms min=2566ms max=58393ms
+experiment:
+  runs: 78 (completed: 76, excluded: 2)
+    excluded: timed_out=2
+    smooth: graphFeasible=323 routed=96 accepted=9
+      shapeScore median=0.702 coverage median=0.725 order median=0.563
+      targetSpan median=0.414 backtrack median=0.113 shape/target median=0.387 route/target median=1.636
+      wordTraversal 12/54
+    angular: graphFeasible=281 routed=116 accepted=11
+      shapeScore median=0.722 coverage median=0.713 order median=0.604
+      targetSpan median=0.413 backtrack median=0.000 shape/target median=0.555 route/target median=1.113
+      wordTraversal 23/56
+    duration: avg=24512.632ms min=3771ms max=140447ms

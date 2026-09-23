@@ -1,5 +1,5 @@
 import { boundingBox2, polylineLength, type Vec2 } from '@/lib/geometry';
-import { flattenLetterStrokes, getLetterShape } from '@/lib/letter-shapes';
+import { flattenLetterStrokes, getLetterShapeVariant, type LetterShapeVariant } from '@/lib/letter-shapes';
 
 export type WordShapeOptions = {
   /** Gap between adjacent 1×1 letter squares. */
@@ -11,6 +11,8 @@ export type WordShapeOptions = {
   aspectRatio?: number;
   normalize?: boolean;
   maxLetters?: number;
+  /** Which letter geometry to build the word from. Defaults to 'smooth' — the original geometry — so existing callers are unaffected. */
+  letterVariant?: LetterShapeVariant;
 };
 
 export type WordLetterLayout = {
@@ -35,6 +37,7 @@ export function buildWordShape(rawWord: string, options: WordShapeOptions = {}):
   const letterSpacing = options.letterSpacing ?? DEFAULT_SPACING;
   const normalize = options.normalize ?? true;
   const maxLetters = options.maxLetters ?? DEFAULT_MAX_LETTERS;
+  const letterVariant = options.letterVariant ?? 'smooth';
   const word = rawWord
     .toUpperCase()
     .replace(/[^A-Z]/g, '')
@@ -45,7 +48,7 @@ export function buildWordShape(rawWord: string, options: WordShapeOptions = {}):
   let cursorX = 0;
 
   for (const char of word) {
-    const shape = getLetterShape(char);
+    const shape = getLetterShapeVariant(char, letterVariant);
     if (!shape) {
       continue;
     }

@@ -1,0 +1,216 @@
+{
+  "generatedAt": "2026-09-22T13:50:35.941Z",
+  "results": [
+    {
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "totalCandidates": 3,
+      "directAcceptedIds": [],
+      "directRejectedReasons": {
+        "sf-r315-s0.8-e0-n0": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ],
+        "sf-r22.5-s1.0-e-565.7-n-565.7": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ],
+        "sf-r22.5-s0.6-e0-n0": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ]
+      },
+      "endpointAcceptedIds": [],
+      "directOnlyIds": [],
+      "endpointOnlyIds": [],
+      "idSetsMatch": true
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "totalCandidates": 3,
+      "directAcceptedIds": [],
+      "directRejectedReasons": {
+        "sf-r157.5-s0.6-e-452.5-n-452.5": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ],
+        "sf-r135-s0.6-e0-n0": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ],
+        "sf-r22.5-s0.6-e640-n0": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ]
+      },
+      "endpointAcceptedIds": [],
+      "directOnlyIds": [],
+      "endpointOnlyIds": [],
+      "idSetsMatch": true
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "totalCandidates": 2,
+      "directAcceptedIds": [],
+      "directRejectedReasons": {
+        "sf-r45-s0.6-e-565.7-n565.7": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ],
+        "sf-r337.5-s0.8-e282.8-n-282.8": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ]
+      },
+      "endpointAcceptedIds": [],
+      "directOnlyIds": [],
+      "endpointOnlyIds": [],
+      "idSetsMatch": true
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "totalCandidates": 3,
+      "directAcceptedIds": [],
+      "directRejectedReasons": {
+        "sf-r315-s0.6-e-905.1-n905.1": [
+          "lengthRatio",
+          "completeness"
+        ],
+        "sf-r135-s0.6-e0-n1280": [
+          "lengthRatio",
+          "completeness"
+        ],
+        "sf-r337.5-s0.6-e1280-n0": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ]
+      },
+      "endpointAcceptedIds": [],
+      "directOnlyIds": [],
+      "endpointOnlyIds": [],
+      "idSetsMatch": true
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "totalCandidates": 3,
+      "directAcceptedIds": [],
+      "directRejectedReasons": {
+        "sf-r22.5-s1.0-e282.8-n-282.8": [
+          "completeness"
+        ],
+        "sf-r45-s0.6-e0-n800": [
+          "shapeScore",
+          "coverage",
+          "completeness"
+        ],
+        "sf-r202.5-s0.6-e-800-n0": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ]
+      },
+      "endpointAcceptedIds": [],
+      "directOnlyIds": [],
+      "endpointOnlyIds": [],
+      "idSetsMatch": true
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "totalCandidates": 0,
+      "directAcceptedIds": [],
+      "directRejectedReasons": {},
+      "endpointAcceptedIds": [],
+      "directOnlyIds": [],
+      "endpointOnlyIds": [],
+      "idSetsMatch": true
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "totalCandidates": 3,
+      "directAcceptedIds": [],
+      "directRejectedReasons": {
+        "sf-r45-s1.2-e0-n-400": [
+          "completeness"
+        ],
+        "sf-r112.5-s0.8-e-565.7-n565.7": [
+          "shapeScore",
+          "completeness"
+        ],
+        "sf-r337.5-s0.6-e800-n0": [
+          "shapeScore",
+          "lengthRatio",
+          "completeness"
+        ]
+      },
+      "endpointAcceptedIds": [],
+      "directOnlyIds": [],
+      "endpointOnlyIds": [],
+      "idSetsMatch": true
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "totalCandidates": 1,
+      "directAcceptedIds": [],
+      "directRejectedReasons": {
+        "sf-r315-s0.6-e0-n0": [
+          "lengthRatio",
+          "completeness"
+        ]
+      },
+      "endpointAcceptedIds": [],
+      "directOnlyIds": [],
+      "endpointOnlyIds": [],
+      "idSetsMatch": true
+    },
+    {
+      "word": "L",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "totalCandidates": 3,
+      "directAcceptedIds": [
+        "sf-r135-s0.6-e-282.8-n-282.8",
+        "sf-r135-s0.8-e565.7-n-565.7",
+        "sf-r135-s0.6-e-565.7-n-565.7"
+      ],
+      "directRejectedReasons": {},
+      "endpointAcceptedIds": [
+        "sf-r135-s0.6-e-282.8-n-282.8",
+        "sf-r135-s0.8-e565.7-n-565.7",
+        "sf-r135-s0.6-e-565.7-n-565.7"
+      ],
+      "directOnlyIds": [],
+      "endpointOnlyIds": [],
+      "idSetsMatch": true
+    }
+  ],
+  "summary": {
+    "totalCandidates": 21,
+    "totalDirect": 3,
+    "totalEndpoint": 3,
+    "allMatch": true
+  }
+}

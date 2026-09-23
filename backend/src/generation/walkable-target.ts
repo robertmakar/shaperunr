@@ -20,7 +20,7 @@ import {
   projectPointOnPolyline,
   type Vec2,
 } from '@/lib/geometry';
-import { flattenLetterStrokes, getLetterShape, type LetterShape } from '@/lib/letter-shapes';
+import { flattenLetterStrokes, getLetterShapeVariant, type LetterShape, type LetterShapeVariant } from '@/lib/letter-shapes';
 import { buildWordShape, type WordShape } from '@/lib/word-shape';
 
 export const WALKABLE_TARGET = {
@@ -28,20 +28,26 @@ export const WALKABLE_TARGET = {
   disconnected: 0.12,
 } as const;
 
-export function buildWalkableWordShape(rawWord: string): WordShape {
+export type WalkableWordShapeOptions = {
+  /** Defaults to 'smooth' — the original geometry — so existing callers are unaffected. */
+  letterVariant?: LetterShapeVariant;
+};
+
+export function buildWalkableWordShape(rawWord: string, options: WalkableWordShapeOptions = {}): WordShape {
+  const letterVariant = options.letterVariant ?? 'smooth';
   const word = rawWord
     .toUpperCase()
     .replace(/[^A-Z]/g, '')
     .slice(0, 16);
   if (!word) {
-    return buildWordShape(rawWord);
+    return buildWordShape(rawWord, { letterVariant });
   }
 
   const letters: Array<{ char: string; points: Vec2[] }> = [];
   const points: Vec2[] = [];
   let cursorX = 0;
   for (const char of word) {
-    const shape = getLetterShape(char);
+    const shape = getLetterShapeVariant(char, letterVariant);
     if (!shape) {
       continue;
     }
@@ -56,7 +62,7 @@ export function buildWalkableWordShape(rawWord: string): WordShape {
 
   const bounds = boundingBox2(points);
   if (!bounds || points.length === 0) {
-    return buildWordShape(rawWord);
+    return buildWordShape(rawWord, { letterVariant });
   }
   const scale = Math.max(bounds.width, bounds.height) || 1;
   const normalizePoint = (point: Vec2): Vec2 => ({

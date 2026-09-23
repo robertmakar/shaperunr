@@ -1,0 +1,346 @@
+Ink-only occupancy diagnostics (DEVELOPMENT ONLY) — observation only, no algorithm/gate change.
+"*" after a letter's occupancy = meaningfullyVisited=true (reused from the existing TargetIdentity per-letter check).
+
+=== ROBZ — Alexandria 2000m (status=ok, graphFeasible=16) ===
+letter boundaries: R[0.00-0.21] O[0.28-0.42] B[0.50-0.72] Z[0.84-1.00]  interLetterGap=23.6%
+  rank=-1 [smooth] shapeScore=0.648 coverage=0.725 order=0.496 backtrack=0.000
+    currentOccupiedSpan=0.451 currentSpanOccupancy=0.875 inkOnlyOccupancy=0.708
+    letters: R=0.71 O=0.80 B=0.86 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.565 coverage=0.438 order=0.497 backtrack=0.000
+    currentOccupiedSpan=0.438 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.750
+    letters: R=0.43 O=1.00 B=1.00 Z=0.60
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.624 coverage=0.537 order=0.590 backtrack=0.000
+    currentOccupiedSpan=0.414 currentSpanOccupancy=0.929 inkOnlyOccupancy=0.708
+    letters: R=0.43 O=1.00 B=1.00 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.732 coverage=0.850 order=0.599 backtrack=0.000
+    currentOccupiedSpan=0.344 currentSpanOccupancy=0.786 inkOnlyOccupancy=0.833
+    letters: R=1.00* O=1.00 B=0.86 Z=0.40
+    completedLetterCount=1/4 completionRatio=0.250 lettersVisitedInOrder=true wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.511 coverage=0.275 order=0.515 backtrack=0.000
+    currentOccupiedSpan=0.291 currentSpanOccupancy=0.750 inkOnlyOccupancy=0.417
+    letters: R=0.29 O=0.80 B=0.43 Z=0.20
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.600 coverage=0.512 order=0.550 backtrack=0.000
+    currentOccupiedSpan=0.283 currentSpanOccupancy=0.750 inkOnlyOccupancy=0.708
+    letters: R=0.86 O=0.60 B=0.86 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.666 coverage=0.588 order=0.557 backtrack=0.000
+    currentOccupiedSpan=0.220 currentSpanOccupancy=0.875 inkOnlyOccupancy=0.542
+    letters: R=0.29 O=0.80 B=0.43 Z=0.80
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.573 coverage=0.412 order=0.544 backtrack=0.000
+    currentOccupiedSpan=0.195 currentSpanOccupancy=0.545 inkOnlyOccupancy=0.583
+    letters: R=0.86 O=0.60 B=0.29 Z=0.60
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.654 coverage=0.725 order=0.542 backtrack=0.301
+    currentOccupiedSpan=0.166 currentSpanOccupancy=0.714 inkOnlyOccupancy=0.708
+    letters: R=0.86 O=0.80 B=0.71 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.552 coverage=0.412 order=0.487 backtrack=0.000
+    currentOccupiedSpan=0.160 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.750
+    letters: R=0.86 O=1.00 B=0.71 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.635 coverage=0.662 order=0.504 backtrack=0.000
+    currentOccupiedSpan=0.148 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.542
+    letters: R=0.43 O=0.80 B=0.57 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.599 coverage=0.525 order=0.542 backtrack=0.000
+    currentOccupiedSpan=0.119 currentSpanOccupancy=0.571 inkOnlyOccupancy=0.625
+    letters: R=0.86 O=0.60 B=0.57 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.576 coverage=0.450 order=0.524 backtrack=0.000
+    currentOccupiedSpan=0.114 currentSpanOccupancy=0.800 inkOnlyOccupancy=0.792
+    letters: R=1.00 O=0.80 B=0.86 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.433 coverage=0.313 order=0.332 backtrack=0.000
+    currentOccupiedSpan=0.103 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.417
+    letters: R=0.43 O=0.80 B=0.43 Z=0.00
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.583 coverage=0.463 order=0.539 backtrack=0.000
+    currentOccupiedSpan=0.095 currentSpanOccupancy=0.600 inkOnlyOccupancy=0.417
+    letters: R=0.57 O=0.60 B=0.43 Z=0.00
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.680 coverage=0.662 order=0.573 backtrack=0.000
+    currentOccupiedSpan=0.059 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.833
+    letters: R=0.86 O=0.80 B=0.86 Z=0.80
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  mean across feasible candidates: currentOccupiedSpan=0.225 inkOnlyOccupancy=0.646
+
+=== ROBZ — Alexandria 4000m (status=ok, graphFeasible=5) ===
+letter boundaries: R[0.00-0.21] O[0.28-0.42] B[0.50-0.72] Z[0.84-1.00]  interLetterGap=23.6%
+  rank=-1 [smooth] shapeScore=0.675 coverage=0.750 order=0.520 backtrack=0.000
+    currentOccupiedSpan=0.420 currentSpanOccupancy=0.929 inkOnlyOccupancy=0.625
+    letters: R=0.29 O=0.80 B=0.86 Z=0.60
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.652 coverage=0.700 order=0.498 backtrack=0.000
+    currentOccupiedSpan=0.201 currentSpanOccupancy=0.857 inkOnlyOccupancy=0.792
+    letters: R=1.00 O=0.80 B=0.86 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.674 coverage=0.787 order=0.564 backtrack=0.258
+    currentOccupiedSpan=0.170 currentSpanOccupancy=0.857 inkOnlyOccupancy=0.750
+    letters: R=0.86 O=0.80 B=0.86 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.659 coverage=0.762 order=0.487 backtrack=0.000
+    currentOccupiedSpan=0.155 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.625
+    letters: R=0.57 O=0.60 B=0.57 Z=0.80
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.644 coverage=0.688 order=0.505 backtrack=0.000
+    currentOccupiedSpan=0.120 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.542
+    letters: R=0.43 O=0.80 B=0.57 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  mean across feasible candidates: currentOccupiedSpan=0.213 inkOnlyOccupancy=0.667
+
+=== ROBZ — Zamalek 2000m (status=ok, graphFeasible=12) ===
+letter boundaries: R[0.00-0.21] O[0.28-0.42] B[0.50-0.72] Z[0.84-1.00]  interLetterGap=23.6%
+  rank=-1 [smooth] shapeScore=0.690 coverage=0.725 order=0.563 backtrack=0.000
+    currentOccupiedSpan=0.423 currentSpanOccupancy=0.813 inkOnlyOccupancy=0.750
+    letters: R=1.00 O=0.60 B=0.86 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.599 coverage=0.563 order=0.460 backtrack=0.000
+    currentOccupiedSpan=0.322 currentSpanOccupancy=0.909 inkOnlyOccupancy=0.583
+    letters: R=0.86 O=0.80 B=0.29 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.538 coverage=0.388 order=0.504 backtrack=0.000
+    currentOccupiedSpan=0.296 currentSpanOccupancy=0.833 inkOnlyOccupancy=0.667
+    letters: R=0.86 O=0.80 B=0.86 Z=0.00
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.662 coverage=0.713 order=0.555 backtrack=0.000
+    currentOccupiedSpan=0.252 currentSpanOccupancy=0.727 inkOnlyOccupancy=0.625
+    letters: R=0.57 O=0.60 B=0.57 Z=0.80
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.565 coverage=0.388 order=0.535 backtrack=0.000
+    currentOccupiedSpan=0.250 currentSpanOccupancy=0.727 inkOnlyOccupancy=0.542
+    letters: R=0.86 O=0.60 B=0.29 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.547 coverage=0.475 order=0.440 backtrack=0.000
+    currentOccupiedSpan=0.217 currentSpanOccupancy=0.875 inkOnlyOccupancy=0.708
+    letters: R=0.57 O=0.80 B=0.86 Z=0.60
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.524 coverage=0.400 order=0.459 backtrack=0.000
+    currentOccupiedSpan=0.180 currentSpanOccupancy=0.857 inkOnlyOccupancy=0.708
+    letters: R=0.86 O=0.80 B=0.86 Z=0.20
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.514 coverage=0.425 order=0.438 backtrack=0.000
+    currentOccupiedSpan=0.135 currentSpanOccupancy=0.667 inkOnlyOccupancy=0.500
+    letters: R=0.43 O=0.80 B=0.57 Z=0.20
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.639 coverage=0.775 order=0.423 backtrack=0.000
+    currentOccupiedSpan=0.128 currentSpanOccupancy=0.800 inkOnlyOccupancy=0.750
+    letters: R=1.00 O=1.00 B=0.43 Z=0.60
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.654 coverage=0.637 order=0.539 backtrack=0.000
+    currentOccupiedSpan=0.101 currentSpanOccupancy=0.600 inkOnlyOccupancy=0.667
+    letters: R=0.71 O=0.80 B=0.71 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.590 coverage=0.512 order=0.449 backtrack=0.000
+    currentOccupiedSpan=0.095 currentSpanOccupancy=0.600 inkOnlyOccupancy=0.583
+    letters: R=0.57 O=0.80 B=0.43 Z=0.60
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.620 coverage=0.625 order=0.459 backtrack=0.000
+    currentOccupiedSpan=0.078 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.542
+    letters: R=0.57 O=1.00 B=0.29 Z=0.40
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  mean across feasible candidates: currentOccupiedSpan=0.206 inkOnlyOccupancy=0.635
+
+=== ROBZ — Zamalek 4000m (status=ok, graphFeasible=5) ===
+letter boundaries: R[0.00-0.21] O[0.28-0.42] B[0.50-0.72] Z[0.84-1.00]  interLetterGap=23.6%
+  rank=-1 [smooth] shapeScore=0.683 coverage=0.738 order=0.549 backtrack=0.000
+    currentOccupiedSpan=0.553 currentSpanOccupancy=0.857 inkOnlyOccupancy=0.792
+    letters: R=1.00* O=0.80 B=0.86 Z=0.40
+    completedLetterCount=1/4 completionRatio=0.250 lettersVisitedInOrder=true wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.740 coverage=0.925 order=0.587 backtrack=0.000
+    currentOccupiedSpan=0.383 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.917
+    letters: R=0.86 O=1.00 B=1.00 Z=0.80
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.717 coverage=0.813 order=0.564 backtrack=0.000
+    currentOccupiedSpan=0.229 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.750
+    letters: R=0.57 O=1.00 B=0.86 Z=0.60
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.638 coverage=0.713 order=0.439 backtrack=0.000
+    currentOccupiedSpan=0.163 currentSpanOccupancy=0.714 inkOnlyOccupancy=0.833
+    letters: R=1.00 O=0.80 B=0.86 Z=0.60
+    completedLetterCount=0/4 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.720 coverage=0.762 order=0.634 backtrack=0.000
+    currentOccupiedSpan=0.103 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.625
+    letters: R=0.57* O=0.80 B=0.57 Z=0.60
+    completedLetterCount=1/4 completionRatio=0.250 lettersVisitedInOrder=true wordTraversal=false
+  mean across feasible candidates: currentOccupiedSpan=0.286 inkOnlyOccupancy=0.783
+
+=== CAIRO — Alexandria 2000m (status=ok, graphFeasible=25) ===
+letter boundaries: C[0.00-0.11] A[0.14-0.38] I[0.45-0.51] R[0.56-0.77] O[0.85-0.99]  interLetterGap=22.9%
+  rank=-1 [smooth] shapeScore=0.624 coverage=0.563 order=0.559 backtrack=0.000
+    currentOccupiedSpan=0.459 currentSpanOccupancy=0.737 inkOnlyOccupancy=0.750
+    letters: C=1.00 A=0.88 I=1.00 R=0.71 O=0.40
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.622 coverage=0.500 order=0.599 backtrack=0.000
+    currentOccupiedSpan=0.432 currentSpanOccupancy=0.824 inkOnlyOccupancy=0.625
+    letters: C=0.00 A=0.88 I=1.00 R=0.71 O=0.40
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.672 coverage=0.713 order=0.514 backtrack=0.000
+    currentOccupiedSpan=0.423 currentSpanOccupancy=0.867 inkOnlyOccupancy=0.583
+    letters: C=0.33 A=0.63 I=1.00 R=0.57 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.692 coverage=0.675 order=0.598 backtrack=0.000
+    currentOccupiedSpan=0.381 currentSpanOccupancy=0.929 inkOnlyOccupancy=0.667
+    letters: C=1.00* A=0.88 I=1.00 R=0.71 O=0.00
+    completedLetterCount=1/5 completionRatio=0.200 lettersVisitedInOrder=true wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.624 coverage=0.613 order=0.446 backtrack=0.000
+    currentOccupiedSpan=0.297 currentSpanOccupancy=0.769 inkOnlyOccupancy=0.708
+    letters: C=0.33 A=0.75 I=1.00 R=0.71 O=0.80
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.743 coverage=0.800 order=0.581 backtrack=0.000
+    currentOccupiedSpan=0.293 currentSpanOccupancy=0.818 inkOnlyOccupancy=0.750
+    letters: C=1.00* A=0.88 I=1.00 R=0.57 O=0.60
+    completedLetterCount=1/5 completionRatio=0.200 lettersVisitedInOrder=true wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.531 coverage=0.400 order=0.508 backtrack=0.000
+    currentOccupiedSpan=0.249 currentSpanOccupancy=0.889 inkOnlyOccupancy=0.542
+    letters: C=0.00 A=0.75 I=1.00 R=0.86 O=0.00
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.692 coverage=0.775 order=0.522 backtrack=0.000
+    currentOccupiedSpan=0.246 currentSpanOccupancy=0.800 inkOnlyOccupancy=0.792
+    letters: C=1.00 A=0.75 I=1.00 R=0.86 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.673 coverage=0.650 order=0.533 backtrack=0.000
+    currentOccupiedSpan=0.239 currentSpanOccupancy=0.727 inkOnlyOccupancy=0.792
+    letters: C=1.00* A=0.75 I=1.00 R=0.86 O=0.60
+    completedLetterCount=1/5 completionRatio=0.200 lettersVisitedInOrder=true wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.665 coverage=0.738 order=0.471 backtrack=0.009
+    currentOccupiedSpan=0.224 currentSpanOccupancy=0.778 inkOnlyOccupancy=0.792
+    letters: C=0.67 A=0.88 I=1.00 R=0.86 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.592 coverage=0.450 order=0.566 backtrack=0.000
+    currentOccupiedSpan=0.224 currentSpanOccupancy=0.778 inkOnlyOccupancy=0.583
+    letters: C=1.00 A=0.63 I=1.00 R=0.43 O=0.40
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.594 coverage=0.500 order=0.543 backtrack=0.000
+    currentOccupiedSpan=0.223 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.708
+    letters: C=1.00 A=0.88 I=1.00 R=0.86 O=0.00
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.721 coverage=0.762 order=0.585 backtrack=0.000
+    currentOccupiedSpan=0.214 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.792
+    letters: C=0.67 A=0.88 I=1.00 R=0.86 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.636 coverage=0.662 order=0.462 backtrack=0.000
+    currentOccupiedSpan=0.212 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.792
+    letters: C=0.33 A=0.88 I=1.00 R=0.71 O=1.00
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.697 coverage=0.800 order=0.517 backtrack=0.052
+    currentOccupiedSpan=0.207 currentSpanOccupancy=0.778 inkOnlyOccupancy=0.750
+    letters: C=0.33 A=0.88 I=1.00 R=0.86 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.718 coverage=0.850 order=0.518 backtrack=0.000
+    currentOccupiedSpan=0.202 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.875
+    letters: C=1.00 A=1.00 I=1.00 R=0.86 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.647 coverage=0.650 order=0.497 backtrack=0.000
+    currentOccupiedSpan=0.191 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.625
+    letters: C=1.00 A=0.88 I=1.00 R=0.29 O=0.40
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.633 coverage=0.487 order=0.604 backtrack=0.000
+    currentOccupiedSpan=0.183 currentSpanOccupancy=0.857 inkOnlyOccupancy=0.833
+    letters: C=1.00 A=0.88 I=1.00 R=0.86 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.693 coverage=0.650 order=0.616 backtrack=0.048
+    currentOccupiedSpan=0.182 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.750
+    letters: C=1.00* A=0.75 I=1.00 R=0.86 O=0.40
+    completedLetterCount=1/5 completionRatio=0.200 lettersVisitedInOrder=true wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.574 coverage=0.487 order=0.490 backtrack=0.000
+    currentOccupiedSpan=0.169 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.667
+    letters: C=0.00 A=0.75 I=1.00 R=0.86 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.638 coverage=0.713 order=0.432 backtrack=0.000
+    currentOccupiedSpan=0.163 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.708
+    letters: C=0.33 A=1.00 I=1.00 R=0.71 O=0.40
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.634 coverage=0.662 order=0.440 backtrack=0.000
+    currentOccupiedSpan=0.139 currentSpanOccupancy=0.800 inkOnlyOccupancy=0.625
+    letters: C=0.33 A=0.63 I=1.00 R=0.71 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.686 coverage=0.575 order=0.533 backtrack=0.006
+    currentOccupiedSpan=0.126 currentSpanOccupancy=0.800 inkOnlyOccupancy=0.667
+    letters: C=0.67 A=0.63 I=1.00 R=0.57 O=0.80
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.641 coverage=0.588 order=0.507 backtrack=0.000
+    currentOccupiedSpan=0.118 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.458
+    letters: C=1.00* A=0.38 I=1.00 R=0.29 O=0.40
+    completedLetterCount=1/5 completionRatio=0.200 lettersVisitedInOrder=true wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.519 coverage=0.388 order=0.399 backtrack=0.000
+    currentOccupiedSpan=0.098 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.625
+    letters: C=0.33 A=0.63 I=1.00 R=0.86 O=0.40
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  mean across feasible candidates: currentOccupiedSpan=0.236 inkOnlyOccupancy=0.698
+
+=== CAIRO — Alexandria 4000m (status=weak_candidates, graphFeasible=1) ===
+letter boundaries: C[0.00-0.11] A[0.14-0.38] I[0.45-0.51] R[0.56-0.77] O[0.85-0.99]  interLetterGap=22.9%
+  rank=-1 [smooth] shapeScore=0.577 coverage=0.438 order=0.563 backtrack=0.000
+    currentOccupiedSpan=0.230 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.667
+    letters: C=0.33 A=0.88 I=1.00 R=0.71 O=0.40
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  mean across feasible candidates: currentOccupiedSpan=0.230 inkOnlyOccupancy=0.667
+
+=== CAIRO — Zamalek 2000m (status=ok, graphFeasible=12) ===
+letter boundaries: C[0.00-0.11] A[0.14-0.38] I[0.45-0.51] R[0.56-0.77] O[0.85-0.99]  interLetterGap=22.9%
+  rank=-1 [smooth] shapeScore=0.709 coverage=0.762 order=0.570 backtrack=0.000
+    currentOccupiedSpan=0.615 currentSpanOccupancy=0.769 inkOnlyOccupancy=0.667
+    letters: C=0.33 A=0.63 I=1.00 R=0.86 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.674 coverage=0.750 order=0.490 backtrack=0.000
+    currentOccupiedSpan=0.518 currentSpanOccupancy=0.889 inkOnlyOccupancy=0.667
+    letters: C=0.33 A=0.63 I=1.00 R=1.00 O=0.40
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.694 coverage=0.775 order=0.567 backtrack=0.000
+    currentOccupiedSpan=0.467 currentSpanOccupancy=0.882 inkOnlyOccupancy=0.792
+    letters: C=1.00 A=0.88 I=1.00 R=0.86 O=0.40
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.684 coverage=0.750 order=0.497 backtrack=0.000
+    currentOccupiedSpan=0.341 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.708
+    letters: C=1.00 A=1.00 I=1.00 R=0.43 O=0.40
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.661 coverage=0.775 order=0.489 backtrack=0.173
+    currentOccupiedSpan=0.315 currentSpanOccupancy=0.833 inkOnlyOccupancy=0.833
+    letters: C=0.67 A=0.88 I=1.00 R=0.86 O=0.80
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.428 coverage=0.263 order=0.363 backtrack=0.000
+    currentOccupiedSpan=0.241 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.375
+    letters: C=0.00 A=0.75 I=1.00 R=0.29 O=0.00
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.619 coverage=0.550 order=0.485 backtrack=0.000
+    currentOccupiedSpan=0.215 currentSpanOccupancy=0.778 inkOnlyOccupancy=0.583
+    letters: C=0.00 A=0.88 I=1.00 R=0.86 O=0.00
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.630 coverage=0.662 order=0.447 backtrack=0.097
+    currentOccupiedSpan=0.161 currentSpanOccupancy=0.714 inkOnlyOccupancy=0.667
+    letters: C=0.67 A=1.00 I=1.00 R=0.29 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.553 coverage=0.450 order=0.453 backtrack=0.069
+    currentOccupiedSpan=0.161 currentSpanOccupancy=0.714 inkOnlyOccupancy=0.625
+    letters: C=0.33 A=0.75 I=1.00 R=0.57 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.673 coverage=0.725 order=0.485 backtrack=0.000
+    currentOccupiedSpan=0.129 currentSpanOccupancy=1.000 inkOnlyOccupancy=0.667
+    letters: C=1.00 A=0.63 I=1.00 R=0.43 O=0.80
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.627 coverage=0.487 order=0.522 backtrack=0.000
+    currentOccupiedSpan=0.083 currentSpanOccupancy=0.600 inkOnlyOccupancy=0.583
+    letters: C=0.33 A=0.75 I=1.00 R=0.43 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.652 coverage=0.637 order=0.541 backtrack=0.132
+    currentOccupiedSpan=0.065 currentSpanOccupancy=0.500 inkOnlyOccupancy=0.708
+    letters: C=0.33 A=0.88 I=1.00* R=0.57 O=0.80
+    completedLetterCount=1/5 completionRatio=0.200 lettersVisitedInOrder=true wordTraversal=false
+  mean across feasible candidates: currentOccupiedSpan=0.276 inkOnlyOccupancy=0.656
+
+=== CAIRO — Zamalek 4000m (status=ok, graphFeasible=2) ===
+letter boundaries: C[0.00-0.11] A[0.14-0.38] I[0.45-0.51] R[0.56-0.77] O[0.85-0.99]  interLetterGap=22.9%
+  rank=-1 [smooth] shapeScore=0.723 coverage=0.738 order=0.635 backtrack=0.000
+    currentOccupiedSpan=0.472 currentSpanOccupancy=0.882 inkOnlyOccupancy=0.750
+    letters: C=0.67 A=0.75 I=1.00 R=1.00* O=0.40
+    completedLetterCount=1/5 completionRatio=0.200 lettersVisitedInOrder=true wordTraversal=false
+  rank=-1 [smooth] shapeScore=0.531 coverage=0.375 order=0.455 backtrack=0.000
+    currentOccupiedSpan=0.220 currentSpanOccupancy=0.875 inkOnlyOccupancy=0.750
+    letters: C=0.33 A=0.88 I=1.00 R=0.86 O=0.60
+    completedLetterCount=0/5 completionRatio=0.000 lettersVisitedInOrder=false wordTraversal=false
+  mean across feasible candidates: currentOccupiedSpan=0.346 inkOnlyOccupancy=0.750

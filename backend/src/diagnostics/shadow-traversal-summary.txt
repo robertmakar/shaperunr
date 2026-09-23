@@ -1,0 +1,417 @@
+Shadow traversal evaluator diagnostics (DEVELOPMENT ONLY) — observation only, no algorithm/gate change.
+"*" after a letter = existingMeaningfullyVisited=true (the existing, unmodified per-letter gate).
+
+=== ROBZ — Alexandria 2000m (status=ok, graphFeasible=16) ===
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.833
+    letters: R ink=0.86 cov=0.67 ord=0.30 O ink=0.80 cov=0.38 ord=0.17 B ink=0.86 cov=0.54 ord=0.37 Z ink=0.80 cov=0.29 ord=0.12
+    completionByThreshold: 0.4:4/4 0.5:4/4 0.6:4/4 0.7:4/4
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.833
+    letters: R ink=1.00 cov=0.58 ord=0.55* O ink=1.00 cov=0.17 ord=0.15 B ink=0.86 cov=0.29 ord=0.36 Z ink=0.40 cov=0.25 ord=0.46
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.792
+    letters: R ink=1.00 cov=0.25 ord=0.20 O ink=0.80 cov=0.29 ord=0.21 B ink=0.86 cov=0.58 ord=0.41 Z ink=0.40 cov=0.13 ord=0.31
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: R ink=0.86 cov=0.38 ord=0.15 O ink=1.00 cov=0.25 ord=0.24 B ink=0.71 cov=0.38 ord=0.42 Z ink=0.40 cov=0.21 ord=0.43
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: R ink=0.43 cov=0.17 ord=0.29 O ink=1.00 cov=0.29 ord=0.16 B ink=1.00 cov=0.33 ord=0.27 Z ink=0.60 cov=0.08 ord=0.35
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:2/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: R ink=0.43 cov=0.29 ord=0.27 O ink=1.00 cov=0.50 ord=0.13 B ink=1.00 cov=0.46 ord=0.44 Z ink=0.40 cov=0.29 ord=0.42
+    completionByThreshold: 0.4:4/4 0.5:2/4 0.6:2/4 0.7:2/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: R ink=0.71 cov=0.13 ord=0.23 O ink=0.80 cov=0.46 ord=0.14 B ink=0.86 cov=0.46 ord=0.16 Z ink=0.40 cov=0.00 ord=0.47
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: R ink=0.86 cov=0.58 ord=0.24 O ink=0.60 cov=0.29 ord=0.43 B ink=0.86 cov=0.42 ord=0.23 Z ink=0.40 cov=0.29 ord=0.45
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:2/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: R ink=0.86 cov=0.46 ord=0.23 O ink=0.80 cov=0.46 ord=0.16 B ink=0.71 cov=0.38 ord=0.23 Z ink=0.40 cov=0.00 ord=0.36
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.625
+    letters: R ink=0.86 cov=0.50 ord=0.23 O ink=0.60 cov=0.38 ord=0.39 B ink=0.57 cov=0.42 ord=0.34 Z ink=0.40 cov=0.33 ord=0.43
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:2/4 0.7:1/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.583
+    letters: R ink=0.86 cov=0.50 ord=0.23 O ink=0.60 cov=0.42 ord=0.42 B ink=0.29 cov=0.21 ord=0.19 Z ink=0.60 cov=0.25 ord=0.28
+    completionByThreshold: 0.4:3/4 0.5:3/4 0.6:3/4 0.7:1/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.542
+    letters: R ink=0.43 cov=0.25 ord=0.28 O ink=0.80 cov=0.50 ord=0.30 B ink=0.57 cov=0.54 ord=0.37 Z ink=0.40 cov=0.29 ord=0.48
+    completionByThreshold: 0.4:4/4 0.5:2/4 0.6:1/4 0.7:1/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.542
+    letters: R ink=0.29 cov=0.08 ord=0.29 O ink=0.80 cov=0.46 ord=0.43 B ink=0.43 cov=0.29 ord=0.43 Z ink=0.80 cov=0.38 ord=0.39
+    completionByThreshold: 0.4:3/4 0.5:2/4 0.6:2/4 0.7:2/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.417
+    letters: R ink=0.57 cov=0.46 ord=0.42 O ink=0.60 cov=0.25 ord=0.17 B ink=0.43 cov=0.38 ord=0.31 Z ink=0.00 cov=0.00 ord=0.38
+    completionByThreshold: 0.4:3/4 0.5:2/4 0.6:1/4 0.7:0/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.417
+    letters: R ink=0.43 cov=0.13 ord=0.43 O ink=0.80 cov=0.42 ord=0.18 B ink=0.43 cov=0.46 ord=0.21 Z ink=0.00 cov=0.00 ord=0.00
+    completionByThreshold: 0.4:3/4 0.5:1/4 0.6:1/4 0.7:1/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.417
+    letters: R ink=0.29 cov=0.13 ord=0.23 O ink=0.80 cov=0.58 ord=0.44 B ink=0.43 cov=0.25 ord=0.40 Z ink=0.20 cov=0.08 ord=0.41
+    completionByThreshold: 0.4:2/4 0.5:1/4 0.6:1/4 0.7:1/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+
+=== ROBZ — Alexandria 4000m (status=ok, graphFeasible=5) ===
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.792
+    letters: R ink=1.00 cov=0.21 ord=0.18 O ink=0.80 cov=0.42 ord=0.15 B ink=0.86 cov=0.17 ord=0.21 Z ink=0.40 cov=0.29 ord=0.46
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: R ink=0.86 cov=0.29 ord=0.25 O ink=0.80 cov=0.29 ord=0.24 B ink=0.86 cov=0.33 ord=0.32 Z ink=0.40 cov=0.00 ord=0.31
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.625
+    letters: R ink=0.57 cov=0.17 ord=0.42 O ink=0.60 cov=0.08 ord=0.17 B ink=0.57 cov=0.25 ord=0.26 Z ink=0.80 cov=0.13 ord=0.28
+    completionByThreshold: 0.4:4/4 0.5:4/4 0.6:2/4 0.7:1/4
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.625
+    letters: R ink=0.29 cov=0.04 ord=0.21 O ink=0.80 cov=0.58 ord=0.15 B ink=0.86 cov=0.42 ord=0.18 Z ink=0.60 cov=0.17 ord=0.47
+    completionByThreshold: 0.4:3/4 0.5:3/4 0.6:3/4 0.7:2/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.542
+    letters: R ink=0.43 cov=0.00 ord=0.33 O ink=0.80 cov=0.42 ord=0.15 B ink=0.57 cov=0.25 ord=0.20 Z ink=0.40 cov=0.00 ord=0.30
+    completionByThreshold: 0.4:4/4 0.5:2/4 0.6:1/4 0.7:1/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+
+=== ROBZ — Zamalek 2000m (status=ok, graphFeasible=12) ===
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: R ink=1.00 cov=0.63 ord=0.27 O ink=0.60 cov=0.21 ord=0.44 B ink=0.86 cov=0.75 ord=0.20 Z ink=0.40 cov=0.29 ord=0.48
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:2/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: R ink=1.00 cov=0.54 ord=0.16 O ink=1.00 cov=0.38 ord=0.16 B ink=0.43 cov=0.21 ord=0.23 Z ink=0.60 cov=0.08 ord=0.43
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:2/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: R ink=0.86 cov=0.42 ord=0.16 O ink=0.80 cov=0.38 ord=0.16 B ink=0.86 cov=0.25 ord=0.19 Z ink=0.20 cov=0.08 ord=0.45
+    completionByThreshold: 0.4:3/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: R ink=0.57 cov=0.46 ord=0.29 O ink=0.80 cov=0.54 ord=0.15 B ink=0.86 cov=0.67 ord=0.18 Z ink=0.60 cov=0.13 ord=0.15
+    completionByThreshold: 0.4:4/4 0.5:4/4 0.6:3/4 0.7:2/4
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.667
+    letters: R ink=0.86 cov=0.42 ord=0.15 O ink=0.80 cov=0.38 ord=0.16 B ink=0.86 cov=0.42 ord=0.27 Z ink=0.00 cov=0.00 ord=0.15
+    completionByThreshold: 0.4:3/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.667
+    letters: R ink=0.71 cov=0.50 ord=0.16 O ink=0.80 cov=0.42 ord=0.16 B ink=0.71 cov=0.29 ord=0.36 Z ink=0.40 cov=0.17 ord=0.28
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.625
+    letters: R ink=0.57 cov=0.33 ord=0.30 O ink=0.60 cov=0.42 ord=0.38 B ink=0.57 cov=0.54 ord=0.26 Z ink=0.80 cov=0.00 ord=0.41
+    completionByThreshold: 0.4:4/4 0.5:4/4 0.6:2/4 0.7:1/4
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.583
+    letters: R ink=0.86 cov=0.46 ord=0.24 O ink=0.80 cov=0.46 ord=0.40 B ink=0.29 cov=0.21 ord=0.28 Z ink=0.40 cov=0.00 ord=0.30
+    completionByThreshold: 0.4:3/4 0.5:2/4 0.6:2/4 0.7:2/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.583
+    letters: R ink=0.57 cov=0.21 ord=0.43 O ink=0.80 cov=0.33 ord=0.18 B ink=0.43 cov=0.00 ord=0.42 Z ink=0.60 cov=0.21 ord=0.36
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:2/4 0.7:1/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.542
+    letters: R ink=0.57 cov=0.21 ord=0.44 O ink=1.00 cov=0.58 ord=0.15 B ink=0.29 cov=0.29 ord=0.25 Z ink=0.40 cov=0.08 ord=0.15
+    completionByThreshold: 0.4:3/4 0.5:2/4 0.6:1/4 0.7:1/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.542
+    letters: R ink=0.86 cov=0.46 ord=0.28 O ink=0.60 cov=0.13 ord=0.47 B ink=0.29 cov=0.33 ord=0.36 Z ink=0.40 cov=0.17 ord=0.37
+    completionByThreshold: 0.4:3/4 0.5:2/4 0.6:2/4 0.7:1/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.500
+    letters: R ink=0.43 cov=0.21 ord=0.26 O ink=0.80 cov=0.50 ord=0.15 B ink=0.57 cov=0.54 ord=0.28 Z ink=0.20 cov=0.08 ord=0.35
+    completionByThreshold: 0.4:3/4 0.5:2/4 0.6:1/4 0.7:1/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+
+=== ROBZ — Zamalek 4000m (status=ok, graphFeasible=5) ===
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.917
+    letters: R ink=0.86 cov=0.33 ord=0.17 O ink=1.00 cov=0.42 ord=0.14 B ink=1.00 cov=0.29 ord=0.29 Z ink=0.80 cov=0.13 ord=0.41
+    completionByThreshold: 0.4:4/4 0.5:4/4 0.6:4/4 0.7:4/4
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.833
+    letters: R ink=1.00 cov=0.38 ord=0.16 O ink=0.80 cov=0.29 ord=0.17 B ink=0.86 cov=0.38 ord=0.31 Z ink=0.60 cov=0.29 ord=0.37
+    completionByThreshold: 0.4:4/4 0.5:4/4 0.6:4/4 0.7:3/4
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.792
+    letters: R ink=1.00 cov=0.88 ord=0.64* O ink=0.80 cov=0.21 ord=0.34 B ink=0.86 cov=0.29 ord=0.34 Z ink=0.40 cov=0.08 ord=0.18
+    completionByThreshold: 0.4:4/4 0.5:3/4 0.6:3/4 0.7:3/4
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: R ink=0.57 cov=0.42 ord=0.42 O ink=1.00 cov=0.25 ord=0.13 B ink=0.86 cov=0.29 ord=0.29 Z ink=0.60 cov=0.29 ord=0.25
+    completionByThreshold: 0.4:4/4 0.5:4/4 0.6:3/4 0.7:2/4
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.625
+    letters: R ink=0.57 cov=0.50 ord=0.45* O ink=0.80 cov=0.50 ord=0.15 B ink=0.57 cov=0.29 ord=0.25 Z ink=0.60 cov=0.13 ord=0.35
+    completionByThreshold: 0.4:4/4 0.5:4/4 0.6:2/4 0.7:1/4
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+
+=== CAIRO — Alexandria 2000m (status=ok, graphFeasible=25) ===
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.875
+    letters: C ink=1.00 cov=0.17 ord=0.44 A ink=1.00 cov=0.71 ord=0.27 I ink=1.00 cov=0.25 ord=0.13 R ink=0.86 cov=0.33 ord=0.23 O ink=0.60 cov=0.17 ord=0.38
+    completionByThreshold: 0.4:5/5 0.5:5/5 0.6:5/5 0.7:4/5
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.833
+    letters: C ink=1.00 cov=0.29 ord=0.39 A ink=0.88 cov=0.38 ord=0.25 I ink=1.00 cov=0.25 ord=0.35 R ink=0.86 cov=0.46 ord=0.30 O ink=0.60 cov=0.13 ord=0.38
+    completionByThreshold: 0.4:5/5 0.5:5/5 0.6:5/5 0.7:4/5
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.792
+    letters: C ink=1.00 cov=0.29 ord=0.44 A ink=0.75 cov=0.33 ord=0.29 I ink=1.00 cov=0.21 ord=0.13 R ink=0.86 cov=0.29 ord=0.42 O ink=0.60 cov=0.04 ord=0.44
+    completionByThreshold: 0.4:5/5 0.5:5/5 0.6:5/5 0.7:4/5
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.792
+    letters: C ink=0.67 cov=0.54 ord=0.29 A ink=0.88 cov=0.75 ord=0.21 I ink=1.00 cov=0.50 ord=0.30 R ink=0.86 cov=0.58 ord=0.27 O ink=0.60 cov=0.21 ord=0.19
+    completionByThreshold: 0.4:5/5 0.5:5/5 0.6:5/5 0.7:3/5
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.792
+    letters: C ink=0.33 cov=0.00 ord=0.00 A ink=0.88 cov=0.50 ord=0.20 I ink=1.00 cov=0.00 ord=0.30 R ink=0.71 cov=0.25 ord=0.24 O ink=1.00 cov=0.42 ord=0.42
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:4/5 0.7:4/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.792
+    letters: C ink=0.67 cov=0.25 ord=0.26 A ink=0.88 cov=0.63 ord=0.23 I ink=1.00 cov=0.71 ord=0.39 R ink=0.86 cov=0.04 ord=0.19 O ink=0.60 cov=0.25 ord=0.22
+    completionByThreshold: 0.4:5/5 0.5:5/5 0.6:5/5 0.7:3/5
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.792
+    letters: C ink=1.00 cov=0.75 ord=0.58* A ink=0.75 cov=0.21 ord=0.26 I ink=1.00 cov=0.29 ord=0.13 R ink=0.86 cov=0.42 ord=0.34 O ink=0.60 cov=0.00 ord=0.40
+    completionByThreshold: 0.4:5/5 0.5:5/5 0.6:5/5 0.7:4/5
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: C ink=0.33 cov=0.17 ord=0.15 A ink=0.88 cov=0.71 ord=0.25 I ink=1.00 cov=0.13 ord=0.40 R ink=0.86 cov=0.46 ord=0.21 O ink=0.60 cov=0.33 ord=0.19
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:4/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: C ink=1.00 cov=0.79 ord=0.52* A ink=0.75 cov=0.13 ord=0.31 I ink=1.00 cov=0.29 ord=0.15 R ink=0.86 cov=0.21 ord=0.26 O ink=0.40 cov=0.08 ord=0.00
+    completionByThreshold: 0.4:5/5 0.5:4/5 0.6:4/5 0.7:4/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: C ink=1.00 cov=0.71 ord=0.43 A ink=0.88 cov=0.50 ord=0.25 I ink=1.00 cov=0.29 ord=0.26 R ink=0.71 cov=0.46 ord=0.33 O ink=0.40 cov=0.17 ord=0.44
+    completionByThreshold: 0.4:5/5 0.5:4/5 0.6:4/5 0.7:4/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: C ink=1.00 cov=0.83 ord=0.46* A ink=0.88 cov=0.88 ord=0.23 I ink=1.00 cov=0.04 ord=0.15 R ink=0.57 cov=0.25 ord=0.40 O ink=0.60 cov=0.33 ord=0.39
+    completionByThreshold: 0.4:5/5 0.5:5/5 0.6:4/5 0.7:3/5
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: C ink=0.33 cov=0.00 ord=0.00 A ink=0.75 cov=0.33 ord=0.35 I ink=1.00 cov=0.25 ord=0.40 R ink=0.71 cov=0.46 ord=0.29 O ink=0.80 cov=0.50 ord=0.16
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:4/5 0.7:4/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: C ink=0.33 cov=0.00 ord=0.00 A ink=1.00 cov=0.38 ord=0.13 I ink=1.00 cov=0.33 ord=0.35 R ink=0.71 cov=0.21 ord=0.18 O ink=0.40 cov=0.08 ord=0.00
+    completionByThreshold: 0.4:4/5 0.5:3/5 0.6:3/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: C ink=1.00 cov=0.46 ord=0.30 A ink=0.88 cov=0.29 ord=0.26 I ink=1.00 cov=0.38 ord=0.34 R ink=0.86 cov=0.42 ord=0.30 O ink=0.00 cov=0.00 ord=0.00
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:4/5 0.7:4/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.667
+    letters: C ink=0.67 cov=0.42 ord=0.26 A ink=0.63 cov=0.29 ord=0.35 I ink=1.00 cov=0.25 ord=0.42 R ink=0.57 cov=0.29 ord=0.46 O ink=0.80 cov=0.63 ord=0.14
+    completionByThreshold: 0.4:5/5 0.5:5/5 0.6:4/5 0.7:2/5
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.667
+    letters: C ink=1.00 cov=0.88 ord=0.66* A ink=0.88 cov=0.38 ord=0.22 I ink=1.00 cov=0.00 ord=0.31 R ink=0.71 cov=0.33 ord=0.31 O ink=0.00 cov=0.00 ord=0.00
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:4/5 0.7:4/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=O
+    decisionCategory=missing_letter
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.667
+    letters: C ink=0.00 cov=0.00 ord=0.00 A ink=0.75 cov=0.58 ord=0.19 I ink=1.00 cov=0.38 ord=0.33 R ink=0.86 cov=0.38 ord=0.20 O ink=0.60 cov=0.25 ord=0.41
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:4/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.625
+    letters: C ink=1.00 cov=0.00 ord=0.24 A ink=0.88 cov=0.54 ord=0.28 I ink=1.00 cov=0.42 ord=0.36 R ink=0.29 cov=0.13 ord=0.27 O ink=0.40 cov=0.08 ord=0.41
+    completionByThreshold: 0.4:4/5 0.5:3/5 0.6:3/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.625
+    letters: C ink=0.00 cov=0.00 ord=0.30 A ink=0.88 cov=0.33 ord=0.22 I ink=1.00 cov=0.92 ord=0.38 R ink=0.71 cov=0.42 ord=0.40 O ink=0.40 cov=0.08 ord=0.00
+    completionByThreshold: 0.4:4/5 0.5:3/5 0.6:3/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.625
+    letters: C ink=0.33 cov=0.13 ord=0.12 A ink=0.63 cov=0.46 ord=0.22 I ink=1.00 cov=0.33 ord=0.14 R ink=0.71 cov=0.42 ord=0.28 O ink=0.60 cov=0.13 ord=0.20
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:4/5 0.7:2/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.625
+    letters: C ink=0.33 cov=0.17 ord=0.33 A ink=0.63 cov=0.29 ord=0.27 I ink=1.00 cov=0.00 ord=0.39 R ink=0.86 cov=0.58 ord=0.13 O ink=0.40 cov=0.04 ord=0.23
+    completionByThreshold: 0.4:4/5 0.5:3/5 0.6:3/5 0.7:2/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.583
+    letters: C ink=0.33 cov=0.17 ord=0.11 A ink=0.63 cov=0.63 ord=0.21 I ink=1.00 cov=0.54 ord=0.29 R ink=0.57 cov=0.58 ord=0.36 O ink=0.60 cov=0.00 ord=0.20
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:3/5 0.7:1/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.583
+    letters: C ink=1.00 cov=0.46 ord=0.43 A ink=0.63 cov=0.42 ord=0.31 I ink=1.00 cov=0.38 ord=0.35 R ink=0.43 cov=0.21 ord=0.27 O ink=0.40 cov=0.00 ord=0.50
+    completionByThreshold: 0.4:5/5 0.5:3/5 0.6:3/5 0.7:2/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.542
+    letters: C ink=0.00 cov=0.00 ord=0.00 A ink=0.75 cov=0.50 ord=0.21 I ink=1.00 cov=0.29 ord=0.33 R ink=0.86 cov=0.46 ord=0.24 O ink=0.00 cov=0.00 ord=0.00
+    completionByThreshold: 0.4:3/5 0.5:3/5 0.6:3/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.458
+    letters: C ink=1.00 cov=0.71 ord=0.47* A ink=0.38 cov=0.54 ord=0.39 I ink=1.00 cov=0.08 ord=0.32 R ink=0.29 cov=0.00 ord=0.36 O ink=0.40 cov=0.04 ord=0.46
+    completionByThreshold: 0.4:3/5 0.5:2/5 0.6:2/5 0.7:2/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+
+=== CAIRO — Alexandria 4000m (status=weak_candidates, graphFeasible=1) ===
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.667
+    letters: C ink=0.33 cov=0.00 ord=0.30 A ink=0.88 cov=0.50 ord=0.28 I ink=1.00 cov=0.46 ord=0.38 R ink=0.71 cov=0.42 ord=0.32 O ink=0.40 cov=0.00 ord=0.00
+    completionByThreshold: 0.4:4/5 0.5:3/5 0.6:3/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+
+=== CAIRO — Zamalek 2000m (status=ok, graphFeasible=12) ===
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.833
+    letters: C ink=0.67 cov=0.38 ord=0.23 A ink=0.88 cov=0.75 ord=0.21 I ink=1.00 cov=0.54 ord=0.13 R ink=0.86 cov=0.58 ord=0.31 O ink=0.80 cov=0.54 ord=0.18
+    completionByThreshold: 0.4:5/5 0.5:5/5 0.6:5/5 0.7:4/5
+    allLettersCovered=true allLettersCoveredAndOrdered=true visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=covered_and_ordered
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.792
+    letters: C ink=1.00 cov=0.00 ord=0.36 A ink=0.88 cov=0.46 ord=0.30 I ink=1.00 cov=0.13 ord=0.36 R ink=0.86 cov=0.17 ord=0.29 O ink=0.40 cov=0.00 ord=0.00
+    completionByThreshold: 0.4:5/5 0.5:4/5 0.6:4/5 0.7:4/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: C ink=0.33 cov=0.17 ord=0.25 A ink=0.88 cov=0.46 ord=0.20 I ink=1.00 cov=0.33 ord=0.46* R ink=0.57 cov=0.29 ord=0.40 O ink=0.80 cov=0.25 ord=0.19
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:3/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.708
+    letters: C ink=1.00 cov=0.63 ord=0.43 A ink=1.00 cov=0.38 ord=0.23 I ink=1.00 cov=0.25 ord=0.37 R ink=0.43 cov=0.21 ord=0.33 O ink=0.40 cov=0.00 ord=0.00
+    completionByThreshold: 0.4:5/5 0.5:3/5 0.6:3/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.667
+    letters: C ink=0.33 cov=0.13 ord=0.15 A ink=0.63 cov=0.25 ord=0.20 I ink=1.00 cov=0.63 ord=0.29 R ink=0.86 cov=0.29 ord=0.34 O ink=0.60 cov=0.54 ord=0.15
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:4/5 0.7:2/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.667
+    letters: C ink=1.00 cov=0.58 ord=0.44 A ink=0.63 cov=0.46 ord=0.26 I ink=1.00 cov=0.46 ord=0.10 R ink=0.43 cov=0.25 ord=0.40 O ink=0.80 cov=0.29 ord=0.21
+    completionByThreshold: 0.4:5/5 0.5:4/5 0.6:4/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.667
+    letters: C ink=0.67 cov=0.13 ord=0.22 A ink=1.00 cov=0.42 ord=0.22 I ink=1.00 cov=0.04 ord=0.32 R ink=0.29 cov=0.00 ord=0.26 O ink=0.60 cov=0.46 ord=0.16
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:4/5 0.7:2/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.667
+    letters: C ink=0.33 cov=0.25 ord=0.15 A ink=0.63 cov=0.58 ord=0.23 I ink=1.00 cov=1.00 ord=0.41 R ink=1.00 cov=0.54 ord=0.25 O ink=0.40 cov=0.00 ord=0.38
+    completionByThreshold: 0.4:4/5 0.5:3/5 0.6:3/5 0.7:2/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.625
+    letters: C ink=0.33 cov=0.17 ord=0.27 A ink=0.75 cov=0.38 ord=0.25 I ink=1.00 cov=0.88 ord=0.40 R ink=0.57 cov=0.08 ord=0.17 O ink=0.60 cov=0.33 ord=0.21
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:3/5 0.7:2/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.583
+    letters: C ink=0.33 cov=0.17 ord=0.15 A ink=0.75 cov=0.25 ord=0.33 I ink=1.00 cov=0.33 ord=0.43 R ink=0.43 cov=0.29 ord=0.38 O ink=0.60 cov=0.29 ord=0.44
+    completionByThreshold: 0.4:4/5 0.5:3/5 0.6:3/5 0.7:2/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.583
+    letters: C ink=0.00 cov=0.00 ord=0.15 A ink=0.88 cov=0.67 ord=0.22 I ink=1.00 cov=0.54 ord=0.15 R ink=0.86 cov=0.71 ord=0.29 O ink=0.00 cov=0.00 ord=0.00
+    completionByThreshold: 0.4:3/5 0.5:3/5 0.6:3/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.375
+    letters: C ink=0.00 cov=0.00 ord=0.30 A ink=0.75 cov=0.46 ord=0.20 I ink=1.00 cov=0.58 ord=0.34 R ink=0.29 cov=0.13 ord=0.29 O ink=0.00 cov=0.00 ord=0.40
+    completionByThreshold: 0.4:2/5 0.5:2/5 0.6:2/5 0.7:2/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+
+=== CAIRO — Zamalek 4000m (status=ok, graphFeasible=2) ===
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: C ink=0.67 cov=0.00 ord=0.31 A ink=0.75 cov=0.42 ord=0.23 I ink=1.00 cov=0.04 ord=0.15 R ink=1.00 cov=0.50 ord=0.56* O ink=0.40 cov=0.13 ord=0.46
+    completionByThreshold: 0.4:5/5 0.5:4/5 0.6:4/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+  rank=-1 [smooth] currentWordTraversal=false inkAwareTraversal=false inkOnlyOccupancy=0.750
+    letters: C ink=0.33 cov=0.00 ord=0.30 A ink=0.88 cov=0.33 ord=0.24 I ink=1.00 cov=0.46 ord=0.19 R ink=0.86 cov=0.38 ord=0.16 O ink=0.60 cov=0.33 ord=0.22
+    completionByThreshold: 0.4:4/5 0.5:4/5 0.6:4/5 0.7:3/5
+    allLettersCovered=false allLettersCoveredAndOrdered=false visitedLettersInOrder=true firstMissingLetter=none
+    decisionCategory=neither
+
+=== Global decision matrix (all cases pooled) ===
+total candidates=78
+  current_passes: 0
+  ink_aware_passes: 0
+  covered_and_ordered: 17
+  covered_not_ordered: 0
+  missing_letter: 1
+  neither: 60

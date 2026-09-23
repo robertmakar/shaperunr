@@ -1,0 +1,4051 @@
+{
+  "generatedAt": "2026-09-21T18:05:08.621Z",
+  "cases": [
+    {
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "status": "ok",
+      "graphFeasibleCount": 16,
+      "boundarySet": {
+        "boundaries": [
+          {
+            "letter": "R",
+            "index": 0,
+            "projectedStartProgress": 0,
+            "projectedEndProgress": 0.2079256563713835,
+            "lengthStartProgress": 0,
+            "lengthEndProgress": 0.2720054179525185,
+            "letterLength": 0.8132500923951749
+          },
+          {
+            "letter": "O",
+            "index": 1,
+            "projectedStartProgress": 0.28106480770455683,
+            "projectedEndProgress": 0.42289374253055667,
+            "lengthStartProgress": 0.2720054179525185,
+            "lengthEndProgress": 0.4676938300333863,
+            "letterLength": 0.5850751812348497
+          },
+          {
+            "letter": "B",
+            "index": 2,
+            "projectedStartProgress": 0.5045563051155663,
+            "projectedEndProgress": 0.7235619573637917,
+            "lengthStartProgress": 0.4676938300333863,
+            "lengthEndProgress": 0.7905490646534655,
+            "letterLength": 0.9652824247452243
+          },
+          {
+            "letter": "Z",
+            "index": 3,
+            "projectedStartProgress": 0.8398920744397433,
+            "projectedEndProgress": 1,
+            "lengthStartProgress": 0.7905490646534655,
+            "lengthEndProgress": 1,
+            "letterLength": 0.6262227929318633
+          }
+        ],
+        "totalFlattenedLength": 3.9112541789580773,
+        "totalLetterLength": 2.9898304913071128,
+        "interLetterGapLength": 0.9214236876509645
+      },
+      "candidates": [
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.624486650391461,
+          "coverage": 0.5375,
+          "order": 0.5902703860218176,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.4135763476553053,
+          "currentSpanOccupancy": 0.9285714285714286,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5763543366472113,
+          "coverage": 0.45,
+          "order": 0.5244430186703096,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.11449120673724456,
+          "currentSpanOccupancy": 0.8,
+          "inkOnlyOccupancy": 0.7916666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5827554638825276,
+          "coverage": 0.4625,
+          "order": 0.5391141890133062,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.09468663070234289,
+          "currentSpanOccupancy": 0.6,
+          "inkOnlyOccupancy": 0.4166666666666667,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.6,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6482679137982397,
+          "coverage": 0.725,
+          "order": 0.4959865498358602,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.45065200163141983,
+          "currentSpanOccupancy": 0.875,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5999448981084896,
+          "coverage": 0.5125,
+          "order": 0.5501945795631787,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.2832959317284741,
+          "currentSpanOccupancy": 0.75,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.6,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.43283496215248135,
+          "coverage": 0.3125,
+          "order": 0.3316297018169193,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.10265583962342306,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.4166666666666667,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5111572781099661,
+          "coverage": 0.275,
+          "order": 0.5154281995169002,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.2914588024349596,
+          "currentSpanOccupancy": 0.75,
+          "inkOnlyOccupancy": 0.4166666666666667,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.2,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5519020741190841,
+          "coverage": 0.4125,
+          "order": 0.4872764045242258,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.16044452271736592,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5733072214778056,
+          "coverage": 0.4125,
+          "order": 0.5441383118410246,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.1949333692709958,
+          "currentSpanOccupancy": 0.5454545454545454,
+          "inkOnlyOccupancy": 0.5833333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.6,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6543095387506684,
+          "coverage": 0.725,
+          "order": 0.5418088244071285,
+          "backtracking": 0.30107149029503744,
+          "currentOccupiedSpan": 0.16609061423571964,
+          "currentSpanOccupancy": 0.7142857142857143,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5986566641989772,
+          "coverage": 0.525,
+          "order": 0.5415524556131969,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.11926892199077778,
+          "currentSpanOccupancy": 0.5714285714285714,
+          "inkOnlyOccupancy": 0.625,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.6,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5654856471267183,
+          "coverage": 0.4375,
+          "order": 0.4974853114059439,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.4378951699643335,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6804976600852539,
+          "coverage": 0.6625,
+          "order": 0.5729491299989368,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.05929971319097871,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.8333333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.8,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.7316172723525435,
+          "coverage": 0.85,
+          "order": 0.5985427327570794,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.34443860184548053,
+          "currentSpanOccupancy": 0.7857142857142857,
+          "inkOnlyOccupancy": 0.8333333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 1,
+              "completed": true
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 1,
+          "expectedLetterCount": 4,
+          "completionRatio": 0.25,
+          "lettersVisitedInOrder": true,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6346591947779289,
+          "coverage": 0.6625,
+          "order": 0.5038839713195682,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.14797230209918466,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.5416666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6657901856649284,
+          "coverage": 0.5875,
+          "order": 0.5569725909185721,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.22021982952758185,
+          "currentSpanOccupancy": 0.875,
+          "inkOnlyOccupancy": 0.5416666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.8,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "status": "ok",
+      "graphFeasibleCount": 5,
+      "boundarySet": {
+        "boundaries": [
+          {
+            "letter": "R",
+            "index": 0,
+            "projectedStartProgress": 0,
+            "projectedEndProgress": 0.2079256563713835,
+            "lengthStartProgress": 0,
+            "lengthEndProgress": 0.2720054179525185,
+            "letterLength": 0.8132500923951749
+          },
+          {
+            "letter": "O",
+            "index": 1,
+            "projectedStartProgress": 0.28106480770455683,
+            "projectedEndProgress": 0.42289374253055667,
+            "lengthStartProgress": 0.2720054179525185,
+            "lengthEndProgress": 0.4676938300333863,
+            "letterLength": 0.5850751812348497
+          },
+          {
+            "letter": "B",
+            "index": 2,
+            "projectedStartProgress": 0.5045563051155663,
+            "projectedEndProgress": 0.7235619573637917,
+            "lengthStartProgress": 0.4676938300333863,
+            "lengthEndProgress": 0.7905490646534655,
+            "letterLength": 0.9652824247452243
+          },
+          {
+            "letter": "Z",
+            "index": 3,
+            "projectedStartProgress": 0.8398920744397433,
+            "projectedEndProgress": 1,
+            "lengthStartProgress": 0.7905490646534655,
+            "lengthEndProgress": 1,
+            "letterLength": 0.6262227929318633
+          }
+        ],
+        "totalFlattenedLength": 3.9112541789580773,
+        "totalLetterLength": 2.9898304913071128,
+        "interLetterGapLength": 0.9214236876509645
+      },
+      "candidates": [
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.659235058687731,
+          "coverage": 0.7625,
+          "order": 0.4872784545653636,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.15538425473629636,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.625,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.6,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.8,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6516409826537382,
+          "coverage": 0.7,
+          "order": 0.4984169617251132,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.20074680373611933,
+          "currentSpanOccupancy": 0.8571428571428571,
+          "inkOnlyOccupancy": 0.7916666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6753598671535698,
+          "coverage": 0.75,
+          "order": 0.520312392562128,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.42015382199551793,
+          "currentSpanOccupancy": 0.9285714285714286,
+          "inkOnlyOccupancy": 0.625,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6442412806702901,
+          "coverage": 0.6875,
+          "order": 0.5050754307753305,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.12038183594177848,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.5416666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6735074822715251,
+          "coverage": 0.7875,
+          "order": 0.5637418557354165,
+          "backtracking": 0.2578431034317528,
+          "currentOccupiedSpan": 0.16962038843726007,
+          "currentSpanOccupancy": 0.8571428571428571,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "status": "ok",
+      "graphFeasibleCount": 12,
+      "boundarySet": {
+        "boundaries": [
+          {
+            "letter": "R",
+            "index": 0,
+            "projectedStartProgress": 0,
+            "projectedEndProgress": 0.2079256563713835,
+            "lengthStartProgress": 0,
+            "lengthEndProgress": 0.2720054179525185,
+            "letterLength": 0.8132500923951749
+          },
+          {
+            "letter": "O",
+            "index": 1,
+            "projectedStartProgress": 0.28106480770455683,
+            "projectedEndProgress": 0.42289374253055667,
+            "lengthStartProgress": 0.2720054179525185,
+            "lengthEndProgress": 0.4676938300333863,
+            "letterLength": 0.5850751812348497
+          },
+          {
+            "letter": "B",
+            "index": 2,
+            "projectedStartProgress": 0.5045563051155663,
+            "projectedEndProgress": 0.7235619573637917,
+            "lengthStartProgress": 0.4676938300333863,
+            "lengthEndProgress": 0.7905490646534655,
+            "letterLength": 0.9652824247452243
+          },
+          {
+            "letter": "Z",
+            "index": 3,
+            "projectedStartProgress": 0.8398920744397433,
+            "projectedEndProgress": 1,
+            "lengthStartProgress": 0.7905490646534655,
+            "lengthEndProgress": 1,
+            "letterLength": 0.6262227929318633
+          }
+        ],
+        "totalFlattenedLength": 3.9112541789580773,
+        "totalLetterLength": 2.9898304913071128,
+        "interLetterGapLength": 0.9214236876509645
+      },
+      "candidates": [
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5375917458632221,
+          "coverage": 0.3875,
+          "order": 0.5039708341737744,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.2962449922057727,
+          "currentSpanOccupancy": 0.8333333333333334,
+          "inkOnlyOccupancy": 0.6666666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6896638171531889,
+          "coverage": 0.725,
+          "order": 0.5628703934649523,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.4234896547859742,
+          "currentSpanOccupancy": 0.8125,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.6,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5244310051754175,
+          "coverage": 0.4,
+          "order": 0.4591072775420174,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.18009474363014671,
+          "currentSpanOccupancy": 0.8571428571428571,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.2,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5138547031862385,
+          "coverage": 0.425,
+          "order": 0.4376486506835061,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.1350813496401672,
+          "currentSpanOccupancy": 0.6666666666666666,
+          "inkOnlyOccupancy": 0.5,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.2,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5472665185732903,
+          "coverage": 0.475,
+          "order": 0.4399154454331704,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.21710047819417932,
+          "currentSpanOccupancy": 0.875,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5990738357635623,
+          "coverage": 0.5625,
+          "order": 0.46036678740146875,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.3219494421595496,
+          "currentSpanOccupancy": 0.9090909090909091,
+          "inkOnlyOccupancy": 0.5833333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6202958028000546,
+          "coverage": 0.625,
+          "order": 0.45875948286104185,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.07836448858998749,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.5416666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6391063199694651,
+          "coverage": 0.775,
+          "order": 0.42335259603382625,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.12797547971446785,
+          "currentSpanOccupancy": 0.8,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5900658367949634,
+          "coverage": 0.5125,
+          "order": 0.4490908581806746,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.09459867913303939,
+          "currentSpanOccupancy": 0.6,
+          "inkOnlyOccupancy": 0.5833333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6538049076775723,
+          "coverage": 0.6375,
+          "order": 0.5388588481876274,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.10096406355277517,
+          "currentSpanOccupancy": 0.6,
+          "inkOnlyOccupancy": 0.6666666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5652505637273911,
+          "coverage": 0.3875,
+          "order": 0.5352793059548975,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.24953194628450476,
+          "currentSpanOccupancy": 0.7272727272727273,
+          "inkOnlyOccupancy": 0.5416666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.6,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6622875043653279,
+          "coverage": 0.7125,
+          "order": 0.5552783762234473,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.2523753167957605,
+          "currentSpanOccupancy": 0.7272727272727273,
+          "inkOnlyOccupancy": 0.625,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.6,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.8,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "ROBZ",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "status": "ok",
+      "graphFeasibleCount": 5,
+      "boundarySet": {
+        "boundaries": [
+          {
+            "letter": "R",
+            "index": 0,
+            "projectedStartProgress": 0,
+            "projectedEndProgress": 0.2079256563713835,
+            "lengthStartProgress": 0,
+            "lengthEndProgress": 0.2720054179525185,
+            "letterLength": 0.8132500923951749
+          },
+          {
+            "letter": "O",
+            "index": 1,
+            "projectedStartProgress": 0.28106480770455683,
+            "projectedEndProgress": 0.42289374253055667,
+            "lengthStartProgress": 0.2720054179525185,
+            "lengthEndProgress": 0.4676938300333863,
+            "letterLength": 0.5850751812348497
+          },
+          {
+            "letter": "B",
+            "index": 2,
+            "projectedStartProgress": 0.5045563051155663,
+            "projectedEndProgress": 0.7235619573637917,
+            "lengthStartProgress": 0.4676938300333863,
+            "lengthEndProgress": 0.7905490646534655,
+            "letterLength": 0.9652824247452243
+          },
+          {
+            "letter": "Z",
+            "index": 3,
+            "projectedStartProgress": 0.8398920744397433,
+            "projectedEndProgress": 1,
+            "lengthStartProgress": 0.7905490646534655,
+            "lengthEndProgress": 1,
+            "letterLength": 0.6262227929318633
+          }
+        ],
+        "totalFlattenedLength": 3.9112541789580773,
+        "totalLetterLength": 2.9898304913071128,
+        "interLetterGapLength": 0.9214236876509645
+      },
+      "candidates": [
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.7173597863002122,
+          "coverage": 0.8125,
+          "order": 0.5635764321341514,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.2294226899031504,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.7396406682184301,
+          "coverage": 0.925,
+          "order": 0.5870707414679918,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.38326866581852465,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.9166666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.8,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.7198485696103146,
+          "coverage": 0.7625,
+          "order": 0.6336176632077594,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.1032412275254134,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.625,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 0.5714285714285714,
+              "completed": true
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 1,
+          "expectedLetterCount": 4,
+          "completionRatio": 0.25,
+          "lettersVisitedInOrder": true,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6830238540672643,
+          "coverage": 0.7375,
+          "order": 0.549068436592589,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.55257106944778,
+          "currentSpanOccupancy": 0.8571428571428571,
+          "inkOnlyOccupancy": 0.7916666666666666,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 1,
+              "completed": true
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 1,
+          "expectedLetterCount": 4,
+          "completionRatio": 0.25,
+          "lettersVisitedInOrder": true,
+          "wordTraversal": false
+        },
+        {
+          "word": "ROBZ",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6383040413714871,
+          "coverage": 0.7125,
+          "order": 0.43873825304092856,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.16301481237141227,
+          "currentSpanOccupancy": 0.7142857142857143,
+          "inkOnlyOccupancy": 0.8333333333333334,
+          "letters": [
+            {
+              "letter": "R",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 1,
+              "occupancy": 0.8,
+              "completed": false
+            },
+            {
+              "letter": "B",
+              "index": 2,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "Z",
+              "index": 3,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 4,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 2000,
+      "status": "ok",
+      "graphFeasibleCount": 25,
+      "boundarySet": {
+        "boundaries": [
+          {
+            "letter": "C",
+            "index": 0,
+            "projectedStartProgress": 0,
+            "projectedEndProgress": 0.10695847876089994,
+            "lengthStartProgress": 0,
+            "lengthEndProgress": 0.1387717114763465,
+            "letterLength": 0.3222113416010616
+          },
+          {
+            "letter": "A",
+            "index": 1,
+            "projectedStartProgress": 0.13980868738535596,
+            "projectedEndProgress": 0.38429615652219334,
+            "lengthStartProgress": 0.1387717114763465,
+            "lengthEndProgress": 0.4559783969087698,
+            "letterLength": 0.7365160419991521
+          },
+          {
+            "letter": "I",
+            "index": 2,
+            "projectedStartProgress": 0.4545524610556882,
+            "projectedEndProgress": 0.5109691255731352,
+            "lengthStartProgress": 0.4559783969087698,
+            "lengthEndProgress": 0.5291753718617737,
+            "letterLength": 0.16995463448446912
+          },
+          {
+            "letter": "R",
+            "index": 3,
+            "projectedStartProgress": 0.5628724569291864,
+            "projectedEndProgress": 0.7739244020338165,
+            "lengthStartProgress": 0.5291753718617737,
+            "lengthEndProgress": 0.803001626422231,
+            "letterLength": 0.6357918621084203
+          },
+          {
+            "letter": "O",
+            "index": 4,
+            "projectedStartProgress": 0.8481632450008291,
+            "projectedEndProgress": 0.9921246641422949,
+            "lengthStartProgress": 0.803001626422231,
+            "lengthEndProgress": 1,
+            "letterLength": 0.45740669743443574
+          }
+        ],
+        "totalFlattenedLength": 3.012489943142779,
+        "totalLetterLength": 2.321880577627539,
+        "interLetterGapLength": 0.6906093655152401
+      },
+      "candidates": [
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6922511667213763,
+          "coverage": 0.775,
+          "order": 0.5220962856856801,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.24645846175172928,
+          "currentSpanOccupancy": 0.8,
+          "inkOnlyOccupancy": 0.7916666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.75,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6413745923299279,
+          "coverage": 0.5875,
+          "order": 0.5068463786686761,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.1177149521239962,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.4583333333333333,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": true
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.375,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 1,
+          "expectedLetterCount": 5,
+          "completionRatio": 0.2,
+          "lettersVisitedInOrder": true,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6474508147935912,
+          "coverage": 0.65,
+          "order": 0.4970474776415076,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.1910330884757388,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.625,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6329169093292639,
+          "coverage": 0.4875,
+          "order": 0.6041985209065036,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.1834906953028405,
+          "currentSpanOccupancy": 0.8571428571428571,
+          "inkOnlyOccupancy": 0.8333333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6862746630423368,
+          "coverage": 0.575,
+          "order": 0.532742269559059,
+          "backtracking": 0.005729447238644413,
+          "currentOccupiedSpan": 0.12626371506676706,
+          "currentSpanOccupancy": 0.8,
+          "inkOnlyOccupancy": 0.6666666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.6666666666666666,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.625,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.8,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6724595896660742,
+          "coverage": 0.7125,
+          "order": 0.5137498326507857,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.4225960370367308,
+          "currentSpanOccupancy": 0.8666666666666667,
+          "inkOnlyOccupancy": 0.5833333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.625,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6916703681686656,
+          "coverage": 0.675,
+          "order": 0.5981304739512501,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.3805527019882168,
+          "currentSpanOccupancy": 0.9285714285714286,
+          "inkOnlyOccupancy": 0.6666666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": true
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 1,
+          "expectedLetterCount": 5,
+          "completionRatio": 0.2,
+          "lettersVisitedInOrder": true,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6650001216013984,
+          "coverage": 0.7375,
+          "order": 0.4713224678042355,
+          "backtracking": 0.008637629434834848,
+          "currentOccupiedSpan": 0.2244321703056717,
+          "currentSpanOccupancy": 0.7777777777777778,
+          "inkOnlyOccupancy": 0.7916666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.6666666666666666,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.62158879187363,
+          "coverage": 0.5,
+          "order": 0.598721239092483,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.43203001632041543,
+          "currentSpanOccupancy": 0.8235294117647058,
+          "inkOnlyOccupancy": 0.625,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6965708715458292,
+          "coverage": 0.8,
+          "order": 0.517239095869653,
+          "backtracking": 0.05225205136287047,
+          "currentOccupiedSpan": 0.20706115080613113,
+          "currentSpanOccupancy": 0.7777777777777778,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6360200483991345,
+          "coverage": 0.6625,
+          "order": 0.46182097076612233,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.21206620788332053,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.7916666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 1,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.7175540983262539,
+          "coverage": 0.85,
+          "order": 0.5182237390036663,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.2015479762641591,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.875,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5919720398403416,
+          "coverage": 0.45,
+          "order": 0.5662848632790498,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.22409876068635354,
+          "currentSpanOccupancy": 0.7777777777777778,
+          "inkOnlyOccupancy": 0.5833333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.625,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6336186495522785,
+          "coverage": 0.6625,
+          "order": 0.44017012207777556,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.13908104953302766,
+          "currentSpanOccupancy": 0.8,
+          "inkOnlyOccupancy": 0.625,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.625,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.692895453449579,
+          "coverage": 0.65,
+          "order": 0.6157561309105014,
+          "backtracking": 0.04844174530576845,
+          "currentOccupiedSpan": 0.1824043888831549,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": true
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.75,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 1,
+          "expectedLetterCount": 5,
+          "completionRatio": 0.2,
+          "lettersVisitedInOrder": true,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6239375138438811,
+          "coverage": 0.6125,
+          "order": 0.44579392031219317,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.29707673612905383,
+          "currentSpanOccupancy": 0.7692307692307693,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.75,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.8,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6239602083920082,
+          "coverage": 0.5625,
+          "order": 0.5587631503237839,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.45855141212593936,
+          "currentSpanOccupancy": 0.7368421052631579,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5311836445720338,
+          "coverage": 0.4,
+          "order": 0.5080817164629093,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.24868474619052156,
+          "currentSpanOccupancy": 0.8888888888888888,
+          "inkOnlyOccupancy": 0.5416666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.75,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6381106682976234,
+          "coverage": 0.7125,
+          "order": 0.43239985919718127,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.16252865765064894,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.7209274052484718,
+          "coverage": 0.7625,
+          "order": 0.5851672279000941,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.21433106664111318,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.7916666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.6666666666666666,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5189096727168431,
+          "coverage": 0.3875,
+          "order": 0.3989806827331559,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.09760860175671737,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.625,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.625,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5736384938144933,
+          "coverage": 0.4875,
+          "order": 0.48981260295313966,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.16865269037477842,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.6666666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.75,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.742554108078905,
+          "coverage": 0.8,
+          "order": 0.5807161808975869,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.29337247457905585,
+          "currentSpanOccupancy": 0.8181818181818182,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": true
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 1,
+          "expectedLetterCount": 5,
+          "completionRatio": 0.2,
+          "lettersVisitedInOrder": true,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5936490741971083,
+          "coverage": 0.5,
+          "order": 0.5431048591428335,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.22306171731439656,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6733851668025314,
+          "coverage": 0.65,
+          "order": 0.5329397447078765,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.2392653540912714,
+          "currentSpanOccupancy": 0.7272727272727273,
+          "inkOnlyOccupancy": 0.7916666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": true
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.75,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 1,
+          "expectedLetterCount": 5,
+          "completionRatio": 0.2,
+          "lettersVisitedInOrder": true,
+          "wordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Alexandria",
+      "targetDistanceMeters": 4000,
+      "status": "weak_candidates",
+      "graphFeasibleCount": 1,
+      "boundarySet": {
+        "boundaries": [
+          {
+            "letter": "C",
+            "index": 0,
+            "projectedStartProgress": 0,
+            "projectedEndProgress": 0.10695847876089994,
+            "lengthStartProgress": 0,
+            "lengthEndProgress": 0.1387717114763465,
+            "letterLength": 0.3222113416010616
+          },
+          {
+            "letter": "A",
+            "index": 1,
+            "projectedStartProgress": 0.13980868738535596,
+            "projectedEndProgress": 0.38429615652219334,
+            "lengthStartProgress": 0.1387717114763465,
+            "lengthEndProgress": 0.4559783969087698,
+            "letterLength": 0.7365160419991521
+          },
+          {
+            "letter": "I",
+            "index": 2,
+            "projectedStartProgress": 0.4545524610556882,
+            "projectedEndProgress": 0.5109691255731352,
+            "lengthStartProgress": 0.4559783969087698,
+            "lengthEndProgress": 0.5291753718617737,
+            "letterLength": 0.16995463448446912
+          },
+          {
+            "letter": "R",
+            "index": 3,
+            "projectedStartProgress": 0.5628724569291864,
+            "projectedEndProgress": 0.7739244020338165,
+            "lengthStartProgress": 0.5291753718617737,
+            "lengthEndProgress": 0.803001626422231,
+            "letterLength": 0.6357918621084203
+          },
+          {
+            "letter": "O",
+            "index": 4,
+            "projectedStartProgress": 0.8481632450008291,
+            "projectedEndProgress": 0.9921246641422949,
+            "lengthStartProgress": 0.803001626422231,
+            "lengthEndProgress": 1,
+            "letterLength": 0.45740669743443574
+          }
+        ],
+        "totalFlattenedLength": 3.012489943142779,
+        "totalLetterLength": 2.321880577627539,
+        "interLetterGapLength": 0.6906093655152401
+      },
+      "candidates": [
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5771102673641417,
+          "coverage": 0.4375,
+          "order": 0.5625122227220459,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.23042139358219937,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.6666666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.7142857142857143,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 2000,
+      "status": "ok",
+      "graphFeasibleCount": 12,
+      "boundarySet": {
+        "boundaries": [
+          {
+            "letter": "C",
+            "index": 0,
+            "projectedStartProgress": 0,
+            "projectedEndProgress": 0.10695847876089994,
+            "lengthStartProgress": 0,
+            "lengthEndProgress": 0.1387717114763465,
+            "letterLength": 0.3222113416010616
+          },
+          {
+            "letter": "A",
+            "index": 1,
+            "projectedStartProgress": 0.13980868738535596,
+            "projectedEndProgress": 0.38429615652219334,
+            "lengthStartProgress": 0.1387717114763465,
+            "lengthEndProgress": 0.4559783969087698,
+            "letterLength": 0.7365160419991521
+          },
+          {
+            "letter": "I",
+            "index": 2,
+            "projectedStartProgress": 0.4545524610556882,
+            "projectedEndProgress": 0.5109691255731352,
+            "lengthStartProgress": 0.4559783969087698,
+            "lengthEndProgress": 0.5291753718617737,
+            "letterLength": 0.16995463448446912
+          },
+          {
+            "letter": "R",
+            "index": 3,
+            "projectedStartProgress": 0.5628724569291864,
+            "projectedEndProgress": 0.7739244020338165,
+            "lengthStartProgress": 0.5291753718617737,
+            "lengthEndProgress": 0.803001626422231,
+            "letterLength": 0.6357918621084203
+          },
+          {
+            "letter": "O",
+            "index": 4,
+            "projectedStartProgress": 0.8481632450008291,
+            "projectedEndProgress": 0.9921246641422949,
+            "lengthStartProgress": 0.803001626422231,
+            "lengthEndProgress": 1,
+            "letterLength": 0.45740669743443574
+          }
+        ],
+        "totalFlattenedLength": 3.012489943142779,
+        "totalLetterLength": 2.321880577627539,
+        "interLetterGapLength": 0.6906093655152401
+      },
+      "candidates": [
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.552782991425823,
+          "coverage": 0.45,
+          "order": 0.45320302978452404,
+          "backtracking": 0.06900617218251956,
+          "currentOccupiedSpan": 0.1606695527224296,
+          "currentSpanOccupancy": 0.7142857142857143,
+          "inkOnlyOccupancy": 0.625,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.75,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6941270956919,
+          "coverage": 0.775,
+          "order": 0.567351497431448,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.4674668237480495,
+          "currentSpanOccupancy": 0.8823529411764706,
+          "inkOnlyOccupancy": 0.7916666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.7085124069601814,
+          "coverage": 0.7625,
+          "order": 0.5699756988809731,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.6145473760930418,
+          "currentSpanOccupancy": 0.7692307692307693,
+          "inkOnlyOccupancy": 0.6666666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.625,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6520210015043713,
+          "coverage": 0.6375,
+          "order": 0.5409093543584625,
+          "backtracking": 0.13214458620513747,
+          "currentOccupiedSpan": 0.06539254244776271,
+          "currentSpanOccupancy": 0.5,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": true
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.5714285714285714,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.8,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 1,
+          "expectedLetterCount": 5,
+          "completionRatio": 0.2,
+          "lettersVisitedInOrder": true,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6725015503016897,
+          "coverage": 0.725,
+          "order": 0.4851657427422107,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.12905396165742977,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.6666666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.625,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.8,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.630307652155195,
+          "coverage": 0.6625,
+          "order": 0.4473639997628808,
+          "backtracking": 0.09686984016262927,
+          "currentOccupiedSpan": 0.16109266249801452,
+          "currentSpanOccupancy": 0.7142857142857143,
+          "inkOnlyOccupancy": 0.6666666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.6666666666666666,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.4276763932266377,
+          "coverage": 0.2625,
+          "order": 0.3634170916012914,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.24112750924712356,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.375,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.75,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.2857142857142857,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6742538469055219,
+          "coverage": 0.75,
+          "order": 0.4898829822729717,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.518302445912975,
+          "currentSpanOccupancy": 0.8888888888888888,
+          "inkOnlyOccupancy": 0.6666666666666666,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.625,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6267106950472807,
+          "coverage": 0.4875,
+          "order": 0.5220929652012607,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.08279458223502519,
+          "currentSpanOccupancy": 0.6,
+          "inkOnlyOccupancy": 0.5833333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.75,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6841758802271543,
+          "coverage": 0.75,
+          "order": 0.49741690265811145,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.3411862564028085,
+          "currentSpanOccupancy": 1,
+          "inkOnlyOccupancy": 0.7083333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.42857142857142855,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6606042416699658,
+          "coverage": 0.775,
+          "order": 0.48922699465659336,
+          "backtracking": 0.17346379337193094,
+          "currentOccupiedSpan": 0.3148140676631389,
+          "currentSpanOccupancy": 0.8333333333333334,
+          "inkOnlyOccupancy": 0.8333333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.6666666666666666,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.8,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.6190361269044635,
+          "coverage": 0.55,
+          "order": 0.4851707146484838,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.21481504423346032,
+          "currentSpanOccupancy": 0.7777777777777778,
+          "inkOnlyOccupancy": 0.5833333333333334,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        }
+      ]
+    },
+    {
+      "word": "CAIRO",
+      "locationName": "Zamalek",
+      "targetDistanceMeters": 4000,
+      "status": "ok",
+      "graphFeasibleCount": 2,
+      "boundarySet": {
+        "boundaries": [
+          {
+            "letter": "C",
+            "index": 0,
+            "projectedStartProgress": 0,
+            "projectedEndProgress": 0.10695847876089994,
+            "lengthStartProgress": 0,
+            "lengthEndProgress": 0.1387717114763465,
+            "letterLength": 0.3222113416010616
+          },
+          {
+            "letter": "A",
+            "index": 1,
+            "projectedStartProgress": 0.13980868738535596,
+            "projectedEndProgress": 0.38429615652219334,
+            "lengthStartProgress": 0.1387717114763465,
+            "lengthEndProgress": 0.4559783969087698,
+            "letterLength": 0.7365160419991521
+          },
+          {
+            "letter": "I",
+            "index": 2,
+            "projectedStartProgress": 0.4545524610556882,
+            "projectedEndProgress": 0.5109691255731352,
+            "lengthStartProgress": 0.4559783969087698,
+            "lengthEndProgress": 0.5291753718617737,
+            "letterLength": 0.16995463448446912
+          },
+          {
+            "letter": "R",
+            "index": 3,
+            "projectedStartProgress": 0.5628724569291864,
+            "projectedEndProgress": 0.7739244020338165,
+            "lengthStartProgress": 0.5291753718617737,
+            "lengthEndProgress": 0.803001626422231,
+            "letterLength": 0.6357918621084203
+          },
+          {
+            "letter": "O",
+            "index": 4,
+            "projectedStartProgress": 0.8481632450008291,
+            "projectedEndProgress": 0.9921246641422949,
+            "lengthStartProgress": 0.803001626422231,
+            "lengthEndProgress": 1,
+            "letterLength": 0.45740669743443574
+          }
+        ],
+        "totalFlattenedLength": 3.012489943142779,
+        "totalLetterLength": 2.321880577627539,
+        "interLetterGapLength": 0.6906093655152401
+      },
+      "candidates": [
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.7234861535026613,
+          "coverage": 0.7375,
+          "order": 0.6351164732284386,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.47247671971340843,
+          "currentSpanOccupancy": 0.8823529411764706,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.6666666666666666,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.75,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 1,
+              "completed": true
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.4,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 1,
+          "expectedLetterCount": 5,
+          "completionRatio": 0.2,
+          "lettersVisitedInOrder": true,
+          "wordTraversal": false
+        },
+        {
+          "word": "CAIRO",
+          "geometryVariant": "smooth",
+          "candidateRank": -1,
+          "shapeScore": 0.5314643826450074,
+          "coverage": 0.375,
+          "order": 0.4548921991466797,
+          "backtracking": 0,
+          "currentOccupiedSpan": 0.2197912505485019,
+          "currentSpanOccupancy": 0.875,
+          "inkOnlyOccupancy": 0.75,
+          "letters": [
+            {
+              "letter": "C",
+              "index": 0,
+              "occupancy": 0.3333333333333333,
+              "completed": false
+            },
+            {
+              "letter": "A",
+              "index": 1,
+              "occupancy": 0.875,
+              "completed": false
+            },
+            {
+              "letter": "I",
+              "index": 2,
+              "occupancy": 1,
+              "completed": false
+            },
+            {
+              "letter": "R",
+              "index": 3,
+              "occupancy": 0.8571428571428571,
+              "completed": false
+            },
+            {
+              "letter": "O",
+              "index": 4,
+              "occupancy": 0.6,
+              "completed": false
+            }
+          ],
+          "completedLetterCount": 0,
+          "expectedLetterCount": 5,
+          "completionRatio": 0,
+          "lettersVisitedInOrder": false,
+          "wordTraversal": false
+        }
+      ]
+    }
+  ]
+}
