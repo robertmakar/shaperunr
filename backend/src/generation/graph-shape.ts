@@ -108,6 +108,29 @@ export type GraphShapeSearchStats = {
   statesExplored: number;
 };
 
+/**
+ * Optional completion-aware goal support (multi-letter words only). When
+ * provided, routeGraphConstrainedShape keeps the exact production search and
+ * production-selected route (the cheapest goal), and additionally:
+ *  - goal-checks the states left in the final beam when the expansion cap
+ *    ends the search (they are never expanded, so were never checked);
+ *  - treats a state whose FINAL letter is physically complete and traversed
+ *    in word order, with search coverage >= goalCoverage, as a
+ *    completion-aware goal even when its progress is < goalProgress (this
+ *    never changes which states are ordinary goals);
+ *  - prefers the cheapest completion-aware goal, else the cheapest goal;
+ *  - returns that candidate only if acceptCandidate() (the nine guards)
+ *    accepts it against the production-selected route, otherwise returns
+ *    the production-selected route unchanged.
+ * Goal logic never affects expansion, so the search itself is identical.
+ */
+export type CompletionAwareGoalSupport = {
+  /** True when the path's final letter is physically complete AND traversed in word order. */
+  finalLetterCompleteInOrder(pathPoints: readonly Vec2[]): boolean;
+  /** Nine-guard verdict: may `candidate` replace the production-selected `baseline`? */
+  acceptCandidate(baseline: GraphShapeResult, candidate: GraphShapeResult): boolean;
+};
+
 export type GraphShapeResult = {
   kind: ShapeKind;
   pathPoints: Vec2[];
@@ -238,6 +261,8 @@ export function routeGraphConstrainedShape(input: {
   graph: ShapeGraph;
   kind?: ShapeKind;
   multiLetter?: boolean;
+  /** Completion-aware goal selection with nine-guard fallback (see CompletionAwareGoalSupport). Omit for production cheapest-goal behavior. */
+  completionAware?: CompletionAwareGoalSupport;
 }): GraphShapeResult {
   const kind = input.kind ?? 'generic';
   const target = input.target.map((point) => ({ ...point }));
@@ -283,12 +308,36 @@ export function routeGraphConstrainedShape(input: {
     );
   }
 
-  const { best, expansions } = beamSearch(starts, directed, outgoing, targetLength, kind, loop, regions);
+  const completionAware = input.completionAware && input.multiLetter && kind === 'generic' && !loop ? input.completionAware : undefined;
+  const retained: RetainedSearch | undefined = completionAware ? { goals: [], visited: [], finalBeam: [], sequence: new Map() } : undefined;
+  const { best, expansions } = beamSearch(starts, directed, outgoing, targetLength, kind, loop, regions, retained);
   const search = { ...searchBase, statesExplored: expansions };
   if (!best) {
     return resultOf(kind, [], [], [], emptyMetrics(targetLength, false), 'search_exhausted', regions, search, null, null);
   }
 
+  const baseline = resultForState(best, directed, target, kind, loop, regions, search);
+  if (!completionAware || !retained) {
+    return baseline;
+  }
+  const candidate = selectCompletionAwareGoal(retained, best, directed, kind, loop, completionAware);
+  if (candidate === best) {
+    return baseline;
+  }
+  const candidateResult = resultForState(candidate, directed, target, kind, loop, regions, search);
+  return completionAware.acceptCandidate(baseline, candidateResult) ? candidateResult : baseline;
+}
+
+/** The production result tail for a selected state (unchanged; factored out so a completion-aware candidate is evaluated exactly like the production pick). */
+function resultForState(
+  best: SearchState,
+  directed: Map<string, Directed>,
+  target: readonly Vec2[],
+  kind: ShapeKind,
+  loop: boolean,
+  regions: TargetRegion[],
+  search: GraphShapeSearchStats,
+): GraphShapeResult {
   const pathPoints = polylineFromEdges(best.edgeIds, directed);
   const waySequence = best.edgeIds
     .map((id) => directed.get(id)?.wayId)
@@ -556,6 +605,7 @@ function beamSearch(
   kind: ShapeKind,
   loop: boolean,
   regions: readonly TargetRegion[],
+  retained?: RetainedSearch,
 ): { best: SearchState | null; expansions: number } {
   const bins = GRAPH_SHAPE.progressBins;
   const bestAt = new Map<string, number>();
@@ -563,6 +613,13 @@ function beamSearch(
   let bestGoal: SearchState | null = null;
   let bestAny: SearchState | null = starts[0] ?? null;
   let expansions = 0;
+  let sequence = 0;
+  if (retained) {
+    for (const start of starts) {
+      retained.sequence.set(start, sequence);
+      sequence += 1;
+    }
+  }
 
   while (beam.length > 0 && expansions < GRAPH_SHAPE.maxExpansions) {
     const next: SearchState[] = [];
@@ -570,8 +627,12 @@ function beamSearch(
       if (!bestAny || betterState(state, bestAny, bins)) {
         bestAny = state;
       }
-      if (isGoal(state, bins, kind, loop, directed) && (!bestGoal || state.cost < bestGoal.cost)) {
+      const goal = isGoal(state, bins, kind, loop, directed);
+      if (goal && (!bestGoal || state.cost < bestGoal.cost)) {
         bestGoal = state;
+      }
+      if (retained) {
+        (goal ? retained.goals : retained.visited).push(state);
       }
       const edges = outgoing.get(state.node) ?? [];
       for (const edge of edges) {
@@ -598,6 +659,10 @@ function beamSearch(
           usedUndirected: withKey(used, undirectedKey(edge)),
           usedInterior: state.usedInterior || edge.interior,
         };
+        if (retained) {
+          retained.sequence.set(child, sequence);
+          sequence += 1;
+        }
         const key = `${child.node}:${progressBin(child.progress, bins)}:${bitCount(child.covered)}`;
         const previous = bestAt.get(key);
         if (previous != null && previous <= child.cost) {
@@ -611,7 +676,66 @@ function beamSearch(
     beam = next.slice(0, GRAPH_SHAPE.beamPerBin * 4);
   }
 
+  if (retained && beam.length > 0) {
+    // The expansion cap ended the search: this beam was built but never expanded, so never goal-checked.
+    retained.finalBeam = beam;
+  }
   return { best: bestGoal ?? bestAny, expansions };
+}
+
+/** States kept for completion-aware goal selection (only when CompletionAwareGoalSupport is provided). */
+type RetainedSearch = {
+  /** Beam states that passed isGoal, in goal-check order. */
+  goals: SearchState[];
+  /** Beam states that were goal-checked and did not pass isGoal. */
+  visited: SearchState[];
+  /** The final beam left unexpanded when the expansion cap ended the search (empty if the beam was exhausted). */
+  finalBeam: SearchState[];
+  /** Creation order of every state (starts first), used only to break exact cost ties deterministically. */
+  sequence: Map<SearchState, number>;
+};
+
+/**
+ * Completion-aware goal selection over the retained search:
+ *  ordinary goals = goal-checked goals ∪ final-beam states that pass isGoal;
+ *  completion-aware goals = ordinary goals, plus goal-checked or final-beam
+ *  states with search coverage >= goalCoverage, whose final letter is
+ *  physically complete and in word order.
+ * Returns the cheapest completion-aware goal, else the cheapest ordinary goal,
+ * else the production pick. Ties: creation order.
+ */
+function selectCompletionAwareGoal(
+  retained: RetainedSearch,
+  best: SearchState,
+  directed: Map<string, Directed>,
+  kind: ShapeKind,
+  loop: boolean,
+  support: CompletionAwareGoalSupport,
+): SearchState {
+  const bins = GRAPH_SHAPE.progressBins;
+  const order = (a: SearchState, b: SearchState) => a.cost - b.cost || (retained.sequence.get(a) ?? 0) - (retained.sequence.get(b) ?? 0);
+  const finalBeamGoals: SearchState[] = [];
+  const completionOnly: SearchState[] = [];
+  for (const state of retained.finalBeam) {
+    if (isGoal(state, bins, kind, loop, directed)) {
+      finalBeamGoals.push(state);
+    } else if (bitCount(state.covered) / bins >= GRAPH_SHAPE.goalCoverage) {
+      completionOnly.push(state);
+    }
+  }
+  for (const state of retained.visited) {
+    if (bitCount(state.covered) / bins >= GRAPH_SHAPE.goalCoverage) {
+      completionOnly.push(state);
+    }
+  }
+  const ordinary = [...retained.goals, ...finalBeamGoals].sort(order);
+  const candidates = [...ordinary, ...completionOnly].sort(order);
+  for (const state of candidates) {
+    if (support.finalLetterCompleteInOrder(polylineFromEdges(state.edgeIds, directed))) {
+      return state;
+    }
+  }
+  return ordinary[0] ?? best;
 }
 
 function betterState(candidate: SearchState, current: SearchState, bins: number): boolean {

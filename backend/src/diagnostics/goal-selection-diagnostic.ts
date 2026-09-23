@@ -15,6 +15,11 @@ import type { Vec2 } from '@/lib/geometry';
 import type { Directed, LetterBinRange, SearchObserver, SearchState } from './graph-shape-goal-mirror';
 import { makeMinFractionGoal } from './per-letter-goal-diagnostic';
 import type { LetterBoundary } from './multi-letter-trace';
+import { GUARD_LIMITS, type GuardQuality } from '../generation/completion-goal-guards';
+
+// The nine-guard fallback now lives in production (generation/completion-goal-guards.ts);
+// re-exported here so every diagnostic keeps using the identical implementation.
+export { GUARD_LIMITS, TWO_SIDED_LIMITS, twoSidedRouteTargetOk, evaluateTwoSidedGuard, type GuardQuality, type TwoSidedGuardResult } from '../generation/completion-goal-guards';
 
 // ---------------------------------------------------------------------------
 // Fixed parameters — declared before any corpus run.
@@ -218,10 +223,6 @@ export function pathOfState(state: SearchState, directed: ReadonlyMap<string, Di
 // ---------------------------------------------------------------------------
 
 
-export const GUARD_LIMITS = { shapeDrop: 0.03, targetCoverageDrop: 0.05, backtrackRise: 0.05, routeTargetFactor: 1.25 } as const;
-
-export type GuardQuality = ComparableQuality & { continuityValid: boolean };
-
 export type GuardResult = {
   feasibilityGuard: boolean;
   shapeGuard: boolean;
@@ -250,59 +251,3 @@ export function evaluateSelectionGuard(base: GuardQuality, cand: GuardQuality): 
   return { ...g, accepted: rejectionReasons.length === 0, rejectionReasons };
 }
 
-// ---------------------------------------------------------------------------
-// Two-sided route/target + final-letter guard (registered after the first
-// guarded experiment; thresholds are the task's, not tuned here).
-// ---------------------------------------------------------------------------
-
-export const TWO_SIDED_LIMITS = { idealRatio: 1.0, distanceFactor: 1.25, zeroDistanceTolerance: 0.05, finalCoverageDrop: 0.05 } as const;
-
-export type TwoSidedGuardResult = {
-  feasibilityGuard: boolean;
-  shapeGuard: boolean;
-  coverageGuard: boolean;
-  backtrackGuard: boolean;
-  twoSidedRouteTargetGuard: boolean;
-  letterCoverageGuard: boolean;
-  finalLetterCoverageGuard: boolean;
-  finalLetterRawInkGuard: boolean;
-  continuityGuard: boolean;
-  accepted: boolean;
-  rejectionReasons: string[];
-};
-
-/** Reject only if the candidate moves MORE than 25% farther from ratio 1.0 than the baseline (zero baseline distance: candidate must be within 0.05). */
-export function twoSidedRouteTargetOk(baselineRatio: number, candidateRatio: number): boolean {
-  const b = Math.abs(baselineRatio - TWO_SIDED_LIMITS.idealRatio);
-  const c = Math.abs(candidateRatio - TWO_SIDED_LIMITS.idealRatio);
-  // 1e-9 absorbs floating-point noise only (|1.05-1| = 0.05000000000000004); it is not a tolerance.
-  const EPS = 1e-9;
-  return b === 0 ? c <= TWO_SIDED_LIMITS.zeroDistanceTolerance + EPS : c <= b * TWO_SIDED_LIMITS.distanceFactor + EPS;
-}
-
-/**
- * continuityRule: 'candidate_valid' (default — as used by the two-sided
- * experiment: the candidate must be continuity-valid) or
- * 'no_valid_to_invalid' (only a valid → invalid transition fails, as in the
- * original guard set). Every other guard is identical in both modes.
- */
-export function evaluateTwoSidedGuard(base: GuardQuality, cand: GuardQuality, options: { continuityRule?: 'candidate_valid' | 'no_valid_to_invalid' } = {}): TwoSidedGuardResult {
-  const bf = base.letters[base.letters.length - 1];
-  const cf = cand.letters[cand.letters.length - 1];
-  const g = {
-    feasibilityGuard: cand.feasible === true,
-    shapeGuard: cand.shapeScore >= base.shapeScore - GUARD_LIMITS.shapeDrop,
-    coverageGuard: cand.targetCoverage >= base.targetCoverage - GUARD_LIMITS.targetCoverageDrop,
-    backtrackGuard: cand.backtracking <= base.backtracking + GUARD_LIMITS.backtrackRise,
-    twoSidedRouteTargetGuard: twoSidedRouteTargetOk(base.routeTarget, cand.routeTarget),
-    letterCoverageGuard: base.letters.every((l, i) => !l.physicallyCovered || Boolean(cand.letters[i]?.physicallyCovered)),
-    // Final letter = last entry of the letter list (derived from the WordShape boundaries; never hard-coded).
-    finalLetterCoverageGuard: Boolean(bf && cf) && cf!.coverage >= bf!.coverage - TWO_SIDED_LIMITS.finalCoverageDrop,
-    finalLetterRawInkGuard: Boolean(bf && cf) && cf!.rawInk >= bf!.rawInk,
-    // As specified for this experiment: the CANDIDATE must be continuity-valid (stricter than the previous valid->invalid rule).
-    continuityGuard: (options.continuityRule ?? 'candidate_valid') === 'candidate_valid' ? cand.continuityValid === true : !(base.continuityValid && !cand.continuityValid),
-  };
-  const names: Record<keyof typeof g, string> = { feasibilityGuard: 'infeasible', shapeGuard: 'shape', coverageGuard: 'coverage', backtrackGuard: 'backtracking', twoSidedRouteTargetGuard: 'route_target_2sided', letterCoverageGuard: 'letter_loss', finalLetterCoverageGuard: 'final_coverage', finalLetterRawInkGuard: 'final_raw_ink', continuityGuard: 'continuity' };
-  const rejectionReasons = (Object.keys(g) as Array<keyof typeof g>).filter((k) => !g[k]).map((k) => names[k]);
-  return { ...g, accepted: rejectionReasons.length === 0, rejectionReasons };
-}

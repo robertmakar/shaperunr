@@ -40,6 +40,7 @@ import {
   type ShapeGraphCollection,
 } from './graph-shape-router';
 import { discoveryScore, filterCorridorSegments, isFeasible } from './shape-discovery';
+import { createCompletionAwareGoalSupport } from './completion-aware-goal';
 import {
   getPlacementRadiusForTargetDistance,
   getPlacementRingsForTargetDistance,
@@ -316,6 +317,7 @@ export async function runExperimentalPipeline(
       kind,
       graph: buildShapeGraph(corridor),
       multiLetter: wordShape.word.length > 1,
+      completionAware: wordShape.word.length > 1 ? createCompletionAwareGoalSupport({ word: wordShape.word, target: projected.target, geometryVariant }) : undefined,
     });
     searchStates += result.search.statesExplored;
     feasibility.push({
@@ -920,6 +922,7 @@ async function runSharedBudgetGeometryPipeline(
       kind,
       graph: buildShapeGraph(corridor),
       multiLetter,
+      completionAware: multiLetter ? createCompletionAwareGoalSupport({ word: anyWordShape.word, target: item.target, geometryVariant: item.geometryVariant }) : undefined,
     });
     searchStates += result.search.statesExplored;
     // placementId is prefixed with the variant here (and only here): the
